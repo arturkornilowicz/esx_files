@@ -370,13 +370,15 @@
        </Loci>
       </Attribute-Pattern>
       <Definiens position="56\32" kind="Simple-Definiens" shape="Formula-Expression">
-       <Label idnr="0" spelling="" position="59\4" serialnr="1" labelnr="0"/>
-       <Relation-Formula nr="25" formatnr="7" patternnr="32" absolutepatternMMLId="RELAT_1:2" leftargscount="1" spelling="c=" sort="Relation-Formula" constrnr="3" absoluteconstrMMLId="TARSKI:1" originalnr="0" position="59\7">
-        <Arguments>
-         <Simple-Term idnr="57" spelling="Al" position="59\4" origin="ReservedVar" sort="Constant" serialnr="1" varnr="1"/>
-         <Simple-Term idnr="78" spelling="Al2" position="59\11" origin="Constant" sort="Constant" serialnr="2" varnr="2"/>
-        </Arguments>
-       </Relation-Formula>
+       <Standard-Definiens>
+        <Label idnr="0" spelling="" position="59\4" serialnr="1" labelnr="0"/>
+        <Relation-Formula nr="25" formatnr="7" patternnr="32" absolutepatternMMLId="RELAT_1:2" leftargscount="1" spelling="c=" sort="Relation-Formula" constrnr="3" absoluteconstrMMLId="TARSKI:1" originalnr="0" position="59\7">
+         <Arguments>
+          <Simple-Term idnr="57" spelling="Al" position="59\4" origin="ReservedVar" sort="Constant" serialnr="1" varnr="1"/>
+          <Simple-Term idnr="78" spelling="Al2" position="59\11" origin="Constant" sort="Constant" serialnr="2" varnr="2"/>
+         </Arguments>
+        </Relation-Formula>
+       </Standard-Definiens>
       </Definiens>
      </Attribute-Definition>
     </Item>
@@ -520,43 +522,45 @@
        </Loci>
       </Attribute-Pattern>
       <Definiens position="75\32" kind="Simple-Definiens" shape="Formula-Expression">
-       <Label idnr="0" spelling="" position="77\5" serialnr="5" labelnr="0"/>
-       <Universal-Quantifier-Formula position="77\5">
-        <Variable-Segments>
-         <Explicitly-Qualified-Segment position="77\5">
-          <Variables>
-           <Variable idnr="80" spelling="S" position="77\7" kind="BoundVar" serialnr="9" varnr="1"/>
-          </Variables>
-          <Standard-Type nr="4" formatnr="34" patternnr="4" absolutepatternMMLId="SUBSET_1:2" spelling="Subset" sort="Expandable-Type" position="77\20">
+       <Standard-Definiens>
+        <Label idnr="0" spelling="" position="77\5" serialnr="5" labelnr="0"/>
+        <Universal-Quantifier-Formula position="77\5">
+         <Variable-Segments>
+          <Explicitly-Qualified-Segment position="77\5">
+           <Variables>
+            <Variable idnr="80" spelling="S" position="77\7" kind="BoundVar" serialnr="9" varnr="1"/>
+           </Variables>
+           <Standard-Type nr="4" formatnr="34" patternnr="4" absolutepatternMMLId="SUBSET_1:2" spelling="Subset" sort="Expandable-Type" position="77\20">
+            <Arguments>
+             <Infix-Term nr="25" formatnr="188" patternnr="139" absolutepatternMMLId="CQC_LANG:3" leftargscount="0" spelling="CQC-WFF" sort="Functor-Term" constrnr="284" absoluteconstrMMLId="CQC_LANG:3" originalnr="0" position="77\31">
+              <Arguments>
+               <Simple-Term idnr="78" spelling="Al2" position="77\35" origin="Constant" sort="Constant" serialnr="7" varnr="2"/>
+              </Arguments>
+             </Infix-Term>
+            </Arguments>
+           </Standard-Type>
+          </Explicitly-Qualified-Segment>
+         </Variable-Segments>
+         <Restriction>
+          <Relation-Formula nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="77\42">
            <Arguments>
-            <Infix-Term nr="25" formatnr="188" patternnr="139" absolutepatternMMLId="CQC_LANG:3" leftargscount="0" spelling="CQC-WFF" sort="Functor-Term" constrnr="284" absoluteconstrMMLId="CQC_LANG:3" originalnr="0" position="77\31">
-             <Arguments>
-              <Simple-Term idnr="78" spelling="Al2" position="77\35" origin="Constant" sort="Constant" serialnr="7" varnr="2"/>
-             </Arguments>
-            </Infix-Term>
+            <Simple-Term idnr="72" spelling="P" position="77\41" origin="Constant" sort="Constant" serialnr="8" varnr="3"/>
+            <Simple-Term idnr="80" spelling="S" position="77\43" origin="BoundVar" sort="BoundVar" serialnr="9" varnr="1"/>
            </Arguments>
-          </Standard-Type>
-         </Explicitly-Qualified-Segment>
-        </Variable-Segments>
-        <Restriction>
-         <Relation-Formula nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="77\42">
-          <Arguments>
-           <Simple-Term idnr="72" spelling="P" position="77\41" origin="Constant" sort="Constant" serialnr="8" varnr="3"/>
-           <Simple-Term idnr="80" spelling="S" position="77\43" origin="BoundVar" sort="BoundVar" serialnr="9" varnr="1"/>
-          </Arguments>
-         </Relation-Formula>
-        </Restriction>
-        <Scope>
-         <Multi-Attributive-Formula position="77\54">
-          <Simple-Term idnr="80" spelling="S" position="77\51" origin="BoundVar" sort="BoundVar" serialnr="9" varnr="1"/>
-          <Adjective-Cluster>
-           <Attribute nr="9" formatnr="340" patternnr="64" absolutepatternMMLId="HENMODEL:1" spelling="Consistent" sort="Adjective" constrnr="94" absoluteconstrMMLId="HENMODEL:1" originalnr="0" position="77\65">
-            <Arguments/>
-           </Attribute>
-          </Adjective-Cluster>
-         </Multi-Attributive-Formula>
-        </Scope>
-       </Universal-Quantifier-Formula>
+          </Relation-Formula>
+         </Restriction>
+         <Scope>
+          <Multi-Attributive-Formula position="77\54">
+           <Simple-Term idnr="80" spelling="S" position="77\51" origin="BoundVar" sort="BoundVar" serialnr="9" varnr="1"/>
+           <Adjective-Cluster>
+            <Attribute nr="9" formatnr="340" patternnr="64" absolutepatternMMLId="HENMODEL:1" spelling="Consistent" sort="Adjective" constrnr="94" absoluteconstrMMLId="HENMODEL:1" originalnr="0" position="77\65">
+             <Arguments/>
+            </Attribute>
+           </Adjective-Cluster>
+          </Multi-Attributive-Formula>
+         </Scope>
+        </Universal-Quantifier-Formula>
+       </Standard-Definiens>
       </Definiens>
      </Attribute-Definition>
     </Item>
@@ -1544,8 +1548,10 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="123\52" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="125\1" serialnr="16" labelnr="0"/>
-       <Simple-Term idnr="59" spelling="p" position="125\1" origin="Constant" sort="Constant" serialnr="20" varnr="3"/>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="125\1" serialnr="16" labelnr="0"/>
+        <Simple-Term idnr="59" spelling="p" position="125\1" origin="Constant" sort="Constant" serialnr="20" varnr="3"/>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -1628,8 +1634,10 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="132\53" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="134\1" serialnr="18" labelnr="0"/>
-       <Simple-Term idnr="73" spelling="x" position="134\1" origin="Constant" sort="Constant" serialnr="23" varnr="3"/>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="134\1" serialnr="18" labelnr="0"/>
+        <Simple-Term idnr="73" spelling="x" position="134\1" origin="Constant" sort="Constant" serialnr="23" varnr="3"/>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -1729,8 +1737,10 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="142\52" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="144\1" serialnr="20" labelnr="0"/>
-       <Simple-Term idnr="72" spelling="P" position="144\1" origin="Constant" sort="Constant" serialnr="27" varnr="4"/>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="144\1" serialnr="20" labelnr="0"/>
+        <Simple-Term idnr="72" spelling="P" position="144\1" origin="Constant" sort="Constant" serialnr="27" varnr="4"/>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -1830,8 +1840,10 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="152\55" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="154\1" serialnr="22" labelnr="0"/>
-       <Simple-Term idnr="71" spelling="l" position="154\1" origin="Constant" sort="Constant" serialnr="31" varnr="4"/>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="154\1" serialnr="22" labelnr="0"/>
+        <Simple-Term idnr="71" spelling="l" position="154\1" origin="Constant" sort="Constant" serialnr="31" varnr="4"/>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
