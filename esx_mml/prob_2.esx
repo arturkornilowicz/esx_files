@@ -1665,12 +1665,14 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="118\50" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="120\14" serialnr="27" labelnr="0"/>
-       <Infix-Term nr="78" formatnr="107" patternnr="142" absolutepatternMMLId="PROB_1:3" leftargscount="0" spelling="Intersection" sort="Functor-Term" constrnr="242" absoluteconstrMMLId="PROB_1:3" originalnr="0" position="120\14">
-        <Arguments>
-         <Simple-Term idnr="36" spelling="ASeq" position="120\19" origin="ReservedVar" sort="Constant" serialnr="14" varnr="3"/>
-        </Arguments>
-       </Infix-Term>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="120\14" serialnr="27" labelnr="0"/>
+        <Infix-Term nr="78" formatnr="107" patternnr="142" absolutepatternMMLId="PROB_1:3" leftargscount="0" spelling="Intersection" sort="Functor-Term" constrnr="242" absoluteconstrMMLId="PROB_1:3" originalnr="0" position="120\14">
+         <Arguments>
+          <Simple-Term idnr="36" spelling="ASeq" position="120\19" origin="ReservedVar" sort="Constant" serialnr="14" varnr="3"/>
+         </Arguments>
+        </Infix-Term>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -6200,61 +6202,63 @@
        <Loci/>
       </Attribute-Pattern>
       <Definiens position="370\33" kind="Simple-Definiens" shape="Formula-Expression">
-       <Label idnr="0" spelling="" position="372\3" serialnr="144" labelnr="0"/>
-       <Universal-Quantifier-Formula position="372\16">
-        <Variable-Segments>
-         <Free-Variable-Segment position="372\16">
-          <Variable idnr="27" spelling="x" position="372\16" origin="ReservedVar" kind="BoundVar" serialnr="5" varnr="1"/>
-          <ReservedDscr-Type idnr="27" nr="3" sort="ReservedDscr-Type" position="372\16">
-           <Substitutions/>
-           <Standard-Type nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="41\22">
-            <Arguments/>
-           </Standard-Type>
-          </ReservedDscr-Type>
-         </Free-Variable-Segment>
-        </Variable-Segments>
-        <Scope>
-         <Universal-Quantifier-Formula position="372\16">
-          <Variable-Segments>
-           <Free-Variable-Segment position="372\16">
-            <Variable idnr="28" spelling="y" position="372\16" origin="ReservedVar" kind="BoundVar" serialnr="6" varnr="2"/>
-            <ReservedDscr-Type idnr="28" nr="3" sort="ReservedDscr-Type" position="372\16">
-             <Substitutions/>
-             <Standard-Type nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="41\22">
-              <Arguments/>
-             </Standard-Type>
-            </ReservedDscr-Type>
-           </Free-Variable-Segment>
-          </Variable-Segments>
-          <Scope>
-           <Conditional-Formula position="372\16">
-            <Relation-Formula nr="2" formatnr="5" patternnr="2" absolutepatternMMLId="HIDDEN:2" antonymic="true" leftargscount="1" spelling="&#x3C;&#x3E;" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="372\6">
-             <Arguments>
-              <Simple-Term idnr="27" spelling="x" position="372\3" origin="ReservedVar" sort="BoundVar" serialnr="5" varnr="1"/>
-              <Simple-Term idnr="28" spelling="y" position="372\8" origin="ReservedVar" sort="BoundVar" serialnr="6" varnr="2"/>
-             </Arguments>
-            </Relation-Formula>
-            <Relation-Formula nr="4" formatnr="14" patternnr="7" absolutepatternMMLId="XBOOLE_0:1" leftargscount="1" spelling="misses" sort="Relation-Formula" constrnr="4" absoluteconstrMMLId="XBOOLE_0:1" originalnr="0" position="372\27">
-             <Arguments>
-              <Infix-Term nr="51" formatnr="86" patternnr="67" absolutepatternMMLId="FUNCT_1:1" leftargscount="1" spelling="." sort="Functor-Term" constrnr="64" absoluteconstrMMLId="FUNCT_1:1" originalnr="0" position="372\19">
-               <Arguments>
-                <Simple-Term idnr="51" spelling="F" position="372\18" origin="Constant" sort="Constant" serialnr="128" varnr="1"/>
-                <Simple-Term idnr="27" spelling="x" position="372\20" origin="ReservedVar" sort="BoundVar" serialnr="5" varnr="1"/>
-               </Arguments>
-              </Infix-Term>
-              <Infix-Term nr="51" formatnr="86" patternnr="67" absolutepatternMMLId="FUNCT_1:1" leftargscount="1" spelling="." sort="Functor-Term" constrnr="64" absoluteconstrMMLId="FUNCT_1:1" originalnr="0" position="372\30">
-               <Arguments>
-                <Simple-Term idnr="51" spelling="F" position="372\29" origin="Constant" sort="Constant" serialnr="128" varnr="1"/>
-                <Simple-Term idnr="28" spelling="y" position="372\31" origin="ReservedVar" sort="BoundVar" serialnr="6" varnr="2"/>
-               </Arguments>
-              </Infix-Term>
-             </Arguments>
-            </Relation-Formula>
-           </Conditional-Formula>
-          </Scope>
-         </Universal-Quantifier-Formula>
-        </Scope>
-       </Universal-Quantifier-Formula>
+       <Standard-Definiens>
+        <Label idnr="0" spelling="" position="372\3" serialnr="144" labelnr="0"/>
+        <Universal-Quantifier-Formula position="372\16">
+         <Variable-Segments>
+          <Free-Variable-Segment position="372\16">
+           <Variable idnr="27" spelling="x" position="372\16" origin="ReservedVar" kind="BoundVar" serialnr="5" varnr="1"/>
+           <ReservedDscr-Type idnr="27" nr="3" sort="ReservedDscr-Type" position="372\16">
+            <Substitutions/>
+            <Standard-Type nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="41\22">
+             <Arguments/>
+            </Standard-Type>
+           </ReservedDscr-Type>
+          </Free-Variable-Segment>
+         </Variable-Segments>
+         <Scope>
+          <Universal-Quantifier-Formula position="372\16">
+           <Variable-Segments>
+            <Free-Variable-Segment position="372\16">
+             <Variable idnr="28" spelling="y" position="372\16" origin="ReservedVar" kind="BoundVar" serialnr="6" varnr="2"/>
+             <ReservedDscr-Type idnr="28" nr="3" sort="ReservedDscr-Type" position="372\16">
+              <Substitutions/>
+              <Standard-Type nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="41\22">
+               <Arguments/>
+              </Standard-Type>
+             </ReservedDscr-Type>
+            </Free-Variable-Segment>
+           </Variable-Segments>
+           <Scope>
+            <Conditional-Formula position="372\16">
+             <Relation-Formula nr="2" formatnr="5" patternnr="2" absolutepatternMMLId="HIDDEN:2" antonymic="true" leftargscount="1" spelling="&#x3C;&#x3E;" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="372\6">
+              <Arguments>
+               <Simple-Term idnr="27" spelling="x" position="372\3" origin="ReservedVar" sort="BoundVar" serialnr="5" varnr="1"/>
+               <Simple-Term idnr="28" spelling="y" position="372\8" origin="ReservedVar" sort="BoundVar" serialnr="6" varnr="2"/>
+              </Arguments>
+             </Relation-Formula>
+             <Relation-Formula nr="4" formatnr="14" patternnr="7" absolutepatternMMLId="XBOOLE_0:1" leftargscount="1" spelling="misses" sort="Relation-Formula" constrnr="4" absoluteconstrMMLId="XBOOLE_0:1" originalnr="0" position="372\27">
+              <Arguments>
+               <Infix-Term nr="51" formatnr="86" patternnr="67" absolutepatternMMLId="FUNCT_1:1" leftargscount="1" spelling="." sort="Functor-Term" constrnr="64" absoluteconstrMMLId="FUNCT_1:1" originalnr="0" position="372\19">
+                <Arguments>
+                 <Simple-Term idnr="51" spelling="F" position="372\18" origin="Constant" sort="Constant" serialnr="128" varnr="1"/>
+                 <Simple-Term idnr="27" spelling="x" position="372\20" origin="ReservedVar" sort="BoundVar" serialnr="5" varnr="1"/>
+                </Arguments>
+               </Infix-Term>
+               <Infix-Term nr="51" formatnr="86" patternnr="67" absolutepatternMMLId="FUNCT_1:1" leftargscount="1" spelling="." sort="Functor-Term" constrnr="64" absoluteconstrMMLId="FUNCT_1:1" originalnr="0" position="372\30">
+                <Arguments>
+                 <Simple-Term idnr="51" spelling="F" position="372\29" origin="Constant" sort="Constant" serialnr="128" varnr="1"/>
+                 <Simple-Term idnr="28" spelling="y" position="372\31" origin="ReservedVar" sort="BoundVar" serialnr="6" varnr="2"/>
+                </Arguments>
+               </Infix-Term>
+              </Arguments>
+             </Relation-Formula>
+            </Conditional-Formula>
+           </Scope>
+          </Universal-Quantifier-Formula>
+         </Scope>
+        </Universal-Quantifier-Formula>
+       </Standard-Definiens>
       </Definiens>
      </Attribute-Definition>
     </Item>
@@ -6314,55 +6318,57 @@
        <Loci/>
       </Attribute-Pattern>
       <Definiens position="377\45" kind="Simple-Definiens" shape="Formula-Expression">
-       <Label idnr="0" spelling="" position="378\5" serialnr="146" labelnr="0"/>
-       <Universal-Quantifier-Formula position="378\5">
-        <Variable-Segments>
-         <Implicitly-Qualified-Segment position="378\7">
-          <Variable idnr="24" spelling="m" position="378\7" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="1"/>
-          <ReservedDscr-Type idnr="24" nr="2" sort="ReservedDscr-Type" position="378\7">
-           <Substitutions/>
-           <Standard-Type nr="23" formatnr="39" patternnr="19" absolutepatternMMLId="NAT_1:1" spelling="Nat" sort="Expandable-Type" position="40\21">
-            <Arguments/>
-           </Standard-Type>
-          </ReservedDscr-Type>
-         </Implicitly-Qualified-Segment>
-         <Implicitly-Qualified-Segment position="378\9">
-          <Variable idnr="25" spelling="n" position="378\9" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="2"/>
-          <ReservedDscr-Type idnr="25" nr="2" sort="ReservedDscr-Type" position="378\9">
-           <Substitutions/>
-           <Standard-Type nr="23" formatnr="39" patternnr="19" absolutepatternMMLId="NAT_1:1" spelling="Nat" sort="Expandable-Type" position="40\21">
-            <Arguments/>
-           </Standard-Type>
-          </ReservedDscr-Type>
-         </Implicitly-Qualified-Segment>
-        </Variable-Segments>
-        <Restriction>
-         <Relation-Formula nr="2" formatnr="5" patternnr="2" absolutepatternMMLId="HIDDEN:2" antonymic="true" leftargscount="1" spelling="&#x3C;&#x3E;" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="378\17">
-          <Arguments>
-           <Simple-Term idnr="24" spelling="m" position="378\14" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
-           <Simple-Term idnr="25" spelling="n" position="378\19" origin="ReservedVar" sort="BoundVar" serialnr="3" varnr="2"/>
-          </Arguments>
-         </Relation-Formula>
-        </Restriction>
-        <Scope>
-         <Relation-Formula nr="4" formatnr="14" patternnr="7" absolutepatternMMLId="XBOOLE_0:1" leftargscount="1" spelling="misses" sort="Relation-Formula" constrnr="4" absoluteconstrMMLId="XBOOLE_0:1" originalnr="0" position="378\39">
-          <Arguments>
-           <Infix-Term nr="51" formatnr="86" patternnr="178" absolutepatternMMLId="PROB_2:1" leftargscount="1" spelling="." sort="Functor-Term" constrnr="268" absoluteconstrMMLId="PROB_2:1" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="378\31">
-            <Arguments>
-             <Simple-Term idnr="36" spelling="ASeq" position="378\30" origin="ReservedVar" sort="Constant" serialnr="14" varnr="3"/>
-             <Simple-Term idnr="24" spelling="m" position="378\32" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
-            </Arguments>
-           </Infix-Term>
-           <Infix-Term nr="51" formatnr="86" patternnr="178" absolutepatternMMLId="PROB_2:1" leftargscount="1" spelling="." sort="Functor-Term" constrnr="268" absoluteconstrMMLId="PROB_2:1" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="378\45">
-            <Arguments>
-             <Simple-Term idnr="36" spelling="ASeq" position="378\44" origin="ReservedVar" sort="Constant" serialnr="14" varnr="3"/>
-             <Simple-Term idnr="25" spelling="n" position="378\46" origin="ReservedVar" sort="BoundVar" serialnr="3" varnr="2"/>
-            </Arguments>
-           </Infix-Term>
-          </Arguments>
-         </Relation-Formula>
-        </Scope>
-       </Universal-Quantifier-Formula>
+       <Standard-Definiens>
+        <Label idnr="0" spelling="" position="378\5" serialnr="146" labelnr="0"/>
+        <Universal-Quantifier-Formula position="378\5">
+         <Variable-Segments>
+          <Implicitly-Qualified-Segment position="378\7">
+           <Variable idnr="24" spelling="m" position="378\7" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="1"/>
+           <ReservedDscr-Type idnr="24" nr="2" sort="ReservedDscr-Type" position="378\7">
+            <Substitutions/>
+            <Standard-Type nr="23" formatnr="39" patternnr="19" absolutepatternMMLId="NAT_1:1" spelling="Nat" sort="Expandable-Type" position="40\21">
+             <Arguments/>
+            </Standard-Type>
+           </ReservedDscr-Type>
+          </Implicitly-Qualified-Segment>
+          <Implicitly-Qualified-Segment position="378\9">
+           <Variable idnr="25" spelling="n" position="378\9" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="2"/>
+           <ReservedDscr-Type idnr="25" nr="2" sort="ReservedDscr-Type" position="378\9">
+            <Substitutions/>
+            <Standard-Type nr="23" formatnr="39" patternnr="19" absolutepatternMMLId="NAT_1:1" spelling="Nat" sort="Expandable-Type" position="40\21">
+             <Arguments/>
+            </Standard-Type>
+           </ReservedDscr-Type>
+          </Implicitly-Qualified-Segment>
+         </Variable-Segments>
+         <Restriction>
+          <Relation-Formula nr="2" formatnr="5" patternnr="2" absolutepatternMMLId="HIDDEN:2" antonymic="true" leftargscount="1" spelling="&#x3C;&#x3E;" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="378\17">
+           <Arguments>
+            <Simple-Term idnr="24" spelling="m" position="378\14" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+            <Simple-Term idnr="25" spelling="n" position="378\19" origin="ReservedVar" sort="BoundVar" serialnr="3" varnr="2"/>
+           </Arguments>
+          </Relation-Formula>
+         </Restriction>
+         <Scope>
+          <Relation-Formula nr="4" formatnr="14" patternnr="7" absolutepatternMMLId="XBOOLE_0:1" leftargscount="1" spelling="misses" sort="Relation-Formula" constrnr="4" absoluteconstrMMLId="XBOOLE_0:1" originalnr="0" position="378\39">
+           <Arguments>
+            <Infix-Term nr="51" formatnr="86" patternnr="178" absolutepatternMMLId="PROB_2:1" leftargscount="1" spelling="." sort="Functor-Term" constrnr="268" absoluteconstrMMLId="PROB_2:1" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="378\31">
+             <Arguments>
+              <Simple-Term idnr="36" spelling="ASeq" position="378\30" origin="ReservedVar" sort="Constant" serialnr="14" varnr="3"/>
+              <Simple-Term idnr="24" spelling="m" position="378\32" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+             </Arguments>
+            </Infix-Term>
+            <Infix-Term nr="51" formatnr="86" patternnr="178" absolutepatternMMLId="PROB_2:1" leftargscount="1" spelling="." sort="Functor-Term" constrnr="268" absoluteconstrMMLId="PROB_2:1" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="378\45">
+             <Arguments>
+              <Simple-Term idnr="36" spelling="ASeq" position="378\44" origin="ReservedVar" sort="Constant" serialnr="14" varnr="3"/>
+              <Simple-Term idnr="25" spelling="n" position="378\46" origin="ReservedVar" sort="BoundVar" serialnr="3" varnr="2"/>
+             </Arguments>
+            </Infix-Term>
+           </Arguments>
+          </Relation-Formula>
+         </Scope>
+        </Universal-Quantifier-Formula>
+       </Standard-Definiens>
       </Definiens>
      </Attribute-Definition>
     </Item>
@@ -12720,38 +12726,40 @@
        </Loci>
       </Predicate-Pattern>
       <Definiens position="603\45" kind="Simple-Definiens" shape="Formula-Expression">
-       <Label idnr="0" spelling="" position="605\3" serialnr="239" labelnr="0"/>
-       <Relation-Formula nr="1" formatnr="4" patternnr="20" absolutepatternMMLId="COMPLEX1:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="605\14">
-        <Arguments>
-         <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="605\4">
-          <Arguments>
-           <Simple-Term idnr="61" spelling="P" position="605\3" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-           <Infix-Term bracketed="true" nr="9" formatnr="20" patternnr="144" absolutepatternMMLId="PROB_1:5" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="244" absoluteconstrMMLId="PROB_1:5" originalnr="18" absoluteorigconstrMMLId="XBOOLE_0:3" position="605\9">
-            <Arguments>
-             <Simple-Term idnr="38" spelling="A" position="605\6" origin="ReservedVar" sort="Constant" serialnr="24" varnr="4"/>
-             <Simple-Term idnr="39" spelling="B" position="605\11" origin="ReservedVar" sort="Constant" serialnr="25" varnr="5"/>
-            </Arguments>
-           </Infix-Term>
-          </Arguments>
-         </Infix-Term>
-         <Infix-Term nr="43" formatnr="49" patternnr="64" absolutepatternMMLId="REAL_1:4" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="61" absoluteconstrMMLId="REAL_1:4" originalnr="53" absoluteorigconstrMMLId="XCMPLX_0:3" position="605\20">
-          <Arguments>
-           <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="605\17">
-            <Arguments>
-             <Simple-Term idnr="61" spelling="P" position="605\16" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-             <Simple-Term idnr="38" spelling="A" position="605\18" origin="ReservedVar" sort="Constant" serialnr="24" varnr="4"/>
-            </Arguments>
-           </Infix-Term>
-           <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="605\23">
-            <Arguments>
-             <Simple-Term idnr="61" spelling="P" position="605\22" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-             <Simple-Term idnr="39" spelling="B" position="605\24" origin="ReservedVar" sort="Constant" serialnr="25" varnr="5"/>
-            </Arguments>
-           </Infix-Term>
-          </Arguments>
-         </Infix-Term>
-        </Arguments>
-       </Relation-Formula>
+       <Standard-Definiens>
+        <Label idnr="0" spelling="" position="605\3" serialnr="239" labelnr="0"/>
+        <Relation-Formula nr="1" formatnr="4" patternnr="20" absolutepatternMMLId="COMPLEX1:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="605\14">
+         <Arguments>
+          <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="605\4">
+           <Arguments>
+            <Simple-Term idnr="61" spelling="P" position="605\3" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+            <Infix-Term bracketed="true" nr="9" formatnr="20" patternnr="144" absolutepatternMMLId="PROB_1:5" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="244" absoluteconstrMMLId="PROB_1:5" originalnr="18" absoluteorigconstrMMLId="XBOOLE_0:3" position="605\9">
+             <Arguments>
+              <Simple-Term idnr="38" spelling="A" position="605\6" origin="ReservedVar" sort="Constant" serialnr="24" varnr="4"/>
+              <Simple-Term idnr="39" spelling="B" position="605\11" origin="ReservedVar" sort="Constant" serialnr="25" varnr="5"/>
+             </Arguments>
+            </Infix-Term>
+           </Arguments>
+          </Infix-Term>
+          <Infix-Term nr="43" formatnr="49" patternnr="64" absolutepatternMMLId="REAL_1:4" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="61" absoluteconstrMMLId="REAL_1:4" originalnr="53" absoluteorigconstrMMLId="XCMPLX_0:3" position="605\20">
+           <Arguments>
+            <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="605\17">
+             <Arguments>
+              <Simple-Term idnr="61" spelling="P" position="605\16" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+              <Simple-Term idnr="38" spelling="A" position="605\18" origin="ReservedVar" sort="Constant" serialnr="24" varnr="4"/>
+             </Arguments>
+            </Infix-Term>
+            <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="605\23">
+             <Arguments>
+              <Simple-Term idnr="61" spelling="P" position="605\22" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+              <Simple-Term idnr="39" spelling="B" position="605\24" origin="ReservedVar" sort="Constant" serialnr="25" varnr="5"/>
+             </Arguments>
+            </Infix-Term>
+           </Arguments>
+          </Infix-Term>
+         </Arguments>
+        </Relation-Formula>
+       </Standard-Definiens>
       </Definiens>
      </Predicate-Definition>
     </Item>
@@ -12789,81 +12797,114 @@
        </Loci>
       </Predicate-Pattern>
       <Definiens position="607\47" kind="Simple-Definiens" shape="Formula-Expression">
-       <Label idnr="0" spelling="" position="609\3" serialnr="240" labelnr="0"/>
-       <Conjunctive-Formula position="610\61">
-        <Conjunctive-Formula position="610\36">
-         <Conjunctive-Formula position="610\11">
-          <Relation-Formula nr="1" formatnr="4" patternnr="20" absolutepatternMMLId="COMPLEX1:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="609\19">
+       <Standard-Definiens>
+        <Label idnr="0" spelling="" position="609\3" serialnr="240" labelnr="0"/>
+        <Conjunctive-Formula position="610\61">
+         <Conjunctive-Formula position="610\36">
+          <Conjunctive-Formula position="610\11">
+           <Relation-Formula nr="1" formatnr="4" patternnr="20" absolutepatternMMLId="COMPLEX1:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="609\19">
+            <Arguments>
+             <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="609\4">
+              <Arguments>
+               <Simple-Term idnr="61" spelling="P" position="609\3" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+               <Infix-Term bracketed="true" nr="9" formatnr="20" patternnr="144" absolutepatternMMLId="PROB_1:5" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="244" absoluteconstrMMLId="PROB_1:5" originalnr="18" absoluteorigconstrMMLId="XBOOLE_0:3" position="609\14">
+                <Arguments>
+                 <Infix-Term nr="9" formatnr="20" patternnr="144" absolutepatternMMLId="PROB_1:5" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="244" absoluteconstrMMLId="PROB_1:5" originalnr="18" absoluteorigconstrMMLId="XBOOLE_0:3" position="609\9">
+                  <Arguments>
+                   <Simple-Term idnr="38" spelling="A" position="609\6" origin="ReservedVar" sort="Constant" serialnr="24" varnr="4"/>
+                   <Simple-Term idnr="39" spelling="B" position="609\11" origin="ReservedVar" sort="Constant" serialnr="25" varnr="5"/>
+                  </Arguments>
+                 </Infix-Term>
+                 <Simple-Term idnr="40" spelling="C" position="609\16" origin="ReservedVar" sort="Constant" serialnr="26" varnr="6"/>
+                </Arguments>
+               </Infix-Term>
+              </Arguments>
+             </Infix-Term>
+             <Infix-Term nr="43" formatnr="49" patternnr="64" absolutepatternMMLId="REAL_1:4" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="61" absoluteconstrMMLId="REAL_1:4" originalnr="53" absoluteorigconstrMMLId="XCMPLX_0:3" position="610\5">
+              <Arguments>
+               <Infix-Term nr="43" formatnr="49" patternnr="64" absolutepatternMMLId="REAL_1:4" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="61" absoluteconstrMMLId="REAL_1:4" originalnr="53" absoluteorigconstrMMLId="XCMPLX_0:3" position="609\25">
+                <Arguments>
+                 <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="609\22">
+                  <Arguments>
+                   <Simple-Term idnr="61" spelling="P" position="609\21" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+                   <Simple-Term idnr="38" spelling="A" position="609\23" origin="ReservedVar" sort="Constant" serialnr="24" varnr="4"/>
+                  </Arguments>
+                 </Infix-Term>
+                 <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\2">
+                  <Arguments>
+                   <Simple-Term idnr="61" spelling="P" position="610\1" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+                   <Simple-Term idnr="39" spelling="B" position="610\3" origin="ReservedVar" sort="Constant" serialnr="25" varnr="5"/>
+                  </Arguments>
+                 </Infix-Term>
+                </Arguments>
+               </Infix-Term>
+               <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\8">
+                <Arguments>
+                 <Simple-Term idnr="61" spelling="P" position="610\7" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+                 <Simple-Term idnr="40" spelling="C" position="610\9" origin="ReservedVar" sort="Constant" serialnr="26" varnr="6"/>
+                </Arguments>
+               </Infix-Term>
+              </Arguments>
+             </Infix-Term>
+            </Arguments>
+           </Relation-Formula>
+           <Relation-Formula nr="1" formatnr="4" patternnr="20" absolutepatternMMLId="COMPLEX1:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="610\24">
+            <Arguments>
+             <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\14">
+              <Arguments>
+               <Simple-Term idnr="61" spelling="P" position="610\13" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+               <Infix-Term bracketed="true" nr="9" formatnr="20" patternnr="144" absolutepatternMMLId="PROB_1:5" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="244" absoluteconstrMMLId="PROB_1:5" originalnr="18" absoluteorigconstrMMLId="XBOOLE_0:3" position="610\19">
+                <Arguments>
+                 <Simple-Term idnr="38" spelling="A" position="610\16" origin="ReservedVar" sort="Constant" serialnr="24" varnr="4"/>
+                 <Simple-Term idnr="39" spelling="B" position="610\21" origin="ReservedVar" sort="Constant" serialnr="25" varnr="5"/>
+                </Arguments>
+               </Infix-Term>
+              </Arguments>
+             </Infix-Term>
+             <Infix-Term nr="43" formatnr="49" patternnr="64" absolutepatternMMLId="REAL_1:4" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="61" absoluteconstrMMLId="REAL_1:4" originalnr="53" absoluteorigconstrMMLId="XCMPLX_0:3" position="610\30">
+              <Arguments>
+               <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\27">
+                <Arguments>
+                 <Simple-Term idnr="61" spelling="P" position="610\26" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+                 <Simple-Term idnr="38" spelling="A" position="610\28" origin="ReservedVar" sort="Constant" serialnr="24" varnr="4"/>
+                </Arguments>
+               </Infix-Term>
+               <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\33">
+                <Arguments>
+                 <Simple-Term idnr="61" spelling="P" position="610\32" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+                 <Simple-Term idnr="39" spelling="B" position="610\34" origin="ReservedVar" sort="Constant" serialnr="25" varnr="5"/>
+                </Arguments>
+               </Infix-Term>
+              </Arguments>
+             </Infix-Term>
+            </Arguments>
+           </Relation-Formula>
+          </Conjunctive-Formula>
+          <Relation-Formula nr="1" formatnr="4" patternnr="20" absolutepatternMMLId="COMPLEX1:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="610\49">
            <Arguments>
-            <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="609\4">
+            <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\39">
              <Arguments>
-              <Simple-Term idnr="61" spelling="P" position="609\3" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-              <Infix-Term bracketed="true" nr="9" formatnr="20" patternnr="144" absolutepatternMMLId="PROB_1:5" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="244" absoluteconstrMMLId="PROB_1:5" originalnr="18" absoluteorigconstrMMLId="XBOOLE_0:3" position="609\14">
+              <Simple-Term idnr="61" spelling="P" position="610\38" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+              <Infix-Term bracketed="true" nr="9" formatnr="20" patternnr="144" absolutepatternMMLId="PROB_1:5" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="244" absoluteconstrMMLId="PROB_1:5" originalnr="18" absoluteorigconstrMMLId="XBOOLE_0:3" position="610\44">
                <Arguments>
-                <Infix-Term nr="9" formatnr="20" patternnr="144" absolutepatternMMLId="PROB_1:5" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="244" absoluteconstrMMLId="PROB_1:5" originalnr="18" absoluteorigconstrMMLId="XBOOLE_0:3" position="609\9">
-                 <Arguments>
-                  <Simple-Term idnr="38" spelling="A" position="609\6" origin="ReservedVar" sort="Constant" serialnr="24" varnr="4"/>
-                  <Simple-Term idnr="39" spelling="B" position="609\11" origin="ReservedVar" sort="Constant" serialnr="25" varnr="5"/>
-                 </Arguments>
-                </Infix-Term>
-                <Simple-Term idnr="40" spelling="C" position="609\16" origin="ReservedVar" sort="Constant" serialnr="26" varnr="6"/>
+                <Simple-Term idnr="38" spelling="A" position="610\41" origin="ReservedVar" sort="Constant" serialnr="24" varnr="4"/>
+                <Simple-Term idnr="40" spelling="C" position="610\46" origin="ReservedVar" sort="Constant" serialnr="26" varnr="6"/>
                </Arguments>
               </Infix-Term>
              </Arguments>
             </Infix-Term>
-            <Infix-Term nr="43" formatnr="49" patternnr="64" absolutepatternMMLId="REAL_1:4" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="61" absoluteconstrMMLId="REAL_1:4" originalnr="53" absoluteorigconstrMMLId="XCMPLX_0:3" position="610\5">
+            <Infix-Term nr="43" formatnr="49" patternnr="64" absolutepatternMMLId="REAL_1:4" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="61" absoluteconstrMMLId="REAL_1:4" originalnr="53" absoluteorigconstrMMLId="XCMPLX_0:3" position="610\55">
              <Arguments>
-              <Infix-Term nr="43" formatnr="49" patternnr="64" absolutepatternMMLId="REAL_1:4" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="61" absoluteconstrMMLId="REAL_1:4" originalnr="53" absoluteorigconstrMMLId="XCMPLX_0:3" position="609\25">
+              <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\52">
                <Arguments>
-                <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="609\22">
-                 <Arguments>
-                  <Simple-Term idnr="61" spelling="P" position="609\21" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-                  <Simple-Term idnr="38" spelling="A" position="609\23" origin="ReservedVar" sort="Constant" serialnr="24" varnr="4"/>
-                 </Arguments>
-                </Infix-Term>
-                <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\2">
-                 <Arguments>
-                  <Simple-Term idnr="61" spelling="P" position="610\1" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-                  <Simple-Term idnr="39" spelling="B" position="610\3" origin="ReservedVar" sort="Constant" serialnr="25" varnr="5"/>
-                 </Arguments>
-                </Infix-Term>
+                <Simple-Term idnr="61" spelling="P" position="610\51" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+                <Simple-Term idnr="38" spelling="A" position="610\53" origin="ReservedVar" sort="Constant" serialnr="24" varnr="4"/>
                </Arguments>
               </Infix-Term>
-              <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\8">
+              <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\58">
                <Arguments>
-                <Simple-Term idnr="61" spelling="P" position="610\7" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-                <Simple-Term idnr="40" spelling="C" position="610\9" origin="ReservedVar" sort="Constant" serialnr="26" varnr="6"/>
-               </Arguments>
-              </Infix-Term>
-             </Arguments>
-            </Infix-Term>
-           </Arguments>
-          </Relation-Formula>
-          <Relation-Formula nr="1" formatnr="4" patternnr="20" absolutepatternMMLId="COMPLEX1:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="610\24">
-           <Arguments>
-            <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\14">
-             <Arguments>
-              <Simple-Term idnr="61" spelling="P" position="610\13" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-              <Infix-Term bracketed="true" nr="9" formatnr="20" patternnr="144" absolutepatternMMLId="PROB_1:5" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="244" absoluteconstrMMLId="PROB_1:5" originalnr="18" absoluteorigconstrMMLId="XBOOLE_0:3" position="610\19">
-               <Arguments>
-                <Simple-Term idnr="38" spelling="A" position="610\16" origin="ReservedVar" sort="Constant" serialnr="24" varnr="4"/>
-                <Simple-Term idnr="39" spelling="B" position="610\21" origin="ReservedVar" sort="Constant" serialnr="25" varnr="5"/>
-               </Arguments>
-              </Infix-Term>
-             </Arguments>
-            </Infix-Term>
-            <Infix-Term nr="43" formatnr="49" patternnr="64" absolutepatternMMLId="REAL_1:4" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="61" absoluteconstrMMLId="REAL_1:4" originalnr="53" absoluteorigconstrMMLId="XCMPLX_0:3" position="610\30">
-             <Arguments>
-              <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\27">
-               <Arguments>
-                <Simple-Term idnr="61" spelling="P" position="610\26" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-                <Simple-Term idnr="38" spelling="A" position="610\28" origin="ReservedVar" sort="Constant" serialnr="24" varnr="4"/>
-               </Arguments>
-              </Infix-Term>
-              <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\33">
-               <Arguments>
-                <Simple-Term idnr="61" spelling="P" position="610\32" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-                <Simple-Term idnr="39" spelling="B" position="610\34" origin="ReservedVar" sort="Constant" serialnr="25" varnr="5"/>
+                <Simple-Term idnr="61" spelling="P" position="610\57" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+                <Simple-Term idnr="40" spelling="C" position="610\59" origin="ReservedVar" sort="Constant" serialnr="26" varnr="6"/>
                </Arguments>
               </Infix-Term>
              </Arguments>
@@ -12871,31 +12912,31 @@
            </Arguments>
           </Relation-Formula>
          </Conjunctive-Formula>
-         <Relation-Formula nr="1" formatnr="4" patternnr="20" absolutepatternMMLId="COMPLEX1:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="610\49">
+         <Relation-Formula nr="1" formatnr="4" patternnr="20" absolutepatternMMLId="COMPLEX1:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="610\74">
           <Arguments>
-           <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\39">
+           <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\64">
             <Arguments>
-             <Simple-Term idnr="61" spelling="P" position="610\38" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-             <Infix-Term bracketed="true" nr="9" formatnr="20" patternnr="144" absolutepatternMMLId="PROB_1:5" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="244" absoluteconstrMMLId="PROB_1:5" originalnr="18" absoluteorigconstrMMLId="XBOOLE_0:3" position="610\44">
+             <Simple-Term idnr="61" spelling="P" position="610\63" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+             <Infix-Term bracketed="true" nr="9" formatnr="20" patternnr="144" absolutepatternMMLId="PROB_1:5" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="244" absoluteconstrMMLId="PROB_1:5" originalnr="18" absoluteorigconstrMMLId="XBOOLE_0:3" position="610\69">
               <Arguments>
-               <Simple-Term idnr="38" spelling="A" position="610\41" origin="ReservedVar" sort="Constant" serialnr="24" varnr="4"/>
-               <Simple-Term idnr="40" spelling="C" position="610\46" origin="ReservedVar" sort="Constant" serialnr="26" varnr="6"/>
+               <Simple-Term idnr="39" spelling="B" position="610\66" origin="ReservedVar" sort="Constant" serialnr="25" varnr="5"/>
+               <Simple-Term idnr="40" spelling="C" position="610\71" origin="ReservedVar" sort="Constant" serialnr="26" varnr="6"/>
               </Arguments>
              </Infix-Term>
             </Arguments>
            </Infix-Term>
-           <Infix-Term nr="43" formatnr="49" patternnr="64" absolutepatternMMLId="REAL_1:4" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="61" absoluteconstrMMLId="REAL_1:4" originalnr="53" absoluteorigconstrMMLId="XCMPLX_0:3" position="610\55">
+           <Infix-Term nr="43" formatnr="49" patternnr="64" absolutepatternMMLId="REAL_1:4" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="61" absoluteconstrMMLId="REAL_1:4" originalnr="53" absoluteorigconstrMMLId="XCMPLX_0:3" position="611\3">
             <Arguments>
-             <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\52">
+             <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\77">
               <Arguments>
-               <Simple-Term idnr="61" spelling="P" position="610\51" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-               <Simple-Term idnr="38" spelling="A" position="610\53" origin="ReservedVar" sort="Constant" serialnr="24" varnr="4"/>
+               <Simple-Term idnr="61" spelling="P" position="610\76" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+               <Simple-Term idnr="39" spelling="B" position="610\78" origin="ReservedVar" sort="Constant" serialnr="25" varnr="5"/>
               </Arguments>
              </Infix-Term>
-             <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\58">
+             <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="611\6">
               <Arguments>
-               <Simple-Term idnr="61" spelling="P" position="610\57" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-               <Simple-Term idnr="40" spelling="C" position="610\59" origin="ReservedVar" sort="Constant" serialnr="26" varnr="6"/>
+               <Simple-Term idnr="61" spelling="P" position="611\5" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+               <Simple-Term idnr="40" spelling="C" position="611\7" origin="ReservedVar" sort="Constant" serialnr="26" varnr="6"/>
               </Arguments>
              </Infix-Term>
             </Arguments>
@@ -12903,38 +12944,7 @@
           </Arguments>
          </Relation-Formula>
         </Conjunctive-Formula>
-        <Relation-Formula nr="1" formatnr="4" patternnr="20" absolutepatternMMLId="COMPLEX1:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="610\74">
-         <Arguments>
-          <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\64">
-           <Arguments>
-            <Simple-Term idnr="61" spelling="P" position="610\63" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-            <Infix-Term bracketed="true" nr="9" formatnr="20" patternnr="144" absolutepatternMMLId="PROB_1:5" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="244" absoluteconstrMMLId="PROB_1:5" originalnr="18" absoluteorigconstrMMLId="XBOOLE_0:3" position="610\69">
-             <Arguments>
-              <Simple-Term idnr="39" spelling="B" position="610\66" origin="ReservedVar" sort="Constant" serialnr="25" varnr="5"/>
-              <Simple-Term idnr="40" spelling="C" position="610\71" origin="ReservedVar" sort="Constant" serialnr="26" varnr="6"/>
-             </Arguments>
-            </Infix-Term>
-           </Arguments>
-          </Infix-Term>
-          <Infix-Term nr="43" formatnr="49" patternnr="64" absolutepatternMMLId="REAL_1:4" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="61" absoluteconstrMMLId="REAL_1:4" originalnr="53" absoluteorigconstrMMLId="XCMPLX_0:3" position="611\3">
-           <Arguments>
-            <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="610\77">
-             <Arguments>
-              <Simple-Term idnr="61" spelling="P" position="610\76" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-              <Simple-Term idnr="39" spelling="B" position="610\78" origin="ReservedVar" sort="Constant" serialnr="25" varnr="5"/>
-             </Arguments>
-            </Infix-Term>
-            <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="611\6">
-             <Arguments>
-              <Simple-Term idnr="61" spelling="P" position="611\5" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-              <Simple-Term idnr="40" spelling="C" position="611\7" origin="ReservedVar" sort="Constant" serialnr="26" varnr="6"/>
-             </Arguments>
-            </Infix-Term>
-           </Arguments>
-          </Infix-Term>
-         </Arguments>
-        </Relation-Formula>
-       </Conjunctive-Formula>
+       </Standard-Definiens>
       </Definiens>
      </Predicate-Definition>
     </Item>
@@ -16205,58 +16215,60 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="726\42" kind="Simple-Definiens" shape="Formula-Expression">
-       <Label idnr="80" spelling="Def6" position="727\7" serialnr="284" labelnr="16"/>
-       <Universal-Quantifier-Formula position="728\5">
-        <Variable-Segments>
-         <Implicitly-Qualified-Segment position="728\7">
-          <Variable idnr="38" spelling="A" position="728\7" origin="ReservedVar" kind="BoundVar" serialnr="24" varnr="1"/>
-          <ReservedDscr-Type idnr="38" nr="11" sort="ReservedDscr-Type" position="728\7">
-           <Substitutions>
-            <Substitution freevarnr="22" kind="Constant" varnr="1"/>
-            <Substitution freevarnr="23" kind="Constant" varnr="2"/>
-           </Substitutions>
-           <Standard-Type nr="12" formatnr="99" patternnr="17" absolutepatternMMLId="PROB_1:6" spelling="Event" sort="Mode" constrnr="10" absoluteconstrMMLId="PROB_1:1" originalnr="3" absoluteorigconstrMMLId="SUBSET_1:1" position="408\37">
-            <Arguments>
-             <Simple-Term idnr="35" spelling="Sigma" position="408\46" origin="ReservedVar" sort="Constant" serialnr="23" varnr="2"/>
-            </Arguments>
-           </Standard-Type>
-          </ReservedDscr-Type>
-         </Implicitly-Qualified-Segment>
-        </Variable-Segments>
-        <Scope>
-         <Relation-Formula nr="1" formatnr="4" patternnr="20" absolutepatternMMLId="COMPLEX1:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="728\20">
-          <Arguments>
-           <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="728\17">
-            <Arguments>
-             <it-Term position="728\16" sort="it-Term"/>
-             <Simple-Term idnr="38" spelling="A" position="728\18" origin="ReservedVar" sort="BoundVar" serialnr="24" varnr="1"/>
-            </Arguments>
-           </Infix-Term>
-           <Infix-Term nr="33" formatnr="53" patternnr="66" absolutepatternMMLId="REAL_1:6" leftargscount="1" spelling="/" sort="Functor-Term" constrnr="63" absoluteconstrMMLId="REAL_1:6" originalnr="57" absoluteorigconstrMMLId="XCMPLX_0:7" position="728\33">
-            <Arguments>
-             <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="728\23">
-              <Arguments>
-               <Simple-Term idnr="61" spelling="P" position="728\22" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-               <Infix-Term bracketed="true" nr="9" formatnr="20" patternnr="144" absolutepatternMMLId="PROB_1:5" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="244" absoluteconstrMMLId="PROB_1:5" originalnr="18" absoluteorigconstrMMLId="XBOOLE_0:3" position="728\28">
-                <Arguments>
-                 <Simple-Term idnr="38" spelling="A" position="728\25" origin="ReservedVar" sort="BoundVar" serialnr="24" varnr="1"/>
-                 <Simple-Term idnr="39" spelling="B" position="728\30" origin="ReservedVar" sort="Constant" serialnr="25" varnr="4"/>
-                </Arguments>
-               </Infix-Term>
-              </Arguments>
-             </Infix-Term>
-             <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="728\35">
-              <Arguments>
-               <Simple-Term idnr="61" spelling="P" position="728\34" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
-               <Simple-Term idnr="39" spelling="B" position="728\36" origin="ReservedVar" sort="Constant" serialnr="25" varnr="4"/>
-              </Arguments>
-             </Infix-Term>
-            </Arguments>
-           </Infix-Term>
-          </Arguments>
-         </Relation-Formula>
-        </Scope>
-       </Universal-Quantifier-Formula>
+       <Standard-Definiens>
+        <Label idnr="80" spelling="Def6" position="727\7" serialnr="284" labelnr="16"/>
+        <Universal-Quantifier-Formula position="728\5">
+         <Variable-Segments>
+          <Implicitly-Qualified-Segment position="728\7">
+           <Variable idnr="38" spelling="A" position="728\7" origin="ReservedVar" kind="BoundVar" serialnr="24" varnr="1"/>
+           <ReservedDscr-Type idnr="38" nr="11" sort="ReservedDscr-Type" position="728\7">
+            <Substitutions>
+             <Substitution freevarnr="22" kind="Constant" varnr="1"/>
+             <Substitution freevarnr="23" kind="Constant" varnr="2"/>
+            </Substitutions>
+            <Standard-Type nr="12" formatnr="99" patternnr="17" absolutepatternMMLId="PROB_1:6" spelling="Event" sort="Mode" constrnr="10" absoluteconstrMMLId="PROB_1:1" originalnr="3" absoluteorigconstrMMLId="SUBSET_1:1" position="408\37">
+             <Arguments>
+              <Simple-Term idnr="35" spelling="Sigma" position="408\46" origin="ReservedVar" sort="Constant" serialnr="23" varnr="2"/>
+             </Arguments>
+            </Standard-Type>
+           </ReservedDscr-Type>
+          </Implicitly-Qualified-Segment>
+         </Variable-Segments>
+         <Scope>
+          <Relation-Formula nr="1" formatnr="4" patternnr="20" absolutepatternMMLId="COMPLEX1:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="728\20">
+           <Arguments>
+            <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="728\17">
+             <Arguments>
+              <it-Term position="728\16" sort="it-Term"/>
+              <Simple-Term idnr="38" spelling="A" position="728\18" origin="ReservedVar" sort="BoundVar" serialnr="24" varnr="1"/>
+             </Arguments>
+            </Infix-Term>
+            <Infix-Term nr="33" formatnr="53" patternnr="66" absolutepatternMMLId="REAL_1:6" leftargscount="1" spelling="/" sort="Functor-Term" constrnr="63" absoluteconstrMMLId="REAL_1:6" originalnr="57" absoluteorigconstrMMLId="XCMPLX_0:7" position="728\33">
+             <Arguments>
+              <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="728\23">
+               <Arguments>
+                <Simple-Term idnr="61" spelling="P" position="728\22" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+                <Infix-Term bracketed="true" nr="9" formatnr="20" patternnr="144" absolutepatternMMLId="PROB_1:5" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="244" absoluteconstrMMLId="PROB_1:5" originalnr="18" absoluteorigconstrMMLId="XBOOLE_0:3" position="728\28">
+                 <Arguments>
+                  <Simple-Term idnr="38" spelling="A" position="728\25" origin="ReservedVar" sort="BoundVar" serialnr="24" varnr="1"/>
+                  <Simple-Term idnr="39" spelling="B" position="728\30" origin="ReservedVar" sort="Constant" serialnr="25" varnr="4"/>
+                 </Arguments>
+                </Infix-Term>
+               </Arguments>
+              </Infix-Term>
+              <Infix-Term nr="51" formatnr="86" patternnr="75" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="107" absoluteconstrMMLId="FUNCT_2:3" originalnr="64" absoluteorigconstrMMLId="FUNCT_1:1" position="728\35">
+               <Arguments>
+                <Simple-Term idnr="61" spelling="P" position="728\34" origin="ReservedVar" sort="Constant" serialnr="32" varnr="3"/>
+                <Simple-Term idnr="39" spelling="B" position="728\36" origin="ReservedVar" sort="Constant" serialnr="25" varnr="4"/>
+               </Arguments>
+              </Infix-Term>
+             </Arguments>
+            </Infix-Term>
+           </Arguments>
+          </Relation-Formula>
+         </Scope>
+        </Universal-Quantifier-Formula>
+       </Standard-Definiens>
       </Definiens>
      </Functor-Definition>
     </Item>

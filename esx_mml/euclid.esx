@@ -63,15 +63,17 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="52\46" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="53\3" serialnr="1" labelnr="0"/>
-       <Infix-Term nr="11" formatnr="250" patternnr="267" absolutepatternMMLId="FINSEQ_2:4" leftargscount="1" spelling="-tuples_on" sort="Functor-Term" constrnr="359" absoluteconstrMMLId="FINSEQ_2:4" originalnr="0" position="53\13">
-        <Arguments>
-         <Simple-Term idnr="31" spelling="n" position="53\3" origin="Constant" sort="Constant" serialnr="1" varnr="1"/>
-         <Infix-Term nr="2" formatnr="53" patternnr="32" absolutepatternMMLId="NUMBERS:2" leftargscount="0" spelling="REAL" sort="Functor-Term" constrnr="40" absoluteconstrMMLId="NUMBERS:1" originalnr="0" position="53\18">
-          <Arguments/>
-         </Infix-Term>
-        </Arguments>
-       </Infix-Term>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="53\3" serialnr="1" labelnr="0"/>
+        <Infix-Term nr="11" formatnr="250" patternnr="267" absolutepatternMMLId="FINSEQ_2:4" leftargscount="1" spelling="-tuples_on" sort="Functor-Term" constrnr="359" absoluteconstrMMLId="FINSEQ_2:4" originalnr="0" position="53\13">
+         <Arguments>
+          <Simple-Term idnr="31" spelling="n" position="53\3" origin="Constant" sort="Constant" serialnr="1" varnr="1"/>
+          <Infix-Term nr="2" formatnr="53" patternnr="32" absolutepatternMMLId="NUMBERS:2" leftargscount="0" spelling="REAL" sort="Functor-Term" constrnr="40" absoluteconstrMMLId="NUMBERS:1" originalnr="0" position="53\18">
+           <Arguments/>
+          </Infix-Term>
+         </Arguments>
+        </Infix-Term>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -199,38 +201,40 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="70\45" kind="Simple-Definiens" shape="Formula-Expression">
-       <Label idnr="33" spelling="Def2" position="71\7" serialnr="5" labelnr="1"/>
-       <Universal-Quantifier-Formula position="72\5">
-        <Variable-Segments>
-         <Implicitly-Qualified-Segment position="72\7">
-          <Variable idnr="32" spelling="r" position="72\7" origin="ReservedVar" kind="BoundVar" serialnr="4" varnr="1"/>
-          <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="72\7">
-           <Substitutions/>
-           <Standard-Type nr="13" formatnr="81" patternnr="11" absolutepatternMMLId="XREAL_0:1" spelling="Real" sort="Expandable-Type" position="48\12">
-            <Arguments/>
-           </Standard-Type>
-          </ReservedDscr-Type>
-         </Implicitly-Qualified-Segment>
-        </Variable-Segments>
-        <Scope>
-         <Relation-Formula nr="1" formatnr="4" patternnr="22" absolutepatternMMLId="COMPLEX1:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="72\20">
-          <Arguments>
-           <Infix-Term nr="21" formatnr="94" patternnr="88" absolutepatternMMLId="FUNCT_1:1" leftargscount="1" spelling="." sort="Functor-Term" constrnr="63" absoluteconstrMMLId="FUNCT_1:1" originalnr="0" position="72\17">
-            <Arguments>
-             <it-Term position="72\16" sort="it-Term"/>
-             <Simple-Term idnr="32" spelling="r" position="72\18" origin="ReservedVar" sort="BoundVar" serialnr="4" varnr="1"/>
-            </Arguments>
-           </Infix-Term>
-           <Circumfix-Term nr="5" formatnr="88" patternnr="64" absolutepatternMMLId="COMPLEX1:10" spelling="&#x7C;." sort="Functor-Term" constrnr="146" absoluteconstrMMLId="COMPLEX1:9" originalnr="0" position="72\26">
-            <Right-Circumflex-Symbol nr="5" formatnr="88" spelling=".&#x7C;" position="72\26"/>
-            <Arguments>
-             <Simple-Term idnr="32" spelling="r" position="72\24" origin="ReservedVar" sort="BoundVar" serialnr="4" varnr="1"/>
-            </Arguments>
-           </Circumfix-Term>
-          </Arguments>
-         </Relation-Formula>
-        </Scope>
-       </Universal-Quantifier-Formula>
+       <Standard-Definiens>
+        <Label idnr="33" spelling="Def2" position="71\7" serialnr="5" labelnr="1"/>
+        <Universal-Quantifier-Formula position="72\5">
+         <Variable-Segments>
+          <Implicitly-Qualified-Segment position="72\7">
+           <Variable idnr="32" spelling="r" position="72\7" origin="ReservedVar" kind="BoundVar" serialnr="4" varnr="1"/>
+           <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="72\7">
+            <Substitutions/>
+            <Standard-Type nr="13" formatnr="81" patternnr="11" absolutepatternMMLId="XREAL_0:1" spelling="Real" sort="Expandable-Type" position="48\12">
+             <Arguments/>
+            </Standard-Type>
+           </ReservedDscr-Type>
+          </Implicitly-Qualified-Segment>
+         </Variable-Segments>
+         <Scope>
+          <Relation-Formula nr="1" formatnr="4" patternnr="22" absolutepatternMMLId="COMPLEX1:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="72\20">
+           <Arguments>
+            <Infix-Term nr="21" formatnr="94" patternnr="88" absolutepatternMMLId="FUNCT_1:1" leftargscount="1" spelling="." sort="Functor-Term" constrnr="63" absoluteconstrMMLId="FUNCT_1:1" originalnr="0" position="72\17">
+             <Arguments>
+              <it-Term position="72\16" sort="it-Term"/>
+              <Simple-Term idnr="32" spelling="r" position="72\18" origin="ReservedVar" sort="BoundVar" serialnr="4" varnr="1"/>
+             </Arguments>
+            </Infix-Term>
+            <Circumfix-Term nr="5" formatnr="88" patternnr="64" absolutepatternMMLId="COMPLEX1:10" spelling="&#x7C;." sort="Functor-Term" constrnr="146" absoluteconstrMMLId="COMPLEX1:9" originalnr="0" position="72\26">
+             <Right-Circumflex-Symbol nr="5" formatnr="88" spelling=".&#x7C;" position="72\26"/>
+             <Arguments>
+              <Simple-Term idnr="32" spelling="r" position="72\24" origin="ReservedVar" sort="BoundVar" serialnr="4" varnr="1"/>
+             </Arguments>
+            </Circumfix-Term>
+           </Arguments>
+          </Relation-Formula>
+         </Scope>
+        </Universal-Quantifier-Formula>
+       </Standard-Definiens>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -631,15 +635,17 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="100\51" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="101\9" serialnr="15" labelnr="0"/>
-       <Infix-Term nr="33" formatnr="62" patternnr="90" absolutepatternMMLId="FUNCT_1:3" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="3" absoluteconstrMMLId="RELAT_1:3" originalnr="0" position="101\10">
-        <Arguments>
-         <Infix-Term nr="194" formatnr="451" patternnr="464" absolutepatternMMLId="EUCLID:2" leftargscount="0" spelling="absreal" sort="Functor-Term" constrnr="605" absoluteconstrMMLId="EUCLID:2" originalnr="0" position="101\9">
-          <Arguments/>
-         </Infix-Term>
-         <Simple-Term idnr="40" spelling="x" position="101\11" origin="Constant" sort="Constant" serialnr="14" varnr="1"/>
-        </Arguments>
-       </Infix-Term>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="101\9" serialnr="15" labelnr="0"/>
+        <Infix-Term nr="33" formatnr="62" patternnr="90" absolutepatternMMLId="FUNCT_1:3" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="3" absoluteconstrMMLId="RELAT_1:3" originalnr="0" position="101\10">
+         <Arguments>
+          <Infix-Term nr="194" formatnr="451" patternnr="464" absolutepatternMMLId="EUCLID:2" leftargscount="0" spelling="absreal" sort="Functor-Term" constrnr="605" absoluteconstrMMLId="EUCLID:2" originalnr="0" position="101\9">
+           <Arguments/>
+          </Infix-Term>
+          <Simple-Term idnr="40" spelling="x" position="101\11" origin="Constant" sort="Constant" serialnr="14" varnr="1"/>
+         </Arguments>
+        </Infix-Term>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -963,22 +969,24 @@
        </Clustered-Type>
       </Type-Specification>
       <Definiens position="127\44" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="128\3" serialnr="25" labelnr="0"/>
-       <Infix-Term nr="10" formatnr="249" patternnr="268" absolutepatternMMLId="FINSEQ_2:5" leftargscount="1" spelling="&#x7C;-&#x3E;" sort="Functor-Term" constrnr="360" absoluteconstrMMLId="FINSEQ_2:5" originalnr="357" absoluteorigconstrMMLId="FINSEQ_2:2" position="128\7">
-        <Arguments>
-         <Simple-Term idnr="31" spelling="n" position="128\3" origin="ReservedVar" sort="Constant" serialnr="3" varnr="1"/>
-         <Infix-Term nr="230" formatnr="39" patternnr="23" absolutepatternMMLId="SUBSET_1:10" leftargscount="0" spelling="In" sort="Functor-Term" constrnr="29" absoluteconstrMMLId="SUBSET_1:10" originalnr="0" position="128\10">
-          <Arguments>
-           <Infix-Term nr="42" formatnr="43" patternnr="36" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="44" absoluteconstrMMLId="NUMBERS:5" originalnr="38" absoluteorigconstrMMLId="ORDINAL1:5" position="128\12">
-            <Arguments/>
-           </Infix-Term>
-           <Infix-Term bracketed="true" nr="2" formatnr="53" patternnr="32" absolutepatternMMLId="NUMBERS:2" leftargscount="0" spelling="REAL" sort="Functor-Term" constrnr="40" absoluteconstrMMLId="NUMBERS:1" originalnr="0" position="128\17">
-            <Arguments/>
-           </Infix-Term>
-          </Arguments>
-         </Infix-Term>
-        </Arguments>
-       </Infix-Term>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="128\3" serialnr="25" labelnr="0"/>
+        <Infix-Term nr="10" formatnr="249" patternnr="268" absolutepatternMMLId="FINSEQ_2:5" leftargscount="1" spelling="&#x7C;-&#x3E;" sort="Functor-Term" constrnr="360" absoluteconstrMMLId="FINSEQ_2:5" originalnr="357" absoluteorigconstrMMLId="FINSEQ_2:2" position="128\7">
+         <Arguments>
+          <Simple-Term idnr="31" spelling="n" position="128\3" origin="ReservedVar" sort="Constant" serialnr="3" varnr="1"/>
+          <Infix-Term nr="230" formatnr="39" patternnr="23" absolutepatternMMLId="SUBSET_1:10" leftargscount="0" spelling="In" sort="Functor-Term" constrnr="29" absoluteconstrMMLId="SUBSET_1:10" originalnr="0" position="128\10">
+           <Arguments>
+            <Infix-Term nr="42" formatnr="43" patternnr="36" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="44" absoluteconstrMMLId="NUMBERS:5" originalnr="38" absoluteorigconstrMMLId="ORDINAL1:5" position="128\12">
+             <Arguments/>
+            </Infix-Term>
+            <Infix-Term bracketed="true" nr="2" formatnr="53" patternnr="32" absolutepatternMMLId="NUMBERS:2" leftargscount="0" spelling="REAL" sort="Functor-Term" constrnr="40" absoluteconstrMMLId="NUMBERS:1" originalnr="0" position="128\17">
+             <Arguments/>
+            </Infix-Term>
+           </Arguments>
+          </Infix-Term>
+         </Arguments>
+        </Infix-Term>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -1872,20 +1880,22 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="201\29" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="202\6" serialnr="41" labelnr="0"/>
-       <Infix-Term nr="64" formatnr="252" patternnr="278" absolutepatternMMLId="SQUARE_1:3" leftargscount="0" spelling="sqrt" sort="Functor-Term" constrnr="62" absoluteconstrMMLId="SQUARE_1:3" originalnr="0" position="202\6">
-        <Arguments>
-         <Infix-Term nr="70" formatnr="258" patternnr="300" absolutepatternMMLId="RVSUM_1:22" leftargscount="0" spelling="Sum" sort="Functor-Term" constrnr="381" absoluteconstrMMLId="RVSUM_1:18" originalnr="379" absoluteorigconstrMMLId="RVSUM_1:16" position="202\10">
-          <Arguments>
-           <Infix-Term nr="61" formatnr="256" patternnr="293" absolutepatternMMLId="RVSUM_1:15" leftargscount="0" spelling="sqr" sort="Functor-Term" constrnr="375" absoluteconstrMMLId="RVSUM_1:12" originalnr="330" absoluteorigconstrMMLId="VALUED_1:39" position="202\14">
-            <Arguments>
-             <Simple-Term idnr="35" spelling="f" position="202\16" origin="ReservedVar" sort="Constant" serialnr="9" varnr="1"/>
-            </Arguments>
-           </Infix-Term>
-          </Arguments>
-         </Infix-Term>
-        </Arguments>
-       </Infix-Term>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="202\6" serialnr="41" labelnr="0"/>
+        <Infix-Term nr="64" formatnr="252" patternnr="278" absolutepatternMMLId="SQUARE_1:3" leftargscount="0" spelling="sqrt" sort="Functor-Term" constrnr="62" absoluteconstrMMLId="SQUARE_1:3" originalnr="0" position="202\6">
+         <Arguments>
+          <Infix-Term nr="70" formatnr="258" patternnr="300" absolutepatternMMLId="RVSUM_1:22" leftargscount="0" spelling="Sum" sort="Functor-Term" constrnr="381" absoluteconstrMMLId="RVSUM_1:18" originalnr="379" absoluteorigconstrMMLId="RVSUM_1:16" position="202\10">
+           <Arguments>
+            <Infix-Term nr="61" formatnr="256" patternnr="293" absolutepatternMMLId="RVSUM_1:15" leftargscount="0" spelling="sqr" sort="Functor-Term" constrnr="375" absoluteconstrMMLId="RVSUM_1:12" originalnr="330" absoluteorigconstrMMLId="VALUED_1:39" position="202\14">
+             <Arguments>
+              <Simple-Term idnr="35" spelling="f" position="202\16" origin="ReservedVar" sort="Constant" serialnr="9" varnr="1"/>
+             </Arguments>
+            </Infix-Term>
+           </Arguments>
+          </Infix-Term>
+         </Arguments>
+        </Infix-Term>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -9035,50 +9045,52 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="496\63" kind="Simple-Definiens" shape="Formula-Expression">
-       <Label idnr="84" spelling="Def6" position="497\7" serialnr="165" labelnr="15"/>
-       <Universal-Quantifier-Formula position="498\5">
-        <Variable-Segments>
-         <Explicitly-Qualified-Segment position="498\5">
-          <Variables>
-           <Variable idnr="40" spelling="x" position="498\7" kind="BoundVar" serialnr="117" varnr="1"/>
-           <Variable idnr="44" spelling="y" position="498\9" kind="BoundVar" serialnr="118" varnr="2"/>
-          </Variables>
-          <Standard-Type nr="10" formatnr="33" patternnr="41" absolutepatternMMLId="FINSEQ_2:2" spelling="Element" sort="Mode" constrnr="13" absoluteconstrMMLId="FINSEQ_2:2" originalnr="3" absoluteorigconstrMMLId="SUBSET_1:1" position="498\23">
-           <Arguments>
-            <Infix-Term nr="2" formatnr="450" patternnr="463" absolutepatternMMLId="EUCLID:1" leftargscount="0" spelling="REAL" sort="Functor-Term" constrnr="604" absoluteconstrMMLId="EUCLID:1" originalnr="0" position="498\31">
-             <Arguments>
-              <Simple-Term idnr="31" spelling="n" position="498\33" origin="Constant" sort="Constant" serialnr="116" varnr="1"/>
-             </Arguments>
-            </Infix-Term>
-           </Arguments>
-          </Standard-Type>
-         </Explicitly-Qualified-Segment>
-        </Variable-Segments>
-        <Scope>
-         <Relation-Formula nr="1" formatnr="4" patternnr="22" absolutepatternMMLId="COMPLEX1:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="498\50">
-          <Arguments>
-           <Infix-Term nr="21" formatnr="95" patternnr="130" absolutepatternMMLId="BINOP_1:2" leftargscount="1" spelling="." sort="Functor-Term" constrnr="241" absoluteconstrMMLId="BINOP_1:2" originalnr="240" absoluteorigconstrMMLId="BINOP_1:1" position="498\43">
+       <Standard-Definiens>
+        <Label idnr="84" spelling="Def6" position="497\7" serialnr="165" labelnr="15"/>
+        <Universal-Quantifier-Formula position="498\5">
+         <Variable-Segments>
+          <Explicitly-Qualified-Segment position="498\5">
+           <Variables>
+            <Variable idnr="40" spelling="x" position="498\7" kind="BoundVar" serialnr="117" varnr="1"/>
+            <Variable idnr="44" spelling="y" position="498\9" kind="BoundVar" serialnr="118" varnr="2"/>
+           </Variables>
+           <Standard-Type nr="10" formatnr="33" patternnr="41" absolutepatternMMLId="FINSEQ_2:2" spelling="Element" sort="Mode" constrnr="13" absoluteconstrMMLId="FINSEQ_2:2" originalnr="3" absoluteorigconstrMMLId="SUBSET_1:1" position="498\23">
             <Arguments>
-             <it-Term position="498\42" sort="it-Term"/>
-             <Simple-Term idnr="40" spelling="x" position="498\45" origin="BoundVar" sort="BoundVar" serialnr="117" varnr="1"/>
-             <Simple-Term idnr="44" spelling="y" position="498\47" origin="BoundVar" sort="BoundVar" serialnr="118" varnr="2"/>
-            </Arguments>
-           </Infix-Term>
-           <Circumfix-Term nr="5" formatnr="88" patternnr="474" absolutepatternMMLId="EUCLID:12" spelling="&#x7C;." sort="Functor-Term" constrnr="615" absoluteconstrMMLId="EUCLID:12" originalnr="0" position="498\58">
-            <Right-Circumflex-Symbol nr="5" formatnr="88" spelling=".&#x7C;" position="498\58"/>
-            <Arguments>
-             <Infix-Term nr="48" formatnr="65" patternnr="470" absolutepatternMMLId="EUCLID:8" leftargscount="1" spelling="-" sort="Functor-Term" constrnr="611" absoluteconstrMMLId="EUCLID:8" originalnr="336" absoluteorigconstrMMLId="VALUED_1:45" position="498\55">
+             <Infix-Term nr="2" formatnr="450" patternnr="463" absolutepatternMMLId="EUCLID:1" leftargscount="0" spelling="REAL" sort="Functor-Term" constrnr="604" absoluteconstrMMLId="EUCLID:1" originalnr="0" position="498\31">
               <Arguments>
-               <Simple-Term idnr="40" spelling="x" position="498\54" origin="BoundVar" sort="BoundVar" serialnr="117" varnr="1"/>
-               <Simple-Term idnr="44" spelling="y" position="498\56" origin="BoundVar" sort="BoundVar" serialnr="118" varnr="2"/>
+               <Simple-Term idnr="31" spelling="n" position="498\33" origin="Constant" sort="Constant" serialnr="116" varnr="1"/>
               </Arguments>
              </Infix-Term>
             </Arguments>
-           </Circumfix-Term>
-          </Arguments>
-         </Relation-Formula>
-        </Scope>
-       </Universal-Quantifier-Formula>
+           </Standard-Type>
+          </Explicitly-Qualified-Segment>
+         </Variable-Segments>
+         <Scope>
+          <Relation-Formula nr="1" formatnr="4" patternnr="22" absolutepatternMMLId="COMPLEX1:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="498\50">
+           <Arguments>
+            <Infix-Term nr="21" formatnr="95" patternnr="130" absolutepatternMMLId="BINOP_1:2" leftargscount="1" spelling="." sort="Functor-Term" constrnr="241" absoluteconstrMMLId="BINOP_1:2" originalnr="240" absoluteorigconstrMMLId="BINOP_1:1" position="498\43">
+             <Arguments>
+              <it-Term position="498\42" sort="it-Term"/>
+              <Simple-Term idnr="40" spelling="x" position="498\45" origin="BoundVar" sort="BoundVar" serialnr="117" varnr="1"/>
+              <Simple-Term idnr="44" spelling="y" position="498\47" origin="BoundVar" sort="BoundVar" serialnr="118" varnr="2"/>
+             </Arguments>
+            </Infix-Term>
+            <Circumfix-Term nr="5" formatnr="88" patternnr="474" absolutepatternMMLId="EUCLID:12" spelling="&#x7C;." sort="Functor-Term" constrnr="615" absoluteconstrMMLId="EUCLID:12" originalnr="0" position="498\58">
+             <Right-Circumflex-Symbol nr="5" formatnr="88" spelling=".&#x7C;" position="498\58"/>
+             <Arguments>
+              <Infix-Term nr="48" formatnr="65" patternnr="470" absolutepatternMMLId="EUCLID:8" leftargscount="1" spelling="-" sort="Functor-Term" constrnr="611" absoluteconstrMMLId="EUCLID:8" originalnr="336" absoluteorigconstrMMLId="VALUED_1:45" position="498\55">
+               <Arguments>
+                <Simple-Term idnr="40" spelling="x" position="498\54" origin="BoundVar" sort="BoundVar" serialnr="117" varnr="1"/>
+                <Simple-Term idnr="44" spelling="y" position="498\56" origin="BoundVar" sort="BoundVar" serialnr="118" varnr="2"/>
+               </Arguments>
+              </Infix-Term>
+             </Arguments>
+            </Circumfix-Term>
+           </Arguments>
+          </Relation-Formula>
+         </Scope>
+        </Universal-Quantifier-Formula>
+       </Standard-Definiens>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -10188,21 +10200,23 @@
        </Clustered-Type>
       </Type-Specification>
       <Definiens position="555\42" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="556\12" serialnr="184" labelnr="0"/>
-       <Aggregate-Term nr="6" formatnr="183" patternnr="6" absolutepatternMMLId="METRIC_1:1" spelling="MetrStruct" sort="Aggregate-Term" constrnr="7" absoluteconstrMMLId="METRIC_1:1" position="556\35">
-        <Arguments>
-         <Infix-Term nr="2" formatnr="450" patternnr="463" absolutepatternMMLId="EUCLID:1" leftargscount="0" spelling="REAL" sort="Functor-Term" constrnr="604" absoluteconstrMMLId="EUCLID:1" originalnr="0" position="556\18">
-          <Arguments>
-           <Simple-Term idnr="31" spelling="n" position="556\20" origin="Constant" sort="Constant" serialnr="155" varnr="1"/>
-          </Arguments>
-         </Infix-Term>
-         <Infix-Term nr="196" formatnr="453" patternnr="475" absolutepatternMMLId="EUCLID:13" leftargscount="0" spelling="Pitag_dist" sort="Functor-Term" constrnr="616" absoluteconstrMMLId="EUCLID:13" originalnr="0" position="556\31">
-          <Arguments>
-           <Simple-Term idnr="31" spelling="n" position="556\33" origin="Constant" sort="Constant" serialnr="155" varnr="1"/>
-          </Arguments>
-         </Infix-Term>
-        </Arguments>
-       </Aggregate-Term>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="556\12" serialnr="184" labelnr="0"/>
+        <Aggregate-Term nr="6" formatnr="183" patternnr="6" absolutepatternMMLId="METRIC_1:1" spelling="MetrStruct" sort="Aggregate-Term" constrnr="7" absoluteconstrMMLId="METRIC_1:1" position="556\35">
+         <Arguments>
+          <Infix-Term nr="2" formatnr="450" patternnr="463" absolutepatternMMLId="EUCLID:1" leftargscount="0" spelling="REAL" sort="Functor-Term" constrnr="604" absoluteconstrMMLId="EUCLID:1" originalnr="0" position="556\18">
+           <Arguments>
+            <Simple-Term idnr="31" spelling="n" position="556\20" origin="Constant" sort="Constant" serialnr="155" varnr="1"/>
+           </Arguments>
+          </Infix-Term>
+          <Infix-Term nr="196" formatnr="453" patternnr="475" absolutepatternMMLId="EUCLID:13" leftargscount="0" spelling="Pitag_dist" sort="Functor-Term" constrnr="616" absoluteconstrMMLId="EUCLID:13" originalnr="0" position="556\31">
+           <Arguments>
+            <Simple-Term idnr="31" spelling="n" position="556\33" origin="Constant" sort="Constant" serialnr="155" varnr="1"/>
+           </Arguments>
+          </Infix-Term>
+         </Arguments>
+        </Aggregate-Term>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -10352,41 +10366,43 @@
        </Clustered-Type>
       </Type-Specification>
       <Definiens position="573\45" kind="Simple-Definiens" shape="Formula-Expression">
-       <Label idnr="87" spelling="Def8" position="574\7" serialnr="189" labelnr="17"/>
-       <Conjunctive-Formula position="576\25">
-        <Relation-Formula nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="575\23">
-         <Arguments>
-          <Forgetful-Functor-Term nr="8" formatnr="345" patternnr="7" absolutepatternMMLId="PRE_TOPC:1" spelling="TopStruct" sort="Forgetful-Functor-Term" constrnr="6" absoluteconstrMMLId="PRE_TOPC:1" position="575\15">
-           <it-Term position="575\21" sort="it-Term"/>
-          </Forgetful-Functor-Term>
-          <Infix-Term nr="88" formatnr="352" patternnr="420" absolutepatternMMLId="PCOMPS_1:3" leftargscount="0" spelling="TopSpaceMetr" sort="Functor-Term" constrnr="238" absoluteconstrMMLId="PCOMPS_1:3" originalnr="0" position="576\14">
-           <Arguments>
-            <Infix-Term nr="197" formatnr="454" patternnr="476" absolutepatternMMLId="EUCLID:14" leftargscount="0" spelling="Euclid" sort="Functor-Term" constrnr="617" absoluteconstrMMLId="EUCLID:14" originalnr="0" position="576\21">
-             <Arguments>
-              <Simple-Term idnr="31" spelling="n" position="576\23" origin="Constant" sort="Constant" serialnr="157" varnr="1"/>
-             </Arguments>
-            </Infix-Term>
-           </Arguments>
-          </Infix-Term>
-         </Arguments>
-        </Relation-Formula>
-        <Relation-Formula nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="576\47">
-         <Arguments>
-          <Forgetful-Functor-Term nr="9" formatnr="422" patternnr="14" absolutepatternMMLId="RLVECT_1:1" spelling="RLSStruct" sort="Forgetful-Functor-Term" constrnr="15" absoluteconstrMMLId="RLVECT_1:1" position="576\39">
-           <it-Term position="576\45" sort="it-Term"/>
-          </Forgetful-Functor-Term>
-          <Infix-Term nr="118" formatnr="431" patternnr="456" absolutepatternMMLId="FUNCSDOM:10" leftargscount="0" spelling="RealVectSpace" sort="Functor-Term" constrnr="509" absoluteconstrMMLId="FUNCSDOM:10" originalnr="0" position="576\61">
-           <Arguments>
-            <Infix-Term nr="12" formatnr="236" patternnr="248" absolutepatternMMLId="FINSEQ_1:2" leftargscount="0" spelling="Seg" sort="Functor-Term" constrnr="172" absoluteconstrMMLId="FINSEQ_1:2" originalnr="171" absoluteorigconstrMMLId="FINSEQ_1:1" position="576\65">
-             <Arguments>
-              <Simple-Term idnr="31" spelling="n" position="576\67" origin="Constant" sort="Constant" serialnr="157" varnr="1"/>
-             </Arguments>
-            </Infix-Term>
-           </Arguments>
-          </Infix-Term>
-         </Arguments>
-        </Relation-Formula>
-       </Conjunctive-Formula>
+       <Standard-Definiens>
+        <Label idnr="87" spelling="Def8" position="574\7" serialnr="189" labelnr="17"/>
+        <Conjunctive-Formula position="576\25">
+         <Relation-Formula nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="575\23">
+          <Arguments>
+           <Forgetful-Functor-Term nr="8" formatnr="345" patternnr="7" absolutepatternMMLId="PRE_TOPC:1" spelling="TopStruct" sort="Forgetful-Functor-Term" constrnr="6" absoluteconstrMMLId="PRE_TOPC:1" position="575\15">
+            <it-Term position="575\21" sort="it-Term"/>
+           </Forgetful-Functor-Term>
+           <Infix-Term nr="88" formatnr="352" patternnr="420" absolutepatternMMLId="PCOMPS_1:3" leftargscount="0" spelling="TopSpaceMetr" sort="Functor-Term" constrnr="238" absoluteconstrMMLId="PCOMPS_1:3" originalnr="0" position="576\14">
+            <Arguments>
+             <Infix-Term nr="197" formatnr="454" patternnr="476" absolutepatternMMLId="EUCLID:14" leftargscount="0" spelling="Euclid" sort="Functor-Term" constrnr="617" absoluteconstrMMLId="EUCLID:14" originalnr="0" position="576\21">
+              <Arguments>
+               <Simple-Term idnr="31" spelling="n" position="576\23" origin="Constant" sort="Constant" serialnr="157" varnr="1"/>
+              </Arguments>
+             </Infix-Term>
+            </Arguments>
+           </Infix-Term>
+          </Arguments>
+         </Relation-Formula>
+         <Relation-Formula nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="576\47">
+          <Arguments>
+           <Forgetful-Functor-Term nr="9" formatnr="422" patternnr="14" absolutepatternMMLId="RLVECT_1:1" spelling="RLSStruct" sort="Forgetful-Functor-Term" constrnr="15" absoluteconstrMMLId="RLVECT_1:1" position="576\39">
+            <it-Term position="576\45" sort="it-Term"/>
+           </Forgetful-Functor-Term>
+           <Infix-Term nr="118" formatnr="431" patternnr="456" absolutepatternMMLId="FUNCSDOM:10" leftargscount="0" spelling="RealVectSpace" sort="Functor-Term" constrnr="509" absoluteconstrMMLId="FUNCSDOM:10" originalnr="0" position="576\61">
+            <Arguments>
+             <Infix-Term nr="12" formatnr="236" patternnr="248" absolutepatternMMLId="FINSEQ_1:2" leftargscount="0" spelling="Seg" sort="Functor-Term" constrnr="172" absoluteconstrMMLId="FINSEQ_1:2" originalnr="171" absoluteorigconstrMMLId="FINSEQ_1:1" position="576\65">
+              <Arguments>
+               <Simple-Term idnr="31" spelling="n" position="576\67" origin="Constant" sort="Constant" serialnr="157" varnr="1"/>
+              </Arguments>
+             </Infix-Term>
+            </Arguments>
+           </Infix-Term>
+          </Arguments>
+         </Relation-Formula>
+        </Conjunctive-Formula>
+       </Standard-Definiens>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -13144,13 +13160,15 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="770\25" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="771\3" serialnr="243" labelnr="0"/>
-       <Infix-Term nr="21" formatnr="94" patternnr="88" absolutepatternMMLId="FUNCT_1:1" leftargscount="1" spelling="." sort="Functor-Term" constrnr="63" absoluteconstrMMLId="FUNCT_1:1" originalnr="0" position="771\4">
-        <Arguments>
-         <Simple-Term idnr="92" spelling="p" position="771\3" origin="ReservedVar" sort="Constant" serialnr="20" varnr="1"/>
-         <Numeral-Term number="1" sort="Numeral-Term" position="771\5"/>
-        </Arguments>
-       </Infix-Term>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="771\3" serialnr="243" labelnr="0"/>
+        <Infix-Term nr="21" formatnr="94" patternnr="88" absolutepatternMMLId="FUNCT_1:1" leftargscount="1" spelling="." sort="Functor-Term" constrnr="63" absoluteconstrMMLId="FUNCT_1:1" originalnr="0" position="771\4">
+         <Arguments>
+          <Simple-Term idnr="92" spelling="p" position="771\3" origin="ReservedVar" sort="Constant" serialnr="20" varnr="1"/>
+          <Numeral-Term number="1" sort="Numeral-Term" position="771\5"/>
+         </Arguments>
+        </Infix-Term>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -13175,13 +13193,15 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="773\25" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="774\3" serialnr="244" labelnr="0"/>
-       <Infix-Term nr="21" formatnr="94" patternnr="88" absolutepatternMMLId="FUNCT_1:1" leftargscount="1" spelling="." sort="Functor-Term" constrnr="63" absoluteconstrMMLId="FUNCT_1:1" originalnr="0" position="774\4">
-        <Arguments>
-         <Simple-Term idnr="92" spelling="p" position="774\3" origin="ReservedVar" sort="Constant" serialnr="20" varnr="1"/>
-         <Numeral-Term number="2" sort="Numeral-Term" position="774\5"/>
-        </Arguments>
-       </Infix-Term>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="774\3" serialnr="244" labelnr="0"/>
+        <Infix-Term nr="21" formatnr="94" patternnr="88" absolutepatternMMLId="FUNCT_1:1" leftargscount="1" spelling="." sort="Functor-Term" constrnr="63" absoluteconstrMMLId="FUNCT_1:1" originalnr="0" position="774\4">
+         <Arguments>
+          <Simple-Term idnr="92" spelling="p" position="774\3" origin="ReservedVar" sort="Constant" serialnr="20" varnr="1"/>
+          <Numeral-Term number="2" sort="Numeral-Term" position="774\5"/>
+         </Arguments>
+        </Infix-Term>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -16942,13 +16962,15 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="971\40" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="972\3" serialnr="316" labelnr="0"/>
-       <Infix-Term nr="10" formatnr="249" patternnr="268" absolutepatternMMLId="FINSEQ_2:5" leftargscount="1" spelling="&#x7C;-&#x3E;" sort="Functor-Term" constrnr="360" absoluteconstrMMLId="FINSEQ_2:5" originalnr="357" absoluteorigconstrMMLId="FINSEQ_2:2" position="972\7">
-        <Arguments>
-         <Simple-Term idnr="31" spelling="n" position="972\3" origin="Constant" sort="Constant" serialnr="295" varnr="2"/>
-         <Numeral-Term number="1" sort="Numeral-Term" position="972\9"/>
-        </Arguments>
-       </Infix-Term>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="972\3" serialnr="316" labelnr="0"/>
+        <Infix-Term nr="10" formatnr="249" patternnr="268" absolutepatternMMLId="FINSEQ_2:5" leftargscount="1" spelling="&#x7C;-&#x3E;" sort="Functor-Term" constrnr="360" absoluteconstrMMLId="FINSEQ_2:5" originalnr="357" absoluteorigconstrMMLId="FINSEQ_2:2" position="972\7">
+         <Arguments>
+          <Simple-Term idnr="31" spelling="n" position="972\3" origin="Constant" sort="Constant" serialnr="295" varnr="2"/>
+          <Numeral-Term number="1" sort="Numeral-Term" position="972\9"/>
+         </Arguments>
+        </Infix-Term>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -17121,12 +17143,14 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="992\45" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="993\4" serialnr="323" labelnr="0"/>
-       <Infix-Term nr="228" formatnr="460" patternnr="485" absolutepatternMMLId="EUCLID:23" leftargscount="0" spelling="1&#x2A;" sort="Functor-Term" constrnr="624" absoluteconstrMMLId="EUCLID:21" originalnr="623" absoluteorigconstrMMLId="EUCLID:20" position="993\4">
-        <Arguments>
-         <Simple-Term idnr="31" spelling="n" position="993\5" origin="Constant" sort="Constant" serialnr="297" varnr="2"/>
-        </Arguments>
-       </Infix-Term>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="993\4" serialnr="323" labelnr="0"/>
+        <Infix-Term nr="228" formatnr="460" patternnr="485" absolutepatternMMLId="EUCLID:23" leftargscount="0" spelling="1&#x2A;" sort="Functor-Term" constrnr="624" absoluteconstrMMLId="EUCLID:21" originalnr="623" absoluteorigconstrMMLId="EUCLID:20" position="993\4">
+         <Arguments>
+          <Simple-Term idnr="31" spelling="n" position="993\5" origin="Constant" sort="Constant" serialnr="297" varnr="2"/>
+         </Arguments>
+        </Infix-Term>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>

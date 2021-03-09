@@ -3656,17 +3656,19 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="282\49" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="283\5" serialnr="71" labelnr="0"/>
-       <Infix-Term nr="82" formatnr="217" patternnr="249" absolutepatternMMLId="FINSEQ_1:16" leftargscount="0" spelling="Seq" sort="Functor-Term" constrnr="172" absoluteconstrMMLId="FINSEQ_1:15" originalnr="0" position="283\5">
-        <Arguments>
-         <Infix-Term bracketed="true" nr="51" formatnr="139" patternnr="157" absolutepatternMMLId="RELAT_1:8" leftargscount="1" spelling="&#x7C;" sort="Functor-Term" constrnr="5" absoluteconstrMMLId="RELAT_1:5" originalnr="0" position="283\10">
-          <Arguments>
-           <Simple-Term idnr="51" spelling="f" position="283\8" origin="Constant" sort="Constant" serialnr="71" varnr="1"/>
-           <Simple-Term idnr="52" spelling="A" position="283\12" origin="Constant" sort="Constant" serialnr="72" varnr="2"/>
-          </Arguments>
-         </Infix-Term>
-        </Arguments>
-       </Infix-Term>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="283\5" serialnr="71" labelnr="0"/>
+        <Infix-Term nr="82" formatnr="217" patternnr="249" absolutepatternMMLId="FINSEQ_1:16" leftargscount="0" spelling="Seq" sort="Functor-Term" constrnr="172" absoluteconstrMMLId="FINSEQ_1:15" originalnr="0" position="283\5">
+         <Arguments>
+          <Infix-Term bracketed="true" nr="51" formatnr="139" patternnr="157" absolutepatternMMLId="RELAT_1:8" leftargscount="1" spelling="&#x7C;" sort="Functor-Term" constrnr="5" absoluteconstrMMLId="RELAT_1:5" originalnr="0" position="283\10">
+           <Arguments>
+            <Simple-Term idnr="51" spelling="f" position="283\8" origin="Constant" sort="Constant" serialnr="71" varnr="1"/>
+            <Simple-Term idnr="52" spelling="A" position="283\12" origin="Constant" sort="Constant" serialnr="72" varnr="2"/>
+           </Arguments>
+          </Infix-Term>
+         </Arguments>
+        </Infix-Term>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -26843,40 +26845,42 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="1286\36" kind="Simple-Definiens" shape="Formula-Expression">
-       <Label idnr="123" spelling="Def2" position="1287\7" serialnr="415" labelnr="45"/>
-       <Universal-Quantifier-Formula position="1288\5">
-        <Variable-Segments>
-         <Explicitly-Qualified-Segment position="1288\5">
-          <Variables>
-           <Variable idnr="26" spelling="k" position="1288\7" kind="BoundVar" serialnr="329" varnr="1"/>
-          </Variables>
-          <Standard-Type nr="5" formatnr="25" patternnr="4" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="1288\21">
+       <Standard-Definiens>
+        <Label idnr="123" spelling="Def2" position="1287\7" serialnr="415" labelnr="45"/>
+        <Universal-Quantifier-Formula position="1288\5">
+         <Variable-Segments>
+          <Explicitly-Qualified-Segment position="1288\5">
+           <Variables>
+            <Variable idnr="26" spelling="k" position="1288\7" kind="BoundVar" serialnr="329" varnr="1"/>
+           </Variables>
+           <Standard-Type nr="5" formatnr="25" patternnr="4" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="1288\21">
+            <Arguments>
+             <Infix-Term nr="1" formatnr="64" patternnr="43" absolutepatternMMLId="NUMBERS:1" leftargscount="0" spelling="NAT" sort="Functor-Term" constrnr="37" absoluteconstrMMLId="ORDINAL1:4" originalnr="0" position="1288\28">
+              <Arguments/>
+             </Infix-Term>
+            </Arguments>
+           </Standard-Type>
+          </Explicitly-Qualified-Segment>
+         </Variable-Segments>
+         <Scope>
+          <Relation-Formula nr="1" formatnr="4" patternnr="13" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1288\41">
            <Arguments>
-            <Infix-Term nr="1" formatnr="64" patternnr="43" absolutepatternMMLId="NUMBERS:1" leftargscount="0" spelling="NAT" sort="Functor-Term" constrnr="37" absoluteconstrMMLId="ORDINAL1:4" originalnr="0" position="1288\28">
-             <Arguments/>
+            <Infix-Term nr="76" formatnr="112" patternnr="171" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="127" absoluteconstrMMLId="FUNCT_2:3" originalnr="84" absoluteorigconstrMMLId="FUNCT_1:1" position="1288\38">
+             <Arguments>
+              <it-Term position="1288\37" sort="it-Term"/>
+              <Simple-Term idnr="26" spelling="k" position="1288\39" origin="BoundVar" sort="BoundVar" serialnr="329" varnr="1"/>
+             </Arguments>
+            </Infix-Term>
+            <Infix-Term nr="126" formatnr="154" patternnr="175" absolutepatternMMLId="PRE_FF:2" leftargscount="0" spelling="Fib" sort="Functor-Term" constrnr="205" absoluteconstrMMLId="PRE_FF:2" originalnr="0" position="1288\45">
+             <Arguments>
+              <Simple-Term idnr="26" spelling="k" position="1288\47" origin="BoundVar" sort="BoundVar" serialnr="329" varnr="1"/>
+             </Arguments>
             </Infix-Term>
            </Arguments>
-          </Standard-Type>
-         </Explicitly-Qualified-Segment>
-        </Variable-Segments>
-        <Scope>
-         <Relation-Formula nr="1" formatnr="4" patternnr="13" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1288\41">
-          <Arguments>
-           <Infix-Term nr="76" formatnr="112" patternnr="171" absolutepatternMMLId="FUNCT_2:3" leftargscount="1" spelling="." sort="Functor-Term" constrnr="127" absoluteconstrMMLId="FUNCT_2:3" originalnr="84" absoluteorigconstrMMLId="FUNCT_1:1" position="1288\38">
-            <Arguments>
-             <it-Term position="1288\37" sort="it-Term"/>
-             <Simple-Term idnr="26" spelling="k" position="1288\39" origin="BoundVar" sort="BoundVar" serialnr="329" varnr="1"/>
-            </Arguments>
-           </Infix-Term>
-           <Infix-Term nr="126" formatnr="154" patternnr="175" absolutepatternMMLId="PRE_FF:2" leftargscount="0" spelling="Fib" sort="Functor-Term" constrnr="205" absoluteconstrMMLId="PRE_FF:2" originalnr="0" position="1288\45">
-            <Arguments>
-             <Simple-Term idnr="26" spelling="k" position="1288\47" origin="BoundVar" sort="BoundVar" serialnr="329" varnr="1"/>
-            </Arguments>
-           </Infix-Term>
-          </Arguments>
-         </Relation-Formula>
-        </Scope>
-       </Universal-Quantifier-Formula>
+          </Relation-Formula>
+         </Scope>
+        </Universal-Quantifier-Formula>
+       </Standard-Definiens>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -27202,25 +27206,27 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="1308\38" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="1309\5" serialnr="422" labelnr="0"/>
-       <Simple-Fraenkel-Term sort="Simple-Fraenkel-Term" position="1309\16">
-        <Variable-Segments>
-         <Explicitly-Qualified-Segment position="1309\34">
-          <Variables>
-           <Variable idnr="26" spelling="k" position="1309\31" kind="BoundVar" serialnr="349" varnr="1"/>
-          </Variables>
-          <Standard-Type nr="3" formatnr="13" patternnr="14" absolutepatternMMLId="NAT_1:1" spelling="Nat" sort="Expandable-Type" position="1309\38">
-           <Arguments/>
-          </Standard-Type>
-         </Explicitly-Qualified-Segment>
-        </Variable-Segments>
-        <Infix-Term nr="49" formatnr="74" patternnr="52" absolutepatternMMLId="XCMPLX_0:3" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="48" absoluteconstrMMLId="XCMPLX_0:3" originalnr="0" position="1309\21">
-         <Arguments>
-          <Numeral-Term number="2" sort="Numeral-Term" position="1309\19"/>
-          <Simple-Term idnr="26" spelling="k" position="1309\23" origin="BoundVar" sort="BoundVar" serialnr="349" varnr="1"/>
-         </Arguments>
-        </Infix-Term>
-       </Simple-Fraenkel-Term>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="1309\5" serialnr="422" labelnr="0"/>
+        <Simple-Fraenkel-Term sort="Simple-Fraenkel-Term" position="1309\16">
+         <Variable-Segments>
+          <Explicitly-Qualified-Segment position="1309\34">
+           <Variables>
+            <Variable idnr="26" spelling="k" position="1309\31" kind="BoundVar" serialnr="349" varnr="1"/>
+           </Variables>
+           <Standard-Type nr="3" formatnr="13" patternnr="14" absolutepatternMMLId="NAT_1:1" spelling="Nat" sort="Expandable-Type" position="1309\38">
+            <Arguments/>
+           </Standard-Type>
+          </Explicitly-Qualified-Segment>
+         </Variable-Segments>
+         <Infix-Term nr="49" formatnr="74" patternnr="52" absolutepatternMMLId="XCMPLX_0:3" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="48" absoluteconstrMMLId="XCMPLX_0:3" originalnr="0" position="1309\21">
+          <Arguments>
+           <Numeral-Term number="2" sort="Numeral-Term" position="1309\19"/>
+           <Simple-Term idnr="26" spelling="k" position="1309\23" origin="BoundVar" sort="BoundVar" serialnr="349" varnr="1"/>
+          </Arguments>
+         </Infix-Term>
+        </Simple-Fraenkel-Term>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -27389,34 +27395,36 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="1320\37" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="1321\5" serialnr="428" labelnr="0"/>
-       <Simple-Fraenkel-Term sort="Simple-Fraenkel-Term" position="1321\16">
-        <Variable-Segments>
-         <Explicitly-Qualified-Segment position="1321\38">
-          <Variables>
-           <Variable idnr="26" spelling="k" position="1321\35" kind="BoundVar" serialnr="358" varnr="1"/>
-          </Variables>
-          <Standard-Type nr="5" formatnr="25" patternnr="4" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="1321\46">
-           <Arguments>
-            <Infix-Term nr="1" formatnr="64" patternnr="43" absolutepatternMMLId="NUMBERS:1" leftargscount="0" spelling="NAT" sort="Functor-Term" constrnr="37" absoluteconstrMMLId="ORDINAL1:4" originalnr="0" position="1321\53">
-             <Arguments/>
-            </Infix-Term>
-           </Arguments>
-          </Standard-Type>
-         </Explicitly-Qualified-Segment>
-        </Variable-Segments>
-        <Infix-Term nr="28" formatnr="73" patternnr="129" absolutepatternMMLId="NAT_1:1" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="276" absoluteconstrMMLId="NAT_1:1" originalnr="47" absoluteorigconstrMMLId="XCMPLX_0:2" position="1321\25">
-         <Arguments>
-          <Infix-Term nr="49" formatnr="74" patternnr="130" absolutepatternMMLId="NAT_1:2" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="277" absoluteconstrMMLId="NAT_1:2" originalnr="48" absoluteorigconstrMMLId="XCMPLX_0:3" position="1321\21">
-           <Arguments>
-            <Numeral-Term number="2" sort="Numeral-Term" position="1321\19"/>
-            <Simple-Term idnr="26" spelling="k" position="1321\23" origin="BoundVar" sort="BoundVar" serialnr="358" varnr="1"/>
-           </Arguments>
-          </Infix-Term>
-          <Numeral-Term number="1" sort="Numeral-Term" position="1321\27"/>
-         </Arguments>
-        </Infix-Term>
-       </Simple-Fraenkel-Term>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="1321\5" serialnr="428" labelnr="0"/>
+        <Simple-Fraenkel-Term sort="Simple-Fraenkel-Term" position="1321\16">
+         <Variable-Segments>
+          <Explicitly-Qualified-Segment position="1321\38">
+           <Variables>
+            <Variable idnr="26" spelling="k" position="1321\35" kind="BoundVar" serialnr="358" varnr="1"/>
+           </Variables>
+           <Standard-Type nr="5" formatnr="25" patternnr="4" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="1321\46">
+            <Arguments>
+             <Infix-Term nr="1" formatnr="64" patternnr="43" absolutepatternMMLId="NUMBERS:1" leftargscount="0" spelling="NAT" sort="Functor-Term" constrnr="37" absoluteconstrMMLId="ORDINAL1:4" originalnr="0" position="1321\53">
+              <Arguments/>
+             </Infix-Term>
+            </Arguments>
+           </Standard-Type>
+          </Explicitly-Qualified-Segment>
+         </Variable-Segments>
+         <Infix-Term nr="28" formatnr="73" patternnr="129" absolutepatternMMLId="NAT_1:1" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="276" absoluteconstrMMLId="NAT_1:1" originalnr="47" absoluteorigconstrMMLId="XCMPLX_0:2" position="1321\25">
+          <Arguments>
+           <Infix-Term nr="49" formatnr="74" patternnr="130" absolutepatternMMLId="NAT_1:2" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="277" absoluteconstrMMLId="NAT_1:2" originalnr="48" absoluteorigconstrMMLId="XCMPLX_0:3" position="1321\21">
+            <Arguments>
+             <Numeral-Term number="2" sort="Numeral-Term" position="1321\19"/>
+             <Simple-Term idnr="26" spelling="k" position="1321\23" origin="BoundVar" sort="BoundVar" serialnr="358" varnr="1"/>
+            </Arguments>
+           </Infix-Term>
+           <Numeral-Term number="1" sort="Numeral-Term" position="1321\27"/>
+          </Arguments>
+         </Infix-Term>
+        </Simple-Fraenkel-Term>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -27928,26 +27936,28 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="1354\48" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="1355\8" serialnr="442" labelnr="0"/>
-       <Infix-Term nr="86" formatnr="232" patternnr="269" absolutepatternMMLId="FIB_NUM2:1" leftargscount="0" spelling="Prefix" sort="Functor-Term" constrnr="551" absoluteconstrMMLId="FIB_NUM2:1" originalnr="0" position="1355\8">
-        <Arguments>
-         <Infix-Term nr="145" formatnr="233" patternnr="270" absolutepatternMMLId="FIB_NUM2:2" leftargscount="0" spelling="FIB" sort="Functor-Term" constrnr="552" absoluteconstrMMLId="FIB_NUM2:2" originalnr="0" position="1355\13">
-          <Arguments/>
-         </Infix-Term>
-         <Infix-Term bracketed="true" nr="11" formatnr="37" patternnr="26" absolutepatternMMLId="XBOOLE_0:3" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="13" absoluteconstrMMLId="XBOOLE_0:3" originalnr="0" position="1355\25">
-          <Arguments>
-           <Infix-Term nr="146" formatnr="234" patternnr="271" absolutepatternMMLId="FIB_NUM2:3" leftargscount="0" spelling="EvenNAT" sort="Functor-Term" constrnr="553" absoluteconstrMMLId="FIB_NUM2:3" originalnr="0" position="1355\22">
-            <Arguments/>
-           </Infix-Term>
-           <Infix-Term nr="78" formatnr="208" patternnr="235" absolutepatternMMLId="FINSEQ_1:2" leftargscount="0" spelling="Seg" sort="Functor-Term" constrnr="159" absoluteconstrMMLId="FINSEQ_1:2" originalnr="158" absoluteorigconstrMMLId="FINSEQ_1:1" position="1355\29">
-            <Arguments>
-             <Simple-Term idnr="25" spelling="n" position="1355\31" origin="Constant" sort="Constant" serialnr="372" varnr="1"/>
-            </Arguments>
-           </Infix-Term>
-          </Arguments>
-         </Infix-Term>
-        </Arguments>
-       </Infix-Term>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="1355\8" serialnr="442" labelnr="0"/>
+        <Infix-Term nr="86" formatnr="232" patternnr="269" absolutepatternMMLId="FIB_NUM2:1" leftargscount="0" spelling="Prefix" sort="Functor-Term" constrnr="551" absoluteconstrMMLId="FIB_NUM2:1" originalnr="0" position="1355\8">
+         <Arguments>
+          <Infix-Term nr="145" formatnr="233" patternnr="270" absolutepatternMMLId="FIB_NUM2:2" leftargscount="0" spelling="FIB" sort="Functor-Term" constrnr="552" absoluteconstrMMLId="FIB_NUM2:2" originalnr="0" position="1355\13">
+           <Arguments/>
+          </Infix-Term>
+          <Infix-Term bracketed="true" nr="11" formatnr="37" patternnr="26" absolutepatternMMLId="XBOOLE_0:3" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="13" absoluteconstrMMLId="XBOOLE_0:3" originalnr="0" position="1355\25">
+           <Arguments>
+            <Infix-Term nr="146" formatnr="234" patternnr="271" absolutepatternMMLId="FIB_NUM2:3" leftargscount="0" spelling="EvenNAT" sort="Functor-Term" constrnr="553" absoluteconstrMMLId="FIB_NUM2:3" originalnr="0" position="1355\22">
+             <Arguments/>
+            </Infix-Term>
+            <Infix-Term nr="78" formatnr="208" patternnr="235" absolutepatternMMLId="FINSEQ_1:2" leftargscount="0" spelling="Seg" sort="Functor-Term" constrnr="159" absoluteconstrMMLId="FINSEQ_1:2" originalnr="158" absoluteorigconstrMMLId="FINSEQ_1:1" position="1355\29">
+             <Arguments>
+              <Simple-Term idnr="25" spelling="n" position="1355\31" origin="Constant" sort="Constant" serialnr="372" varnr="1"/>
+             </Arguments>
+            </Infix-Term>
+           </Arguments>
+          </Infix-Term>
+         </Arguments>
+        </Infix-Term>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
@@ -27976,26 +27986,28 @@
        </Standard-Type>
       </Type-Specification>
       <Definiens position="1357\47" kind="Simple-Definiens" shape="Term-Expression">
-       <Label idnr="0" spelling="" position="1358\8" serialnr="443" labelnr="0"/>
-       <Infix-Term nr="86" formatnr="232" patternnr="269" absolutepatternMMLId="FIB_NUM2:1" leftargscount="0" spelling="Prefix" sort="Functor-Term" constrnr="551" absoluteconstrMMLId="FIB_NUM2:1" originalnr="0" position="1358\8">
-        <Arguments>
-         <Infix-Term nr="145" formatnr="233" patternnr="270" absolutepatternMMLId="FIB_NUM2:2" leftargscount="0" spelling="FIB" sort="Functor-Term" constrnr="552" absoluteconstrMMLId="FIB_NUM2:2" originalnr="0" position="1358\13">
-          <Arguments/>
-         </Infix-Term>
-         <Infix-Term bracketed="true" nr="11" formatnr="37" patternnr="26" absolutepatternMMLId="XBOOLE_0:3" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="13" absoluteconstrMMLId="XBOOLE_0:3" originalnr="0" position="1358\24">
-          <Arguments>
-           <Infix-Term nr="147" formatnr="235" patternnr="272" absolutepatternMMLId="FIB_NUM2:4" leftargscount="0" spelling="OddNAT" sort="Functor-Term" constrnr="554" absoluteconstrMMLId="FIB_NUM2:4" originalnr="0" position="1358\21">
-            <Arguments/>
-           </Infix-Term>
-           <Infix-Term nr="78" formatnr="208" patternnr="235" absolutepatternMMLId="FINSEQ_1:2" leftargscount="0" spelling="Seg" sort="Functor-Term" constrnr="159" absoluteconstrMMLId="FINSEQ_1:2" originalnr="158" absoluteorigconstrMMLId="FINSEQ_1:1" position="1358\28">
-            <Arguments>
-             <Simple-Term idnr="25" spelling="n" position="1358\30" origin="Constant" sort="Constant" serialnr="372" varnr="1"/>
-            </Arguments>
-           </Infix-Term>
-          </Arguments>
-         </Infix-Term>
-        </Arguments>
-       </Infix-Term>
+       <Definiens-Via-Equals>
+        <Label idnr="0" spelling="" position="1358\8" serialnr="443" labelnr="0"/>
+        <Infix-Term nr="86" formatnr="232" patternnr="269" absolutepatternMMLId="FIB_NUM2:1" leftargscount="0" spelling="Prefix" sort="Functor-Term" constrnr="551" absoluteconstrMMLId="FIB_NUM2:1" originalnr="0" position="1358\8">
+         <Arguments>
+          <Infix-Term nr="145" formatnr="233" patternnr="270" absolutepatternMMLId="FIB_NUM2:2" leftargscount="0" spelling="FIB" sort="Functor-Term" constrnr="552" absoluteconstrMMLId="FIB_NUM2:2" originalnr="0" position="1358\13">
+           <Arguments/>
+          </Infix-Term>
+          <Infix-Term bracketed="true" nr="11" formatnr="37" patternnr="26" absolutepatternMMLId="XBOOLE_0:3" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="13" absoluteconstrMMLId="XBOOLE_0:3" originalnr="0" position="1358\24">
+           <Arguments>
+            <Infix-Term nr="147" formatnr="235" patternnr="272" absolutepatternMMLId="FIB_NUM2:4" leftargscount="0" spelling="OddNAT" sort="Functor-Term" constrnr="554" absoluteconstrMMLId="FIB_NUM2:4" originalnr="0" position="1358\21">
+             <Arguments/>
+            </Infix-Term>
+            <Infix-Term nr="78" formatnr="208" patternnr="235" absolutepatternMMLId="FINSEQ_1:2" leftargscount="0" spelling="Seg" sort="Functor-Term" constrnr="159" absoluteconstrMMLId="FINSEQ_1:2" originalnr="158" absoluteorigconstrMMLId="FINSEQ_1:1" position="1358\28">
+             <Arguments>
+              <Simple-Term idnr="25" spelling="n" position="1358\30" origin="Constant" sort="Constant" serialnr="372" varnr="1"/>
+             </Arguments>
+            </Infix-Term>
+           </Arguments>
+          </Infix-Term>
+         </Arguments>
+        </Infix-Term>
+       </Definiens-Via-Equals>
       </Definiens>
      </Functor-Definition>
     </Item>
