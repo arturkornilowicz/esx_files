@@ -1,0 +1,1942 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Text-Proper">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+	<xs:element ref="Item"/>
+      </xs:sequence>
+      <xs:attribute ref="articleid" use="required"/>
+      <xs:attribute ref="articleext" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <!-- definitions of attributes -->
+  
+  <xs:attribute name="absoluteconstrMMLId" type="xs:string"/>
+  <xs:attribute name="absolutenr" type="xs:string"/>
+  <xs:attribute name="absoluteorigconstrMMLId" type="xs:string"/>
+  <xs:attribute name="absoluteorigpatternMMLId" type="xs:string"/>
+  <xs:attribute name="absolutepatternMMLId" type="xs:string"/>
+  <xs:attribute name="amount" type="xs:integer"/>
+  <xs:attribute name="antonymic" type="xs:string"/>
+  <xs:attribute name="articleid" type="xs:string"/>
+  <xs:attribute name="articleext" type="xs:string"/>
+  <xs:attribute name="bracketed" type="xs:string"/>
+  <xs:attribute name="constr" type="xs:string"/>
+  <xs:attribute name="constrnr" type="xs:integer"/>
+  <xs:attribute name="endposition" type="xs:string"/>
+  <xs:attribute name="formatdes" type="xs:string"/>
+  <xs:attribute name="formatnr" type="xs:integer"/>
+  <xs:attribute name="freevarnr" type="xs:integer"/>
+  <xs:attribute name="idnr" type="xs:integer"/>
+  <xs:attribute name="inscription" type="xs:string"/>
+  <xs:attribute name="kind" type="xs:string"/>
+  <xs:attribute name="labelnr" type="xs:integer"/>
+  <xs:attribute name="leftargscount" type="xs:integer"/>
+  <xs:attribute name="leftargsbracketed" type="xs:string"/>
+  <xs:attribute name="MMLId" type="xs:string"/>
+  <xs:attribute name="nonocc" type="xs:string"/>
+  <xs:attribute name="nr" type="xs:integer"/>
+  <xs:attribute name="number" type="xs:integer"/>
+  <xs:attribute name="occurs" type="xs:string"/>
+  <xs:attribute name="origin" type="xs:string"/>
+  <xs:attribute name="originalnr" type="xs:integer"/>
+  <xs:attribute name="originnr" type="xs:integer"/>
+  <xs:attribute name="origconstrnr" type="xs:integer"/>
+  <xs:attribute name="origpatternnr" type="xs:integer"/>
+  <xs:attribute name="patternnr" type="xs:integer"/>
+  <xs:attribute name="position" type="xs:string"/>
+  <xs:attribute name="property" type="xs:string"/>
+  <xs:attribute name="rightargsbracketed" type="xs:string"/>
+  <xs:attribute name="serialnr" type="xs:integer"/>
+  <xs:attribute name="shape" type="xs:string"/>
+  <xs:attribute name="sort" type="xs:string"/>
+  <xs:attribute name="spelling" type="xs:string"/>
+  <xs:attribute name="superfluous" type="xs:integer"/>
+  <xs:attribute name="varidkind" type="xs:string"/>
+  <xs:attribute name="varnr" type="xs:integer"/>
+  
+  <!-- definitions of elements -->
+  
+  <!-- Items -->
+  
+  <xs:group name="ItemGroup">
+    <xs:choice>
+      <xs:element ref="Assumption"/>
+      <xs:element ref="Attr-Antonym"/>
+      <xs:element ref="Attr-Synonym"/>
+      <xs:element ref="Attribute-Definition"/>
+      <xs:element ref="Choice-Statement"/>
+      <xs:element ref="Cluster"/>
+      <xs:element ref="Conclusion"/>
+      <xs:element ref="Constant-Definition"/>
+      <xs:element ref="Correctness"/>
+      <xs:element ref="Correctness-Condition"/>
+      <xs:element ref="Default-Generalization"/>
+      <xs:element ref="Definition-Item"/>
+      <xs:element ref="Exemplification"/>
+      <xs:element ref="Existential-Assumption"/>
+      <xs:element ref="Func-Synonym"/>
+      <xs:element ref="Functor-Definition"/>
+      <xs:element ref="Generalization"/>
+      <xs:element ref="Identify"/>
+      <xs:element ref="Loci-Declaration"/>
+      <xs:element ref="Mode-Definition"/>
+      <xs:element ref="Mode-Synonym"/>
+      <xs:element ref="Pragma"/>
+      <xs:element ref="Pred-Antonym"/>
+      <xs:element ref="Pred-Synonym"/>
+      <xs:element ref="Predicate-Definition"/>
+      <xs:element ref="Property"/>
+      <xs:element ref="Property-Registration"/>
+      <xs:element ref="Reduction"/>
+      <xs:element ref="Regular-Statement"/>
+      <xs:element ref="Reservation"/>
+      <xs:element ref="Schematic-Variables"/>
+      <xs:element ref="Scheme-Block-Item"/>
+      <xs:element ref="Scheme-Head"/>
+      <xs:element ref="Section-Pragma"/>
+      <xs:element ref="Structure-Definition"/>
+      <xs:element ref="Type-Changing-Statement"/>
+      <xs:element ref="Theorem-Item"/>
+    </xs:choice>
+  </xs:group>
+  
+  <xs:element name="Item">
+    <xs:complexType>
+      <xs:group ref="ItemGroup"/>
+      <xs:attribute ref="kind" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="endposition" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Assumption">
+    <xs:complexType>
+      <xs:choice>
+	<xs:element ref="Collective-Assumption"/>
+	<xs:element ref="Single-Assumption"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Choice-Statement">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Qualified-Segments"/>
+	<xs:element ref="Conditions"/>
+	<xs:element ref="Straightforward-Justification"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Collective-Assumption">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Conditions"/>
+      </xs:sequence>
+      <xs:attribute ref="position"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Cluster">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+	<xs:group ref="Registrations"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Conclusion">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Proposition"/>
+	<xs:group ref="Justification"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Constant-Definition">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Equating"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Exemplification">
+    <xs:complexType>
+      <xs:group ref="Exemplifications"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Existential-Assumption">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Qualified-Segments"/>
+	<xs:element ref="Conditions"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Single-Assumption">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Proposition"/>
+      </xs:sequence>
+      <xs:attribute ref="position"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Conditions">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+	<xs:element ref="Proposition"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Attribute-Definition">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Redefine"/>
+	<xs:element ref="Attribute-Pattern"/>
+	<xs:element ref="Definiens" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute ref="MMLId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Correctness">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Correctness-Conditions"/>
+	<xs:group ref="Justification"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Correctness-Condition">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="Correctness-Conditions-List"/>
+	<xs:group ref="Justification"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Default-Generalization">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Qualified-Segments"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Definition-Item">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Block"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Functor-Definition">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Redefine"/>
+	<xs:group ref="FunctorPatterns"/>
+	<xs:element ref="Type-Specification" minOccurs="0"/>
+	<xs:element ref="Definiens" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute ref="MMLId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Generalization">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Qualified-Segments"/>
+	<xs:element ref="Conditions" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Identify">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Pattern-Shaped-Expression" minOccurs="2" maxOccurs="2"/>
+	<xs:element ref="Loci-Equalities"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Loci-Declaration">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Qualified-Segments"/>
+	<xs:element ref="Conditions" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Mode-Definition">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Redefine"/>
+	<xs:choice> <!-- TODO -->
+	  <xs:element ref="Mode-Pattern"/>
+	</xs:choice>
+	<xs:group ref="Modes"/>
+      </xs:sequence>
+      <xs:attribute ref="MMLId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Pragma">
+    <xs:complexType>
+      <xs:choice>
+	<xs:element ref="Canceled"/>
+	<xs:element ref="Notion-Name"/>
+	<xs:element ref="Unknown"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Predicate-Definition">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Redefine"/>
+	<xs:element ref="Predicate-Pattern"/>
+	<xs:element ref="Definiens" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute ref="MMLId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Property">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Properties"/>
+	<xs:group ref="Justification"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Property-Registration">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Properties"/>
+	<xs:group ref="Justification"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Reduction">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="Term"/>
+	<xs:group ref="Term"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Regular-Statement">
+    <xs:complexType>
+      <xs:group ref="Statements"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Reservation">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+	<xs:element ref="Reservation-Segment"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Section-Pragma">
+  </xs:element>
+
+  <xs:element name="Theorem-Item">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Proposition" minOccurs="1" maxOccurs="1"/>
+	<xs:group ref="Justification"/>
+      </xs:sequence>
+      <xs:attribute ref="MMLId" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Type-Changing-Statement">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Equalities-List"/>
+	<xs:group ref="Type"/>
+	<xs:element ref="Straightforward-Justification"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Formulas -->
+  
+  <xs:group name="Formula">
+    <xs:choice>
+      <xs:element ref="Multi-Attributive-Formula"/>
+      <xs:element ref="Multi-Relation-Formula"/>
+      <xs:element ref="Qualifying-Formula"/>
+      <xs:element ref="Relation-Formula"/>
+      <xs:element ref="Private-Predicate-Formula"/>
+      <xs:element ref="Negated-Formula"/>
+      <xs:element ref="Conjunctive-Formula"/>
+      <xs:element ref="Disjunctive-Formula"/>
+      <xs:element ref="Conditional-Formula"/>
+      <xs:element ref="Biconditional-Formula"/>
+      <xs:element ref="FlexaryConjunctive-Formula"/>
+      <xs:element ref="FlexaryDisjunctive-Formula"/>
+      <xs:element ref="Existential-Quantifier-Formula"/>
+      <xs:element ref="Universal-Quantifier-Formula"/>
+      <xs:element ref="Contradiction"/>
+      <xs:element ref="Thesis"/>
+    </xs:choice>
+  </xs:group>
+  
+  <xs:element name="Multi-Attributive-Formula">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="Term"/>
+	<xs:element ref="Adjective-Cluster"/>
+      </xs:sequence>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Multi-Relation-Formula">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Relation-Formula" maxOccurs="1"/>
+	<xs:element ref="RightSideOf-Relation-Formula" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Qualifying-Formula">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="Term"/>
+	<xs:group ref="Type"/>
+      </xs:sequence>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Relation-Formula">
+    <xs:complexType>
+      <xs:sequence maxOccurs="1">
+	<xs:element ref="Arguments"/>
+      </xs:sequence>
+      <xs:attribute ref="nr" use="required"/>
+      <xs:attribute ref="formatnr" use="required"/>
+      <xs:attribute ref="patternnr" use="required"/>
+      <xs:attribute ref="absolutepatternMMLId" use="required"/>
+      <xs:attribute ref="leftargscount" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="sort" use="required"/>
+      <xs:attribute ref="constrnr" use="required"/>
+      <xs:attribute ref="absoluteconstrMMLId" use="required"/>
+      <xs:attribute ref="originalnr" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="antonymic"/>
+      <xs:attribute ref="absoluteorigconstrMMLId"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="RightSideOf-Relation-Formula">
+    <xs:complexType>
+      <xs:sequence maxOccurs="1">
+	<xs:element ref="Arguments"/>
+      </xs:sequence>
+      <xs:attribute ref="nr" use="required"/>
+      <xs:attribute ref="formatnr" use="required"/>
+      <xs:attribute ref="patternnr" use="required"/>
+      <xs:attribute ref="absolutepatternMMLId" use="required"/>
+      <xs:attribute ref="leftargscount" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="sort" use="required"/>
+      <xs:attribute ref="constrnr" use="required"/>
+      <xs:attribute ref="absoluteconstrMMLId" use="required"/>
+      <xs:attribute ref="originalnr" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="antonymic"/>
+      <xs:attribute ref="absoluteorigconstrMMLId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Private-Predicate-Formula">
+    <xs:complexType>
+      <xs:sequence maxOccurs="1">
+	<xs:element ref="Arguments"/>
+      </xs:sequence>
+      <xs:attribute ref="idnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="sort" use="required"/>
+      <xs:attribute ref="constrnr" use="required"/>
+      <xs:attribute ref="serialnr" use="required"/>
+      <xs:attribute ref="nr" use="required"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Negated-Formula">
+    <xs:complexType>
+      <xs:group ref="Formula" minOccurs="1" maxOccurs="2"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Binary-Formula">
+    <xs:complexType>
+      <xs:group ref="Formula" minOccurs="2" maxOccurs="2"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Conjunctive-Formula">
+    <xs:complexType>
+      <xs:group ref="Formula" minOccurs="2" maxOccurs="2"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Disjunctive-Formula">
+    <xs:complexType>
+      <xs:group ref="Formula" minOccurs="2" maxOccurs="2"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Conditional-Formula">
+    <xs:complexType>
+      <xs:group ref="Formula" minOccurs="2" maxOccurs="2"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Biconditional-Formula">
+    <xs:complexType>
+      <xs:group ref="Formula" minOccurs="2" maxOccurs="2"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="FlexaryConjunctive-Formula">
+    <xs:complexType>
+      <xs:group ref="Formula" minOccurs="2" maxOccurs="2"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="FlexaryDisjunctive-Formula">
+    <xs:complexType>
+      <xs:group ref="Formula" minOccurs="2" maxOccurs="2"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Existential-Quantifier-Formula">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variable-Segments"/>
+	<xs:element ref="Scope"/>
+      </xs:sequence>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Universal-Quantifier-Formula">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variable-Segments"/>
+	<xs:element ref="Restriction" minOccurs="0"/>
+	<xs:element ref="Scope"/>
+      </xs:sequence>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Contradiction">
+    <xs:complexType>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Thesis">
+    <xs:complexType>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <!-- Terms -->
+  
+  <xs:group name="Term">
+    <xs:choice>
+      <xs:element ref="Aggregate-Term"/>
+      <xs:element ref="Circumfix-Term"/>
+      <xs:element ref="Forgetful-Functor-Term"/>
+      <xs:element ref="Fraenkel-Term"/>
+      <xs:element ref="Global-Choice-Term"/>
+      <xs:element ref="Infix-Term"/>
+      <xs:element ref="Internal-Selector-Term"/>
+      <xs:element ref="it-Term"/>
+      <xs:element ref="Numeral-Term"/>
+      <xs:element ref="Private-Functor-Term"/>
+      <xs:element ref="Qualification-Term"/>
+      <xs:element ref="Selector-Term"/>
+      <xs:element ref="Simple-Fraenkel-Term"/>
+      <xs:element ref="Simple-Term"/>
+    </xs:choice>
+  </xs:group>
+  
+  <xs:element name="Aggregate-Term">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Arguments"/>
+      </xs:sequence>
+      <xs:attribute ref="nr"/>
+      <xs:attribute ref="formatnr"/>
+      <xs:attribute ref="patternnr"/>
+      <xs:attribute ref="absolutepatternMMLId"/>
+      <xs:attribute ref="spelling"/>
+      <xs:attribute ref="sort"/>
+      <xs:attribute ref="constrnr"/>
+      <xs:attribute ref="absoluteconstrMMLId"/>
+      <xs:attribute ref="position"/>
+      <xs:attribute ref="absoluteorigconstrMMLId"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Circumfix-Term">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Right-Circumflex-Symbol"/>
+	<xs:element ref="Arguments"/>
+      </xs:sequence>
+      <xs:attribute ref="bracketed"/>
+      <xs:attribute ref="nr"/>
+      <xs:attribute ref="formatnr"/>
+      <xs:attribute ref="patternnr"/>
+      <xs:attribute ref="absolutepatternMMLId"/>
+      <xs:attribute ref="spelling"/>
+      <xs:attribute ref="sort"/>
+      <xs:attribute ref="constrnr"/>
+      <xs:attribute ref="absoluteconstrMMLId"/>
+      <xs:attribute ref="originalnr"/>
+      <xs:attribute ref="position"/>
+      <xs:attribute ref="absoluteorigconstrMMLId"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Forgetful-Functor-Term">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="Term"/>
+      </xs:sequence>
+      <xs:attribute ref="nr"/>
+      <xs:attribute ref="formatnr"/>
+      <xs:attribute ref="patternnr"/>
+      <xs:attribute ref="absolutepatternMMLId"/>
+      <xs:attribute ref="spelling"/>
+      <xs:attribute ref="sort"/>
+      <xs:attribute ref="constrnr"/>
+      <xs:attribute ref="absoluteconstrMMLId"/>
+      <xs:attribute ref="position"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Fraenkel-Term">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variable-Segments"/>
+	<xs:group ref="Term"/>
+	<xs:group ref="Formula"/>
+      </xs:sequence>
+      <xs:attribute ref="sort" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Global-Choice-Term">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="Type"/>
+      </xs:sequence>
+      <xs:attribute ref="sort" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Infix-Term">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Arguments"/>
+      </xs:sequence>
+      <xs:attribute ref="nr" use="required"/>
+      <xs:attribute ref="formatnr" use="required"/>
+      <xs:attribute ref="patternnr" use="required"/>
+      <xs:attribute ref="absolutepatternMMLId" use="required"/>
+      <xs:attribute ref="leftargscount" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="sort" use="required"/>
+      <xs:attribute ref="constrnr" use="required"/>
+      <xs:attribute ref="absoluteconstrMMLId" use="required"/>
+      <xs:attribute ref="originalnr" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
+      <xs:attribute ref="absoluteorigconstrMMLId"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Internal-Selector-Term">
+    <xs:complexType>
+      <xs:attribute ref="nr" use="required"/>
+      <xs:attribute ref="sort" use="required"/>
+      <xs:attribute ref="formatnr" use="required"/>
+      <xs:attribute ref="absolutenr" use="required"/>
+      <xs:attribute ref="varnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="it-Term">
+    <xs:complexType>
+      <xs:attribute ref="sort" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Numeral-Term">
+    <xs:complexType>
+      <xs:attribute ref="bracketed"/>
+      <xs:attribute ref="number" use="required"/>
+      <xs:attribute ref="sort" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Private-Functor-Term">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Arguments"/>
+      </xs:sequence>
+      <xs:attribute ref="bracketed"/>
+      <xs:attribute ref="idnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="sort" use="required"/>
+      <xs:attribute ref="serialnr" use="required"/>
+      <xs:attribute ref="nr" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Qualification-Term">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="Term"/>
+	<xs:group ref="Type"/>
+      </xs:sequence>
+      <xs:attribute ref="bracketed"/>
+      <xs:attribute ref="sort" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Selector-Term">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="Term"/>
+      </xs:sequence>
+      <xs:attribute ref="bracketed"/>
+      <xs:attribute ref="nr"/>
+      <xs:attribute ref="formatnr"/>
+      <xs:attribute ref="patternnr"/>
+      <xs:attribute ref="absolutepatternMMLId"/>
+      <xs:attribute ref="spelling"/>
+      <xs:attribute ref="sort"/>
+      <xs:attribute ref="constrnr"/>
+      <xs:attribute ref="absoluteconstrMMLId"/>
+      <xs:attribute ref="originalnr"/>
+      <xs:attribute ref="position"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Simple-Fraenkel-Term">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variable-Segments"/>
+	<xs:group ref="Term"/>
+      </xs:sequence>
+      <xs:attribute ref="sort" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Simple-Term">
+    <xs:complexType>
+      <xs:attribute ref="idnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="origin" use="required"/>
+      <xs:attribute ref="sort" use="required"/>
+      <xs:attribute ref="serialnr" use="required"/>
+      <xs:attribute ref="varnr" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <!-- Types -->
+  
+  <xs:group name="Type">
+    <xs:choice>
+      <xs:element ref="Clustered-Type"/>
+      <xs:element ref="Standard-Type"/>
+      <xs:element ref="Struct-Type"/>
+    </xs:choice>
+  </xs:group>
+  
+  <xs:element name="ReservedDscr-Type">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Substitutions"/>
+	<xs:group ref="Type"/>
+      </xs:sequence>
+      <xs:attribute ref="idnr"/>
+      <xs:attribute ref="nr"/>
+      <xs:attribute ref="sort"/>
+      <xs:attribute ref="position"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Clustered-Type">
+    <xs:complexType>
+      <xs:sequence maxOccurs="1">
+	<xs:element ref="Adjective-Cluster"/>
+	<xs:group ref="Type"/>
+      </xs:sequence>
+      <xs:attribute ref="nr"/>
+      <xs:attribute ref="formatnr"/>
+      <xs:attribute ref="patternnr"/>
+      <xs:attribute ref="absolutepatternMMLId"/>
+      <xs:attribute ref="spelling"/>
+      <xs:attribute ref="sort"/>
+      <xs:attribute ref="constrnr"/>
+      <xs:attribute ref="absoluteconstrMMLId"/>
+      <xs:attribute ref="originalnr"/>
+      <xs:attribute ref="position"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Standard-Type">
+    <xs:complexType>
+      <xs:sequence maxOccurs="1">
+	<xs:element ref="Arguments"/>
+      </xs:sequence>
+      <xs:attribute ref="bracketed"/>
+      <xs:attribute ref="nr"/>
+      <xs:attribute ref="formatnr"/>
+      <xs:attribute ref="patternnr"/>
+      <xs:attribute ref="absolutepatternMMLId"/>
+      <xs:attribute ref="spelling"/>
+      <xs:attribute ref="sort"/>
+      <xs:attribute ref="constrnr"/>
+      <xs:attribute ref="absoluteconstrMMLId"/>
+      <xs:attribute ref="originalnr"/>
+      <xs:attribute ref="position"/>
+      <xs:attribute ref="absoluteorigconstrMMLId"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Struct-Type">
+    <xs:complexType>
+      <xs:sequence maxOccurs="1">
+	<xs:element ref="Arguments"/>
+      </xs:sequence>
+      <xs:attribute ref="nr"/>
+      <xs:attribute ref="formatnr"/>
+      <xs:attribute ref="patternnr"/>
+      <xs:attribute ref="absolutepatternMMLId"/>
+      <xs:attribute ref="spelling"/>
+      <xs:attribute ref="sort"/>
+      <xs:attribute ref="constrnr"/>
+      <xs:attribute ref="absoluteconstrMMLId"/>
+      <xs:attribute ref="originalnr"/>
+      <xs:attribute ref="position"/>
+      <xs:attribute ref="absoluteorigconstrMMLId"/>
+      <xs:attribute ref="bracketed"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Type-List">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+	<xs:group ref="Type"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <!-- Justifications -->
+  
+  <xs:group name="Justification">
+    <xs:choice>
+      <xs:element ref="Straightforward-Justification"/>
+      <xs:element ref="Block"/>
+    </xs:choice>
+  </xs:group>
+
+  <xs:group name="Reference">
+    <xs:choice>
+      <xs:element ref="Definition-Reference"/>
+      <xs:element ref="Local-Reference"/>
+      <xs:element ref="Scheme-Reference"/>
+      <xs:element ref="Theorem-Reference"/>
+    </xs:choice>
+  </xs:group>
+
+  <xs:element name="Straightforward-Justification">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+	<xs:element ref="Link" minOccurs="0"/>
+	<xs:group ref="Reference" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Definition-Reference">
+    <xs:complexType>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="nr" use="required"/>
+      <xs:attribute ref="MMLId" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Link">
+    <xs:complexType>
+      <xs:attribute ref="position"/>
+      <xs:attribute ref="labelnr"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Local-Reference">
+    <xs:complexType>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="idnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="serialnr" use="required"/>
+      <xs:attribute ref="labelnr" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Scheme-Reference">
+    <xs:complexType>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Theorem-Reference">
+    <xs:complexType>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="nr" use="required"/>
+      <xs:attribute ref="MMLId" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Clusters -->
+
+  <xs:element name="Attribute">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+	<xs:element ref="Arguments"/>
+      </xs:sequence>
+      <xs:attribute ref="nr" use="required"/>
+      <xs:attribute ref="formatnr" use="required"/>
+      <xs:attribute ref="patternnr" use="required"/>
+      <xs:attribute ref="absolutepatternMMLId" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="sort" use="required"/>
+      <xs:attribute ref="constrnr" use="required"/>
+      <xs:attribute ref="absoluteconstrMMLId" use="required"/>
+      <xs:attribute ref="originalnr" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="nonocc"/>
+      <xs:attribute ref="absoluteorigconstrMMLId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Adjective-Cluster">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+	<xs:element ref="Attribute"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="Registrations">
+    <xs:choice>
+      <xs:element ref="Conditional-Registration"/>
+      <xs:element ref="Existential-Registration"/>
+      <xs:element ref="Functorial-Registration"/>
+    </xs:choice>
+  </xs:group>
+
+  <xs:element name="Conditional-Registration">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Adjective-Cluster"/>
+	<xs:element ref="Adjective-Cluster"/>
+	<xs:group ref="Type"/>
+      </xs:sequence>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Existential-Registration">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Adjective-Cluster"/>
+	<xs:group ref="Type"/>
+      </xs:sequence>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Functorial-Registration">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="Term"/>
+	<xs:element ref="Adjective-Cluster"/>
+	<xs:group ref="Type" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Definitions -->
+  
+  <xs:element name="Definiens">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Label" minOccurs="1" maxOccurs="1"/>
+	<xs:group ref="Definienses"/>
+      </xs:sequence>
+      <xs:attribute ref="position"/>
+      <xs:attribute ref="kind"/>
+      <xs:attribute ref="shape"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="Definienses">
+    <xs:choice>
+      <xs:group ref="ComplexDefiniens"/>
+      <xs:group ref="SimpleDefiniensFormula"/>
+      <xs:group ref="SimpleDefiniensTerm"/>
+    </xs:choice>
+  </xs:group>
+
+  <xs:group name="ComplexDefiniens">
+    <xs:sequence>
+      <xs:element ref="Partial-Definiens-List"/>
+      <xs:element ref="Otherwise"/>
+    </xs:sequence>
+  </xs:group>
+
+  <xs:group name="SimpleDefiniensFormula">
+    <xs:choice>
+      <xs:group ref="Formula"/>
+    </xs:choice>
+  </xs:group>
+
+  <xs:group name="SimpleDefiniensTerm">
+    <xs:choice>
+      <xs:group ref="Term"/>
+    </xs:choice>
+  </xs:group>
+
+  <xs:element name="Partial-Definiens-List">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Partial-Definiens" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Partial-Definiens">
+    <xs:complexType>
+      <xs:choice>
+	<xs:group ref="Partial-Definiens-Formula"/>
+	<xs:group ref="Partial-Definiens-Term"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:group name="Partial-Definiens-Formula">
+    <xs:sequence>
+      <xs:group ref="Formula"/>
+      <xs:group ref="Formula"/>
+    </xs:sequence>
+  </xs:group>
+
+  <xs:group name="Partial-Definiens-Term">
+    <xs:sequence>
+      <xs:group ref="Term"/>
+      <xs:group ref="Formula"/>
+    </xs:sequence>
+  </xs:group>
+
+  <xs:element name="Otherwise">
+    <xs:complexType>
+      <xs:choice minOccurs="0">
+	<xs:group ref="Formula"/>
+	<xs:group ref="Term"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="Modes">
+    <xs:choice>
+      <xs:element ref="Standard-Mode"/>
+      <xs:element ref="Expandable-Mode"/>
+    </xs:choice>
+  </xs:group>
+      
+  <xs:element name="Standard-Mode">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Type-Specification" minOccurs="0"/>
+	<xs:element ref="Definiens" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Expandable-Mode">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="Type"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Notations -->
+  
+  <xs:element name="Attr-Antonym">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Attribute-Pattern"/>
+	<xs:element ref="Pattern-Shaped-Expression"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Attr-Synonym">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Attribute-Pattern"/>
+	<xs:element ref="Pattern-Shaped-Expression"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Func-Synonym">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="FunctorPatterns"/>
+	<xs:element ref="Pattern-Shaped-Expression"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Mode-Synonym">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Mode-Pattern"/>
+	<xs:element ref="Pattern-Shaped-Expression"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Pred-Antonym">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Predicate-Pattern"/>
+	<xs:element ref="Pattern-Shaped-Expression"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Pred-Synonym">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Predicate-Pattern"/>
+	<xs:element ref="Pattern-Shaped-Expression"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Pattern-Shaped-Expression">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="Pattern"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Patterns -->
+
+  <xs:group name="Pattern">
+    <xs:choice>
+      <xs:element ref="Attribute-Pattern"/>
+      <xs:element ref="CircumfixFunctor-Pattern"/>
+      <xs:element ref="InfixFunctor-Pattern"/>
+      <xs:element ref="Mode-Pattern"/>
+      <xs:element ref="Predicate-Pattern"/>
+    </xs:choice>
+  </xs:group>
+
+  <xs:element name="Attribute-Pattern">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Locus" minOccurs="1" maxOccurs="1"/>
+	<xs:element ref="Loci" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute ref="formatdes" use="required"/>
+      <xs:attribute ref="formatnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="origpatternnr"/>
+      <xs:attribute ref="absoluteorigpatternMMLId"/>
+      <xs:attribute ref="patternnr" use="required"/>
+      <xs:attribute ref="absolutepatternMMLId" use="required"/>
+      <xs:attribute ref="constr" use="required"/>
+      <xs:attribute ref="absoluteconstrMMLId" use="required"/>
+      <xs:attribute ref="origconstrnr" use="required"/>
+      <xs:attribute ref="absoluteorigconstrMMLId"/>
+      <xs:attribute ref="superfluous"/>
+      <xs:attribute ref="bracketed"/> <!-- TODO PO CO -->
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="FunctorPatterns">
+    <xs:choice>
+      <xs:element ref="CircumfixFunctor-Pattern"/>
+      <xs:element ref="InfixFunctor-Pattern"/>
+    </xs:choice>
+  </xs:group>
+  
+  <xs:element name="CircumfixFunctor-Pattern">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Right-Circumflex-Symbol" minOccurs="1" maxOccurs="1"/>
+	<xs:element ref="Loci"/>
+      </xs:sequence>
+      <xs:attribute ref="formatdes" use="required"/>
+      <xs:attribute ref="formatnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="origpatternnr"/>
+      <xs:attribute ref="absoluteorigpatternMMLId"/>
+      <xs:attribute ref="patternnr" use="required"/>
+      <xs:attribute ref="absolutepatternMMLId" use="required"/>
+      <xs:attribute ref="constr" use="required"/>
+      <xs:attribute ref="absoluteconstrMMLId" use="required"/>
+      <xs:attribute ref="origconstrnr" use="required"/>
+      <xs:attribute ref="absoluteorigconstrMMLId"/>
+      <xs:attribute ref="superfluous"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="InfixFunctor-Pattern">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Loci" minOccurs="2" maxOccurs="2"/>
+      </xs:sequence>
+      <xs:attribute ref="formatdes" use="required"/>
+      <xs:attribute ref="formatnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="origpatternnr"/>
+      <xs:attribute ref="absoluteorigpatternMMLId"/>
+      <xs:attribute ref="patternnr" use="required"/>
+      <xs:attribute ref="absolutepatternMMLId" use="required"/>
+      <xs:attribute ref="constr" use="required"/>
+      <xs:attribute ref="absoluteconstrMMLId" use="required"/>
+      <xs:attribute ref="origconstrnr" use="required"/>
+      <xs:attribute ref="absoluteorigconstrMMLId"/>
+      <xs:attribute ref="rightargsbracketed"/>
+      <xs:attribute ref="superfluous"/>
+      <xs:attribute ref="leftargsbracketed"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Mode-Pattern">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Loci"/>
+      </xs:sequence>
+      <xs:attribute ref="formatdes" use="required"/>
+      <xs:attribute ref="formatnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="origpatternnr"/>
+      <xs:attribute ref="absoluteorigpatternMMLId"/>
+      <xs:attribute ref="patternnr" use="required"/>
+      <xs:attribute ref="absolutepatternMMLId" use="required"/>
+      <xs:attribute ref="constr"/>
+      <xs:attribute ref="absoluteconstrMMLId"/>
+      <xs:attribute ref="origconstrnr"/>
+      <xs:attribute ref="absoluteorigconstrMMLId"/>
+      <xs:attribute ref="superfluous"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Predicate-Pattern">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Loci" minOccurs="2" maxOccurs="2"/>
+      </xs:sequence>
+      <xs:attribute ref="formatdes" use="required"/>
+      <xs:attribute ref="formatnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="origpatternnr"/>
+      <xs:attribute ref="absoluteorigpatternMMLId"/>
+      <xs:attribute ref="patternnr" use="required"/>
+      <xs:attribute ref="absolutepatternMMLId" use="required"/>
+      <xs:attribute ref="constr" use="required"/>
+      <xs:attribute ref="absoluteconstrMMLId" use="required"/>
+      <xs:attribute ref="origconstrnr" use="required"/>
+      <xs:attribute ref="absoluteorigconstrMMLId"/>
+      <xs:attribute ref="superfluous"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Correctness Conditions -->
+
+  <xs:element name="Correctness-Conditions">
+  </xs:element>
+  
+  <xs:group name="Correctness-Conditions-List">
+    <xs:choice>
+      <xs:element ref="coherence"/>
+      <xs:element ref="compatibility"/>
+      <xs:element ref="consistency"/>
+      <xs:element ref="existence"/>
+      <xs:element ref="reducibility"/>
+      <xs:element ref="uniqueness"/>
+    </xs:choice>
+  </xs:group>
+  
+  <xs:element name="coherence">
+  </xs:element>
+  
+  <xs:element name="compatibility">
+  </xs:element>
+  
+  <xs:element name="consistency">
+  </xs:element>
+  
+  <xs:element name="existence">
+  </xs:element>
+  
+  <xs:element name="reducibility">
+  </xs:element>
+  
+  <xs:element name="uniqueness">
+  </xs:element>
+
+  <!-- Schemes -->
+  
+  <xs:element name="Scheme-Block-Item">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Block"/>
+      </xs:sequence>
+      <xs:attribute ref="MMLId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Scheme-Head">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Scheme"/>
+	<xs:element ref="Schematic-Variables"/>
+	<xs:group ref="Formula"/>
+	<xs:element ref="Provisional-Formulas" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Scheme">
+    <xs:complexType>
+      <xs:attribute ref="idnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="nr" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Schematic-Variables">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="SchematicSegments" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="SchematicSegments">
+    <xs:choice>
+      <xs:element ref="Functor-Segment"/>
+      <xs:element ref="Predicate-Segment"/>
+    </xs:choice>
+  </xs:group>
+  
+  <xs:element name="Functor-Segment">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variables"/>
+	<xs:element ref="Type-List"/>
+	<xs:element ref="Type-Specification"/>
+      </xs:sequence>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Predicate-Segment">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variables"/>
+	<xs:element ref="Type-List"/>
+      </xs:sequence>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Provisional-Formulas">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+	<xs:element ref="Proposition"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Structures -->
+  
+  <xs:element name="Structure-Definition">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Ancestors"/>
+	<xs:element ref="Structure-Pattern"/>
+	<xs:element ref="Field-Segments"/>
+	<xs:element ref="Structure-Patterns-Rendering"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="AggregateFunctor-Pattern">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Loci" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute ref="formatdes" use="required"/>
+      <xs:attribute ref="formatnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="patternnr" use="required"/>
+      <xs:attribute ref="absolutepatternMMLId" use="required"/>
+      <xs:attribute ref="constr" use="required"/>
+      <xs:attribute ref="absoluteconstrMMLId" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Ancestors">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+	<xs:element ref="Struct-Type"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Field-Segments">
+    <xs:complexType>
+      <xs:sequence minOccurs="1" maxOccurs="unbounded">
+	<xs:element ref="Field-Segment"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Field-Segment">
+    <xs:complexType>
+      <xs:sequence minOccurs="1" maxOccurs="unbounded">
+	<xs:element ref="Selectors"/>
+	<xs:group ref="Type"/>
+      </xs:sequence>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ForgetfulFunctor-Pattern">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Loci" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute ref="formatdes" use="required"/>
+      <xs:attribute ref="formatnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="patternnr" use="required"/>
+      <xs:attribute ref="absolutepatternMMLId" use="required"/>
+      <xs:attribute ref="constr" use="required"/>
+      <xs:attribute ref="absoluteconstrMMLId" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="SelectorFunctor-Pattern">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Loci" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute ref="formatdes" use="required"/>
+      <xs:attribute ref="formatnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="patternnr" use="required"/>
+      <xs:attribute ref="absolutepatternMMLId" use="required"/>
+      <xs:attribute ref="constr" use="required"/>
+      <xs:attribute ref="absoluteconstrMMLId" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Selectors">
+    <xs:complexType>
+      <xs:sequence minOccurs="1" maxOccurs="unbounded">
+	<xs:element ref="Selector"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Selector">
+    <xs:complexType>
+      <xs:sequence minOccurs="1" maxOccurs="unbounded">
+	<xs:element ref="Locus"/>
+      </xs:sequence>
+      <xs:attribute ref="nr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Selectors-List">
+    <xs:complexType>
+      <xs:sequence minOccurs="1" maxOccurs="unbounded">
+	<xs:element ref="SelectorFunctor-Pattern"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Strict-Pattern">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Locus" minOccurs="1" maxOccurs="1"/>
+	<xs:element ref="Loci" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute ref="formatdes" use="required"/>
+      <xs:attribute ref="formatnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="origpatternnr"/>
+      <xs:attribute ref="absoluteorigpatternMMLId"/>
+      <xs:attribute ref="patternnr" use="required"/>
+      <xs:attribute ref="absolutepatternMMLId" use="required"/>
+      <xs:attribute ref="constr" use="required"/>
+      <xs:attribute ref="absoluteconstrMMLId" use="required"/>
+      <xs:attribute ref="origconstrnr" use="required"/>
+      <xs:attribute ref="absoluteorigconstrMMLId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Structure-Pattern">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Loci" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute ref="formatdes" use="required"/>
+      <xs:attribute ref="formatnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="patternnr" use="required"/>
+      <xs:attribute ref="absolutepatternMMLId" use="required"/>
+      <xs:attribute ref="constr" use="required"/>
+      <xs:attribute ref="absoluteconstrMMLId" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Structure-Patterns-Rendering">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="AggregateFunctor-Pattern"/>
+	<xs:element ref="ForgetfulFunctor-Pattern"/>
+	<xs:element ref="Strict-Pattern"/>
+	<xs:element ref="Selectors-List"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Misc -->
+  
+  <xs:element name="Arguments">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+	<xs:group ref="Term"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Block">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+	<xs:element ref="Item"/>
+      </xs:sequence>
+      <xs:attribute ref="kind" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="endposition" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="DiffuseStatementExtra">
+    <xs:sequence>
+      <xs:element ref="Diffuse-Statement" minOccurs="1" maxOccurs="1"/>
+      <xs:element ref="Block" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:group>
+
+  <xs:element name="Diffuse-Statement">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Label"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Equalities-List">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="Equalities"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="Equalities">
+    <xs:choice>
+      <xs:element ref="Equality-To-Itself"/>
+    </xs:choice>
+  </xs:group>
+
+  <xs:element name="Equality-To-Itself">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variable"/>
+	<xs:group ref="Term"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Equating">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variable"/>
+	<xs:group ref="Term"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:group name="Exemplifications">
+    <xs:choice>
+      <xs:element ref="ImplicitExemplification"/>
+    </xs:choice>
+  </xs:group>
+
+  <xs:element name="Explicitly-Qualified-Segment">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variables"/>
+	<xs:group ref="Type"/>
+      </xs:sequence>
+      <xs:attribute ref="position"/>
+    </xs:complexType>
+  </xs:element>
+    
+  <xs:element name="Free-Variable-Segment">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variable"/>
+	<xs:element ref="ReservedDscr-Type"/>
+      </xs:sequence>
+      <xs:attribute ref="idnr"/>
+      <xs:attribute ref="spelling"/>
+      <xs:attribute ref="position"/>
+      <xs:attribute ref="origin"/>
+      <xs:attribute ref="kind"/>
+      <xs:attribute ref="serialnr"/>
+      <xs:attribute ref="varnr"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Implicitly-Qualified-Segment">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variable"/>
+	<xs:element ref="ReservedDscr-Type"/>
+      </xs:sequence>
+      <xs:attribute ref="position"/>
+    </xs:complexType>
+  </xs:element>
+    
+  <xs:element name="ImplicitExemplification">
+    <xs:complexType>
+      <xs:group ref="Term"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="JustifiedProposition">
+    <xs:sequence>
+      <xs:element ref="Proposition"/>
+      <xs:group ref="Justification"/>
+    </xs:sequence>
+  </xs:group>
+  
+  <xs:element name="Label">
+    <xs:complexType>
+      <xs:attribute ref="idnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="serialnr" use="required"/>
+      <xs:attribute ref="labelnr" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Loci">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Locus" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Loci-Equalities">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Loci-Equality" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Loci-Equality">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Locus" minOccurs="2" maxOccurs="2"/>
+      </xs:sequence>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Locus">
+    <xs:complexType>
+      <xs:attribute ref="idnr" use="required"/>
+      <xs:attribute ref="varidkind" use="required"/>
+      <xs:attribute ref="spelling"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="origin" use="required"/>
+      <xs:attribute ref="kind" use="required"/>
+      <xs:attribute ref="serialnr" use="required"/>
+      <xs:attribute ref="varnr" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Proposition">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Label" minOccurs="1" maxOccurs="1"/>
+	<xs:group ref="Formula" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute ref="position" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Qualified-Segments">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+	<xs:group ref="Segment"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Properties">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="Type" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute ref="property"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Redefine">
+    <xs:complexType>
+      <xs:attribute ref="occurs"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Reservation-Segment">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variables"/>
+	<xs:element ref="Variable-Segments"/>
+	<xs:group ref="Type"/>
+      </xs:sequence>
+      <xs:attribute ref="position"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Restriction">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+	<xs:group ref="Formula"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+    
+  <xs:element name="Right-Circumflex-Symbol">
+    <xs:complexType>
+      <xs:attribute ref="nr"/>
+      <xs:attribute ref="formatnr"/>
+      <xs:attribute ref="spelling"/>
+      <xs:attribute ref="position"/>
+    </xs:complexType>
+  </xs:element>
+    
+  <xs:element name="Scope">
+    <xs:complexType>
+      <xs:sequence minOccurs="1">
+	<xs:group ref="Formula"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="Segment">
+    <xs:choice>
+      <xs:element ref="Implicitly-Qualified-Segment"/>
+      <xs:element ref="Explicitly-Qualified-Segment"/>
+      <xs:element ref="Free-Variable-Segment"/>
+    </xs:choice>
+  </xs:group>
+  
+  <xs:group name="Statements">
+    <xs:choice>
+      <xs:group ref="DiffuseStatementExtra"/>
+      <xs:group ref="JustifiedProposition"/>
+    </xs:choice>
+  </xs:group>
+
+  <xs:element name="Substitution">
+    <xs:complexType>
+      <xs:attribute ref="freevarnr"/>
+      <xs:attribute ref="kind"/>
+      <xs:attribute ref="varnr"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Substitutions">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Substitution" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Type-Specification">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="Type"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Canceled">
+    <xs:complexType>
+      <xs:attribute ref="position"/>
+      <xs:attribute ref="kind"/>
+      <xs:attribute ref="amount"/>
+      <xs:attribute ref="MMLId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Notion-Name">
+    <xs:complexType>
+      <xs:attribute ref="position"/>
+      <xs:attribute ref="inscription"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Unknown">
+    <xs:complexType>
+      <xs:attribute ref="position"/>
+      <xs:attribute ref="inscription"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Variable">
+    <xs:complexType>
+      <xs:attribute ref="idnr"/>
+      <xs:attribute ref="spelling"/>
+      <xs:attribute ref="position"/>
+      <xs:attribute ref="origin"/>
+      <xs:attribute ref="kind"/>
+      <xs:attribute ref="serialnr"/>
+      <xs:attribute ref="varnr"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Variables">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+	<xs:element ref="Variable"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Variable-Segments">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+	<xs:group ref="Segment"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+    
+</xs:schema>
