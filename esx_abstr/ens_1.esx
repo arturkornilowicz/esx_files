@@ -7,7 +7,7 @@
   <Reservation>
    <Reservation-Segment position="33\9">
     <Variables>
-     <Variable idnr="31" spelling="V" position="33\9" kind="ReservedVar" serialnr="1" varnr="0"/>
+     <Variable idnr="31" spelling="V" position="33\9" varintro="itReservation" kind="ReservedVar" serialnr="1" varnr="0"/>
     </Variables>
     <Variable-Segments/>
     <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -23,14 +23,14 @@
    </Reservation-Segment>
    <Reservation-Segment position="34\3">
     <Variables>
-     <Variable idnr="32" spelling="A" position="34\3" kind="ReservedVar" serialnr="2" varnr="0"/>
-     <Variable idnr="33" spelling="B" position="34\5" kind="ReservedVar" serialnr="3" varnr="0"/>
-     <Variable idnr="34" spelling="A9" position="34\8" kind="ReservedVar" serialnr="4" varnr="0"/>
-     <Variable idnr="35" spelling="B9" position="34\11" kind="ReservedVar" serialnr="5" varnr="0"/>
+     <Variable idnr="32" spelling="A" position="34\3" varintro="itReservation" kind="ReservedVar" serialnr="2" varnr="0"/>
+     <Variable idnr="33" spelling="B" position="34\5" varintro="itReservation" kind="ReservedVar" serialnr="3" varnr="0"/>
+     <Variable idnr="34" spelling="A9" position="34\8" varintro="itReservation" kind="ReservedVar" serialnr="4" varnr="0"/>
+     <Variable idnr="35" spelling="B9" position="34\11" varintro="itReservation" kind="ReservedVar" serialnr="5" varnr="0"/>
     </Variables>
     <Variable-Segments>
      <Free-Variable-Segment position="33\9">
-      <Variable idnr="31" spelling="V" position="33\9" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+      <Variable idnr="31" spelling="V" position="33\9" varintro="InsideReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
       <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="33\9">
        <Substitutions/>
        <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -61,7 +61,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="37\7">
-        <Variable idnr="31" spelling="V" position="37\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="37\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="37\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -100,7 +100,7 @@
          <Simple-Fraenkel-Term sort="Simple-Fraenkel-Term" position="40\22">
           <Variable-Segments>
            <Free-Variable-Segment position="40\22">
-            <Variable idnr="32" spelling="A" position="40\22" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="1"/>
+            <Variable idnr="32" spelling="A" position="40\22" varintro="DefaultFraenkel" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="1"/>
             <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="40\22">
              <Substitutions>
               <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -113,7 +113,7 @@
             </ReservedDscr-Type>
            </Free-Variable-Segment>
            <Free-Variable-Segment position="40\22">
-            <Variable idnr="33" spelling="B" position="40\22" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="2"/>
+            <Variable idnr="33" spelling="B" position="40\22" varintro="DefaultFraenkel" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="2"/>
             <ReservedDscr-Type idnr="33" nr="2" sort="ReservedDscr-Type" position="40\22">
              <Substitutions>
               <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -148,7 +148,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="44\7">
-        <Variable idnr="31" spelling="V" position="44\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="44\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="44\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -195,7 +195,7 @@
     <Universal-Quantifier-Formula position="49\5">
      <Variable-Segments>
       <Free-Variable-Segment position="49\5">
-       <Variable idnr="31" spelling="V" position="49\5" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="49\5" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="49\5">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -216,7 +216,7 @@
        <Variable-Segments>
         <Explicitly-Qualified-Segment position="49\5">
          <Variables>
-          <Variable idnr="36" spelling="f" position="49\7" kind="BoundVar" serialnr="3" varnr="2"/>
+          <Variable idnr="36" spelling="f" position="49\7" varintro="Quantifier" kind="BoundVar" serialnr="3" varnr="2"/>
          </Variables>
          <Standard-Type nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="49\17">
           <Arguments/>
@@ -238,7 +238,7 @@
          <Existential-Quantifier-Formula position="49\44">
           <Variable-Segments>
            <Implicitly-Qualified-Segment position="49\46">
-            <Variable idnr="32" spelling="A" position="49\46" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="3"/>
+            <Variable idnr="32" spelling="A" position="49\46" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="3"/>
             <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="49\46">
              <Substitutions>
               <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -251,7 +251,7 @@
             </ReservedDscr-Type>
            </Implicitly-Qualified-Segment>
            <Implicitly-Qualified-Segment position="49\48">
-            <Variable idnr="33" spelling="B" position="49\48" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="4"/>
+            <Variable idnr="33" spelling="B" position="49\48" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="4"/>
             <ReservedDscr-Type idnr="33" nr="2" sort="ReservedDscr-Type" position="49\48">
              <Substitutions>
               <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -312,7 +312,7 @@
     <Universal-Quantifier-Formula position="53\15">
      <Variable-Segments>
       <Free-Variable-Segment position="53\15">
-       <Variable idnr="31" spelling="V" position="53\15" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="53\15" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="53\15">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -332,7 +332,7 @@
       <Universal-Quantifier-Formula position="53\15">
        <Variable-Segments>
         <Free-Variable-Segment position="53\15">
-         <Variable idnr="32" spelling="A" position="53\15" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
+         <Variable idnr="32" spelling="A" position="53\15" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
          <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="53\15">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -349,7 +349,7 @@
         <Universal-Quantifier-Formula position="53\15">
          <Variable-Segments>
           <Free-Variable-Segment position="53\15">
-           <Variable idnr="33" spelling="B" position="53\15" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="3"/>
+           <Variable idnr="33" spelling="B" position="53\15" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="3"/>
            <ReservedDscr-Type idnr="33" nr="2" sort="ReservedDscr-Type" position="53\15">
             <Substitutions>
              <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -395,7 +395,7 @@
     <Universal-Quantifier-Formula position="56\5">
      <Variable-Segments>
       <Free-Variable-Segment position="56\5">
-       <Variable idnr="31" spelling="V" position="56\5" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="56\5" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="56\5">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -416,7 +416,7 @@
        <Variable-Segments>
         <Explicitly-Qualified-Segment position="56\5">
          <Variables>
-          <Variable idnr="37" spelling="W" position="56\7" kind="BoundVar" serialnr="7" varnr="2"/>
+          <Variable idnr="37" spelling="W" position="56\7" varintro="Quantifier" kind="BoundVar" serialnr="7" varnr="2"/>
          </Variables>
          <Clustered-Type sort="Clustered-Type" position="56\27">
           <Adjective-Cluster>
@@ -459,12 +459,12 @@
   <Reservation>
    <Reservation-Segment position="58\9">
     <Variables>
-     <Variable idnr="36" spelling="f" position="58\9" kind="ReservedVar" serialnr="6" varnr="0"/>
-     <Variable idnr="38" spelling="f9" position="58\12" kind="ReservedVar" serialnr="7" varnr="0"/>
+     <Variable idnr="36" spelling="f" position="58\9" varintro="itReservation" kind="ReservedVar" serialnr="6" varnr="0"/>
+     <Variable idnr="38" spelling="f9" position="58\12" varintro="itReservation" kind="ReservedVar" serialnr="7" varnr="0"/>
     </Variables>
     <Variable-Segments>
      <Free-Variable-Segment position="33\9">
-      <Variable idnr="31" spelling="V" position="33\9" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+      <Variable idnr="31" spelling="V" position="33\9" varintro="InsideReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
       <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="33\9">
        <Substitutions/>
        <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -499,7 +499,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="61\7">
-        <Variable idnr="31" spelling="V" position="61\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="61\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="61\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -536,7 +536,7 @@
        <Fraenkel-Term sort="Fraenkel-Term" position="65\9">
         <Variable-Segments>
          <Free-Variable-Segment position="65\9">
-          <Variable idnr="32" spelling="A" position="65\9" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="1"/>
+          <Variable idnr="32" spelling="A" position="65\9" varintro="DefaultFraenkel" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="1"/>
           <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="65\9">
            <Substitutions>
             <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -549,7 +549,7 @@
           </ReservedDscr-Type>
          </Free-Variable-Segment>
          <Free-Variable-Segment position="65\9">
-          <Variable idnr="33" spelling="B" position="65\9" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="2"/>
+          <Variable idnr="33" spelling="B" position="65\9" varintro="DefaultFraenkel" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="2"/>
           <ReservedDscr-Type idnr="33" nr="2" sort="ReservedDscr-Type" position="65\9">
            <Substitutions>
             <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -562,7 +562,7 @@
           </ReservedDscr-Type>
          </Free-Variable-Segment>
          <Free-Variable-Segment position="65\9">
-          <Variable idnr="36" spelling="f" position="65\9" origin="ReservedVar" kind="BoundVar" serialnr="6" varnr="3"/>
+          <Variable idnr="36" spelling="f" position="65\9" varintro="DefaultFraenkel" origin="ReservedVar" kind="BoundVar" serialnr="6" varnr="3"/>
           <ReservedDscr-Type idnr="36" nr="3" sort="ReservedDscr-Type" position="65\9">
            <Substitutions>
             <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -635,7 +635,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="69\7">
-        <Variable idnr="31" spelling="V" position="69\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="69\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="69\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -676,15 +676,15 @@
   <Reservation>
    <Reservation-Segment position="73\9">
     <Variables>
-     <Variable idnr="39" spelling="m" position="73\9" kind="ReservedVar" serialnr="8" varnr="0"/>
-     <Variable idnr="40" spelling="m1" position="73\12" kind="ReservedVar" serialnr="9" varnr="0"/>
-     <Variable idnr="41" spelling="m2" position="73\15" kind="ReservedVar" serialnr="10" varnr="0"/>
-     <Variable idnr="42" spelling="m3" position="73\18" kind="ReservedVar" serialnr="11" varnr="0"/>
-     <Variable idnr="43" spelling="m9" position="73\21" kind="ReservedVar" serialnr="12" varnr="0"/>
+     <Variable idnr="39" spelling="m" position="73\9" varintro="itReservation" kind="ReservedVar" serialnr="8" varnr="0"/>
+     <Variable idnr="40" spelling="m1" position="73\12" varintro="itReservation" kind="ReservedVar" serialnr="9" varnr="0"/>
+     <Variable idnr="41" spelling="m2" position="73\15" varintro="itReservation" kind="ReservedVar" serialnr="10" varnr="0"/>
+     <Variable idnr="42" spelling="m3" position="73\18" varintro="itReservation" kind="ReservedVar" serialnr="11" varnr="0"/>
+     <Variable idnr="43" spelling="m9" position="73\21" varintro="itReservation" kind="ReservedVar" serialnr="12" varnr="0"/>
     </Variables>
     <Variable-Segments>
      <Free-Variable-Segment position="33\9">
-      <Variable idnr="31" spelling="V" position="33\9" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+      <Variable idnr="31" spelling="V" position="33\9" varintro="InsideReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
       <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="33\9">
        <Substitutions/>
        <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -719,7 +719,7 @@
     <Universal-Quantifier-Formula position="76\4">
      <Variable-Segments>
       <Free-Variable-Segment position="76\4">
-       <Variable idnr="31" spelling="V" position="76\4" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="76\4" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="76\4">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -739,7 +739,7 @@
       <Universal-Quantifier-Formula position="76\4">
        <Variable-Segments>
         <Free-Variable-Segment position="76\4">
-         <Variable idnr="39" spelling="m" position="76\4" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="2"/>
+         <Variable idnr="39" spelling="m" position="76\4" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="2"/>
          <ReservedDscr-Type idnr="39" nr="4" sort="ReservedDscr-Type" position="76\4">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -760,7 +760,7 @@
         <Existential-Quantifier-Formula position="76\4">
          <Variable-Segments>
           <Implicitly-Qualified-Segment position="76\6">
-           <Variable idnr="36" spelling="f" position="76\6" origin="ReservedVar" kind="BoundVar" serialnr="6" varnr="3"/>
+           <Variable idnr="36" spelling="f" position="76\6" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="6" varnr="3"/>
            <ReservedDscr-Type idnr="36" nr="3" sort="ReservedDscr-Type" position="76\6">
             <Substitutions>
              <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -777,7 +777,7 @@
            </ReservedDscr-Type>
           </Implicitly-Qualified-Segment>
           <Implicitly-Qualified-Segment position="76\8">
-           <Variable idnr="32" spelling="A" position="76\8" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="4"/>
+           <Variable idnr="32" spelling="A" position="76\8" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="4"/>
            <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="76\8">
             <Substitutions>
              <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -790,7 +790,7 @@
            </ReservedDscr-Type>
           </Implicitly-Qualified-Segment>
           <Implicitly-Qualified-Segment position="76\10">
-           <Variable idnr="33" spelling="B" position="76\10" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="5"/>
+           <Variable idnr="33" spelling="B" position="76\10" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="5"/>
            <ReservedDscr-Type idnr="33" nr="2" sort="ReservedDscr-Type" position="76\10">
             <Substitutions>
              <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -870,7 +870,7 @@
     <Universal-Quantifier-Formula position="79\5">
      <Variable-Segments>
       <Free-Variable-Segment position="79\5">
-       <Variable idnr="31" spelling="V" position="79\5" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="79\5" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="79\5">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -890,7 +890,7 @@
       <Universal-Quantifier-Formula position="79\5">
        <Variable-Segments>
         <Free-Variable-Segment position="79\5">
-         <Variable idnr="32" spelling="A" position="79\5" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
+         <Variable idnr="32" spelling="A" position="79\5" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
          <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="79\5">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -907,7 +907,7 @@
         <Universal-Quantifier-Formula position="79\5">
          <Variable-Segments>
           <Free-Variable-Segment position="79\5">
-           <Variable idnr="33" spelling="B" position="79\5" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="3"/>
+           <Variable idnr="33" spelling="B" position="79\5" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="3"/>
            <ReservedDscr-Type idnr="33" nr="2" sort="ReservedDscr-Type" position="79\5">
             <Substitutions>
              <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -925,7 +925,7 @@
            <Variable-Segments>
             <Explicitly-Qualified-Segment position="79\5">
              <Variables>
-              <Variable idnr="36" spelling="f" position="79\7" kind="BoundVar" serialnr="14" varnr="4"/>
+              <Variable idnr="36" spelling="f" position="79\7" varintro="Quantifier" kind="BoundVar" serialnr="14" varnr="4"/>
              </Variables>
              <Standard-Type nr="7" formatnr="86" patternnr="8" absolutepatternMMLId="FUNCT_2:1" spelling="Function" sort="Expandable-Type" position="79\22">
               <Arguments>
@@ -997,7 +997,7 @@
     <Universal-Quantifier-Formula position="82\11">
      <Variable-Segments>
       <Free-Variable-Segment position="82\11">
-       <Variable idnr="31" spelling="V" position="82\11" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="82\11" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="82\11">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -1053,7 +1053,7 @@
     <Universal-Quantifier-Formula position="85\5">
      <Variable-Segments>
       <Free-Variable-Segment position="85\5">
-       <Variable idnr="31" spelling="V" position="85\5" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="85\5" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="85\5">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -1074,7 +1074,7 @@
        <Variable-Segments>
         <Explicitly-Qualified-Segment position="85\5">
          <Variables>
-          <Variable idnr="37" spelling="W" position="85\7" kind="BoundVar" serialnr="16" varnr="2"/>
+          <Variable idnr="37" spelling="W" position="85\7" varintro="Quantifier" kind="BoundVar" serialnr="16" varnr="2"/>
          </Variables>
          <Clustered-Type sort="Clustered-Type" position="85\27">
           <Adjective-Cluster>
@@ -1121,7 +1121,7 @@
       <Qualified-Segments>
        <Explicitly-Qualified-Segment position="88\7">
         <Variables>
-         <Variable idnr="31" spelling="V" position="88\7" kind="Constant" serialnr="18" varnr="1"/>
+         <Variable idnr="31" spelling="V" position="88\7" varintro="itLociDeclaration" kind="Constant" serialnr="18" varnr="1"/>
         </Variables>
         <Clustered-Type sort="Clustered-Type" position="88\24">
          <Adjective-Cluster>
@@ -1136,7 +1136,7 @@
        </Explicitly-Qualified-Segment>
        <Explicitly-Qualified-Segment position="88\27">
         <Variables>
-         <Variable idnr="39" spelling="m" position="88\27" kind="Constant" serialnr="19" varnr="2"/>
+         <Variable idnr="39" spelling="m" position="88\27" varintro="itLociDeclaration" kind="Constant" serialnr="19" varnr="2"/>
         </Variables>
         <Standard-Type nr="3" formatnr="39" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="88\38">
          <Arguments>
@@ -1183,7 +1183,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="93\7">
-        <Variable idnr="31" spelling="V" position="93\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="93\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="93\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -1199,7 +1199,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="93\9">
-        <Variable idnr="39" spelling="m" position="93\9" origin="ReservedVar" kind="Constant" serialnr="8" varnr="2"/>
+        <Variable idnr="39" spelling="m" position="93\9" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="8" varnr="2"/>
         <ReservedDscr-Type idnr="39" nr="4" sort="ReservedDscr-Type" position="93\9">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -1288,7 +1288,7 @@
     <Universal-Quantifier-Formula position="104\5">
      <Variable-Segments>
       <Free-Variable-Segment position="104\5">
-       <Variable idnr="31" spelling="V" position="104\5" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="104\5" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="104\5">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -1308,7 +1308,7 @@
       <Universal-Quantifier-Formula position="104\5">
        <Variable-Segments>
         <Free-Variable-Segment position="104\5">
-         <Variable idnr="39" spelling="m" position="104\5" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="2"/>
+         <Variable idnr="39" spelling="m" position="104\5" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="2"/>
          <ReservedDscr-Type idnr="39" nr="4" sort="ReservedDscr-Type" position="104\5">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -1371,7 +1371,7 @@
     <Universal-Quantifier-Formula position="107\31">
      <Variable-Segments>
       <Free-Variable-Segment position="107\31">
-       <Variable idnr="31" spelling="V" position="107\31" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="107\31" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="107\31">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -1391,7 +1391,7 @@
       <Universal-Quantifier-Formula position="107\31">
        <Variable-Segments>
         <Free-Variable-Segment position="107\31">
-         <Variable idnr="39" spelling="m" position="107\31" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="2"/>
+         <Variable idnr="39" spelling="m" position="107\31" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="2"/>
          <ReservedDscr-Type idnr="39" nr="4" sort="ReservedDscr-Type" position="107\31">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -1473,7 +1473,7 @@
     <Universal-Quantifier-Formula position="110\5">
      <Variable-Segments>
       <Free-Variable-Segment position="110\5">
-       <Variable idnr="31" spelling="V" position="110\5" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="110\5" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="110\5">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -1494,7 +1494,7 @@
        <Variable-Segments>
         <Explicitly-Qualified-Segment position="110\5">
          <Variables>
-          <Variable idnr="36" spelling="f" position="110\7" kind="BoundVar" serialnr="22" varnr="2"/>
+          <Variable idnr="36" spelling="f" position="110\7" varintro="Quantifier" kind="BoundVar" serialnr="22" varnr="2"/>
          </Variables>
          <Standard-Type nr="7" formatnr="77" patternnr="7" absolutepatternMMLId="FUNCT_1:1" spelling="Function" sort="Expandable-Type" position="110\22">
           <Arguments/>
@@ -1502,8 +1502,8 @@
         </Explicitly-Qualified-Segment>
         <Explicitly-Qualified-Segment position="110\23">
          <Variables>
-          <Variable idnr="32" spelling="A" position="110\25" kind="BoundVar" serialnr="23" varnr="3"/>
-          <Variable idnr="33" spelling="B" position="110\27" kind="BoundVar" serialnr="24" varnr="4"/>
+          <Variable idnr="32" spelling="A" position="110\25" varintro="Quantifier" kind="BoundVar" serialnr="23" varnr="3"/>
+          <Variable idnr="33" spelling="B" position="110\27" varintro="Quantifier" kind="BoundVar" serialnr="24" varnr="4"/>
          </Variables>
          <Standard-Type nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="110\37">
           <Arguments/>
@@ -1579,7 +1579,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="114\7">
-        <Variable idnr="31" spelling="V" position="114\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="114\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="114\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -1595,7 +1595,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="114\9">
-        <Variable idnr="32" spelling="A" position="114\9" origin="ReservedVar" kind="Constant" serialnr="2" varnr="2"/>
+        <Variable idnr="32" spelling="A" position="114\9" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="2" varnr="2"/>
         <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="114\9">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -1662,7 +1662,7 @@
     <Universal-Quantifier-Formula position="121\36">
      <Variable-Segments>
       <Free-Variable-Segment position="121\36">
-       <Variable idnr="31" spelling="V" position="121\36" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="121\36" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="121\36">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -1682,7 +1682,7 @@
       <Universal-Quantifier-Formula position="121\36">
        <Variable-Segments>
         <Free-Variable-Segment position="121\36">
-         <Variable idnr="32" spelling="A" position="121\36" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
+         <Variable idnr="32" spelling="A" position="121\36" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
          <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="121\36">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -1761,7 +1761,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="124\7">
-        <Variable idnr="31" spelling="V" position="124\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="124\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="124\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -1777,7 +1777,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="124\10">
-        <Variable idnr="40" spelling="m1" position="124\10" origin="ReservedVar" kind="Constant" serialnr="9" varnr="2"/>
+        <Variable idnr="40" spelling="m1" position="124\10" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="9" varnr="2"/>
         <ReservedDscr-Type idnr="40" nr="4" sort="ReservedDscr-Type" position="124\10">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -1794,7 +1794,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="124\13">
-        <Variable idnr="41" spelling="m2" position="124\13" origin="ReservedVar" kind="Constant" serialnr="10" varnr="3"/>
+        <Variable idnr="41" spelling="m2" position="124\13" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="10" varnr="3"/>
         <ReservedDscr-Type idnr="41" nr="4" sort="ReservedDscr-Type" position="124\13">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -1907,7 +1907,7 @@
     <Universal-Quantifier-Formula position="134\25">
      <Variable-Segments>
       <Free-Variable-Segment position="134\25">
-       <Variable idnr="31" spelling="V" position="134\25" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="134\25" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="134\25">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -1927,7 +1927,7 @@
       <Universal-Quantifier-Formula position="134\25">
        <Variable-Segments>
         <Free-Variable-Segment position="134\25">
-         <Variable idnr="40" spelling="m1" position="134\25" origin="ReservedVar" kind="BoundVar" serialnr="9" varnr="2"/>
+         <Variable idnr="40" spelling="m1" position="134\25" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="9" varnr="2"/>
          <ReservedDscr-Type idnr="40" nr="4" sort="ReservedDscr-Type" position="134\25">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -1948,7 +1948,7 @@
         <Universal-Quantifier-Formula position="134\25">
          <Variable-Segments>
           <Free-Variable-Segment position="134\25">
-           <Variable idnr="41" spelling="m2" position="134\25" origin="ReservedVar" kind="BoundVar" serialnr="10" varnr="3"/>
+           <Variable idnr="41" spelling="m2" position="134\25" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="10" varnr="3"/>
            <ReservedDscr-Type idnr="41" nr="4" sort="ReservedDscr-Type" position="134\25">
             <Substitutions>
              <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2069,7 +2069,7 @@
     <Universal-Quantifier-Formula position="138\43">
      <Variable-Segments>
       <Free-Variable-Segment position="138\43">
-       <Variable idnr="31" spelling="V" position="138\43" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="138\43" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="138\43">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -2089,7 +2089,7 @@
       <Universal-Quantifier-Formula position="138\43">
        <Variable-Segments>
         <Free-Variable-Segment position="138\43">
-         <Variable idnr="40" spelling="m1" position="138\43" origin="ReservedVar" kind="BoundVar" serialnr="9" varnr="2"/>
+         <Variable idnr="40" spelling="m1" position="138\43" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="9" varnr="2"/>
          <ReservedDscr-Type idnr="40" nr="4" sort="ReservedDscr-Type" position="138\43">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2110,7 +2110,7 @@
         <Universal-Quantifier-Formula position="138\43">
          <Variable-Segments>
           <Free-Variable-Segment position="138\43">
-           <Variable idnr="41" spelling="m2" position="138\43" origin="ReservedVar" kind="BoundVar" serialnr="10" varnr="3"/>
+           <Variable idnr="41" spelling="m2" position="138\43" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="10" varnr="3"/>
            <ReservedDscr-Type idnr="41" nr="4" sort="ReservedDscr-Type" position="138\43">
             <Substitutions>
              <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2131,7 +2131,7 @@
           <Universal-Quantifier-Formula position="138\43">
            <Variable-Segments>
             <Free-Variable-Segment position="138\43">
-             <Variable idnr="42" spelling="m3" position="138\43" origin="ReservedVar" kind="BoundVar" serialnr="11" varnr="4"/>
+             <Variable idnr="42" spelling="m3" position="138\43" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="11" varnr="4"/>
              <ReservedDscr-Type idnr="42" nr="4" sort="ReservedDscr-Type" position="138\43">
               <Substitutions>
                <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2226,7 +2226,7 @@
     <Universal-Quantifier-Formula position="141\21">
      <Variable-Segments>
       <Free-Variable-Segment position="141\21">
-       <Variable idnr="31" spelling="V" position="141\21" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="141\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="141\21">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -2246,7 +2246,7 @@
       <Universal-Quantifier-Formula position="141\21">
        <Variable-Segments>
         <Free-Variable-Segment position="141\21">
-         <Variable idnr="39" spelling="m" position="141\21" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="2"/>
+         <Variable idnr="39" spelling="m" position="141\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="2"/>
          <ReservedDscr-Type idnr="39" nr="4" sort="ReservedDscr-Type" position="141\21">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2319,7 +2319,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="144\7">
-        <Variable idnr="31" spelling="V" position="144\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="144\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="144\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -2335,7 +2335,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="144\9">
-        <Variable idnr="32" spelling="A" position="144\9" origin="ReservedVar" kind="Constant" serialnr="2" varnr="2"/>
+        <Variable idnr="32" spelling="A" position="144\9" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="2" varnr="2"/>
         <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="144\9">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -2348,7 +2348,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="144\11">
-        <Variable idnr="33" spelling="B" position="144\11" origin="ReservedVar" kind="Constant" serialnr="3" varnr="3"/>
+        <Variable idnr="33" spelling="B" position="144\11" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="3" varnr="3"/>
         <ReservedDscr-Type idnr="33" nr="2" sort="ReservedDscr-Type" position="144\11">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -2384,7 +2384,7 @@
         <Variable-Segments>
          <Explicitly-Qualified-Segment position="147\24">
           <Variables>
-           <Variable idnr="36" spelling="f" position="147\21" kind="BoundVar" serialnr="36" varnr="1"/>
+           <Variable idnr="36" spelling="f" position="147\21" varintro="Fraenkel" kind="BoundVar" serialnr="36" varnr="1"/>
           </Variables>
           <Standard-Type nr="3" formatnr="39" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="147\32">
            <Arguments>
@@ -2446,7 +2446,7 @@
     <Universal-Quantifier-Formula position="152\5">
      <Variable-Segments>
       <Free-Variable-Segment position="152\5">
-       <Variable idnr="31" spelling="V" position="152\5" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="152\5" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="152\5">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -2466,7 +2466,7 @@
       <Universal-Quantifier-Formula position="152\5">
        <Variable-Segments>
         <Free-Variable-Segment position="152\5">
-         <Variable idnr="32" spelling="A" position="152\5" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
+         <Variable idnr="32" spelling="A" position="152\5" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
          <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="152\5">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2483,7 +2483,7 @@
         <Universal-Quantifier-Formula position="152\5">
          <Variable-Segments>
           <Free-Variable-Segment position="152\5">
-           <Variable idnr="33" spelling="B" position="152\5" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="3"/>
+           <Variable idnr="33" spelling="B" position="152\5" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="3"/>
            <ReservedDscr-Type idnr="33" nr="2" sort="ReservedDscr-Type" position="152\5">
             <Substitutions>
              <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2501,7 +2501,7 @@
            <Variable-Segments>
             <Explicitly-Qualified-Segment position="152\5">
              <Variables>
-              <Variable idnr="36" spelling="f" position="152\7" kind="BoundVar" serialnr="38" varnr="4"/>
+              <Variable idnr="36" spelling="f" position="152\7" varintro="Quantifier" kind="BoundVar" serialnr="38" varnr="4"/>
              </Variables>
              <Standard-Type nr="7" formatnr="86" patternnr="8" absolutepatternMMLId="FUNCT_2:1" spelling="Function" sort="Expandable-Type" position="152\22">
               <Arguments>
@@ -2574,7 +2574,7 @@
     <Universal-Quantifier-Formula position="156\24">
      <Variable-Segments>
       <Free-Variable-Segment position="156\24">
-       <Variable idnr="31" spelling="V" position="156\24" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="156\24" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="156\24">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -2594,7 +2594,7 @@
       <Universal-Quantifier-Formula position="156\24">
        <Variable-Segments>
         <Free-Variable-Segment position="156\24">
-         <Variable idnr="32" spelling="A" position="156\24" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
+         <Variable idnr="32" spelling="A" position="156\24" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
          <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="156\24">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2611,7 +2611,7 @@
         <Universal-Quantifier-Formula position="156\24">
          <Variable-Segments>
           <Free-Variable-Segment position="156\24">
-           <Variable idnr="33" spelling="B" position="156\24" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="3"/>
+           <Variable idnr="33" spelling="B" position="156\24" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="3"/>
            <ReservedDscr-Type idnr="33" nr="2" sort="ReservedDscr-Type" position="156\24">
             <Substitutions>
              <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2628,7 +2628,7 @@
           <Universal-Quantifier-Formula position="156\24">
            <Variable-Segments>
             <Free-Variable-Segment position="156\24">
-             <Variable idnr="39" spelling="m" position="156\24" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="4"/>
+             <Variable idnr="39" spelling="m" position="156\24" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="4"/>
              <ReservedDscr-Type idnr="39" nr="4" sort="ReservedDscr-Type" position="156\24">
               <Substitutions>
                <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2700,7 +2700,7 @@
     <Universal-Quantifier-Formula position="159\14">
      <Variable-Segments>
       <Free-Variable-Segment position="159\14">
-       <Variable idnr="31" spelling="V" position="159\14" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="159\14" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="159\14">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -2720,7 +2720,7 @@
       <Universal-Quantifier-Formula position="159\14">
        <Variable-Segments>
         <Free-Variable-Segment position="159\14">
-         <Variable idnr="32" spelling="A" position="159\14" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
+         <Variable idnr="32" spelling="A" position="159\14" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
          <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="159\14">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2737,7 +2737,7 @@
         <Universal-Quantifier-Formula position="159\14">
          <Variable-Segments>
           <Free-Variable-Segment position="159\14">
-           <Variable idnr="33" spelling="B" position="159\14" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="3"/>
+           <Variable idnr="33" spelling="B" position="159\14" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="3"/>
            <ReservedDscr-Type idnr="33" nr="2" sort="ReservedDscr-Type" position="159\14">
             <Substitutions>
              <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2783,7 +2783,7 @@
     <Universal-Quantifier-Formula position="162\10">
      <Variable-Segments>
       <Free-Variable-Segment position="162\10">
-       <Variable idnr="31" spelling="V" position="162\10" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="162\10" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="162\10">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -2812,7 +2812,7 @@
           <Simple-Fraenkel-Term sort="Simple-Fraenkel-Term" position="162\31">
            <Variable-Segments>
             <Free-Variable-Segment position="162\31">
-             <Variable idnr="32" spelling="A" position="162\31" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
+             <Variable idnr="32" spelling="A" position="162\31" varintro="DefaultFraenkel" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
              <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="162\31">
               <Substitutions>
                <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2825,7 +2825,7 @@
              </ReservedDscr-Type>
             </Free-Variable-Segment>
             <Free-Variable-Segment position="162\31">
-             <Variable idnr="33" spelling="B" position="162\31" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="3"/>
+             <Variable idnr="33" spelling="B" position="162\31" varintro="DefaultFraenkel" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="3"/>
              <ReservedDscr-Type idnr="33" nr="2" sort="ReservedDscr-Type" position="162\31">
               <Substitutions>
                <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2862,7 +2862,7 @@
     <Universal-Quantifier-Formula position="165\20">
      <Variable-Segments>
       <Free-Variable-Segment position="165\20">
-       <Variable idnr="31" spelling="V" position="165\20" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="165\20" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="165\20">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -2882,7 +2882,7 @@
       <Universal-Quantifier-Formula position="165\20">
        <Variable-Segments>
         <Free-Variable-Segment position="165\20">
-         <Variable idnr="32" spelling="A" position="165\20" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
+         <Variable idnr="32" spelling="A" position="165\20" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
          <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="165\20">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2899,7 +2899,7 @@
         <Universal-Quantifier-Formula position="165\20">
          <Variable-Segments>
           <Free-Variable-Segment position="165\20">
-           <Variable idnr="33" spelling="B" position="165\20" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="3"/>
+           <Variable idnr="33" spelling="B" position="165\20" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="3"/>
            <ReservedDscr-Type idnr="33" nr="2" sort="ReservedDscr-Type" position="165\20">
             <Substitutions>
              <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2916,7 +2916,7 @@
           <Universal-Quantifier-Formula position="165\20">
            <Variable-Segments>
             <Free-Variable-Segment position="165\20">
-             <Variable idnr="39" spelling="m" position="165\20" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="4"/>
+             <Variable idnr="39" spelling="m" position="165\20" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="4"/>
              <ReservedDscr-Type idnr="39" nr="4" sort="ReservedDscr-Type" position="165\20">
               <Substitutions>
                <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -2988,7 +2988,7 @@
     <Universal-Quantifier-Formula position="168\24">
      <Variable-Segments>
       <Free-Variable-Segment position="168\24">
-       <Variable idnr="31" spelling="V" position="168\24" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="168\24" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="168\24">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -3008,7 +3008,7 @@
       <Universal-Quantifier-Formula position="168\24">
        <Variable-Segments>
         <Free-Variable-Segment position="168\24">
-         <Variable idnr="32" spelling="A" position="168\24" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
+         <Variable idnr="32" spelling="A" position="168\24" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
          <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="168\24">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -3025,7 +3025,7 @@
         <Universal-Quantifier-Formula position="168\24">
          <Variable-Segments>
           <Free-Variable-Segment position="168\24">
-           <Variable idnr="33" spelling="B" position="168\24" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="3"/>
+           <Variable idnr="33" spelling="B" position="168\24" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="3"/>
            <ReservedDscr-Type idnr="33" nr="2" sort="ReservedDscr-Type" position="168\24">
             <Substitutions>
              <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -3042,7 +3042,7 @@
           <Universal-Quantifier-Formula position="168\24">
            <Variable-Segments>
             <Free-Variable-Segment position="168\24">
-             <Variable idnr="39" spelling="m" position="168\24" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="4"/>
+             <Variable idnr="39" spelling="m" position="168\24" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="4"/>
              <ReservedDscr-Type idnr="39" nr="4" sort="ReservedDscr-Type" position="168\24">
               <Substitutions>
                <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -3107,7 +3107,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="171\7">
-        <Variable idnr="31" spelling="V" position="171\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="171\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="171\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -3123,7 +3123,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="171\9">
-        <Variable idnr="39" spelling="m" position="171\9" origin="ReservedVar" kind="Constant" serialnr="8" varnr="2"/>
+        <Variable idnr="39" spelling="m" position="171\9" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="8" varnr="2"/>
         <ReservedDscr-Type idnr="39" nr="4" sort="ReservedDscr-Type" position="171\9">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -3185,7 +3185,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="180\7">
-        <Variable idnr="31" spelling="V" position="180\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="180\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="180\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -3229,7 +3229,7 @@
        <Universal-Quantifier-Formula position="184\5">
         <Variable-Segments>
          <Implicitly-Qualified-Segment position="184\7">
-          <Variable idnr="39" spelling="m" position="184\7" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="1"/>
+          <Variable idnr="39" spelling="m" position="184\7" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="1"/>
           <ReservedDscr-Type idnr="39" nr="4" sort="ReservedDscr-Type" position="184\7">
            <Substitutions>
             <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -3293,7 +3293,7 @@
        <Universal-Quantifier-Formula position="188\5">
         <Variable-Segments>
          <Implicitly-Qualified-Segment position="188\7">
-          <Variable idnr="39" spelling="m" position="188\7" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="1"/>
+          <Variable idnr="39" spelling="m" position="188\7" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="1"/>
           <ReservedDscr-Type idnr="39" nr="4" sort="ReservedDscr-Type" position="188\7">
            <Substitutions>
             <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -3372,7 +3372,7 @@
         <Universal-Quantifier-Formula bracketed="true" position="192\6">
          <Variable-Segments>
           <Implicitly-Qualified-Segment position="192\9">
-           <Variable idnr="41" spelling="m2" position="192\9" origin="ReservedVar" kind="BoundVar" serialnr="10" varnr="1"/>
+           <Variable idnr="41" spelling="m2" position="192\9" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="10" varnr="1"/>
            <ReservedDscr-Type idnr="41" nr="4" sort="ReservedDscr-Type" position="192\9">
             <Substitutions>
              <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -3389,7 +3389,7 @@
            </ReservedDscr-Type>
           </Implicitly-Qualified-Segment>
           <Implicitly-Qualified-Segment position="193\2">
-           <Variable idnr="40" spelling="m1" position="193\2" origin="ReservedVar" kind="BoundVar" serialnr="9" varnr="2"/>
+           <Variable idnr="40" spelling="m1" position="193\2" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="9" varnr="2"/>
            <ReservedDscr-Type idnr="40" nr="4" sort="ReservedDscr-Type" position="193\2">
             <Substitutions>
              <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -3444,7 +3444,7 @@
         <Universal-Quantifier-Formula position="193\53">
          <Variable-Segments>
           <Implicitly-Qualified-Segment position="193\56">
-           <Variable idnr="41" spelling="m2" position="193\56" origin="ReservedVar" kind="BoundVar" serialnr="10" varnr="3"/>
+           <Variable idnr="41" spelling="m2" position="193\56" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="10" varnr="3"/>
            <ReservedDscr-Type idnr="41" nr="4" sort="ReservedDscr-Type" position="193\56">
             <Substitutions>
              <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -3461,7 +3461,7 @@
            </ReservedDscr-Type>
           </Implicitly-Qualified-Segment>
           <Implicitly-Qualified-Segment position="193\59">
-           <Variable idnr="40" spelling="m1" position="193\59" origin="ReservedVar" kind="BoundVar" serialnr="9" varnr="4"/>
+           <Variable idnr="40" spelling="m1" position="193\59" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="9" varnr="4"/>
            <ReservedDscr-Type idnr="40" nr="4" sort="ReservedDscr-Type" position="193\59">
             <Substitutions>
              <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -3538,7 +3538,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="199\7">
-        <Variable idnr="31" spelling="V" position="199\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="199\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="199\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -3623,7 +3623,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="206\7">
-        <Variable idnr="31" spelling="V" position="206\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="206\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="206\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -3676,12 +3676,12 @@
   <Reservation>
    <Reservation-Segment position="211\9">
     <Variables>
-     <Variable idnr="44" spelling="a" position="211\9" kind="ReservedVar" serialnr="13" varnr="0"/>
-     <Variable idnr="45" spelling="b" position="211\11" kind="ReservedVar" serialnr="14" varnr="0"/>
+     <Variable idnr="44" spelling="a" position="211\9" varintro="itReservation" kind="ReservedVar" serialnr="13" varnr="0"/>
+     <Variable idnr="45" spelling="b" position="211\11" varintro="itReservation" kind="ReservedVar" serialnr="14" varnr="0"/>
     </Variables>
     <Variable-Segments>
      <Free-Variable-Segment position="33\9">
-      <Variable idnr="31" spelling="V" position="33\9" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+      <Variable idnr="31" spelling="V" position="33\9" varintro="InsideReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
       <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="33\9">
        <Substitutions/>
        <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -3721,7 +3721,7 @@
     <Universal-Quantifier-Formula position="216\13">
      <Variable-Segments>
       <Free-Variable-Segment position="216\13">
-       <Variable idnr="31" spelling="V" position="216\13" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="216\13" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="216\13">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -3741,7 +3741,7 @@
       <Universal-Quantifier-Formula position="216\13">
        <Variable-Segments>
         <Free-Variable-Segment position="216\13">
-         <Variable idnr="32" spelling="A" position="216\13" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
+         <Variable idnr="32" spelling="A" position="216\13" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
          <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="216\13">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -3782,7 +3782,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="219\7">
-        <Variable idnr="31" spelling="V" position="219\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="219\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="219\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -3798,7 +3798,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="219\9">
-        <Variable idnr="32" spelling="A" position="219\9" origin="ReservedVar" kind="Constant" serialnr="2" varnr="2"/>
+        <Variable idnr="32" spelling="A" position="219\9" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="2" varnr="2"/>
         <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="219\9">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -3849,7 +3849,7 @@
     <Universal-Quantifier-Formula position="226\14">
      <Variable-Segments>
       <Free-Variable-Segment position="226\14">
-       <Variable idnr="31" spelling="V" position="226\14" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="226\14" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="226\14">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -3869,7 +3869,7 @@
       <Universal-Quantifier-Formula position="226\14">
        <Variable-Segments>
         <Free-Variable-Segment position="226\14">
-         <Variable idnr="44" spelling="a" position="226\14" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="226\14" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="5" sort="ReservedDscr-Type" position="226\14">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -3910,7 +3910,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="229\7">
-        <Variable idnr="31" spelling="V" position="229\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="229\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="229\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -3926,7 +3926,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="229\9">
-        <Variable idnr="44" spelling="a" position="229\9" origin="ReservedVar" kind="Constant" serialnr="13" varnr="2"/>
+        <Variable idnr="44" spelling="a" position="229\9" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="13" varnr="2"/>
         <ReservedDscr-Type idnr="44" nr="5" sort="ReservedDscr-Type" position="229\9">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -3974,14 +3974,14 @@
   <Reservation>
    <Reservation-Segment position="235\9">
     <Variables>
-     <Variable idnr="36" spelling="f" position="235\9" kind="ReservedVar" serialnr="15" varnr="0"/>
-     <Variable idnr="46" spelling="g" position="235\11" kind="ReservedVar" serialnr="16" varnr="0"/>
-     <Variable idnr="47" spelling="f1" position="235\14" kind="ReservedVar" serialnr="17" varnr="0"/>
-     <Variable idnr="48" spelling="f2" position="235\17" kind="ReservedVar" serialnr="18" varnr="0"/>
+     <Variable idnr="36" spelling="f" position="235\9" varintro="itReservation" kind="ReservedVar" serialnr="15" varnr="0"/>
+     <Variable idnr="46" spelling="g" position="235\11" varintro="itReservation" kind="ReservedVar" serialnr="16" varnr="0"/>
+     <Variable idnr="47" spelling="f1" position="235\14" varintro="itReservation" kind="ReservedVar" serialnr="17" varnr="0"/>
+     <Variable idnr="48" spelling="f2" position="235\17" varintro="itReservation" kind="ReservedVar" serialnr="18" varnr="0"/>
     </Variables>
     <Variable-Segments>
      <Free-Variable-Segment position="33\9">
-      <Variable idnr="31" spelling="V" position="33\9" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+      <Variable idnr="31" spelling="V" position="33\9" varintro="InsideReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
       <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="33\9">
        <Substitutions/>
        <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -4016,7 +4016,7 @@
     <Universal-Quantifier-Formula position="238\15">
      <Variable-Segments>
       <Free-Variable-Segment position="238\15">
-       <Variable idnr="31" spelling="V" position="238\15" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="238\15" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="238\15">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -4036,7 +4036,7 @@
       <Universal-Quantifier-Formula position="238\15">
        <Variable-Segments>
         <Free-Variable-Segment position="238\15">
-         <Variable idnr="39" spelling="m" position="238\15" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="2"/>
+         <Variable idnr="39" spelling="m" position="238\15" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="2"/>
          <ReservedDscr-Type idnr="39" nr="4" sort="ReservedDscr-Type" position="238\15">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -4081,7 +4081,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="241\7">
-        <Variable idnr="31" spelling="V" position="241\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="241\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="241\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -4097,7 +4097,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="241\9">
-        <Variable idnr="39" spelling="m" position="241\9" origin="ReservedVar" kind="Constant" serialnr="8" varnr="2"/>
+        <Variable idnr="39" spelling="m" position="241\9" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="8" varnr="2"/>
         <ReservedDscr-Type idnr="39" nr="4" sort="ReservedDscr-Type" position="241\9">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -4152,7 +4152,7 @@
     <Universal-Quantifier-Formula position="248\14">
      <Variable-Segments>
       <Free-Variable-Segment position="248\14">
-       <Variable idnr="31" spelling="V" position="248\14" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="248\14" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="248\14">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -4172,7 +4172,7 @@
       <Universal-Quantifier-Formula position="248\14">
        <Variable-Segments>
         <Free-Variable-Segment position="248\14">
-         <Variable idnr="36" spelling="f" position="248\14" origin="ReservedVar" kind="BoundVar" serialnr="15" varnr="2"/>
+         <Variable idnr="36" spelling="f" position="248\14" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="15" varnr="2"/>
          <ReservedDscr-Type idnr="36" nr="6" sort="ReservedDscr-Type" position="248\14">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -4217,7 +4217,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="251\7">
-        <Variable idnr="31" spelling="V" position="251\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="251\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="251\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -4233,7 +4233,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="251\9">
-        <Variable idnr="36" spelling="f" position="251\9" origin="ReservedVar" kind="Constant" serialnr="15" varnr="2"/>
+        <Variable idnr="36" spelling="f" position="251\9" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="15" varnr="2"/>
         <ReservedDscr-Type idnr="36" nr="6" sort="ReservedDscr-Type" position="251\9">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -4288,7 +4288,7 @@
     <Universal-Quantifier-Formula position="258\19">
      <Variable-Segments>
       <Free-Variable-Segment position="258\19">
-       <Variable idnr="31" spelling="V" position="258\19" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="258\19" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="258\19">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -4308,7 +4308,7 @@
       <Universal-Quantifier-Formula position="258\19">
        <Variable-Segments>
         <Free-Variable-Segment position="258\19">
-         <Variable idnr="36" spelling="f" position="258\19" origin="ReservedVar" kind="BoundVar" serialnr="15" varnr="2"/>
+         <Variable idnr="36" spelling="f" position="258\19" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="15" varnr="2"/>
          <ReservedDscr-Type idnr="36" nr="6" sort="ReservedDscr-Type" position="258\19">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -4379,7 +4379,7 @@
     <Universal-Quantifier-Formula position="261\12">
      <Variable-Segments>
       <Free-Variable-Segment position="261\12">
-       <Variable idnr="31" spelling="V" position="261\12" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="261\12" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="261\12">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -4399,7 +4399,7 @@
       <Universal-Quantifier-Formula position="261\12">
        <Variable-Segments>
         <Free-Variable-Segment position="261\12">
-         <Variable idnr="44" spelling="a" position="261\12" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="261\12" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="5" sort="ReservedDscr-Type" position="261\12">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -4420,7 +4420,7 @@
         <Universal-Quantifier-Formula position="261\12">
          <Variable-Segments>
           <Free-Variable-Segment position="261\12">
-           <Variable idnr="45" spelling="b" position="261\12" origin="ReservedVar" kind="BoundVar" serialnr="14" varnr="3"/>
+           <Variable idnr="45" spelling="b" position="261\12" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="14" varnr="3"/>
            <ReservedDscr-Type idnr="45" nr="5" sort="ReservedDscr-Type" position="261\12">
             <Substitutions>
              <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -4479,7 +4479,7 @@
     <Universal-Quantifier-Formula position="264\23">
      <Variable-Segments>
       <Free-Variable-Segment position="264\23">
-       <Variable idnr="31" spelling="V" position="264\23" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="264\23" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="264\23">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -4499,7 +4499,7 @@
       <Universal-Quantifier-Formula position="264\23">
        <Variable-Segments>
         <Free-Variable-Segment position="264\23">
-         <Variable idnr="36" spelling="f" position="264\23" origin="ReservedVar" kind="BoundVar" serialnr="15" varnr="2"/>
+         <Variable idnr="36" spelling="f" position="264\23" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="15" varnr="2"/>
          <ReservedDscr-Type idnr="36" nr="6" sort="ReservedDscr-Type" position="264\23">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -4520,7 +4520,7 @@
         <Universal-Quantifier-Formula position="264\23">
          <Variable-Segments>
           <Free-Variable-Segment position="264\23">
-           <Variable idnr="46" spelling="g" position="264\23" origin="ReservedVar" kind="BoundVar" serialnr="16" varnr="3"/>
+           <Variable idnr="46" spelling="g" position="264\23" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="16" varnr="3"/>
            <ReservedDscr-Type idnr="46" nr="6" sort="ReservedDscr-Type" position="264\23">
             <Substitutions>
              <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -4595,7 +4595,7 @@
     <Universal-Quantifier-Formula position="267\8">
      <Variable-Segments>
       <Free-Variable-Segment position="267\8">
-       <Variable idnr="31" spelling="V" position="267\8" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="267\8" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="267\8">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -4615,7 +4615,7 @@
       <Universal-Quantifier-Formula position="267\8">
        <Variable-Segments>
         <Free-Variable-Segment position="267\8">
-         <Variable idnr="44" spelling="a" position="267\8" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="267\8" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="5" sort="ReservedDscr-Type" position="267\8">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -4666,7 +4666,7 @@
     <Universal-Quantifier-Formula position="270\16">
      <Variable-Segments>
       <Free-Variable-Segment position="270\16">
-       <Variable idnr="31" spelling="V" position="270\16" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="270\16" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="270\16">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -4686,7 +4686,7 @@
       <Universal-Quantifier-Formula position="270\16">
        <Variable-Segments>
         <Free-Variable-Segment position="270\16">
-         <Variable idnr="44" spelling="a" position="270\16" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="270\16" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="5" sort="ReservedDscr-Type" position="270\16">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -4737,7 +4737,7 @@
     <Universal-Quantifier-Formula position="273\32">
      <Variable-Segments>
       <Free-Variable-Segment position="273\32">
-       <Variable idnr="31" spelling="V" position="273\32" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="273\32" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="273\32">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -4757,7 +4757,7 @@
       <Universal-Quantifier-Formula position="273\32">
        <Variable-Segments>
         <Free-Variable-Segment position="273\32">
-         <Variable idnr="44" spelling="a" position="273\32" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="273\32" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="5" sort="ReservedDscr-Type" position="273\32">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -4819,7 +4819,7 @@
      <Variable-Segments>
       <Explicitly-Qualified-Segment position="276\5">
        <Variables>
-        <Variable idnr="37" spelling="W" position="276\7" kind="BoundVar" serialnr="59" varnr="1"/>
+        <Variable idnr="37" spelling="W" position="276\7" varintro="Quantifier" kind="BoundVar" serialnr="59" varnr="1"/>
        </Variables>
        <Standard-Type nr="29" formatnr="121" patternnr="15" absolutepatternMMLId="CLASSES2:1" spelling="Universe" sort="Expandable-Type" position="276\22">
         <Arguments/>
@@ -4827,7 +4827,7 @@
       </Explicitly-Qualified-Segment>
       <Explicitly-Qualified-Segment position="276\23">
        <Variables>
-        <Variable idnr="44" spelling="a" position="276\25" kind="BoundVar" serialnr="60" varnr="2"/>
+        <Variable idnr="44" spelling="a" position="276\25" varintro="Quantifier" kind="BoundVar" serialnr="60" varnr="2"/>
        </Variables>
        <Standard-Type nr="16" formatnr="192" patternnr="34" absolutepatternMMLId="CAT_1:1" spelling="Object" sort="Expandable-Type" position="276\38">
         <Arguments>
@@ -4872,7 +4872,7 @@
     <Universal-Quantifier-Formula position="280\37">
      <Variable-Segments>
       <Free-Variable-Segment position="280\37">
-       <Variable idnr="31" spelling="V" position="280\37" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="280\37" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="280\37">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -4892,7 +4892,7 @@
       <Universal-Quantifier-Formula position="280\37">
        <Variable-Segments>
         <Free-Variable-Segment position="280\37">
-         <Variable idnr="44" spelling="a" position="280\37" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="280\37" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="5" sort="ReservedDscr-Type" position="280\37">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -4915,7 +4915,7 @@
           <Variable-Segments>
            <Explicitly-Qualified-Segment position="280\5">
             <Variables>
-             <Variable idnr="49" spelling="x" position="280\7" kind="BoundVar" serialnr="63" varnr="3"/>
+             <Variable idnr="49" spelling="x" position="280\7" varintro="Quantifier" kind="BoundVar" serialnr="63" varnr="3"/>
             </Variables>
             <Standard-Type nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="280\17">
              <Arguments/>
@@ -4960,7 +4960,7 @@
     <Universal-Quantifier-Formula position="283\35">
      <Variable-Segments>
       <Free-Variable-Segment position="283\35">
-       <Variable idnr="31" spelling="V" position="283\35" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="283\35" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="283\35">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -4980,7 +4980,7 @@
       <Universal-Quantifier-Formula position="283\35">
        <Variable-Segments>
         <Free-Variable-Segment position="283\35">
-         <Variable idnr="44" spelling="a" position="283\35" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="283\35" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="5" sort="ReservedDscr-Type" position="283\35">
           <Substitutions>
            <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -5026,7 +5026,7 @@
           <Variable-Segments>
            <Explicitly-Qualified-Segment position="283\38">
             <Variables>
-             <Variable idnr="49" spelling="x" position="283\40" kind="BoundVar" serialnr="65" varnr="3"/>
+             <Variable idnr="49" spelling="x" position="283\40" varintro="Quantifier" kind="BoundVar" serialnr="65" varnr="3"/>
             </Variables>
             <Standard-Type nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="283\50">
              <Arguments/>
@@ -5064,7 +5064,7 @@
      <Variable-Segments>
       <Explicitly-Qualified-Segment position="286\5">
        <Variables>
-        <Variable idnr="37" spelling="W" position="286\7" kind="BoundVar" serialnr="67" varnr="1"/>
+        <Variable idnr="37" spelling="W" position="286\7" varintro="Quantifier" kind="BoundVar" serialnr="67" varnr="1"/>
        </Variables>
        <Standard-Type nr="29" formatnr="121" patternnr="15" absolutepatternMMLId="CLASSES2:1" spelling="Universe" sort="Expandable-Type" position="286\22">
         <Arguments/>
@@ -5072,7 +5072,7 @@
       </Explicitly-Qualified-Segment>
       <Explicitly-Qualified-Segment position="286\23">
        <Variables>
-        <Variable idnr="44" spelling="a" position="286\25" kind="BoundVar" serialnr="68" varnr="2"/>
+        <Variable idnr="44" spelling="a" position="286\25" varintro="Quantifier" kind="BoundVar" serialnr="68" varnr="2"/>
        </Variables>
        <Standard-Type nr="16" formatnr="192" patternnr="34" absolutepatternMMLId="CAT_1:1" spelling="Object" sort="Expandable-Type" position="286\38">
         <Arguments>
@@ -5100,7 +5100,7 @@
        <Variable-Segments>
         <Explicitly-Qualified-Segment position="286\68">
          <Variables>
-          <Variable idnr="49" spelling="x" position="286\70" kind="BoundVar" serialnr="69" varnr="3"/>
+          <Variable idnr="49" spelling="x" position="286\70" varintro="Quantifier" kind="BoundVar" serialnr="69" varnr="3"/>
          </Variables>
          <Standard-Type nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="287\11">
           <Arguments/>
@@ -5134,7 +5134,7 @@
     <Universal-Quantifier-Formula position="290\4">
      <Variable-Segments>
       <Free-Variable-Segment position="290\4">
-       <Variable idnr="31" spelling="V" position="290\4" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="290\4" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="290\4">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -5155,8 +5155,8 @@
        <Variable-Segments>
         <Explicitly-Qualified-Segment position="290\4">
          <Variables>
-          <Variable idnr="44" spelling="a" position="290\6" kind="BoundVar" serialnr="73" varnr="2"/>
-          <Variable idnr="45" spelling="b" position="290\8" kind="BoundVar" serialnr="74" varnr="3"/>
+          <Variable idnr="44" spelling="a" position="290\6" varintro="Quantifier" kind="BoundVar" serialnr="73" varnr="2"/>
+          <Variable idnr="45" spelling="b" position="290\8" varintro="Quantifier" kind="BoundVar" serialnr="74" varnr="3"/>
          </Variables>
          <Standard-Type nr="16" formatnr="192" patternnr="34" absolutepatternMMLId="CAT_1:1" spelling="Object" sort="Expandable-Type" position="290\21">
           <Arguments>
@@ -5170,7 +5170,7 @@
         </Explicitly-Qualified-Segment>
         <Explicitly-Qualified-Segment position="290\32">
          <Variables>
-          <Variable idnr="36" spelling="f" position="290\34" kind="BoundVar" serialnr="75" varnr="4"/>
+          <Variable idnr="36" spelling="f" position="290\34" varintro="Quantifier" kind="BoundVar" serialnr="75" varnr="4"/>
          </Variables>
          <Standard-Type nr="17" formatnr="194" patternnr="36" absolutepatternMMLId="CAT_1:3" spelling="Morphism" sort="Mode" constrnr="13" absoluteconstrMMLId="CAT_1:1" originalnr="0" position="290\49">
           <Arguments>
@@ -5237,7 +5237,7 @@
     <Universal-Quantifier-Formula position="294\4">
      <Variable-Segments>
       <Free-Variable-Segment position="294\4">
-       <Variable idnr="31" spelling="V" position="294\4" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="294\4" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="294\4">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -5258,8 +5258,8 @@
        <Variable-Segments>
         <Explicitly-Qualified-Segment position="294\4">
          <Variables>
-          <Variable idnr="44" spelling="a" position="294\6" kind="BoundVar" serialnr="79" varnr="2"/>
-          <Variable idnr="45" spelling="b" position="294\8" kind="BoundVar" serialnr="80" varnr="3"/>
+          <Variable idnr="44" spelling="a" position="294\6" varintro="Quantifier" kind="BoundVar" serialnr="79" varnr="2"/>
+          <Variable idnr="45" spelling="b" position="294\8" varintro="Quantifier" kind="BoundVar" serialnr="80" varnr="3"/>
          </Variables>
          <Standard-Type nr="16" formatnr="192" patternnr="34" absolutepatternMMLId="CAT_1:1" spelling="Object" sort="Expandable-Type" position="294\21">
           <Arguments>
@@ -5273,7 +5273,7 @@
         </Explicitly-Qualified-Segment>
         <Explicitly-Qualified-Segment position="294\32">
          <Variables>
-          <Variable idnr="36" spelling="f" position="294\34" kind="BoundVar" serialnr="81" varnr="4"/>
+          <Variable idnr="36" spelling="f" position="294\34" varintro="Quantifier" kind="BoundVar" serialnr="81" varnr="4"/>
          </Variables>
          <Standard-Type nr="17" formatnr="194" patternnr="36" absolutepatternMMLId="CAT_1:3" spelling="Morphism" sort="Mode" constrnr="13" absoluteconstrMMLId="CAT_1:1" originalnr="0" position="294\49">
           <Arguments>
@@ -5312,7 +5312,7 @@
           <Existential-Quantifier-Formula bracketed="true" position="296\22">
            <Variable-Segments>
             <Implicitly-Qualified-Segment position="296\24">
-             <Variable idnr="32" spelling="A" position="296\24" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="5"/>
+             <Variable idnr="32" spelling="A" position="296\24" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="5"/>
              <ReservedDscr-Type idnr="32" nr="2" sort="ReservedDscr-Type" position="296\24">
               <Substitutions>
                <Substitution freevarnr="1" kind="BoundVar" varnr="1"/>
@@ -5330,8 +5330,8 @@
              <Variable-Segments>
               <Explicitly-Qualified-Segment position="296\30">
                <Variables>
-                <Variable idnr="50" spelling="x1" position="296\33" kind="BoundVar" serialnr="83" varnr="6"/>
-                <Variable idnr="51" spelling="x2" position="296\36" kind="BoundVar" serialnr="84" varnr="7"/>
+                <Variable idnr="50" spelling="x1" position="296\33" varintro="Quantifier" kind="BoundVar" serialnr="83" varnr="6"/>
+                <Variable idnr="51" spelling="x2" position="296\36" varintro="Quantifier" kind="BoundVar" serialnr="84" varnr="7"/>
                </Variables>
                <Standard-Type nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="296\46">
                 <Arguments/>
@@ -5394,7 +5394,7 @@
     <Universal-Quantifier-Formula position="300\4">
      <Variable-Segments>
       <Free-Variable-Segment position="300\4">
-       <Variable idnr="31" spelling="V" position="300\4" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="300\4" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="300\4">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -5415,8 +5415,8 @@
        <Variable-Segments>
         <Explicitly-Qualified-Segment position="300\4">
          <Variables>
-          <Variable idnr="44" spelling="a" position="300\6" kind="BoundVar" serialnr="90" varnr="2"/>
-          <Variable idnr="45" spelling="b" position="300\8" kind="BoundVar" serialnr="91" varnr="3"/>
+          <Variable idnr="44" spelling="a" position="300\6" varintro="Quantifier" kind="BoundVar" serialnr="90" varnr="2"/>
+          <Variable idnr="45" spelling="b" position="300\8" varintro="Quantifier" kind="BoundVar" serialnr="91" varnr="3"/>
          </Variables>
          <Standard-Type nr="16" formatnr="192" patternnr="34" absolutepatternMMLId="CAT_1:1" spelling="Object" sort="Expandable-Type" position="300\21">
           <Arguments>
@@ -5449,7 +5449,7 @@
          <Variable-Segments>
           <Explicitly-Qualified-Segment position="301\4">
            <Variables>
-            <Variable idnr="36" spelling="f" position="301\6" kind="BoundVar" serialnr="92" varnr="4"/>
+            <Variable idnr="36" spelling="f" position="301\6" varintro="Quantifier" kind="BoundVar" serialnr="92" varnr="4"/>
            </Variables>
            <Standard-Type nr="17" formatnr="194" patternnr="36" absolutepatternMMLId="CAT_1:3" spelling="Morphism" sort="Mode" constrnr="13" absoluteconstrMMLId="CAT_1:1" originalnr="0" position="301\21">
             <Arguments>
@@ -5500,7 +5500,7 @@
      <Variable-Segments>
       <Explicitly-Qualified-Segment position="305\5">
        <Variables>
-        <Variable idnr="37" spelling="W" position="305\7" kind="BoundVar" serialnr="96" varnr="1"/>
+        <Variable idnr="37" spelling="W" position="305\7" varintro="Quantifier" kind="BoundVar" serialnr="96" varnr="1"/>
        </Variables>
        <Standard-Type nr="29" formatnr="121" patternnr="15" absolutepatternMMLId="CLASSES2:1" spelling="Universe" sort="Expandable-Type" position="305\22">
         <Arguments/>
@@ -5508,8 +5508,8 @@
       </Explicitly-Qualified-Segment>
       <Explicitly-Qualified-Segment position="305\23">
        <Variables>
-        <Variable idnr="44" spelling="a" position="305\25" kind="BoundVar" serialnr="97" varnr="2"/>
-        <Variable idnr="45" spelling="b" position="305\27" kind="BoundVar" serialnr="98" varnr="3"/>
+        <Variable idnr="44" spelling="a" position="305\25" varintro="Quantifier" kind="BoundVar" serialnr="97" varnr="2"/>
+        <Variable idnr="45" spelling="b" position="305\27" varintro="Quantifier" kind="BoundVar" serialnr="98" varnr="3"/>
        </Variables>
        <Standard-Type nr="16" formatnr="192" patternnr="34" absolutepatternMMLId="CAT_1:1" spelling="Object" sort="Expandable-Type" position="305\40">
         <Arguments>
@@ -5542,7 +5542,7 @@
        <Variable-Segments>
         <Explicitly-Qualified-Segment position="306\5">
          <Variables>
-          <Variable idnr="36" spelling="f" position="306\7" kind="BoundVar" serialnr="99" varnr="4"/>
+          <Variable idnr="36" spelling="f" position="306\7" varintro="Quantifier" kind="BoundVar" serialnr="99" varnr="4"/>
          </Variables>
          <Standard-Type nr="17" formatnr="194" patternnr="36" absolutepatternMMLId="CAT_1:3" spelling="Morphism" sort="Mode" constrnr="13" absoluteconstrMMLId="CAT_1:1" originalnr="0" position="306\22">
           <Arguments>
@@ -5590,7 +5590,7 @@
     <Universal-Quantifier-Formula position="310\5">
      <Variable-Segments>
       <Free-Variable-Segment position="310\5">
-       <Variable idnr="31" spelling="V" position="310\5" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="310\5" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="310\5">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -5611,7 +5611,7 @@
        <Variable-Segments>
         <Explicitly-Qualified-Segment position="310\5">
          <Variables>
-          <Variable idnr="37" spelling="W" position="310\7" kind="BoundVar" serialnr="104" varnr="2"/>
+          <Variable idnr="37" spelling="W" position="310\7" varintro="Quantifier" kind="BoundVar" serialnr="104" varnr="2"/>
          </Variables>
          <Clustered-Type sort="Clustered-Type" position="310\30">
           <Adjective-Cluster>
@@ -5666,7 +5666,7 @@
   <Reservation>
    <Reservation-Segment position="315\9">
     <Variables>
-     <Variable idnr="52" spelling="C" position="315\9" kind="ReservedVar" serialnr="19" varnr="0"/>
+     <Variable idnr="52" spelling="C" position="315\9" varintro="itReservation" kind="ReservedVar" serialnr="19" varnr="0"/>
     </Variables>
     <Variable-Segments/>
     <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -5675,15 +5675,15 @@
    </Reservation-Segment>
    <Reservation-Segment position="316\3">
     <Variables>
-     <Variable idnr="44" spelling="a" position="316\3" kind="ReservedVar" serialnr="20" varnr="0"/>
-     <Variable idnr="45" spelling="b" position="316\5" kind="ReservedVar" serialnr="21" varnr="0"/>
-     <Variable idnr="53" spelling="a9" position="316\8" kind="ReservedVar" serialnr="22" varnr="0"/>
-     <Variable idnr="54" spelling="b9" position="316\11" kind="ReservedVar" serialnr="23" varnr="0"/>
-     <Variable idnr="55" spelling="c" position="316\13" kind="ReservedVar" serialnr="24" varnr="0"/>
+     <Variable idnr="44" spelling="a" position="316\3" varintro="itReservation" kind="ReservedVar" serialnr="20" varnr="0"/>
+     <Variable idnr="45" spelling="b" position="316\5" varintro="itReservation" kind="ReservedVar" serialnr="21" varnr="0"/>
+     <Variable idnr="53" spelling="a9" position="316\8" varintro="itReservation" kind="ReservedVar" serialnr="22" varnr="0"/>
+     <Variable idnr="54" spelling="b9" position="316\11" varintro="itReservation" kind="ReservedVar" serialnr="23" varnr="0"/>
+     <Variable idnr="55" spelling="c" position="316\13" varintro="itReservation" kind="ReservedVar" serialnr="24" varnr="0"/>
     </Variables>
     <Variable-Segments>
      <Free-Variable-Segment position="315\9">
-      <Variable idnr="52" spelling="C" position="315\9" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+      <Variable idnr="52" spelling="C" position="315\9" varintro="InsideReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
       <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="315\9">
        <Substitutions/>
        <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -5700,15 +5700,15 @@
    </Reservation-Segment>
    <Reservation-Segment position="317\3">
     <Variables>
-     <Variable idnr="36" spelling="f" position="317\3" kind="ReservedVar" serialnr="25" varnr="0"/>
-     <Variable idnr="46" spelling="g" position="317\5" kind="ReservedVar" serialnr="26" varnr="0"/>
-     <Variable idnr="56" spelling="h" position="317\7" kind="ReservedVar" serialnr="27" varnr="0"/>
-     <Variable idnr="38" spelling="f9" position="317\10" kind="ReservedVar" serialnr="28" varnr="0"/>
-     <Variable idnr="57" spelling="g9" position="317\13" kind="ReservedVar" serialnr="29" varnr="0"/>
+     <Variable idnr="36" spelling="f" position="317\3" varintro="itReservation" kind="ReservedVar" serialnr="25" varnr="0"/>
+     <Variable idnr="46" spelling="g" position="317\5" varintro="itReservation" kind="ReservedVar" serialnr="26" varnr="0"/>
+     <Variable idnr="56" spelling="h" position="317\7" varintro="itReservation" kind="ReservedVar" serialnr="27" varnr="0"/>
+     <Variable idnr="38" spelling="f9" position="317\10" varintro="itReservation" kind="ReservedVar" serialnr="28" varnr="0"/>
+     <Variable idnr="57" spelling="g9" position="317\13" varintro="itReservation" kind="ReservedVar" serialnr="29" varnr="0"/>
     </Variables>
     <Variable-Segments>
      <Free-Variable-Segment position="315\9">
-      <Variable idnr="52" spelling="C" position="315\9" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+      <Variable idnr="52" spelling="C" position="315\9" varintro="InsideReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
       <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="315\9">
        <Substitutions/>
        <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -5732,7 +5732,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="320\7">
-        <Variable idnr="52" spelling="C" position="320\7" origin="ReservedVar" kind="Constant" serialnr="19" varnr="1"/>
+        <Variable idnr="52" spelling="C" position="320\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="19" varnr="1"/>
         <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="320\7">
          <Substitutions/>
          <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -5762,7 +5762,7 @@
        <Simple-Fraenkel-Term sort="Simple-Fraenkel-Term" position="323\16">
         <Variable-Segments>
          <Free-Variable-Segment position="323\16">
-          <Variable idnr="44" spelling="a" position="323\16" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="1"/>
+          <Variable idnr="44" spelling="a" position="323\16" varintro="DefaultFraenkel" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="1"/>
           <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="323\16">
            <Substitutions>
             <Substitution freevarnr="19" kind="Constant" varnr="1"/>
@@ -5775,7 +5775,7 @@
           </ReservedDscr-Type>
          </Free-Variable-Segment>
          <Free-Variable-Segment position="323\16">
-          <Variable idnr="45" spelling="b" position="323\16" origin="ReservedVar" kind="BoundVar" serialnr="21" varnr="2"/>
+          <Variable idnr="45" spelling="b" position="323\16" varintro="DefaultFraenkel" origin="ReservedVar" kind="BoundVar" serialnr="21" varnr="2"/>
           <ReservedDscr-Type idnr="45" nr="8" sort="ReservedDscr-Type" position="323\16">
            <Substitutions>
             <Substitution freevarnr="19" kind="Constant" varnr="1"/>
@@ -5808,7 +5808,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="327\7">
-        <Variable idnr="52" spelling="C" position="327\7" origin="ReservedVar" kind="Constant" serialnr="19" varnr="1"/>
+        <Variable idnr="52" spelling="C" position="327\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="19" varnr="1"/>
         <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="327\7">
          <Substitutions/>
          <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -5845,7 +5845,7 @@
     <Universal-Quantifier-Formula position="332\13">
      <Variable-Segments>
       <Free-Variable-Segment position="332\13">
-       <Variable idnr="52" spelling="C" position="332\13" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+       <Variable idnr="52" spelling="C" position="332\13" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
        <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="332\13">
         <Substitutions/>
         <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -5858,7 +5858,7 @@
       <Universal-Quantifier-Formula position="332\13">
        <Variable-Segments>
         <Free-Variable-Segment position="332\13">
-         <Variable idnr="44" spelling="a" position="332\13" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="332\13" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="332\13">
           <Substitutions>
            <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -5875,7 +5875,7 @@
         <Universal-Quantifier-Formula position="332\13">
          <Variable-Segments>
           <Free-Variable-Segment position="332\13">
-           <Variable idnr="45" spelling="b" position="332\13" origin="ReservedVar" kind="BoundVar" serialnr="21" varnr="3"/>
+           <Variable idnr="45" spelling="b" position="332\13" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="21" varnr="3"/>
            <ReservedDscr-Type idnr="45" nr="8" sort="ReservedDscr-Type" position="332\13">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -5921,7 +5921,7 @@
     <Universal-Quantifier-Formula position="337\49">
      <Variable-Segments>
       <Free-Variable-Segment position="337\49">
-       <Variable idnr="52" spelling="C" position="337\49" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+       <Variable idnr="52" spelling="C" position="337\49" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
        <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="337\49">
         <Substitutions/>
         <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -5934,7 +5934,7 @@
       <Universal-Quantifier-Formula position="337\49">
        <Variable-Segments>
         <Free-Variable-Segment position="337\49">
-         <Variable idnr="44" spelling="a" position="337\49" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="337\49" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="337\49">
           <Substitutions>
            <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -5951,7 +5951,7 @@
         <Universal-Quantifier-Formula position="337\49">
          <Variable-Segments>
           <Free-Variable-Segment position="337\49">
-           <Variable idnr="36" spelling="f" position="337\49" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="3"/>
+           <Variable idnr="36" spelling="f" position="337\49" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="3"/>
            <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="337\49">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -6056,7 +6056,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="341\7">
-        <Variable idnr="52" spelling="C" position="341\7" origin="ReservedVar" kind="Constant" serialnr="19" varnr="1"/>
+        <Variable idnr="52" spelling="C" position="341\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="19" varnr="1"/>
         <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="341\7">
          <Substitutions/>
          <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -6065,7 +6065,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="341\9">
-        <Variable idnr="44" spelling="a" position="341\9" origin="ReservedVar" kind="Constant" serialnr="20" varnr="2"/>
+        <Variable idnr="44" spelling="a" position="341\9" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="20" varnr="2"/>
         <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="341\9">
          <Substitutions>
           <Substitution freevarnr="19" kind="Constant" varnr="1"/>
@@ -6078,7 +6078,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="341\11">
-        <Variable idnr="36" spelling="f" position="341\11" origin="ReservedVar" kind="Constant" serialnr="25" varnr="3"/>
+        <Variable idnr="36" spelling="f" position="341\11" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="25" varnr="3"/>
         <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="341\11">
          <Substitutions>
           <Substitution freevarnr="19" kind="Constant" varnr="1"/>
@@ -6134,7 +6134,7 @@
        <Universal-Quantifier-Formula position="345\5">
         <Variable-Segments>
          <Implicitly-Qualified-Segment position="345\7">
-          <Variable idnr="46" spelling="g" position="345\7" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="1"/>
+          <Variable idnr="46" spelling="g" position="345\7" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="1"/>
           <ReservedDscr-Type idnr="46" nr="9" sort="ReservedDscr-Type" position="345\7">
            <Substitutions>
             <Substitution freevarnr="19" kind="Constant" varnr="1"/>
@@ -6227,7 +6227,7 @@
        <Universal-Quantifier-Formula position="349\5">
         <Variable-Segments>
          <Implicitly-Qualified-Segment position="349\7">
-          <Variable idnr="46" spelling="g" position="349\7" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="1"/>
+          <Variable idnr="46" spelling="g" position="349\7" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="1"/>
           <ReservedDscr-Type idnr="46" nr="9" sort="ReservedDscr-Type" position="349\7">
            <Substitutions>
             <Substitution freevarnr="19" kind="Constant" varnr="1"/>
@@ -6289,7 +6289,7 @@
     <Universal-Quantifier-Formula position="353\15">
      <Variable-Segments>
       <Free-Variable-Segment position="353\15">
-       <Variable idnr="52" spelling="C" position="353\15" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+       <Variable idnr="52" spelling="C" position="353\15" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
        <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="353\15">
         <Substitutions/>
         <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -6302,7 +6302,7 @@
       <Universal-Quantifier-Formula position="353\15">
        <Variable-Segments>
         <Free-Variable-Segment position="353\15">
-         <Variable idnr="44" spelling="a" position="353\15" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="353\15" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="353\15">
           <Substitutions>
            <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -6319,7 +6319,7 @@
         <Universal-Quantifier-Formula position="353\15">
          <Variable-Segments>
           <Free-Variable-Segment position="353\15">
-           <Variable idnr="55" spelling="c" position="353\15" origin="ReservedVar" kind="BoundVar" serialnr="24" varnr="3"/>
+           <Variable idnr="55" spelling="c" position="353\15" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="24" varnr="3"/>
            <ReservedDscr-Type idnr="55" nr="8" sort="ReservedDscr-Type" position="353\15">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -6374,7 +6374,7 @@
     <Universal-Quantifier-Formula position="356\15">
      <Variable-Segments>
       <Free-Variable-Segment position="356\15">
-       <Variable idnr="52" spelling="C" position="356\15" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+       <Variable idnr="52" spelling="C" position="356\15" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
        <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="356\15">
         <Substitutions/>
         <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -6387,7 +6387,7 @@
       <Universal-Quantifier-Formula position="356\15">
        <Variable-Segments>
         <Free-Variable-Segment position="356\15">
-         <Variable idnr="44" spelling="a" position="356\15" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="356\15" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="356\15">
           <Substitutions>
            <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -6404,7 +6404,7 @@
         <Universal-Quantifier-Formula position="356\15">
          <Variable-Segments>
           <Free-Variable-Segment position="356\15">
-           <Variable idnr="55" spelling="c" position="356\15" origin="ReservedVar" kind="BoundVar" serialnr="24" varnr="3"/>
+           <Variable idnr="55" spelling="c" position="356\15" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="24" varnr="3"/>
            <ReservedDscr-Type idnr="55" nr="8" sort="ReservedDscr-Type" position="356\15">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -6459,7 +6459,7 @@
     <Universal-Quantifier-Formula position="359\23">
      <Variable-Segments>
       <Free-Variable-Segment position="359\23">
-       <Variable idnr="52" spelling="C" position="359\23" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+       <Variable idnr="52" spelling="C" position="359\23" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
        <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="359\23">
         <Substitutions/>
         <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -6472,7 +6472,7 @@
       <Universal-Quantifier-Formula position="359\23">
        <Variable-Segments>
         <Free-Variable-Segment position="359\23">
-         <Variable idnr="44" spelling="a" position="359\23" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="359\23" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="359\23">
           <Substitutions>
            <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -6489,7 +6489,7 @@
         <Universal-Quantifier-Formula position="359\23">
          <Variable-Segments>
           <Free-Variable-Segment position="359\23">
-           <Variable idnr="36" spelling="f" position="359\23" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="3"/>
+           <Variable idnr="36" spelling="f" position="359\23" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="3"/>
            <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="359\23">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -6506,7 +6506,7 @@
           <Universal-Quantifier-Formula position="359\23">
            <Variable-Segments>
             <Free-Variable-Segment position="359\23">
-             <Variable idnr="46" spelling="g" position="359\23" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="4"/>
+             <Variable idnr="46" spelling="g" position="359\23" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="4"/>
              <ReservedDscr-Type idnr="46" nr="9" sort="ReservedDscr-Type" position="359\23">
               <Substitutions>
                <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -6586,7 +6586,7 @@
     <Universal-Quantifier-Formula position="362\23">
      <Variable-Segments>
       <Free-Variable-Segment position="362\23">
-       <Variable idnr="52" spelling="C" position="362\23" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+       <Variable idnr="52" spelling="C" position="362\23" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
        <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="362\23">
         <Substitutions/>
         <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -6599,7 +6599,7 @@
       <Universal-Quantifier-Formula position="362\23">
        <Variable-Segments>
         <Free-Variable-Segment position="362\23">
-         <Variable idnr="44" spelling="a" position="362\23" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="362\23" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="362\23">
           <Substitutions>
            <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -6616,7 +6616,7 @@
         <Universal-Quantifier-Formula position="362\23">
          <Variable-Segments>
           <Free-Variable-Segment position="362\23">
-           <Variable idnr="36" spelling="f" position="362\23" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="3"/>
+           <Variable idnr="36" spelling="f" position="362\23" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="3"/>
            <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="362\23">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -6633,7 +6633,7 @@
           <Universal-Quantifier-Formula position="362\23">
            <Variable-Segments>
             <Free-Variable-Segment position="362\23">
-             <Variable idnr="46" spelling="g" position="362\23" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="4"/>
+             <Variable idnr="46" spelling="g" position="362\23" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="4"/>
              <ReservedDscr-Type idnr="46" nr="9" sort="ReservedDscr-Type" position="362\23">
               <Substitutions>
                <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -6713,7 +6713,7 @@
     <Universal-Quantifier-Formula position="365\51">
      <Variable-Segments>
       <Free-Variable-Segment position="365\51">
-       <Variable idnr="52" spelling="C" position="365\51" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+       <Variable idnr="52" spelling="C" position="365\51" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
        <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="365\51">
         <Substitutions/>
         <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -6726,7 +6726,7 @@
       <Universal-Quantifier-Formula position="365\51">
        <Variable-Segments>
         <Free-Variable-Segment position="365\51">
-         <Variable idnr="44" spelling="a" position="365\51" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="365\51" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="365\51">
           <Substitutions>
            <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -6743,7 +6743,7 @@
         <Universal-Quantifier-Formula position="365\51">
          <Variable-Segments>
           <Free-Variable-Segment position="365\51">
-           <Variable idnr="36" spelling="f" position="365\51" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="3"/>
+           <Variable idnr="36" spelling="f" position="365\51" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="3"/>
            <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="365\51">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -6825,7 +6825,7 @@
     <Universal-Quantifier-Formula position="368\51">
      <Variable-Segments>
       <Free-Variable-Segment position="368\51">
-       <Variable idnr="52" spelling="C" position="368\51" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+       <Variable idnr="52" spelling="C" position="368\51" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
        <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="368\51">
         <Substitutions/>
         <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -6838,7 +6838,7 @@
       <Universal-Quantifier-Formula position="368\51">
        <Variable-Segments>
         <Free-Variable-Segment position="368\51">
-         <Variable idnr="44" spelling="a" position="368\51" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="368\51" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="368\51">
           <Substitutions>
            <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -6855,7 +6855,7 @@
         <Universal-Quantifier-Formula position="368\51">
          <Variable-Segments>
           <Free-Variable-Segment position="368\51">
-           <Variable idnr="36" spelling="f" position="368\51" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="3"/>
+           <Variable idnr="36" spelling="f" position="368\51" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="3"/>
            <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="368\51">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -6937,7 +6937,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="371\7">
-        <Variable idnr="52" spelling="C" position="371\7" origin="ReservedVar" kind="Constant" serialnr="19" varnr="1"/>
+        <Variable idnr="52" spelling="C" position="371\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="19" varnr="1"/>
         <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="371\7">
          <Substitutions/>
          <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -6946,7 +6946,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="371\9">
-        <Variable idnr="44" spelling="a" position="371\9" origin="ReservedVar" kind="Constant" serialnr="20" varnr="2"/>
+        <Variable idnr="44" spelling="a" position="371\9" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="20" varnr="2"/>
         <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="371\9">
          <Substitutions>
           <Substitution freevarnr="19" kind="Constant" varnr="1"/>
@@ -6993,7 +6993,7 @@
        <Universal-Quantifier-Formula position="375\5">
         <Variable-Segments>
          <Implicitly-Qualified-Segment position="375\7">
-          <Variable idnr="36" spelling="f" position="375\7" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="1"/>
+          <Variable idnr="36" spelling="f" position="375\7" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="1"/>
           <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="375\7">
            <Substitutions>
             <Substitution freevarnr="19" kind="Constant" varnr="1"/>
@@ -7090,7 +7090,7 @@
        <Universal-Quantifier-Formula position="379\5">
         <Variable-Segments>
          <Implicitly-Qualified-Segment position="379\7">
-          <Variable idnr="36" spelling="f" position="379\7" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="1"/>
+          <Variable idnr="36" spelling="f" position="379\7" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="1"/>
           <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="379\7">
            <Substitutions>
             <Substitution freevarnr="19" kind="Constant" varnr="1"/>
@@ -7165,7 +7165,7 @@
     <Universal-Quantifier-Formula position="383\21">
      <Variable-Segments>
       <Free-Variable-Segment position="383\21">
-       <Variable idnr="31" spelling="V" position="383\21" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="383\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="383\21">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -7185,7 +7185,7 @@
       <Universal-Quantifier-Formula position="383\21">
        <Variable-Segments>
         <Free-Variable-Segment position="383\21">
-         <Variable idnr="52" spelling="C" position="383\21" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
+         <Variable idnr="52" spelling="C" position="383\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
          <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="383\21">
           <Substitutions/>
           <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -7198,7 +7198,7 @@
         <Universal-Quantifier-Formula position="383\21">
          <Variable-Segments>
           <Free-Variable-Segment position="383\21">
-           <Variable idnr="44" spelling="a" position="383\21" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
+           <Variable idnr="44" spelling="a" position="383\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
            <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="383\21">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="2"/>
@@ -7258,7 +7258,7 @@
     <Universal-Quantifier-Formula position="386\21">
      <Variable-Segments>
       <Free-Variable-Segment position="386\21">
-       <Variable idnr="31" spelling="V" position="386\21" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="386\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="386\21">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -7278,7 +7278,7 @@
       <Universal-Quantifier-Formula position="386\21">
        <Variable-Segments>
         <Free-Variable-Segment position="386\21">
-         <Variable idnr="52" spelling="C" position="386\21" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
+         <Variable idnr="52" spelling="C" position="386\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
          <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="386\21">
           <Substitutions/>
           <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -7291,7 +7291,7 @@
         <Universal-Quantifier-Formula position="386\21">
          <Variable-Segments>
           <Free-Variable-Segment position="386\21">
-           <Variable idnr="44" spelling="a" position="386\21" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
+           <Variable idnr="44" spelling="a" position="386\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
            <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="386\21">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="2"/>
@@ -7351,7 +7351,7 @@
     <Universal-Quantifier-Formula position="391\32">
      <Variable-Segments>
       <Free-Variable-Segment position="391\32">
-       <Variable idnr="52" spelling="C" position="391\32" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+       <Variable idnr="52" spelling="C" position="391\32" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
        <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="391\32">
         <Substitutions/>
         <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -7364,7 +7364,7 @@
       <Universal-Quantifier-Formula position="391\32">
        <Variable-Segments>
         <Free-Variable-Segment position="391\32">
-         <Variable idnr="36" spelling="f" position="391\32" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="2"/>
+         <Variable idnr="36" spelling="f" position="391\32" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="2"/>
          <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="391\32">
           <Substitutions>
            <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -7381,7 +7381,7 @@
         <Universal-Quantifier-Formula position="391\32">
          <Variable-Segments>
           <Free-Variable-Segment position="391\32">
-           <Variable idnr="38" spelling="f9" position="391\32" origin="ReservedVar" kind="BoundVar" serialnr="28" varnr="3"/>
+           <Variable idnr="38" spelling="f9" position="391\32" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="28" varnr="3"/>
            <ReservedDscr-Type idnr="38" nr="9" sort="ReservedDscr-Type" position="391\32">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -7456,7 +7456,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="394\7">
-        <Variable idnr="52" spelling="C" position="394\7" origin="ReservedVar" kind="Constant" serialnr="19" varnr="1"/>
+        <Variable idnr="52" spelling="C" position="394\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="19" varnr="1"/>
         <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="394\7">
          <Substitutions/>
          <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -7465,7 +7465,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="394\9">
-        <Variable idnr="36" spelling="f" position="394\9" origin="ReservedVar" kind="Constant" serialnr="25" varnr="2"/>
+        <Variable idnr="36" spelling="f" position="394\9" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="25" varnr="2"/>
         <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="394\9">
          <Substitutions>
           <Substitution freevarnr="19" kind="Constant" varnr="1"/>
@@ -7478,7 +7478,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="394\11">
-        <Variable idnr="46" spelling="g" position="394\11" origin="ReservedVar" kind="Constant" serialnr="26" varnr="3"/>
+        <Variable idnr="46" spelling="g" position="394\11" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="26" varnr="3"/>
         <ReservedDscr-Type idnr="46" nr="9" sort="ReservedDscr-Type" position="394\11">
          <Substitutions>
           <Substitution freevarnr="19" kind="Constant" varnr="1"/>
@@ -7542,7 +7542,7 @@
        <Universal-Quantifier-Formula position="398\5">
         <Variable-Segments>
          <Implicitly-Qualified-Segment position="398\7">
-          <Variable idnr="56" spelling="h" position="398\7" origin="ReservedVar" kind="BoundVar" serialnr="27" varnr="1"/>
+          <Variable idnr="56" spelling="h" position="398\7" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="27" varnr="1"/>
           <ReservedDscr-Type idnr="56" nr="9" sort="ReservedDscr-Type" position="398\7">
            <Substitutions>
             <Substitution freevarnr="19" kind="Constant" varnr="1"/>
@@ -7613,7 +7613,7 @@
     <Universal-Quantifier-Formula position="402\59">
      <Variable-Segments>
       <Free-Variable-Segment position="402\59">
-       <Variable idnr="52" spelling="C" position="402\59" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+       <Variable idnr="52" spelling="C" position="402\59" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
        <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="402\59">
         <Substitutions/>
         <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -7626,7 +7626,7 @@
       <Universal-Quantifier-Formula position="402\59">
        <Variable-Segments>
         <Free-Variable-Segment position="402\59">
-         <Variable idnr="36" spelling="f" position="402\59" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="2"/>
+         <Variable idnr="36" spelling="f" position="402\59" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="2"/>
          <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="402\59">
           <Substitutions>
            <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -7643,7 +7643,7 @@
         <Universal-Quantifier-Formula position="402\59">
          <Variable-Segments>
           <Free-Variable-Segment position="402\59">
-           <Variable idnr="46" spelling="g" position="402\59" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="3"/>
+           <Variable idnr="46" spelling="g" position="402\59" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="3"/>
            <ReservedDscr-Type idnr="46" nr="9" sort="ReservedDscr-Type" position="402\59">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -7733,7 +7733,7 @@
     <Universal-Quantifier-Formula position="405\26">
      <Variable-Segments>
       <Free-Variable-Segment position="405\26">
-       <Variable idnr="52" spelling="C" position="405\26" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+       <Variable idnr="52" spelling="C" position="405\26" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
        <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="405\26">
         <Substitutions/>
         <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -7746,7 +7746,7 @@
       <Universal-Quantifier-Formula position="405\26">
        <Variable-Segments>
         <Free-Variable-Segment position="405\26">
-         <Variable idnr="44" spelling="a" position="405\26" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="405\26" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="405\26">
           <Substitutions>
            <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -7763,7 +7763,7 @@
         <Universal-Quantifier-Formula position="405\26">
          <Variable-Segments>
           <Free-Variable-Segment position="405\26">
-           <Variable idnr="36" spelling="f" position="405\26" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="3"/>
+           <Variable idnr="36" spelling="f" position="405\26" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="3"/>
            <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="405\26">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -7836,7 +7836,7 @@
     <Universal-Quantifier-Formula position="408\18">
      <Variable-Segments>
       <Free-Variable-Segment position="408\18">
-       <Variable idnr="52" spelling="C" position="408\18" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+       <Variable idnr="52" spelling="C" position="408\18" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
        <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="408\18">
         <Substitutions/>
         <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -7849,7 +7849,7 @@
       <Universal-Quantifier-Formula position="408\18">
        <Variable-Segments>
         <Free-Variable-Segment position="408\18">
-         <Variable idnr="44" spelling="a" position="408\18" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="408\18" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="408\18">
           <Substitutions>
            <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -7866,7 +7866,7 @@
         <Universal-Quantifier-Formula position="408\18">
          <Variable-Segments>
           <Free-Variable-Segment position="408\18">
-           <Variable idnr="45" spelling="b" position="408\18" origin="ReservedVar" kind="BoundVar" serialnr="21" varnr="3"/>
+           <Variable idnr="45" spelling="b" position="408\18" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="21" varnr="3"/>
            <ReservedDscr-Type idnr="45" nr="8" sort="ReservedDscr-Type" position="408\18">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -7925,7 +7925,7 @@
     <Universal-Quantifier-Formula position="411\12">
      <Variable-Segments>
       <Free-Variable-Segment position="411\12">
-       <Variable idnr="52" spelling="C" position="411\12" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+       <Variable idnr="52" spelling="C" position="411\12" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
        <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="411\12">
         <Substitutions/>
         <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -7938,7 +7938,7 @@
       <Universal-Quantifier-Formula position="411\12">
        <Variable-Segments>
         <Free-Variable-Segment position="411\12">
-         <Variable idnr="36" spelling="f" position="411\12" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="2"/>
+         <Variable idnr="36" spelling="f" position="411\12" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="2"/>
          <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="411\12">
           <Substitutions>
            <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -7955,7 +7955,7 @@
         <Universal-Quantifier-Formula position="411\12">
          <Variable-Segments>
           <Free-Variable-Segment position="411\12">
-           <Variable idnr="46" spelling="g" position="411\12" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="3"/>
+           <Variable idnr="46" spelling="g" position="411\12" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="3"/>
            <ReservedDscr-Type idnr="46" nr="9" sort="ReservedDscr-Type" position="411\12">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -8020,7 +8020,7 @@
     <Universal-Quantifier-Formula position="414\41">
      <Variable-Segments>
       <Free-Variable-Segment position="414\41">
-       <Variable idnr="52" spelling="C" position="414\41" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+       <Variable idnr="52" spelling="C" position="414\41" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
        <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="414\41">
         <Substitutions/>
         <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -8033,7 +8033,7 @@
       <Universal-Quantifier-Formula position="414\41">
        <Variable-Segments>
         <Free-Variable-Segment position="414\41">
-         <Variable idnr="36" spelling="f" position="414\41" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="2"/>
+         <Variable idnr="36" spelling="f" position="414\41" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="2"/>
          <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="414\41">
           <Substitutions>
            <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -8050,7 +8050,7 @@
         <Universal-Quantifier-Formula position="414\41">
          <Variable-Segments>
           <Free-Variable-Segment position="414\41">
-           <Variable idnr="46" spelling="g" position="414\41" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="3"/>
+           <Variable idnr="46" spelling="g" position="414\41" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="3"/>
            <ReservedDscr-Type idnr="46" nr="9" sort="ReservedDscr-Type" position="414\41">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -8067,7 +8067,7 @@
           <Universal-Quantifier-Formula position="414\41">
            <Variable-Segments>
             <Free-Variable-Segment position="414\41">
-             <Variable idnr="38" spelling="f9" position="414\41" origin="ReservedVar" kind="BoundVar" serialnr="28" varnr="4"/>
+             <Variable idnr="38" spelling="f9" position="414\41" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="28" varnr="4"/>
              <ReservedDscr-Type idnr="38" nr="9" sort="ReservedDscr-Type" position="414\41">
               <Substitutions>
                <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -8084,7 +8084,7 @@
             <Universal-Quantifier-Formula position="414\41">
              <Variable-Segments>
               <Free-Variable-Segment position="414\41">
-               <Variable idnr="57" spelling="g9" position="414\41" origin="ReservedVar" kind="BoundVar" serialnr="29" varnr="5"/>
+               <Variable idnr="57" spelling="g9" position="414\41" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="29" varnr="5"/>
                <ReservedDscr-Type idnr="57" nr="9" sort="ReservedDscr-Type" position="414\41">
                 <Substitutions>
                  <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -8187,7 +8187,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="418\7">
-        <Variable idnr="52" spelling="C" position="418\7" origin="ReservedVar" kind="Constant" serialnr="19" varnr="1"/>
+        <Variable idnr="52" spelling="C" position="418\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="19" varnr="1"/>
         <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="418\7">
          <Substitutions/>
          <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -8236,7 +8236,7 @@
        <Universal-Quantifier-Formula position="422\6">
         <Variable-Segments>
          <Implicitly-Qualified-Segment position="423\2">
-          <Variable idnr="36" spelling="f" position="423\2" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="1"/>
+          <Variable idnr="36" spelling="f" position="423\2" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="1"/>
           <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="423\2">
            <Substitutions>
             <Substitution freevarnr="19" kind="Constant" varnr="1"/>
@@ -8249,7 +8249,7 @@
           </ReservedDscr-Type>
          </Implicitly-Qualified-Segment>
          <Implicitly-Qualified-Segment position="423\4">
-          <Variable idnr="46" spelling="g" position="423\4" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="2"/>
+          <Variable idnr="46" spelling="g" position="423\4" varintro="Quantifier" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="2"/>
           <ReservedDscr-Type idnr="46" nr="9" sort="ReservedDscr-Type" position="423\4">
            <Substitutions>
             <Substitution freevarnr="19" kind="Constant" varnr="1"/>
@@ -8338,7 +8338,7 @@
     <Universal-Quantifier-Formula position="427\40">
      <Variable-Segments>
       <Free-Variable-Segment position="427\40">
-       <Variable idnr="52" spelling="C" position="427\40" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
+       <Variable idnr="52" spelling="C" position="427\40" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="1"/>
        <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="427\40">
         <Substitutions/>
         <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -8351,7 +8351,7 @@
       <Universal-Quantifier-Formula position="427\40">
        <Variable-Segments>
         <Free-Variable-Segment position="427\40">
-         <Variable idnr="44" spelling="a" position="427\40" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
+         <Variable idnr="44" spelling="a" position="427\40" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="2"/>
          <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="427\40">
           <Substitutions>
            <Substitution freevarnr="19" kind="BoundVar" varnr="1"/>
@@ -8436,7 +8436,7 @@
     <Universal-Quantifier-Formula position="431\21">
      <Variable-Segments>
       <Free-Variable-Segment position="431\21">
-       <Variable idnr="31" spelling="V" position="431\21" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="431\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="431\21">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -8456,7 +8456,7 @@
       <Universal-Quantifier-Formula position="431\21">
        <Variable-Segments>
         <Free-Variable-Segment position="431\21">
-         <Variable idnr="52" spelling="C" position="431\21" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
+         <Variable idnr="52" spelling="C" position="431\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
          <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="431\21">
           <Substitutions/>
           <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -8520,7 +8520,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="434\7">
-        <Variable idnr="31" spelling="V" position="434\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="434\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="434\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -8536,7 +8536,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="434\9">
-        <Variable idnr="52" spelling="C" position="434\9" origin="ReservedVar" kind="Constant" serialnr="19" varnr="2"/>
+        <Variable idnr="52" spelling="C" position="434\9" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="19" varnr="2"/>
         <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="434\9">
          <Substitutions/>
          <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -8545,7 +8545,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="434\11">
-        <Variable idnr="44" spelling="a" position="434\11" origin="ReservedVar" kind="Constant" serialnr="20" varnr="3"/>
+        <Variable idnr="44" spelling="a" position="434\11" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="20" varnr="3"/>
         <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="434\11">
          <Substitutions>
           <Substitution freevarnr="19" kind="Constant" varnr="2"/>
@@ -8653,7 +8653,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="448\7">
-        <Variable idnr="31" spelling="V" position="448\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="31" spelling="V" position="448\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="448\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -8669,7 +8669,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="448\9">
-        <Variable idnr="52" spelling="C" position="448\9" origin="ReservedVar" kind="Constant" serialnr="19" varnr="2"/>
+        <Variable idnr="52" spelling="C" position="448\9" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="19" varnr="2"/>
         <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="448\9">
          <Substitutions/>
          <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -8751,7 +8751,7 @@
     <Universal-Quantifier-Formula position="458\21">
      <Variable-Segments>
       <Free-Variable-Segment position="458\21">
-       <Variable idnr="31" spelling="V" position="458\21" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="458\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="458\21">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -8771,7 +8771,7 @@
       <Universal-Quantifier-Formula position="458\21">
        <Variable-Segments>
         <Free-Variable-Segment position="458\21">
-         <Variable idnr="52" spelling="C" position="458\21" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
+         <Variable idnr="52" spelling="C" position="458\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
          <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="458\21">
           <Substitutions/>
           <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -8784,7 +8784,7 @@
         <Universal-Quantifier-Formula position="458\21">
          <Variable-Segments>
           <Free-Variable-Segment position="458\21">
-           <Variable idnr="44" spelling="a" position="458\21" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
+           <Variable idnr="44" spelling="a" position="458\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
            <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="458\21">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="2"/>
@@ -8801,7 +8801,7 @@
           <Universal-Quantifier-Formula position="458\21">
            <Variable-Segments>
             <Free-Variable-Segment position="458\21">
-             <Variable idnr="36" spelling="f" position="458\21" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="4"/>
+             <Variable idnr="36" spelling="f" position="458\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="4"/>
              <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="458\21">
               <Substitutions>
                <Substitution freevarnr="19" kind="BoundVar" varnr="2"/>
@@ -8897,7 +8897,7 @@
     <Universal-Quantifier-Formula position="462\21">
      <Variable-Segments>
       <Free-Variable-Segment position="462\21">
-       <Variable idnr="31" spelling="V" position="462\21" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="462\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="462\21">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -8917,7 +8917,7 @@
       <Universal-Quantifier-Formula position="462\21">
        <Variable-Segments>
         <Free-Variable-Segment position="462\21">
-         <Variable idnr="52" spelling="C" position="462\21" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
+         <Variable idnr="52" spelling="C" position="462\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
          <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="462\21">
           <Substitutions/>
           <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -8930,7 +8930,7 @@
         <Universal-Quantifier-Formula position="462\21">
          <Variable-Segments>
           <Free-Variable-Segment position="462\21">
-           <Variable idnr="44" spelling="a" position="462\21" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
+           <Variable idnr="44" spelling="a" position="462\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
            <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="462\21">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="2"/>
@@ -8947,7 +8947,7 @@
           <Universal-Quantifier-Formula position="462\21">
            <Variable-Segments>
             <Free-Variable-Segment position="462\21">
-             <Variable idnr="45" spelling="b" position="462\21" origin="ReservedVar" kind="BoundVar" serialnr="21" varnr="4"/>
+             <Variable idnr="45" spelling="b" position="462\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="21" varnr="4"/>
              <ReservedDscr-Type idnr="45" nr="8" sort="ReservedDscr-Type" position="462\21">
               <Substitutions>
                <Substitution freevarnr="19" kind="BoundVar" varnr="2"/>
@@ -9017,7 +9017,7 @@
     <Universal-Quantifier-Formula position="465\21">
      <Variable-Segments>
       <Free-Variable-Segment position="465\21">
-       <Variable idnr="31" spelling="V" position="465\21" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="465\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="465\21">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -9037,7 +9037,7 @@
       <Universal-Quantifier-Formula position="465\21">
        <Variable-Segments>
         <Free-Variable-Segment position="465\21">
-         <Variable idnr="52" spelling="C" position="465\21" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
+         <Variable idnr="52" spelling="C" position="465\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
          <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="465\21">
           <Substitutions/>
           <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -9050,7 +9050,7 @@
         <Universal-Quantifier-Formula position="465\21">
          <Variable-Segments>
           <Free-Variable-Segment position="465\21">
-           <Variable idnr="44" spelling="a" position="465\21" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
+           <Variable idnr="44" spelling="a" position="465\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
            <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="465\21">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="2"/>
@@ -9067,7 +9067,7 @@
           <Universal-Quantifier-Formula position="465\21">
            <Variable-Segments>
             <Free-Variable-Segment position="465\21">
-             <Variable idnr="36" spelling="f" position="465\21" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="4"/>
+             <Variable idnr="36" spelling="f" position="465\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="4"/>
              <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="465\21">
               <Substitutions>
                <Substitution freevarnr="19" kind="BoundVar" varnr="2"/>
@@ -9163,7 +9163,7 @@
     <Universal-Quantifier-Formula position="469\21">
      <Variable-Segments>
       <Free-Variable-Segment position="469\21">
-       <Variable idnr="31" spelling="V" position="469\21" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="469\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="469\21">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -9183,7 +9183,7 @@
       <Universal-Quantifier-Formula position="469\21">
        <Variable-Segments>
         <Free-Variable-Segment position="469\21">
-         <Variable idnr="52" spelling="C" position="469\21" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
+         <Variable idnr="52" spelling="C" position="469\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
          <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="469\21">
           <Substitutions/>
           <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -9196,7 +9196,7 @@
         <Universal-Quantifier-Formula position="469\21">
          <Variable-Segments>
           <Free-Variable-Segment position="469\21">
-           <Variable idnr="44" spelling="a" position="469\21" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
+           <Variable idnr="44" spelling="a" position="469\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
            <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="469\21">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="2"/>
@@ -9213,7 +9213,7 @@
           <Universal-Quantifier-Formula position="469\21">
            <Variable-Segments>
             <Free-Variable-Segment position="469\21">
-             <Variable idnr="45" spelling="b" position="469\21" origin="ReservedVar" kind="BoundVar" serialnr="21" varnr="4"/>
+             <Variable idnr="45" spelling="b" position="469\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="21" varnr="4"/>
              <ReservedDscr-Type idnr="45" nr="8" sort="ReservedDscr-Type" position="469\21">
               <Substitutions>
                <Substitution freevarnr="19" kind="BoundVar" varnr="2"/>
@@ -9283,7 +9283,7 @@
     <Universal-Quantifier-Formula position="472\21">
      <Variable-Segments>
       <Free-Variable-Segment position="472\21">
-       <Variable idnr="31" spelling="V" position="472\21" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="472\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="472\21">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -9303,7 +9303,7 @@
       <Universal-Quantifier-Formula position="472\21">
        <Variable-Segments>
         <Free-Variable-Segment position="472\21">
-         <Variable idnr="52" spelling="C" position="472\21" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
+         <Variable idnr="52" spelling="C" position="472\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
          <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="472\21">
           <Substitutions/>
           <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -9316,7 +9316,7 @@
         <Universal-Quantifier-Formula position="472\21">
          <Variable-Segments>
           <Free-Variable-Segment position="472\21">
-           <Variable idnr="36" spelling="f" position="472\21" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="3"/>
+           <Variable idnr="36" spelling="f" position="472\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="25" varnr="3"/>
            <ReservedDscr-Type idnr="36" nr="9" sort="ReservedDscr-Type" position="472\21">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="2"/>
@@ -9333,7 +9333,7 @@
           <Universal-Quantifier-Formula position="472\21">
            <Variable-Segments>
             <Free-Variable-Segment position="472\21">
-             <Variable idnr="46" spelling="g" position="472\21" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="4"/>
+             <Variable idnr="46" spelling="g" position="472\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="26" varnr="4"/>
              <ReservedDscr-Type idnr="46" nr="9" sort="ReservedDscr-Type" position="472\21">
               <Substitutions>
                <Substitution freevarnr="19" kind="BoundVar" varnr="2"/>
@@ -9447,7 +9447,7 @@
     <Universal-Quantifier-Formula position="476\21">
      <Variable-Segments>
       <Free-Variable-Segment position="476\21">
-       <Variable idnr="31" spelling="V" position="476\21" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="476\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="476\21">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -9467,7 +9467,7 @@
       <Universal-Quantifier-Formula position="476\21">
        <Variable-Segments>
         <Free-Variable-Segment position="476\21">
-         <Variable idnr="52" spelling="C" position="476\21" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
+         <Variable idnr="52" spelling="C" position="476\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
          <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="476\21">
           <Substitutions/>
           <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -9480,7 +9480,7 @@
         <Universal-Quantifier-Formula position="476\21">
          <Variable-Segments>
           <Free-Variable-Segment position="476\21">
-           <Variable idnr="44" spelling="a" position="476\21" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
+           <Variable idnr="44" spelling="a" position="476\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
            <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="476\21">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="2"/>
@@ -9497,7 +9497,7 @@
           <Universal-Quantifier-Formula position="476\21">
            <Variable-Segments>
             <Free-Variable-Segment position="476\21">
-             <Variable idnr="45" spelling="b" position="476\21" origin="ReservedVar" kind="BoundVar" serialnr="21" varnr="4"/>
+             <Variable idnr="45" spelling="b" position="476\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="21" varnr="4"/>
              <ReservedDscr-Type idnr="45" nr="8" sort="ReservedDscr-Type" position="476\21">
               <Substitutions>
                <Substitution freevarnr="19" kind="BoundVar" varnr="2"/>
@@ -9577,7 +9577,7 @@
     <Universal-Quantifier-Formula position="479\21">
      <Variable-Segments>
       <Free-Variable-Segment position="479\21">
-       <Variable idnr="31" spelling="V" position="479\21" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="479\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="479\21">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -9597,7 +9597,7 @@
       <Universal-Quantifier-Formula position="479\21">
        <Variable-Segments>
         <Free-Variable-Segment position="479\21">
-         <Variable idnr="52" spelling="C" position="479\21" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
+         <Variable idnr="52" spelling="C" position="479\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
          <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="479\21">
           <Substitutions/>
           <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -9610,7 +9610,7 @@
         <Universal-Quantifier-Formula position="479\21">
          <Variable-Segments>
           <Free-Variable-Segment position="479\21">
-           <Variable idnr="44" spelling="a" position="479\21" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
+           <Variable idnr="44" spelling="a" position="479\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
            <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="479\21">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="2"/>
@@ -9678,7 +9678,7 @@
     <Universal-Quantifier-Formula position="482\21">
      <Variable-Segments>
       <Free-Variable-Segment position="482\21">
-       <Variable idnr="31" spelling="V" position="482\21" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <Variable idnr="31" spelling="V" position="482\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
        <ReservedDscr-Type idnr="31" nr="1" sort="ReservedDscr-Type" position="482\21">
         <Substitutions/>
         <Clustered-Type sort="Clustered-Type" position="33\27">
@@ -9698,7 +9698,7 @@
       <Universal-Quantifier-Formula position="482\21">
        <Variable-Segments>
         <Free-Variable-Segment position="482\21">
-         <Variable idnr="52" spelling="C" position="482\21" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
+         <Variable idnr="52" spelling="C" position="482\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="19" varnr="2"/>
          <ReservedDscr-Type idnr="52" nr="7" sort="ReservedDscr-Type" position="482\21">
           <Substitutions/>
           <Standard-Type nr="18" formatnr="195" patternnr="37" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="315\22">
@@ -9711,7 +9711,7 @@
         <Universal-Quantifier-Formula position="482\21">
          <Variable-Segments>
           <Free-Variable-Segment position="482\21">
-           <Variable idnr="44" spelling="a" position="482\21" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
+           <Variable idnr="44" spelling="a" position="482\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="20" varnr="3"/>
            <ReservedDscr-Type idnr="44" nr="8" sort="ReservedDscr-Type" position="482\21">
             <Substitutions>
              <Substitution freevarnr="19" kind="BoundVar" varnr="2"/>

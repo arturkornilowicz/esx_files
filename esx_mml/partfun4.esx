@@ -7,7 +7,7 @@
   <Reservation>
    <Reservation-Segment position="38\9">
     <Variables>
-     <Variable idnr="26" spelling="T" position="38\9" kind="ReservedVar" serialnr="1" varnr="0"/>
+     <Variable idnr="26" spelling="T" position="38\9" varintro="itReservation" kind="ReservedVar" serialnr="1" varnr="0"/>
     </Variables>
     <Variable-Segments/>
     <Clustered-Type sort="Clustered-Type" position="38\32">
@@ -23,12 +23,12 @@
    </Reservation-Segment>
    <Reservation-Segment position="39\3">
     <Variables>
-     <Variable idnr="27" spelling="f" position="39\3" kind="ReservedVar" serialnr="2" varnr="0"/>
-     <Variable idnr="28" spelling="g" position="39\6" kind="ReservedVar" serialnr="3" varnr="0"/>
+     <Variable idnr="27" spelling="f" position="39\3" varintro="itReservation" kind="ReservedVar" serialnr="2" varnr="0"/>
+     <Variable idnr="28" spelling="g" position="39\6" varintro="itReservation" kind="ReservedVar" serialnr="3" varnr="0"/>
     </Variables>
     <Variable-Segments>
      <Free-Variable-Segment position="38\9">
-      <Variable idnr="26" spelling="T" position="38\9" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+      <Variable idnr="26" spelling="T" position="38\9" varintro="InsideReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
       <ReservedDscr-Type idnr="26" nr="1" sort="ReservedDscr-Type" position="38\9">
        <Substitutions/>
        <Clustered-Type sort="Clustered-Type" position="38\32">
@@ -59,7 +59,7 @@
    </Reservation-Segment>
    <Reservation-Segment position="40\3">
     <Variables>
-     <Variable idnr="29" spelling="r" position="40\3" kind="ReservedVar" serialnr="4" varnr="0"/>
+     <Variable idnr="29" spelling="r" position="40\3" varintro="itReservation" kind="ReservedVar" serialnr="4" varnr="0"/>
     </Variables>
     <Variable-Segments/>
     <Standard-Type nr="14" formatnr="113" patternnr="11" absolutepatternMMLId="XREAL_0:1" spelling="Real" sort="Expandable-Type" position="40\12">
@@ -75,7 +75,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="43\7">
-        <Variable idnr="26" spelling="T" position="43\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="26" spelling="T" position="43\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="26" nr="1" sort="ReservedDscr-Type" position="43\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="38\32">
@@ -91,7 +91,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="43\10">
-        <Variable idnr="27" spelling="f" position="43\10" origin="ReservedVar" kind="Constant" serialnr="2" varnr="2"/>
+        <Variable idnr="27" spelling="f" position="43\10" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="2" varnr="2"/>
         <ReservedDscr-Type idnr="27" nr="2" sort="ReservedDscr-Type" position="43\10">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -111,7 +111,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="43\13">
-        <Variable idnr="28" spelling="g" position="43\13" origin="ReservedVar" kind="Constant" serialnr="3" varnr="3"/>
+        <Variable idnr="28" spelling="g" position="43\13" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="3" varnr="3"/>
         <ReservedDscr-Type idnr="28" nr="2" sort="ReservedDscr-Type" position="43\13">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -136,7 +136,7 @@
     <Item kind="Constant-Definition" position="44\5" endposition="44\26">
      <Constant-Definition>
       <Equating>
-       <Variable idnr="30" spelling="c" position="44\7" origin="DefConstant" kind="Constant" serialnr="4" varnr="4"/>
+       <Variable idnr="30" spelling="c" position="44\7" varintro="itConstantDefinition" origin="DefConstant" kind="Constant" serialnr="4" varnr="4"/>
        <Selector-Term nr="2" formatnr="142" patternnr="1" absolutepatternMMLId="STRUCT_0:1" spelling="carrier" sort="Selector-Term" constrnr="1" absoluteconstrMMLId="STRUCT_0:1" position="44\21">
         <Simple-Term idnr="26" spelling="T" position="44\26" origin="ReservedVar" sort="Constant" serialnr="1" varnr="1"/>
        </Selector-Term>
@@ -147,11 +147,11 @@
      <Type-Changing-Statement>
       <Equalities-List>
        <Equality>
-        <Variable idnr="31" spelling="F" position="45\14" origin="DefConstant" kind="Constant" serialnr="5" varnr="5"/>
+        <Variable idnr="31" spelling="F" position="45\14" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="5" varnr="5"/>
         <Simple-Term idnr="27" spelling="f" position="45\18" origin="ReservedVar" sort="Constant" serialnr="2" varnr="2"/>
        </Equality>
        <Equality>
-        <Variable idnr="32" spelling="G" position="45\21" origin="DefConstant" kind="Constant" serialnr="6" varnr="6"/>
+        <Variable idnr="32" spelling="G" position="45\21" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="6" varnr="6"/>
         <Simple-Term idnr="28" spelling="g" position="45\25" origin="ReservedVar" sort="Constant" serialnr="3" varnr="3"/>
        </Equality>
       </Equalities-List>
@@ -207,7 +207,7 @@
          <Qualified-Segments>
           <Explicitly-Qualified-Segment position="50\14">
            <Variables>
-            <Variable idnr="33" spelling="H" position="50\14" kind="Constant" serialnr="7" varnr="7"/>
+            <Variable idnr="33" spelling="H" position="50\14" varintro="itChoice" kind="Constant" serialnr="7" varnr="7"/>
            </Variables>
            <Standard-Type nr="6" formatnr="129" patternnr="17" absolutepatternMMLId="STRUCT_0:6" spelling="Function" sort="Expandable-Type" position="50\29">
             <Arguments>
@@ -226,7 +226,7 @@
             <Variable-Segments>
              <Explicitly-Qualified-Segment position="51\7">
               <Variables>
-               <Variable idnr="35" spelling="p" position="51\9" kind="BoundVar" serialnr="8" varnr="1"/>
+               <Variable idnr="35" spelling="p" position="51\9" varintro="Quantifier" kind="BoundVar" serialnr="8" varnr="1"/>
               </Variables>
               <Standard-Type nr="10" formatnr="157" patternnr="19" absolutepatternMMLId="PRE_TOPC:2" spelling="Point" sort="Expandable-Type" position="51\21">
                <Arguments>
@@ -236,8 +236,8 @@
              </Explicitly-Qualified-Segment>
              <Explicitly-Qualified-Segment position="51\27">
               <Variables>
-               <Variable idnr="36" spelling="r1" position="51\30" kind="BoundVar" serialnr="9" varnr="2"/>
-               <Variable idnr="37" spelling="r2" position="51\33" kind="BoundVar" serialnr="10" varnr="3"/>
+               <Variable idnr="36" spelling="r1" position="51\30" varintro="Quantifier" kind="BoundVar" serialnr="9" varnr="2"/>
+               <Variable idnr="37" spelling="r2" position="51\33" varintro="Quantifier" kind="BoundVar" serialnr="10" varnr="3"/>
               </Variables>
               <Standard-Type nr="14" formatnr="113" patternnr="11" absolutepatternMMLId="XREAL_0:1" spelling="Real" sort="Expandable-Type" position="51\44">
                <Arguments/>
@@ -311,7 +311,7 @@
         <Type-Changing-Statement>
          <Equalities-List>
           <Equality>
-           <Variable idnr="39" spelling="h" position="54\16" origin="DefConstant" kind="Constant" serialnr="14" varnr="8"/>
+           <Variable idnr="39" spelling="h" position="54\16" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="14" varnr="8"/>
            <Simple-Term idnr="33" spelling="H" position="54\20" origin="Constant" sort="Constant" serialnr="7" varnr="7"/>
           </Equality>
          </Equalities-List>
@@ -394,7 +394,7 @@
            <Variable-Segments>
             <Explicitly-Qualified-Segment position="58\7">
              <Variables>
-              <Variable idnr="30" spelling="c" position="58\9" kind="BoundVar" serialnr="15" varnr="1"/>
+              <Variable idnr="30" spelling="c" position="58\9" varintro="Quantifier" kind="BoundVar" serialnr="15" varnr="1"/>
              </Variables>
              <Standard-Type nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="58\22">
               <Arguments/>
@@ -520,7 +520,7 @@
          <Qualified-Segments>
           <Explicitly-Qualified-Segment position="65\14">
            <Variables>
-            <Variable idnr="33" spelling="H" position="65\14" kind="Constant" serialnr="17" varnr="7"/>
+            <Variable idnr="33" spelling="H" position="65\14" varintro="itChoice" kind="Constant" serialnr="17" varnr="7"/>
            </Variables>
            <Standard-Type nr="6" formatnr="129" patternnr="17" absolutepatternMMLId="STRUCT_0:6" spelling="Function" sort="Expandable-Type" position="65\29">
             <Arguments>
@@ -539,7 +539,7 @@
             <Variable-Segments>
              <Explicitly-Qualified-Segment position="66\7">
               <Variables>
-               <Variable idnr="35" spelling="p" position="66\9" kind="BoundVar" serialnr="18" varnr="1"/>
+               <Variable idnr="35" spelling="p" position="66\9" varintro="Quantifier" kind="BoundVar" serialnr="18" varnr="1"/>
               </Variables>
               <Standard-Type nr="10" formatnr="157" patternnr="19" absolutepatternMMLId="PRE_TOPC:2" spelling="Point" sort="Expandable-Type" position="66\21">
                <Arguments>
@@ -549,8 +549,8 @@
              </Explicitly-Qualified-Segment>
              <Explicitly-Qualified-Segment position="66\27">
               <Variables>
-               <Variable idnr="36" spelling="r1" position="66\30" kind="BoundVar" serialnr="19" varnr="2"/>
-               <Variable idnr="37" spelling="r2" position="66\33" kind="BoundVar" serialnr="20" varnr="3"/>
+               <Variable idnr="36" spelling="r1" position="66\30" varintro="Quantifier" kind="BoundVar" serialnr="19" varnr="2"/>
+               <Variable idnr="37" spelling="r2" position="66\33" varintro="Quantifier" kind="BoundVar" serialnr="20" varnr="3"/>
               </Variables>
               <Standard-Type nr="14" formatnr="113" patternnr="11" absolutepatternMMLId="XREAL_0:1" spelling="Real" sort="Expandable-Type" position="66\44">
                <Arguments/>
@@ -624,7 +624,7 @@
         <Type-Changing-Statement>
          <Equalities-List>
           <Equality>
-           <Variable idnr="39" spelling="h" position="69\16" origin="DefConstant" kind="Constant" serialnr="24" varnr="8"/>
+           <Variable idnr="39" spelling="h" position="69\16" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="24" varnr="8"/>
            <Simple-Term idnr="33" spelling="H" position="69\20" origin="Constant" sort="Constant" serialnr="17" varnr="7"/>
           </Equality>
          </Equalities-List>
@@ -736,7 +736,7 @@
             <Variable-Segments>
              <Explicitly-Qualified-Segment position="74\3">
               <Variables>
-               <Variable idnr="30" spelling="c" position="74\5" kind="BoundVar" serialnr="25" varnr="1"/>
+               <Variable idnr="30" spelling="c" position="74\5" varintro="Quantifier" kind="BoundVar" serialnr="25" varnr="1"/>
               </Variables>
               <Standard-Type nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="74\18">
                <Arguments/>
@@ -864,7 +864,7 @@
          <Qualified-Segments>
           <Explicitly-Qualified-Segment position="82\14">
            <Variables>
-            <Variable idnr="33" spelling="H" position="82\14" kind="Constant" serialnr="27" varnr="7"/>
+            <Variable idnr="33" spelling="H" position="82\14" varintro="itChoice" kind="Constant" serialnr="27" varnr="7"/>
            </Variables>
            <Standard-Type nr="6" formatnr="129" patternnr="17" absolutepatternMMLId="STRUCT_0:6" spelling="Function" sort="Expandable-Type" position="82\29">
             <Arguments>
@@ -883,7 +883,7 @@
             <Variable-Segments>
              <Explicitly-Qualified-Segment position="83\7">
               <Variables>
-               <Variable idnr="35" spelling="p" position="83\9" kind="BoundVar" serialnr="28" varnr="1"/>
+               <Variable idnr="35" spelling="p" position="83\9" varintro="Quantifier" kind="BoundVar" serialnr="28" varnr="1"/>
               </Variables>
               <Standard-Type nr="10" formatnr="157" patternnr="19" absolutepatternMMLId="PRE_TOPC:2" spelling="Point" sort="Expandable-Type" position="83\21">
                <Arguments>
@@ -893,8 +893,8 @@
              </Explicitly-Qualified-Segment>
              <Explicitly-Qualified-Segment position="83\27">
               <Variables>
-               <Variable idnr="36" spelling="r1" position="83\30" kind="BoundVar" serialnr="29" varnr="2"/>
-               <Variable idnr="37" spelling="r2" position="83\33" kind="BoundVar" serialnr="30" varnr="3"/>
+               <Variable idnr="36" spelling="r1" position="83\30" varintro="Quantifier" kind="BoundVar" serialnr="29" varnr="2"/>
+               <Variable idnr="37" spelling="r2" position="83\33" varintro="Quantifier" kind="BoundVar" serialnr="30" varnr="3"/>
               </Variables>
               <Standard-Type nr="14" formatnr="113" patternnr="11" absolutepatternMMLId="XREAL_0:1" spelling="Real" sort="Expandable-Type" position="83\44">
                <Arguments/>
@@ -968,7 +968,7 @@
         <Type-Changing-Statement>
          <Equalities-List>
           <Equality>
-           <Variable idnr="39" spelling="h" position="86\16" origin="DefConstant" kind="Constant" serialnr="34" varnr="8"/>
+           <Variable idnr="39" spelling="h" position="86\16" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="34" varnr="8"/>
            <Simple-Term idnr="33" spelling="H" position="86\20" origin="Constant" sort="Constant" serialnr="27" varnr="7"/>
           </Equality>
          </Equalities-List>
@@ -1051,7 +1051,7 @@
            <Variable-Segments>
             <Explicitly-Qualified-Segment position="90\7">
              <Variables>
-              <Variable idnr="30" spelling="c" position="90\9" kind="BoundVar" serialnr="35" varnr="1"/>
+              <Variable idnr="30" spelling="c" position="90\9" varintro="Quantifier" kind="BoundVar" serialnr="35" varnr="1"/>
              </Variables>
              <Standard-Type nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="90\22">
               <Arguments/>
@@ -1156,7 +1156,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="97\7">
-        <Variable idnr="26" spelling="T" position="97\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="26" spelling="T" position="97\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="26" nr="1" sort="ReservedDscr-Type" position="97\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="38\32">
@@ -1172,7 +1172,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="97\10">
-        <Variable idnr="27" spelling="f" position="97\10" origin="ReservedVar" kind="Constant" serialnr="2" varnr="2"/>
+        <Variable idnr="27" spelling="f" position="97\10" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="2" varnr="2"/>
         <ReservedDscr-Type idnr="27" nr="2" sort="ReservedDscr-Type" position="97\10">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -1223,7 +1223,7 @@
         <Type-Changing-Statement>
          <Equalities-List>
           <Equality>
-           <Variable idnr="31" spelling="F" position="101\16" origin="DefConstant" kind="Constant" serialnr="39" varnr="3"/>
+           <Variable idnr="31" spelling="F" position="101\16" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="39" varnr="3"/>
            <Simple-Term idnr="27" spelling="f" position="101\20" origin="ReservedVar" sort="Constant" serialnr="2" varnr="2"/>
           </Equality>
          </Equalities-List>
@@ -1251,7 +1251,7 @@
        <Item kind="Constant-Definition" position="102\7" endposition="102\28">
         <Constant-Definition>
          <Equating>
-          <Variable idnr="30" spelling="c" position="102\9" origin="DefConstant" kind="Constant" serialnr="40" varnr="4"/>
+          <Variable idnr="30" spelling="c" position="102\9" varintro="itConstantDefinition" origin="DefConstant" kind="Constant" serialnr="40" varnr="4"/>
           <Selector-Term nr="2" formatnr="142" patternnr="1" absolutepatternMMLId="STRUCT_0:1" spelling="carrier" sort="Selector-Term" constrnr="1" absoluteconstrMMLId="STRUCT_0:1" position="102\23">
            <Simple-Term idnr="26" spelling="T" position="102\28" origin="ReservedVar" sort="Constant" serialnr="1" varnr="1"/>
           </Selector-Term>
@@ -1263,7 +1263,7 @@
          <Qualified-Segments>
           <Explicitly-Qualified-Segment position="103\14">
            <Variables>
-            <Variable idnr="33" spelling="H" position="103\14" kind="Constant" serialnr="41" varnr="5"/>
+            <Variable idnr="33" spelling="H" position="103\14" varintro="itChoice" kind="Constant" serialnr="41" varnr="5"/>
            </Variables>
            <Standard-Type nr="6" formatnr="129" patternnr="17" absolutepatternMMLId="STRUCT_0:6" spelling="Function" sort="Expandable-Type" position="103\29">
             <Arguments>
@@ -1282,7 +1282,7 @@
             <Variable-Segments>
              <Explicitly-Qualified-Segment position="104\7">
               <Variables>
-               <Variable idnr="35" spelling="p" position="104\9" kind="BoundVar" serialnr="42" varnr="1"/>
+               <Variable idnr="35" spelling="p" position="104\9" varintro="Quantifier" kind="BoundVar" serialnr="42" varnr="1"/>
               </Variables>
               <Standard-Type nr="10" formatnr="157" patternnr="19" absolutepatternMMLId="PRE_TOPC:2" spelling="Point" sort="Expandable-Type" position="104\21">
                <Arguments>
@@ -1292,7 +1292,7 @@
              </Explicitly-Qualified-Segment>
              <Explicitly-Qualified-Segment position="104\27">
               <Variables>
-               <Variable idnr="36" spelling="r1" position="104\30" kind="BoundVar" serialnr="43" varnr="2"/>
+               <Variable idnr="36" spelling="r1" position="104\30" varintro="Quantifier" kind="BoundVar" serialnr="43" varnr="2"/>
               </Variables>
               <Standard-Type nr="14" formatnr="113" patternnr="11" absolutepatternMMLId="XREAL_0:1" spelling="Real" sort="Expandable-Type" position="104\41">
                <Arguments/>
@@ -1352,7 +1352,7 @@
         <Type-Changing-Statement>
          <Equalities-List>
           <Equality>
-           <Variable idnr="39" spelling="h" position="107\16" origin="DefConstant" kind="Constant" serialnr="46" varnr="6"/>
+           <Variable idnr="39" spelling="h" position="107\16" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="46" varnr="6"/>
            <Simple-Term idnr="33" spelling="H" position="107\20" origin="Constant" sort="Constant" serialnr="41" varnr="5"/>
           </Equality>
          </Equalities-List>
@@ -1406,7 +1406,7 @@
            <Variable-Segments>
             <Explicitly-Qualified-Segment position="110\7">
              <Variables>
-              <Variable idnr="30" spelling="c" position="110\9" kind="BoundVar" serialnr="47" varnr="1"/>
+              <Variable idnr="30" spelling="c" position="110\9" varintro="Quantifier" kind="BoundVar" serialnr="47" varnr="1"/>
              </Variables>
              <Standard-Type nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="110\22">
               <Arguments/>
@@ -1504,7 +1504,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="117\7">
-        <Variable idnr="26" spelling="T" position="117\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="26" spelling="T" position="117\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="26" nr="1" sort="ReservedDscr-Type" position="117\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="38\32">
@@ -1520,7 +1520,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="117\10">
-        <Variable idnr="27" spelling="f" position="117\10" origin="ReservedVar" kind="Constant" serialnr="2" varnr="2"/>
+        <Variable idnr="27" spelling="f" position="117\10" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="2" varnr="2"/>
         <ReservedDscr-Type idnr="27" nr="2" sort="ReservedDscr-Type" position="117\10">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="1"/>
@@ -1571,7 +1571,7 @@
         <Type-Changing-Statement>
          <Equalities-List>
           <Equality>
-           <Variable idnr="31" spelling="F" position="121\16" origin="DefConstant" kind="Constant" serialnr="51" varnr="3"/>
+           <Variable idnr="31" spelling="F" position="121\16" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="51" varnr="3"/>
            <Simple-Term idnr="27" spelling="f" position="121\20" origin="ReservedVar" sort="Constant" serialnr="2" varnr="2"/>
           </Equality>
          </Equalities-List>
@@ -1599,7 +1599,7 @@
        <Item kind="Constant-Definition" position="122\7" endposition="122\28">
         <Constant-Definition>
          <Equating>
-          <Variable idnr="30" spelling="c" position="122\9" origin="DefConstant" kind="Constant" serialnr="52" varnr="4"/>
+          <Variable idnr="30" spelling="c" position="122\9" varintro="itConstantDefinition" origin="DefConstant" kind="Constant" serialnr="52" varnr="4"/>
           <Selector-Term nr="2" formatnr="142" patternnr="1" absolutepatternMMLId="STRUCT_0:1" spelling="carrier" sort="Selector-Term" constrnr="1" absoluteconstrMMLId="STRUCT_0:1" position="122\23">
            <Simple-Term idnr="26" spelling="T" position="122\28" origin="ReservedVar" sort="Constant" serialnr="1" varnr="1"/>
           </Selector-Term>
@@ -1611,7 +1611,7 @@
          <Qualified-Segments>
           <Explicitly-Qualified-Segment position="123\14">
            <Variables>
-            <Variable idnr="33" spelling="H" position="123\14" kind="Constant" serialnr="53" varnr="5"/>
+            <Variable idnr="33" spelling="H" position="123\14" varintro="itChoice" kind="Constant" serialnr="53" varnr="5"/>
            </Variables>
            <Standard-Type nr="6" formatnr="129" patternnr="17" absolutepatternMMLId="STRUCT_0:6" spelling="Function" sort="Expandable-Type" position="123\29">
             <Arguments>
@@ -1630,7 +1630,7 @@
             <Variable-Segments>
              <Explicitly-Qualified-Segment position="124\7">
               <Variables>
-               <Variable idnr="35" spelling="p" position="124\9" kind="BoundVar" serialnr="54" varnr="1"/>
+               <Variable idnr="35" spelling="p" position="124\9" varintro="Quantifier" kind="BoundVar" serialnr="54" varnr="1"/>
               </Variables>
               <Standard-Type nr="10" formatnr="157" patternnr="19" absolutepatternMMLId="PRE_TOPC:2" spelling="Point" sort="Expandable-Type" position="124\21">
                <Arguments>
@@ -1640,7 +1640,7 @@
              </Explicitly-Qualified-Segment>
              <Explicitly-Qualified-Segment position="124\27">
               <Variables>
-               <Variable idnr="36" spelling="r1" position="124\30" kind="BoundVar" serialnr="55" varnr="2"/>
+               <Variable idnr="36" spelling="r1" position="124\30" varintro="Quantifier" kind="BoundVar" serialnr="55" varnr="2"/>
               </Variables>
               <Standard-Type nr="14" formatnr="113" patternnr="11" absolutepatternMMLId="XREAL_0:1" spelling="Real" sort="Expandable-Type" position="124\41">
                <Arguments/>
@@ -1701,7 +1701,7 @@
         <Type-Changing-Statement>
          <Equalities-List>
           <Equality>
-           <Variable idnr="39" spelling="h" position="127\16" origin="DefConstant" kind="Constant" serialnr="58" varnr="6"/>
+           <Variable idnr="39" spelling="h" position="127\16" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="58" varnr="6"/>
            <Simple-Term idnr="33" spelling="H" position="127\20" origin="Constant" sort="Constant" serialnr="53" varnr="5"/>
           </Equality>
          </Equalities-List>
@@ -1755,7 +1755,7 @@
            <Variable-Segments>
             <Explicitly-Qualified-Segment position="130\7">
              <Variables>
-              <Variable idnr="30" spelling="c" position="130\9" kind="BoundVar" serialnr="59" varnr="1"/>
+              <Variable idnr="30" spelling="c" position="130\9" varintro="Quantifier" kind="BoundVar" serialnr="59" varnr="1"/>
              </Variables>
              <Standard-Type nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="130\22">
               <Arguments/>
@@ -1857,7 +1857,7 @@
      <Generalization>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="137\7">
-        <Variable idnr="26" spelling="T" position="137\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
+        <Variable idnr="26" spelling="T" position="137\7" varintro="itGeneralization" origin="ReservedVar" kind="Constant" serialnr="1" varnr="1"/>
         <ReservedDscr-Type idnr="26" nr="1" sort="ReservedDscr-Type" position="137\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="38\32">
@@ -1880,7 +1880,7 @@
       <Qualified-Segments>
        <Explicitly-Qualified-Segment position="138\7">
         <Variables>
-         <Variable idnr="48" spelling="a" position="138\7" kind="Constant" serialnr="62" varnr="2"/>
+         <Variable idnr="48" spelling="a" position="138\7" varintro="itGeneralization" kind="Constant" serialnr="62" varnr="2"/>
         </Variables>
         <Standard-Type nr="7" formatnr="23" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="138\18">
          <Arguments>
@@ -1896,7 +1896,7 @@
     <Item kind="Constant-Definition" position="139\5" endposition="139\26">
      <Constant-Definition>
       <Equating>
-       <Variable idnr="30" spelling="c" position="139\7" origin="DefConstant" kind="Constant" serialnr="63" varnr="3"/>
+       <Variable idnr="30" spelling="c" position="139\7" varintro="itConstantDefinition" origin="DefConstant" kind="Constant" serialnr="63" varnr="3"/>
        <Selector-Term nr="2" formatnr="142" patternnr="1" absolutepatternMMLId="STRUCT_0:1" spelling="carrier" sort="Selector-Term" constrnr="1" absoluteconstrMMLId="STRUCT_0:1" position="139\21">
         <Simple-Term idnr="26" spelling="T" position="139\26" origin="ReservedVar" sort="Constant" serialnr="1" varnr="1"/>
        </Selector-Term>
@@ -1906,7 +1906,7 @@
     <Item kind="Constant-Definition" position="140\5" endposition="140\17">
      <Constant-Definition>
       <Equating>
-       <Variable idnr="27" spelling="f" position="140\7" origin="DefConstant" kind="Constant" serialnr="64" varnr="4"/>
+       <Variable idnr="27" spelling="f" position="140\7" varintro="itConstantDefinition" origin="DefConstant" kind="Constant" serialnr="64" varnr="4"/>
        <Infix-Term nr="52" formatnr="116" patternnr="168" absolutepatternMMLId="FUNCOP_1:8" leftargscount="1" spelling="--&#x3E;" sort="Functor-Term" constrnr="143" absoluteconstrMMLId="FUNCOP_1:8" originalnr="137" absoluteorigconstrMMLId="FUNCOP_1:2" position="140\15">
         <Arguments>
          <Simple-Term idnr="30" spelling="c" position="140\11" origin="DefConstant" sort="DefConstant" serialnr="63" varnr="3"/>
@@ -1935,7 +1935,7 @@
          <Qualified-Segments>
           <Explicitly-Qualified-Segment position="143\9">
            <Variables>
-            <Variable idnr="49" spelling="Y" position="143\9" kind="Constant" serialnr="65" varnr="5"/>
+            <Variable idnr="49" spelling="Y" position="143\9" varintro="itGeneralization" kind="Constant" serialnr="65" varnr="5"/>
            </Variables>
            <Standard-Type nr="8" formatnr="24" patternnr="4" absolutepatternMMLId="SUBSET_1:2" spelling="Subset" sort="Expandable-Type" position="143\19">
             <Arguments>
@@ -2266,7 +2266,7 @@
   <Type-Changing-Statement>
    <Equalities-List>
     <Equality>
-     <Variable idnr="50" spelling="jj" position="170\13" origin="DefConstant" kind="Constant" serialnr="66" varnr="1"/>
+     <Variable idnr="50" spelling="jj" position="170\13" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="66" varnr="1"/>
      <Numeral-Term number="1" sort="Numeral-Term" position="170\15"/>
     </Equality>
    </Equalities-List>
@@ -2289,7 +2289,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="173\7">
-        <Variable idnr="26" spelling="T" position="173\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="2"/>
+        <Variable idnr="26" spelling="T" position="173\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="2"/>
         <ReservedDscr-Type idnr="26" nr="1" sort="ReservedDscr-Type" position="173\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="38\32">
@@ -2333,7 +2333,7 @@
        <Item kind="Exemplification" position="177\8" endposition="177\38">
         <Exemplification>
          <Example>
-          <Variable idnr="27" spelling="f" position="177\10" origin="DefConstant" kind="Constant" serialnr="68" varnr="3"/>
+          <Variable idnr="27" spelling="f" position="177\10" varintro="itExemplification" origin="DefConstant" kind="Constant" serialnr="68" varnr="3"/>
           <Infix-Term nr="52" formatnr="116" patternnr="168" absolutepatternMMLId="FUNCOP_1:8" leftargscount="1" spelling="--&#x3E;" sort="Functor-Term" constrnr="143" absoluteconstrMMLId="FUNCOP_1:8" originalnr="137" absoluteorigconstrMMLId="FUNCOP_1:2" position="177\35">
            <Arguments>
             <Selector-Term bracketed="true" nr="2" formatnr="142" patternnr="1" absolutepatternMMLId="STRUCT_0:1" spelling="carrier" sort="Selector-Term" constrnr="1" absoluteconstrMMLId="STRUCT_0:1" position="177\25">
@@ -2401,7 +2401,7 @@
        <Item kind="Exemplification" position="184\8" endposition="184\39">
         <Exemplification>
          <Example>
-          <Variable idnr="27" spelling="f" position="184\10" origin="DefConstant" kind="Constant" serialnr="69" varnr="3"/>
+          <Variable idnr="27" spelling="f" position="184\10" varintro="itExemplification" origin="DefConstant" kind="Constant" serialnr="69" varnr="3"/>
           <Infix-Term nr="52" formatnr="116" patternnr="168" absolutepatternMMLId="FUNCOP_1:8" leftargscount="1" spelling="--&#x3E;" sort="Functor-Term" constrnr="143" absoluteconstrMMLId="FUNCOP_1:8" originalnr="137" absoluteorigconstrMMLId="FUNCOP_1:2" position="184\35">
            <Arguments>
             <Selector-Term bracketed="true" nr="2" formatnr="142" patternnr="1" absolutepatternMMLId="STRUCT_0:1" spelling="carrier" sort="Selector-Term" constrnr="1" absoluteconstrMMLId="STRUCT_0:1" position="184\25">
@@ -2457,7 +2457,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="191\7">
-        <Variable idnr="26" spelling="T" position="191\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="2"/>
+        <Variable idnr="26" spelling="T" position="191\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="2"/>
         <ReservedDscr-Type idnr="26" nr="1" sort="ReservedDscr-Type" position="191\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="38\32">
@@ -2480,7 +2480,7 @@
       <Qualified-Segments>
        <Explicitly-Qualified-Segment position="192\7">
         <Variables>
-         <Variable idnr="27" spelling="f" position="192\7" kind="Constant" serialnr="71" varnr="3"/>
+         <Variable idnr="27" spelling="f" position="192\7" varintro="itLociDeclaration" kind="Constant" serialnr="71" varnr="3"/>
         </Variables>
         <Clustered-Type sort="Clustered-Type" position="192\50">
          <Adjective-Cluster>
@@ -2530,7 +2530,7 @@
         <Type-Changing-Statement>
          <Equalities-List>
           <Equality>
-           <Variable idnr="31" spelling="F" position="196\16" origin="DefConstant" kind="Constant" serialnr="72" varnr="4"/>
+           <Variable idnr="31" spelling="F" position="196\16" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="72" varnr="4"/>
            <Simple-Term idnr="27" spelling="f" position="196\20" origin="Constant" sort="Constant" serialnr="71" varnr="3"/>
           </Equality>
          </Equalities-List>
@@ -2558,7 +2558,7 @@
        <Item kind="Constant-Definition" position="197\7" endposition="197\28">
         <Constant-Definition>
          <Equating>
-          <Variable idnr="30" spelling="c" position="197\9" origin="DefConstant" kind="Constant" serialnr="73" varnr="5"/>
+          <Variable idnr="30" spelling="c" position="197\9" varintro="itConstantDefinition" origin="DefConstant" kind="Constant" serialnr="73" varnr="5"/>
           <Selector-Term nr="2" formatnr="142" patternnr="1" absolutepatternMMLId="STRUCT_0:1" spelling="carrier" sort="Selector-Term" constrnr="1" absoluteconstrMMLId="STRUCT_0:1" position="197\23">
            <Simple-Term idnr="26" spelling="T" position="197\28" origin="ReservedVar" sort="Constant" serialnr="1" varnr="2"/>
           </Selector-Term>
@@ -2573,7 +2573,7 @@
            <Variable-Segments>
             <Explicitly-Qualified-Segment position="198\7">
              <Variables>
-              <Variable idnr="51" spelling="q" position="198\9" kind="BoundVar" serialnr="74" varnr="1"/>
+              <Variable idnr="51" spelling="q" position="198\9" varintro="Quantifier" kind="BoundVar" serialnr="74" varnr="1"/>
              </Variables>
              <Standard-Type nr="10" formatnr="157" patternnr="19" absolutepatternMMLId="PRE_TOPC:2" spelling="Point" sort="Expandable-Type" position="198\21">
               <Arguments>
@@ -2587,7 +2587,7 @@
              <Variable-Segments>
               <Explicitly-Qualified-Segment position="198\29">
                <Variables>
-                <Variable idnr="29" spelling="r" position="198\31" kind="BoundVar" serialnr="75" varnr="2"/>
+                <Variable idnr="29" spelling="r" position="198\31" varintro="Quantifier" kind="BoundVar" serialnr="75" varnr="2"/>
                </Variables>
                <Standard-Type nr="14" formatnr="113" patternnr="11" absolutepatternMMLId="XREAL_0:1" spelling="Real" sort="Expandable-Type" position="198\42">
                 <Arguments/>
@@ -2627,7 +2627,7 @@
             <Qualified-Segments>
              <Explicitly-Qualified-Segment position="200\11">
               <Variables>
-               <Variable idnr="51" spelling="q" position="200\11" kind="Constant" serialnr="78" varnr="6"/>
+               <Variable idnr="51" spelling="q" position="200\11" varintro="itGeneralization" kind="Constant" serialnr="78" varnr="6"/>
               </Variables>
               <Standard-Type nr="10" formatnr="157" patternnr="19" absolutepatternMMLId="PRE_TOPC:2" spelling="Point" sort="Expandable-Type" position="200\20">
                <Arguments>
@@ -2742,7 +2742,7 @@
          <Qualified-Segments>
           <Explicitly-Qualified-Segment position="207\19">
            <Variables>
-            <Variable idnr="33" spelling="H" position="207\19" kind="Constant" serialnr="79" varnr="6"/>
+            <Variable idnr="33" spelling="H" position="207\19" varintro="itChoice" kind="Constant" serialnr="79" varnr="6"/>
            </Variables>
            <Standard-Type nr="6" formatnr="129" patternnr="17" absolutepatternMMLId="STRUCT_0:6" spelling="Function" sort="Expandable-Type" position="207\34">
             <Arguments>
@@ -2761,7 +2761,7 @@
             <Variable-Segments>
              <Explicitly-Qualified-Segment position="208\7">
               <Variables>
-               <Variable idnr="35" spelling="p" position="208\9" kind="BoundVar" serialnr="80" varnr="1"/>
+               <Variable idnr="35" spelling="p" position="208\9" varintro="Quantifier" kind="BoundVar" serialnr="80" varnr="1"/>
               </Variables>
               <Standard-Type nr="10" formatnr="157" patternnr="19" absolutepatternMMLId="PRE_TOPC:2" spelling="Point" sort="Expandable-Type" position="208\21">
                <Arguments>
@@ -2771,7 +2771,7 @@
              </Explicitly-Qualified-Segment>
              <Explicitly-Qualified-Segment position="208\27">
               <Variables>
-               <Variable idnr="36" spelling="r1" position="208\30" kind="BoundVar" serialnr="81" varnr="2"/>
+               <Variable idnr="36" spelling="r1" position="208\30" varintro="Quantifier" kind="BoundVar" serialnr="81" varnr="2"/>
               </Variables>
               <Standard-Type nr="14" formatnr="113" patternnr="11" absolutepatternMMLId="XREAL_0:1" spelling="Real" sort="Expandable-Type" position="208\41">
                <Arguments/>
@@ -2833,7 +2833,7 @@
         <Type-Changing-Statement>
          <Equalities-List>
           <Equality>
-           <Variable idnr="39" spelling="h" position="211\16" origin="DefConstant" kind="Constant" serialnr="84" varnr="7"/>
+           <Variable idnr="39" spelling="h" position="211\16" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="84" varnr="7"/>
            <Simple-Term idnr="33" spelling="H" position="211\20" origin="Constant" sort="Constant" serialnr="79" varnr="6"/>
           </Equality>
          </Equalities-List>
@@ -2887,7 +2887,7 @@
            <Variable-Segments>
             <Explicitly-Qualified-Segment position="214\7">
              <Variables>
-              <Variable idnr="30" spelling="c" position="214\9" kind="BoundVar" serialnr="85" varnr="1"/>
+              <Variable idnr="30" spelling="c" position="214\9" varintro="Quantifier" kind="BoundVar" serialnr="85" varnr="1"/>
              </Variables>
              <Standard-Type nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="214\22">
               <Arguments/>
@@ -2985,7 +2985,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="221\7">
-        <Variable idnr="26" spelling="T" position="221\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="2"/>
+        <Variable idnr="26" spelling="T" position="221\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="2"/>
         <ReservedDscr-Type idnr="26" nr="1" sort="ReservedDscr-Type" position="221\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="38\32">
@@ -3001,7 +3001,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="221\10">
-        <Variable idnr="27" spelling="f" position="221\10" origin="ReservedVar" kind="Constant" serialnr="2" varnr="3"/>
+        <Variable idnr="27" spelling="f" position="221\10" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="2" varnr="3"/>
         <ReservedDscr-Type idnr="27" nr="2" sort="ReservedDscr-Type" position="221\10">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="2"/>
@@ -3021,7 +3021,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="221\13">
-        <Variable idnr="29" spelling="r" position="221\13" origin="ReservedVar" kind="Constant" serialnr="4" varnr="4"/>
+        <Variable idnr="29" spelling="r" position="221\13" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="4" varnr="4"/>
         <ReservedDscr-Type idnr="29" nr="3" sort="ReservedDscr-Type" position="221\13">
          <Substitutions/>
          <Standard-Type nr="14" formatnr="113" patternnr="11" absolutepatternMMLId="XREAL_0:1" spelling="Real" sort="Expandable-Type" position="40\12">
@@ -3062,7 +3062,7 @@
         <Type-Changing-Statement>
          <Equalities-List>
           <Equality>
-           <Variable idnr="31" spelling="F" position="225\16" origin="DefConstant" kind="Constant" serialnr="90" varnr="5"/>
+           <Variable idnr="31" spelling="F" position="225\16" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="90" varnr="5"/>
            <Simple-Term idnr="27" spelling="f" position="225\20" origin="ReservedVar" sort="Constant" serialnr="2" varnr="3"/>
           </Equality>
          </Equalities-List>
@@ -3090,7 +3090,7 @@
        <Item kind="Constant-Definition" position="226\7" endposition="226\28">
         <Constant-Definition>
          <Equating>
-          <Variable idnr="30" spelling="c" position="226\9" origin="DefConstant" kind="Constant" serialnr="91" varnr="6"/>
+          <Variable idnr="30" spelling="c" position="226\9" varintro="itConstantDefinition" origin="DefConstant" kind="Constant" serialnr="91" varnr="6"/>
           <Selector-Term nr="2" formatnr="142" patternnr="1" absolutepatternMMLId="STRUCT_0:1" spelling="carrier" sort="Selector-Term" constrnr="1" absoluteconstrMMLId="STRUCT_0:1" position="226\23">
            <Simple-Term idnr="26" spelling="T" position="226\28" origin="ReservedVar" sort="Constant" serialnr="1" varnr="2"/>
           </Selector-Term>
@@ -3102,7 +3102,7 @@
          <Qualified-Segments>
           <Explicitly-Qualified-Segment position="227\14">
            <Variables>
-            <Variable idnr="33" spelling="H" position="227\14" kind="Constant" serialnr="92" varnr="7"/>
+            <Variable idnr="33" spelling="H" position="227\14" varintro="itChoice" kind="Constant" serialnr="92" varnr="7"/>
            </Variables>
            <Standard-Type nr="6" formatnr="129" patternnr="17" absolutepatternMMLId="STRUCT_0:6" spelling="Function" sort="Expandable-Type" position="227\29">
             <Arguments>
@@ -3121,7 +3121,7 @@
             <Variable-Segments>
              <Explicitly-Qualified-Segment position="228\7">
               <Variables>
-               <Variable idnr="35" spelling="p" position="228\9" kind="BoundVar" serialnr="93" varnr="1"/>
+               <Variable idnr="35" spelling="p" position="228\9" varintro="Quantifier" kind="BoundVar" serialnr="93" varnr="1"/>
               </Variables>
               <Standard-Type nr="10" formatnr="157" patternnr="19" absolutepatternMMLId="PRE_TOPC:2" spelling="Point" sort="Expandable-Type" position="228\21">
                <Arguments>
@@ -3131,7 +3131,7 @@
              </Explicitly-Qualified-Segment>
              <Explicitly-Qualified-Segment position="228\27">
               <Variables>
-               <Variable idnr="36" spelling="r1" position="228\30" kind="BoundVar" serialnr="94" varnr="2"/>
+               <Variable idnr="36" spelling="r1" position="228\30" varintro="Quantifier" kind="BoundVar" serialnr="94" varnr="2"/>
               </Variables>
               <Standard-Type nr="14" formatnr="113" patternnr="11" absolutepatternMMLId="XREAL_0:1" spelling="Real" sort="Expandable-Type" position="228\41">
                <Arguments/>
@@ -3192,7 +3192,7 @@
         <Type-Changing-Statement>
          <Equalities-List>
           <Equality>
-           <Variable idnr="39" spelling="h" position="231\16" origin="DefConstant" kind="Constant" serialnr="97" varnr="8"/>
+           <Variable idnr="39" spelling="h" position="231\16" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="97" varnr="8"/>
            <Simple-Term idnr="33" spelling="H" position="231\20" origin="Constant" sort="Constant" serialnr="92" varnr="7"/>
           </Equality>
          </Equalities-List>
@@ -3246,7 +3246,7 @@
            <Variable-Segments>
             <Explicitly-Qualified-Segment position="234\7">
              <Variables>
-              <Variable idnr="30" spelling="c" position="234\9" kind="BoundVar" serialnr="98" varnr="1"/>
+              <Variable idnr="30" spelling="c" position="234\9" varintro="Quantifier" kind="BoundVar" serialnr="98" varnr="1"/>
              </Variables>
              <Standard-Type nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="234\22">
               <Arguments/>
@@ -3346,7 +3346,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="241\7">
-        <Variable idnr="26" spelling="T" position="241\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="2"/>
+        <Variable idnr="26" spelling="T" position="241\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="2"/>
         <ReservedDscr-Type idnr="26" nr="1" sort="ReservedDscr-Type" position="241\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="38\32">
@@ -3369,7 +3369,7 @@
       <Qualified-Segments>
        <Explicitly-Qualified-Segment position="242\7">
         <Variables>
-         <Variable idnr="27" spelling="f" position="242\7" kind="Constant" serialnr="101" varnr="3"/>
+         <Variable idnr="27" spelling="f" position="242\7" varintro="itLociDeclaration" kind="Constant" serialnr="101" varnr="3"/>
         </Variables>
         <Clustered-Type sort="Clustered-Type" position="242\39">
          <Adjective-Cluster>
@@ -3419,7 +3419,7 @@
         <Type-Changing-Statement>
          <Equalities-List>
           <Equality>
-           <Variable idnr="31" spelling="F" position="246\16" origin="DefConstant" kind="Constant" serialnr="102" varnr="4"/>
+           <Variable idnr="31" spelling="F" position="246\16" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="102" varnr="4"/>
            <Simple-Term idnr="27" spelling="f" position="246\20" origin="Constant" sort="Constant" serialnr="101" varnr="3"/>
           </Equality>
          </Equalities-List>
@@ -3447,7 +3447,7 @@
        <Item kind="Constant-Definition" position="247\7" endposition="247\28">
         <Constant-Definition>
          <Equating>
-          <Variable idnr="30" spelling="c" position="247\9" origin="DefConstant" kind="Constant" serialnr="103" varnr="5"/>
+          <Variable idnr="30" spelling="c" position="247\9" varintro="itConstantDefinition" origin="DefConstant" kind="Constant" serialnr="103" varnr="5"/>
           <Selector-Term nr="2" formatnr="142" patternnr="1" absolutepatternMMLId="STRUCT_0:1" spelling="carrier" sort="Selector-Term" constrnr="1" absoluteconstrMMLId="STRUCT_0:1" position="247\23">
            <Simple-Term idnr="26" spelling="T" position="247\28" origin="ReservedVar" sort="Constant" serialnr="1" varnr="2"/>
           </Selector-Term>
@@ -3462,7 +3462,7 @@
            <Variable-Segments>
             <Explicitly-Qualified-Segment position="248\7">
              <Variables>
-              <Variable idnr="51" spelling="q" position="248\9" kind="BoundVar" serialnr="104" varnr="1"/>
+              <Variable idnr="51" spelling="q" position="248\9" varintro="Quantifier" kind="BoundVar" serialnr="104" varnr="1"/>
              </Variables>
              <Standard-Type nr="10" formatnr="157" patternnr="19" absolutepatternMMLId="PRE_TOPC:2" spelling="Point" sort="Expandable-Type" position="248\21">
               <Arguments>
@@ -3494,7 +3494,7 @@
             <Qualified-Segments>
              <Explicitly-Qualified-Segment position="250\11">
               <Variables>
-               <Variable idnr="51" spelling="q" position="250\11" kind="Constant" serialnr="106" varnr="6"/>
+               <Variable idnr="51" spelling="q" position="250\11" varintro="itGeneralization" kind="Constant" serialnr="106" varnr="6"/>
               </Variables>
               <Standard-Type nr="10" formatnr="157" patternnr="19" absolutepatternMMLId="PRE_TOPC:2" spelling="Point" sort="Expandable-Type" position="250\20">
                <Arguments>
@@ -3532,7 +3532,7 @@
              <Thesis position="252\18"/>
             </Proposition>
             <Straightforward-Justification position="252\18">
-             <Link position="252\11" labelnr="0"/>
+             <Link position="252\11" labelnr="1953391981"/>
              <Local-Reference position="252\11" idnr="0" spelling="" serialnr="61" labelnr="1"/>
             </Straightforward-Justification>
            </Conclusion>
@@ -3545,7 +3545,7 @@
          <Qualified-Segments>
           <Explicitly-Qualified-Segment position="254\19">
            <Variables>
-            <Variable idnr="33" spelling="H" position="254\19" kind="Constant" serialnr="107" varnr="6"/>
+            <Variable idnr="33" spelling="H" position="254\19" varintro="itChoice" kind="Constant" serialnr="107" varnr="6"/>
            </Variables>
            <Standard-Type nr="6" formatnr="129" patternnr="17" absolutepatternMMLId="STRUCT_0:6" spelling="Function" sort="Expandable-Type" position="254\34">
             <Arguments>
@@ -3564,7 +3564,7 @@
             <Variable-Segments>
              <Explicitly-Qualified-Segment position="255\7">
               <Variables>
-               <Variable idnr="35" spelling="p" position="255\9" kind="BoundVar" serialnr="108" varnr="1"/>
+               <Variable idnr="35" spelling="p" position="255\9" varintro="Quantifier" kind="BoundVar" serialnr="108" varnr="1"/>
               </Variables>
               <Standard-Type nr="10" formatnr="157" patternnr="19" absolutepatternMMLId="PRE_TOPC:2" spelling="Point" sort="Expandable-Type" position="255\21">
                <Arguments>
@@ -3574,7 +3574,7 @@
              </Explicitly-Qualified-Segment>
              <Explicitly-Qualified-Segment position="255\27">
               <Variables>
-               <Variable idnr="36" spelling="r1" position="255\30" kind="BoundVar" serialnr="109" varnr="2"/>
+               <Variable idnr="36" spelling="r1" position="255\30" varintro="Quantifier" kind="BoundVar" serialnr="109" varnr="2"/>
               </Variables>
               <Standard-Type nr="14" formatnr="113" patternnr="11" absolutepatternMMLId="XREAL_0:1" spelling="Real" sort="Expandable-Type" position="255\41">
                <Arguments/>
@@ -3637,7 +3637,7 @@
         <Type-Changing-Statement>
          <Equalities-List>
           <Equality>
-           <Variable idnr="39" spelling="h" position="258\16" origin="DefConstant" kind="Constant" serialnr="112" varnr="7"/>
+           <Variable idnr="39" spelling="h" position="258\16" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="112" varnr="7"/>
            <Simple-Term idnr="33" spelling="H" position="258\20" origin="Constant" sort="Constant" serialnr="107" varnr="6"/>
           </Equality>
          </Equalities-List>
@@ -3662,7 +3662,7 @@
             <Qualified-Segments>
              <Explicitly-Qualified-Segment position="260\11">
               <Variables>
-               <Variable idnr="48" spelling="a" position="260\11" kind="Constant" serialnr="113" varnr="8"/>
+               <Variable idnr="48" spelling="a" position="260\11" varintro="itGeneralization" kind="Constant" serialnr="113" varnr="8"/>
               </Variables>
               <Standard-Type nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="260\21">
                <Arguments/>
@@ -3860,7 +3860,7 @@
      <Loci-Declaration>
       <Qualified-Segments>
        <Implicitly-Qualified-Segment position="274\7">
-        <Variable idnr="26" spelling="T" position="274\7" origin="ReservedVar" kind="Constant" serialnr="1" varnr="2"/>
+        <Variable idnr="26" spelling="T" position="274\7" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="1" varnr="2"/>
         <ReservedDscr-Type idnr="26" nr="1" sort="ReservedDscr-Type" position="274\7">
          <Substitutions/>
          <Clustered-Type sort="Clustered-Type" position="38\32">
@@ -3876,7 +3876,7 @@
         </ReservedDscr-Type>
        </Implicitly-Qualified-Segment>
        <Implicitly-Qualified-Segment position="274\10">
-        <Variable idnr="27" spelling="f" position="274\10" origin="ReservedVar" kind="Constant" serialnr="2" varnr="3"/>
+        <Variable idnr="27" spelling="f" position="274\10" varintro="itLociDeclaration" origin="ReservedVar" kind="Constant" serialnr="2" varnr="3"/>
         <ReservedDscr-Type idnr="27" nr="2" sort="ReservedDscr-Type" position="274\10">
          <Substitutions>
           <Substitution freevarnr="1" kind="Constant" varnr="2"/>
@@ -3903,7 +3903,7 @@
       <Qualified-Segments>
        <Explicitly-Qualified-Segment position="275\7">
         <Variables>
-         <Variable idnr="28" spelling="g" position="275\7" kind="Constant" serialnr="116" varnr="4"/>
+         <Variable idnr="28" spelling="g" position="275\7" varintro="itLociDeclaration" kind="Constant" serialnr="116" varnr="4"/>
         </Variables>
         <Clustered-Type sort="Clustered-Type" position="275\39">
          <Adjective-Cluster>
@@ -3954,11 +3954,11 @@
         <Type-Changing-Statement>
          <Equalities-List>
           <Equality>
-           <Variable idnr="31" spelling="F" position="279\16" origin="DefConstant" kind="Constant" serialnr="117" varnr="5"/>
+           <Variable idnr="31" spelling="F" position="279\16" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="117" varnr="5"/>
            <Simple-Term idnr="27" spelling="f" position="279\20" origin="ReservedVar" sort="Constant" serialnr="2" varnr="3"/>
           </Equality>
           <Equality>
-           <Variable idnr="32" spelling="G" position="279\23" origin="DefConstant" kind="Constant" serialnr="118" varnr="6"/>
+           <Variable idnr="32" spelling="G" position="279\23" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="118" varnr="6"/>
            <Simple-Term idnr="28" spelling="g" position="279\27" origin="Constant" sort="Constant" serialnr="116" varnr="4"/>
           </Equality>
          </Equalities-List>
@@ -3986,7 +3986,7 @@
        <Item kind="Constant-Definition" position="281\7" endposition="281\28">
         <Constant-Definition>
          <Equating>
-          <Variable idnr="30" spelling="c" position="281\9" origin="DefConstant" kind="Constant" serialnr="119" varnr="7"/>
+          <Variable idnr="30" spelling="c" position="281\9" varintro="itConstantDefinition" origin="DefConstant" kind="Constant" serialnr="119" varnr="7"/>
           <Selector-Term nr="2" formatnr="142" patternnr="1" absolutepatternMMLId="STRUCT_0:1" spelling="carrier" sort="Selector-Term" constrnr="1" absoluteconstrMMLId="STRUCT_0:1" position="281\23">
            <Simple-Term idnr="26" spelling="T" position="281\28" origin="ReservedVar" sort="Constant" serialnr="1" varnr="2"/>
           </Selector-Term>
@@ -4001,7 +4001,7 @@
            <Variable-Segments>
             <Explicitly-Qualified-Segment position="282\7">
              <Variables>
-              <Variable idnr="51" spelling="q" position="282\9" kind="BoundVar" serialnr="120" varnr="1"/>
+              <Variable idnr="51" spelling="q" position="282\9" varintro="Quantifier" kind="BoundVar" serialnr="120" varnr="1"/>
              </Variables>
              <Standard-Type nr="10" formatnr="157" patternnr="19" absolutepatternMMLId="PRE_TOPC:2" spelling="Point" sort="Expandable-Type" position="282\21">
               <Arguments>
@@ -4033,7 +4033,7 @@
             <Qualified-Segments>
              <Explicitly-Qualified-Segment position="284\11">
               <Variables>
-               <Variable idnr="51" spelling="q" position="284\11" kind="Constant" serialnr="122" varnr="8"/>
+               <Variable idnr="51" spelling="q" position="284\11" varintro="itGeneralization" kind="Constant" serialnr="122" varnr="8"/>
               </Variables>
               <Standard-Type nr="10" formatnr="157" patternnr="19" absolutepatternMMLId="PRE_TOPC:2" spelling="Point" sort="Expandable-Type" position="284\20">
                <Arguments>
@@ -4071,7 +4071,7 @@
              <Thesis position="286\18"/>
             </Proposition>
             <Straightforward-Justification position="286\18">
-             <Link position="286\11" labelnr="0"/>
+             <Link position="286\11" labelnr="1953391981"/>
              <Local-Reference position="286\11" idnr="0" spelling="" serialnr="73" labelnr="1"/>
             </Straightforward-Justification>
            </Conclusion>
@@ -4084,7 +4084,7 @@
          <Qualified-Segments>
           <Explicitly-Qualified-Segment position="288\19">
            <Variables>
-            <Variable idnr="33" spelling="H" position="288\19" kind="Constant" serialnr="123" varnr="8"/>
+            <Variable idnr="33" spelling="H" position="288\19" varintro="itChoice" kind="Constant" serialnr="123" varnr="8"/>
            </Variables>
            <Standard-Type nr="6" formatnr="129" patternnr="17" absolutepatternMMLId="STRUCT_0:6" spelling="Function" sort="Expandable-Type" position="288\34">
             <Arguments>
@@ -4103,7 +4103,7 @@
             <Variable-Segments>
              <Explicitly-Qualified-Segment position="289\7">
               <Variables>
-               <Variable idnr="35" spelling="p" position="289\9" kind="BoundVar" serialnr="124" varnr="1"/>
+               <Variable idnr="35" spelling="p" position="289\9" varintro="Quantifier" kind="BoundVar" serialnr="124" varnr="1"/>
               </Variables>
               <Standard-Type nr="10" formatnr="157" patternnr="19" absolutepatternMMLId="PRE_TOPC:2" spelling="Point" sort="Expandable-Type" position="289\21">
                <Arguments>
@@ -4113,8 +4113,8 @@
              </Explicitly-Qualified-Segment>
              <Explicitly-Qualified-Segment position="289\27">
               <Variables>
-               <Variable idnr="36" spelling="r1" position="289\30" kind="BoundVar" serialnr="125" varnr="2"/>
-               <Variable idnr="37" spelling="r2" position="289\33" kind="BoundVar" serialnr="126" varnr="3"/>
+               <Variable idnr="36" spelling="r1" position="289\30" varintro="Quantifier" kind="BoundVar" serialnr="125" varnr="2"/>
+               <Variable idnr="37" spelling="r2" position="289\33" varintro="Quantifier" kind="BoundVar" serialnr="126" varnr="3"/>
               </Variables>
               <Standard-Type nr="14" formatnr="113" patternnr="11" absolutepatternMMLId="XREAL_0:1" spelling="Real" sort="Expandable-Type" position="289\44">
                <Arguments/>
@@ -4190,7 +4190,7 @@
         <Type-Changing-Statement>
          <Equalities-List>
           <Equality>
-           <Variable idnr="39" spelling="h" position="292\16" origin="DefConstant" kind="Constant" serialnr="130" varnr="9"/>
+           <Variable idnr="39" spelling="h" position="292\16" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="130" varnr="9"/>
            <Simple-Term idnr="33" spelling="H" position="292\20" origin="Constant" sort="Constant" serialnr="123" varnr="8"/>
           </Equality>
          </Equalities-List>
@@ -4215,7 +4215,7 @@
             <Qualified-Segments>
              <Explicitly-Qualified-Segment position="294\11">
               <Variables>
-               <Variable idnr="30" spelling="c" position="294\11" kind="Constant" serialnr="131" varnr="10"/>
+               <Variable idnr="30" spelling="c" position="294\11" varintro="itGeneralization" kind="Constant" serialnr="131" varnr="10"/>
               </Variables>
               <Standard-Type nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="294\21">
                <Arguments/>
