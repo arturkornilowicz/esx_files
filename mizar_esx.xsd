@@ -69,6 +69,8 @@
       <xs:element ref="Attr-Antonym"/>
       <xs:element ref="Attr-Synonym"/>
       <xs:element ref="Attribute-Definition"/>
+      <xs:element ref="Case-Block"/>
+      <xs:element ref="Case-Head"/>
       <xs:element ref="Choice-Statement"/>
       <xs:element ref="Cluster"/>
       <xs:element ref="Conclusion"/>
@@ -83,13 +85,16 @@
       <xs:element ref="Functor-Definition"/>
       <xs:element ref="Generalization"/>
       <xs:element ref="Identify"/>
+      <xs:element ref="Iterative-Equality"/>
       <xs:element ref="Loci-Declaration"/>
       <xs:element ref="Mode-Definition"/>
       <xs:element ref="Mode-Synonym"/>
+      <xs:element ref="Per-Cases"/>
       <xs:element ref="Pragma"/>
       <xs:element ref="Pred-Antonym"/>
       <xs:element ref="Pred-Synonym"/>
       <xs:element ref="Predicate-Definition"/>
+      <xs:element ref="Private-Functor-Definition"/>
       <xs:element ref="Property"/>
       <xs:element ref="Property-Registration"/>
       <xs:element ref="Reduction"/>
@@ -100,8 +105,10 @@
       <xs:element ref="Scheme-Head"/>
       <xs:element ref="Section-Pragma"/>
       <xs:element ref="Structure-Definition"/>
+      <xs:element ref="Suppose-Head"/>
       <xs:element ref="Type-Changing-Statement"/>
       <xs:element ref="Theorem-Item"/>
+      <xs:element ref="Private-Predicate-Definition"/>
     </xs:choice>
   </xs:group>
   
@@ -128,7 +135,7 @@
       <xs:sequence>
 	<xs:element ref="Qualified-Segments"/>
 	<xs:element ref="Conditions"/>
-	<xs:element ref="Straightforward-Justification"/>
+	<xs:group ref="ByFrom-Justification"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -153,14 +160,14 @@
   <xs:element name="Conclusion">
     <xs:complexType>
       <xs:sequence>
-	<xs:element ref="Proposition"/>
+	<xs:group ref="Statements"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   
   <xs:element name="Constant-Definition">
     <xs:complexType>
-      <xs:sequence>
+      <xs:sequence maxOccurs="unbounded">
 	<xs:element ref="Equating"/>
       </xs:sequence>
     </xs:complexType>
@@ -168,7 +175,9 @@
   
   <xs:element name="Exemplification">
     <xs:complexType>
-      <xs:group ref="Exemplifications"/>
+      <xs:sequence maxOccurs="unbounded">
+	<xs:group ref="Exemplifications"/>
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
   
@@ -316,6 +325,26 @@
     </xs:complexType>
   </xs:element>
 
+  <xs:element name="Private-Functor-Definition">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variable"/>
+	<xs:element ref="Type-List"/>
+	<xs:group ref="Term"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Private-Predicate-Definition">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variable"/>
+	<xs:element ref="Type-List"/>
+	<xs:group ref="Formula"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
   <xs:element name="Property">
     <xs:complexType>
       <xs:sequence>
@@ -375,8 +404,71 @@
       <xs:sequence>
 	<xs:element ref="Equalities-List"/>
 	<xs:group ref="Type"/>
-	<xs:element ref="Straightforward-Justification"/>
+	<xs:group ref="ByFrom-Justification"/>
       </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Per-Cases">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="ByFrom-Justification"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Case-Block">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Block"/>
+      </xs:sequence>
+    </xs:complexType>    
+  </xs:element>
+  
+  <xs:element name="Case-Head">
+    <xs:complexType>
+      <xs:choice>
+	<xs:element ref="Collective-Assumption"/>
+	<xs:element ref="Single-Assumption"/>
+      </xs:choice>
+    </xs:complexType>    
+  </xs:element>
+  
+  <xs:element name="Suppose-Head">
+    <xs:complexType>
+      <xs:choice>
+	<xs:element ref="Collective-Assumption"/>
+	<xs:element ref="Single-Assumption"/>
+      </xs:choice>
+    </xs:complexType>    
+  </xs:element>
+  
+  <xs:element name="Iterative-Equality">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Label"/>
+	<xs:element ref="Relation-Formula"/>
+	<xs:group ref="ByFrom-Justification"/>
+	<xs:element ref="Iterative-Steps-List"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Iterative-Steps-List">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+	<xs:element ref="Iterative-Step"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Iterative-Step">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:group ref="Term"/>
+	<xs:group ref="ByFrom-Justification"/>
+      </xs:sequence>
+      <xs:attribute ref="position" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -421,6 +513,7 @@
 	<xs:element ref="RightSideOf-Relation-Formula" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="bracketed"/>
     </xs:complexType>
   </xs:element>
 
@@ -611,6 +704,7 @@
       <xs:element ref="Selector-Term"/>
       <xs:element ref="Simple-Fraenkel-Term"/>
       <xs:element ref="Simple-Term"/>
+      <xs:element ref="Placeholder-Term"/>
     </xs:choice>
   </xs:group>
   
@@ -757,6 +851,17 @@
       <xs:attribute ref="sort" use="required"/>
       <xs:attribute ref="serialnr" use="required"/>
       <xs:attribute ref="nr" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Placeholder-Term">
+    <xs:complexType>
+      <xs:attribute ref="bracketed"/>
+      <xs:attribute ref="nr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="sort" use="required"/>
+      <xs:attribute ref="varnr" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -907,9 +1012,16 @@
   
   <!-- Justifications -->
   
+  <xs:group name="ByFrom-Justification">
+    <xs:choice>
+      <xs:group ref="Scheme-Justifications"/>
+      <xs:element ref="Straightforward-Justification"/>
+    </xs:choice>
+  </xs:group>
+
   <xs:group name="Justification">
     <xs:choice>
-      <xs:element ref="Straightforward-Justification"/>
+      <xs:group ref="ByFrom-Justification"/>
       <xs:element ref="Block"/>
     </xs:choice>
   </xs:group>
@@ -922,6 +1034,40 @@
       <xs:element ref="Theorem-Reference"/>
     </xs:choice>
   </xs:group>
+
+  <xs:group name="Scheme-Justifications">
+    <xs:choice>
+      <xs:element ref="Local-Scheme-Justification"/>
+      <xs:element ref="Scheme-Justification"/>
+    </xs:choice>
+  </xs:group>
+  
+  <xs:element name="Local-Scheme-Justification">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+	<xs:element ref="Local-Reference" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute ref="MMLId" use="required"/>
+      <xs:attribute ref="idnr" use="required"/>
+      <xs:attribute ref="spelling" use="required"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="endposition" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Scheme-Justification">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+	<xs:element ref="Local-Reference" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute ref="MMLId" use="required"/>
+      <xs:attribute ref="nr"/>
+      <xs:attribute ref="idnr"/>
+      <xs:attribute ref="spelling"/>
+      <xs:attribute ref="position" use="required"/>
+      <xs:attribute ref="endposition" use="required"/>
+    </xs:complexType>
+  </xs:element>
 
   <xs:element name="Straightforward-Justification">
     <xs:complexType>
@@ -1647,7 +1793,7 @@
 
   <xs:element name="Equalities-List">
     <xs:complexType>
-      <xs:sequence>
+      <xs:sequence maxOccurs="unbounded">
 	<xs:group ref="Equalities"/>
       </xs:sequence>
     </xs:complexType>
@@ -1655,9 +1801,19 @@
 
   <xs:group name="Equalities">
     <xs:choice>
+      <xs:element ref="Equality"/>
       <xs:element ref="Equality-To-Itself"/>
     </xs:choice>
   </xs:group>
+
+  <xs:element name="Equality">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variable"/>
+	<xs:group ref="Term"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 
   <xs:element name="Equality-To-Itself">
     <xs:complexType>
@@ -1679,6 +1835,8 @@
   
   <xs:group name="Exemplifications">
     <xs:choice>
+      <xs:element ref="Example"/>
+      <xs:element ref="ExemplifyingVariable"/>
       <xs:element ref="ImplicitExemplification"/>
     </xs:choice>
   </xs:group>
@@ -1690,6 +1848,24 @@
 	<xs:group ref="Type"/>
       </xs:sequence>
       <xs:attribute ref="position"/>
+    </xs:complexType>
+  </xs:element>
+    
+  <xs:element name="Example">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variable"/>
+	<xs:group ref="Term"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+    
+  <xs:element name="ExemplifyingVariable">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element ref="Variable"/>
+	<xs:group ref="Term"/>
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
     
@@ -1860,6 +2036,7 @@
   <xs:group name="Statements">
     <xs:choice>
       <xs:group ref="DiffuseStatementExtra"/>
+      <xs:element ref="Iterative-Equality"/>
       <xs:group ref="JustifiedProposition"/>
     </xs:choice>
   </xs:group>
