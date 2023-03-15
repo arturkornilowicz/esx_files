@@ -27,10 +27,12 @@
   <xs:attribute name="bracketed" type="xs:string"/>
   <xs:attribute name="constr" type="xs:string"/>
   <xs:attribute name="constrnr" type="xs:integer"/>
+  <xs:attribute name="description" type="xs:string"/>
   <xs:attribute name="endposition" type="xs:string"/>
   <xs:attribute name="formatdes" type="xs:string"/>
   <xs:attribute name="formatnr" type="xs:integer"/>
   <xs:attribute name="freevarnr" type="xs:integer"/>
+  <xs:attribute name="href" type="xs:string"/>
   <xs:attribute name="idnr" type="xs:integer"/>
   <xs:attribute name="inscription" type="xs:string"/>
   <xs:attribute name="kind" type="xs:string"/>
@@ -59,7 +61,6 @@
   <xs:attribute name="varidkind" type="xs:string"/>
   <xs:attribute name="varintro" type="xs:string"/>
   <xs:attribute name="varnr" type="xs:integer"/>
-  <xs:attribute name="wikipedia" type="xs:string"/>
   
   <!-- definitions of elements -->
   
@@ -309,9 +310,10 @@
   <xs:element name="Pragma">
     <xs:complexType>
       <xs:choice>
-	<xs:element ref="Canceled"/>
-	<xs:element ref="Notion-Name"/>
-	<xs:element ref="Unknown"/>
+        <xs:element ref="Canceled"/>
+        <xs:element ref="Notion-Name"/>
+        <xs:element ref="Unknown"/>
+        <xs:element ref="URL"/>
       </xs:choice>
     </xs:complexType>
   </xs:element>
@@ -2059,7 +2061,7 @@
   <xs:element name="Substitutions">
     <xs:complexType>
       <xs:sequence>
-	<xs:element ref="Substitution" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="Substitution" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -2067,7 +2069,7 @@
   <xs:element name="Type-Specification">
     <xs:complexType>
       <xs:sequence>
-	<xs:group ref="Type"/>
+      	<xs:group ref="Type"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -2085,7 +2087,6 @@
     <xs:complexType>
       <xs:attribute ref="position"/>
       <xs:attribute ref="inscription"/>
-      <xs:attribute ref="wikipedia"/>
     </xs:complexType>
   </xs:element>
 
@@ -2093,6 +2094,14 @@
     <xs:complexType>
       <xs:attribute ref="position"/>
       <xs:attribute ref="inscription"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="URL">
+    <xs:complexType>
+      <xs:attribute ref="position"/>
+      <xs:attribute ref="href"/>
+      <xs:attribute ref="description"/>
     </xs:complexType>
   </xs:element>
 
