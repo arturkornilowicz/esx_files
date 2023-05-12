@@ -6,6 +6,7 @@
       <xs:sequence maxOccurs="unbounded">
 	<xs:element ref="Item"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="articleid" use="required"/>
       <xs:attribute ref="articleext" use="required"/>
       <xs:attribute ref="position" use="required"/>
@@ -61,6 +62,7 @@
   <xs:attribute name="varidkind" type="xs:string"/>
   <xs:attribute name="varintro" type="xs:string"/>
   <xs:attribute name="varnr" type="xs:integer"/>
+  <xs:attribute name="xmlid" type="xs:string"/>
   
   <!-- definitions of elements -->
   
@@ -111,6 +113,7 @@
   <xs:element name="Item">
     <xs:complexType>
       <xs:group ref="ItemGroup"/>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="kind" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="endposition" use="required"/>
@@ -123,6 +126,7 @@
 	<xs:element ref="Collective-Assumption"/>
 	<xs:element ref="Single-Assumption"/>
       </xs:choice>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -133,6 +137,7 @@
 	<xs:element ref="Conditions"/>
 	<xs:element ref="Straightforward-Justification"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -141,6 +146,7 @@
       <xs:sequence>
 	<xs:element ref="Conditions"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position"/>
     </xs:complexType>
   </xs:element>
@@ -150,6 +156,7 @@
       <xs:sequence maxOccurs="unbounded">
 	<xs:group ref="Registrations"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -158,6 +165,7 @@
       <xs:sequence>
 	<xs:element ref="Proposition"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -166,12 +174,14 @@
       <xs:sequence>
 	<xs:element ref="Equating"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
   <xs:element name="Exemplification">
     <xs:complexType>
       <xs:group ref="Exemplifications"/>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -181,6 +191,7 @@
 	<xs:element ref="Qualified-Segments"/>
 	<xs:element ref="Conditions"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -189,6 +200,7 @@
       <xs:sequence>
 	<xs:element ref="Proposition"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position"/>
     </xs:complexType>
   </xs:element>
@@ -198,6 +210,7 @@
       <xs:sequence maxOccurs="unbounded">
 	<xs:element ref="Proposition"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -208,6 +221,7 @@
 	<xs:element ref="Attribute-Pattern"/>
 	<xs:element ref="Definiens" minOccurs="0"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="MMLId"/>
     </xs:complexType>
   </xs:element>
@@ -218,6 +232,7 @@
 	<xs:element ref="Correctness-Conditions"/>
 	<xs:group ref="Justification"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -227,6 +242,7 @@
 	<xs:group ref="Correctness-Conditions-List"/>
 	<xs:group ref="Justification"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -235,6 +251,7 @@
       <xs:sequence>
 	<xs:element ref="Qualified-Segments"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -243,6 +260,7 @@
       <xs:sequence>
 	<xs:element ref="Block"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -254,6 +272,7 @@
 	<xs:element ref="Type-Specification" minOccurs="0"/>
 	<xs:element ref="Definiens" minOccurs="0"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="MMLId"/>
     </xs:complexType>
   </xs:element>
@@ -264,6 +283,7 @@
 	<xs:element ref="Qualified-Segments"/>
 	<xs:element ref="Conditions" minOccurs="0"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -273,6 +293,7 @@
 	<xs:element ref="Pattern-Shaped-Expression" minOccurs="2" maxOccurs="2"/>
 	<xs:element ref="Loci-Equalities"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -282,6 +303,7 @@
 	<xs:element ref="Qualified-Segments"/>
 	<xs:element ref="Conditions" minOccurs="0"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -294,6 +316,7 @@
 	</xs:choice>
 	<xs:group ref="Modes"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="MMLId"/>
     </xs:complexType>
   </xs:element>
@@ -306,6 +329,7 @@
         <xs:element ref="Unknown"/>
         <xs:element ref="URL"/>
       </xs:choice>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -316,6 +340,7 @@
 	<xs:element ref="Predicate-Pattern"/>
 	<xs:element ref="Definiens" minOccurs="0"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="MMLId"/>
     </xs:complexType>
   </xs:element>
@@ -326,6 +351,7 @@
 	<xs:element ref="Properties"/>
 	<xs:group ref="Justification"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -335,6 +361,7 @@
 	<xs:element ref="Properties"/>
 	<xs:group ref="Justification"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -344,12 +371,14 @@
 	<xs:group ref="Term"/>
 	<xs:group ref="Term"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
   <xs:element name="Regular-Statement">
     <xs:complexType>
       <xs:group ref="Statements"/>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -358,10 +387,14 @@
       <xs:sequence maxOccurs="unbounded">
 	<xs:element ref="Reservation-Segment"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
   <xs:element name="Section-Pragma">
+    <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
+    </xs:complexType>
   </xs:element>
 
   <xs:element name="Theorem-Item">
@@ -370,6 +403,7 @@
 	<xs:element ref="Proposition" minOccurs="1" maxOccurs="1"/>
 	<xs:group ref="Justification"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="MMLId" use="required"/>
     </xs:complexType>
   </xs:element>
@@ -381,6 +415,7 @@
 	<xs:group ref="Type"/>
 	<xs:element ref="Straightforward-Justification"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -413,6 +448,7 @@
 	<xs:group ref="Term"/>
 	<xs:element ref="Adjective-Cluster"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="bracketed"/>
     </xs:complexType>
@@ -424,6 +460,7 @@
 	<xs:element ref="Relation-Formula" maxOccurs="1"/>
 	<xs:element ref="RightSideOf-Relation-Formula" maxOccurs="unbounded"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
     </xs:complexType>
   </xs:element>
@@ -434,6 +471,7 @@
 	<xs:group ref="Term"/>
 	<xs:group ref="Type"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="bracketed"/>
     </xs:complexType>
@@ -444,6 +482,7 @@
       <xs:sequence maxOccurs="1">
 	<xs:element ref="Arguments"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="nr" use="required"/>
       <xs:attribute ref="formatnr" use="required"/>
       <xs:attribute ref="patternnr" use="required"/>
@@ -466,6 +505,7 @@
       <xs:sequence maxOccurs="1">
 	<xs:element ref="Arguments"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="nr" use="required"/>
       <xs:attribute ref="formatnr" use="required"/>
       <xs:attribute ref="patternnr" use="required"/>
@@ -487,6 +527,7 @@
       <xs:sequence maxOccurs="1">
 	<xs:element ref="Arguments"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="idnr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
       <xs:attribute ref="position" use="required"/>
@@ -501,6 +542,7 @@
   <xs:element name="Negated-Formula">
     <xs:complexType>
       <xs:group ref="Formula" minOccurs="1" maxOccurs="2"/>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="bracketed"/>
     </xs:complexType>
@@ -509,6 +551,7 @@
   <xs:element name="Binary-Formula">
     <xs:complexType>
       <xs:group ref="Formula" minOccurs="2" maxOccurs="2"/>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="bracketed"/>
     </xs:complexType>
@@ -517,6 +560,7 @@
   <xs:element name="Conjunctive-Formula">
     <xs:complexType>
       <xs:group ref="Formula" minOccurs="2" maxOccurs="2"/>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="bracketed"/>
     </xs:complexType>
@@ -525,6 +569,7 @@
   <xs:element name="Disjunctive-Formula">
     <xs:complexType>
       <xs:group ref="Formula" minOccurs="2" maxOccurs="2"/>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="bracketed"/>
     </xs:complexType>
@@ -533,6 +578,7 @@
   <xs:element name="Conditional-Formula">
     <xs:complexType>
       <xs:group ref="Formula" minOccurs="2" maxOccurs="2"/>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="bracketed"/>
     </xs:complexType>
@@ -541,6 +587,7 @@
   <xs:element name="Biconditional-Formula">
     <xs:complexType>
       <xs:group ref="Formula" minOccurs="2" maxOccurs="2"/>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="bracketed"/>
     </xs:complexType>
@@ -549,6 +596,7 @@
   <xs:element name="FlexaryConjunctive-Formula">
     <xs:complexType>
       <xs:group ref="Formula" minOccurs="2" maxOccurs="2"/>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="bracketed"/>
     </xs:complexType>
@@ -557,6 +605,7 @@
   <xs:element name="FlexaryDisjunctive-Formula">
     <xs:complexType>
       <xs:group ref="Formula" minOccurs="2" maxOccurs="2"/>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="bracketed"/>
     </xs:complexType>
@@ -568,6 +617,7 @@
 	<xs:element ref="Variable-Segments"/>
 	<xs:element ref="Scope"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="bracketed"/>
     </xs:complexType>
@@ -580,6 +630,7 @@
 	<xs:element ref="Restriction" minOccurs="0"/>
 	<xs:element ref="Scope"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="bracketed"/>
     </xs:complexType>
@@ -587,12 +638,14 @@
   
   <xs:element name="Contradiction">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
     </xs:complexType>
   </xs:element>
   
   <xs:element name="Thesis">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
     </xs:complexType>
   </xs:element>
@@ -623,6 +676,7 @@
       <xs:sequence>
 	<xs:element ref="Arguments"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="nr"/>
       <xs:attribute ref="formatnr"/>
       <xs:attribute ref="patternnr"/>
@@ -643,6 +697,7 @@
 	<xs:element ref="Right-Circumflex-Symbol"/>
 	<xs:element ref="Arguments"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="bracketed"/>
       <xs:attribute ref="nr"/>
       <xs:attribute ref="formatnr"/>
@@ -663,6 +718,7 @@
       <xs:sequence>
 	<xs:group ref="Term"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="nr"/>
       <xs:attribute ref="formatnr"/>
       <xs:attribute ref="patternnr"/>
@@ -683,6 +739,7 @@
 	<xs:group ref="Term"/>
 	<xs:group ref="Formula"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="sort" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="bracketed"/>
@@ -694,6 +751,7 @@
       <xs:sequence>
 	<xs:group ref="Type"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="sort" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="bracketed"/>
@@ -705,6 +763,7 @@
       <xs:sequence>
 	<xs:element ref="Arguments"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="nr" use="required"/>
       <xs:attribute ref="formatnr" use="required"/>
       <xs:attribute ref="patternnr" use="required"/>
@@ -723,6 +782,7 @@
   
   <xs:element name="Internal-Selector-Term">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="nr" use="required"/>
       <xs:attribute ref="sort" use="required"/>
       <xs:attribute ref="formatnr" use="required"/>
@@ -735,6 +795,7 @@
   
   <xs:element name="it-Term">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="sort" use="required"/>
       <xs:attribute ref="position" use="required"/>
     </xs:complexType>
@@ -742,6 +803,7 @@
   
   <xs:element name="Numeral-Term">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="bracketed"/>
       <xs:attribute ref="number" use="required"/>
       <xs:attribute ref="sort" use="required"/>
@@ -754,6 +816,7 @@
       <xs:sequence>
 	<xs:element ref="Arguments"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="bracketed"/>
       <xs:attribute ref="idnr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
@@ -770,6 +833,7 @@
 	<xs:group ref="Term"/>
 	<xs:group ref="Type"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="bracketed"/>
       <xs:attribute ref="sort" use="required"/>
       <xs:attribute ref="position" use="required"/>
@@ -781,6 +845,7 @@
       <xs:sequence>
 	<xs:group ref="Term"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="bracketed"/>
       <xs:attribute ref="nr"/>
       <xs:attribute ref="formatnr"/>
@@ -801,6 +866,7 @@
 	<xs:element ref="Variable-Segments"/>
 	<xs:group ref="Term"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="sort" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="bracketed"/>
@@ -809,6 +875,7 @@
   
   <xs:element name="Simple-Term">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="idnr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
       <xs:attribute ref="position" use="required"/>
@@ -835,6 +902,7 @@
 	<xs:element ref="Substitutions"/>
 	<xs:group ref="Type"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="idnr"/>
       <xs:attribute ref="nr"/>
       <xs:attribute ref="sort"/>
@@ -848,6 +916,7 @@
 	<xs:element ref="Adjective-Cluster"/>
 	<xs:group ref="Type"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="nr"/>
       <xs:attribute ref="formatnr"/>
       <xs:attribute ref="patternnr"/>
@@ -866,6 +935,7 @@
       <xs:sequence maxOccurs="1">
 	<xs:element ref="Arguments"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="bracketed"/>
       <xs:attribute ref="nr"/>
       <xs:attribute ref="formatnr"/>
@@ -886,6 +956,7 @@
       <xs:sequence maxOccurs="1">
 	<xs:element ref="Arguments"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="nr"/>
       <xs:attribute ref="formatnr"/>
       <xs:attribute ref="patternnr"/>
@@ -906,6 +977,7 @@
       <xs:sequence minOccurs="0" maxOccurs="unbounded">
 	<xs:group ref="Type"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -933,12 +1005,14 @@
 	<xs:element ref="Link" minOccurs="0"/>
 	<xs:group ref="Reference" maxOccurs="unbounded"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
     </xs:complexType>
   </xs:element>
 
   <xs:element name="Definition-Reference">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="nr" use="required"/>
       <xs:attribute ref="MMLId" use="required"/>
@@ -947,6 +1021,7 @@
 
   <xs:element name="Link">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position"/>
       <xs:attribute ref="labelnr"/>
     </xs:complexType>
@@ -954,6 +1029,7 @@
 
   <xs:element name="Local-Reference">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="idnr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
@@ -969,6 +1045,7 @@
 
   <xs:element name="Theorem-Reference">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="nr" use="required"/>
       <xs:attribute ref="MMLId" use="required"/>
@@ -982,6 +1059,7 @@
       <xs:sequence minOccurs="0">
 	<xs:element ref="Arguments"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="nr" use="required"/>
       <xs:attribute ref="formatnr" use="required"/>
       <xs:attribute ref="patternnr" use="required"/>
@@ -1002,6 +1080,7 @@
       <xs:sequence minOccurs="0" maxOccurs="unbounded">
 	<xs:element ref="Attribute"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1020,6 +1099,7 @@
 	<xs:element ref="Adjective-Cluster"/>
 	<xs:group ref="Type"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
     </xs:complexType>
   </xs:element>
@@ -1030,6 +1110,7 @@
 	<xs:element ref="Adjective-Cluster"/>
 	<xs:group ref="Type"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
     </xs:complexType>
   </xs:element>
@@ -1041,6 +1122,7 @@
 	<xs:element ref="Adjective-Cluster"/>
 	<xs:group ref="Type" minOccurs="0"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
     </xs:complexType>
   </xs:element>
@@ -1053,6 +1135,7 @@
 	<xs:element ref="Label" minOccurs="1" maxOccurs="1"/>
 	<xs:group ref="Definienses"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position"/>
       <xs:attribute ref="kind"/>
       <xs:attribute ref="shape"/>
@@ -1091,6 +1174,7 @@
       <xs:sequence>
 	<xs:element ref="Partial-Definiens" maxOccurs="unbounded"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1100,6 +1184,7 @@
 	<xs:group ref="Partial-Definiens-Formula"/>
 	<xs:group ref="Partial-Definiens-Term"/>
       </xs:choice>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -1123,6 +1208,7 @@
 	<xs:group ref="Formula"/>
 	<xs:group ref="Term"/>
       </xs:choice>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1139,6 +1225,7 @@
 	<xs:element ref="Type-Specification" minOccurs="0"/>
 	<xs:element ref="Definiens" minOccurs="0"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1147,6 +1234,7 @@
       <xs:sequence>
 	<xs:group ref="Type"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1158,6 +1246,7 @@
 	<xs:element ref="Attribute-Pattern"/>
 	<xs:element ref="Pattern-Shaped-Expression"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1167,6 +1256,7 @@
 	<xs:element ref="Attribute-Pattern"/>
 	<xs:element ref="Pattern-Shaped-Expression"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1176,6 +1266,7 @@
 	<xs:group ref="FunctorPatterns"/>
 	<xs:element ref="Pattern-Shaped-Expression"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1185,6 +1276,7 @@
 	<xs:element ref="Mode-Pattern"/>
 	<xs:element ref="Pattern-Shaped-Expression"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1194,6 +1286,7 @@
 	<xs:element ref="Predicate-Pattern"/>
 	<xs:element ref="Pattern-Shaped-Expression"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1203,6 +1296,7 @@
 	<xs:element ref="Predicate-Pattern"/>
 	<xs:element ref="Pattern-Shaped-Expression"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1211,6 +1305,7 @@
       <xs:sequence>
 	<xs:group ref="Pattern"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1232,6 +1327,7 @@
 	<xs:element ref="Locus" minOccurs="1" maxOccurs="1"/>
 	<xs:element ref="Loci" minOccurs="0"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="formatdes" use="required"/>
       <xs:attribute ref="formatnr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
@@ -1263,6 +1359,7 @@
 	<xs:element ref="Right-Circumflex-Symbol" minOccurs="1" maxOccurs="1"/>
 	<xs:element ref="Loci"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="formatdes" use="required"/>
       <xs:attribute ref="formatnr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
@@ -1285,6 +1382,7 @@
       <xs:sequence>
 	<xs:element ref="Loci" minOccurs="2" maxOccurs="2"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="formatdes" use="required"/>
       <xs:attribute ref="formatnr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
@@ -1309,6 +1407,7 @@
       <xs:sequence>
 	<xs:element ref="Loci"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="formatdes" use="required"/>
       <xs:attribute ref="formatnr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
@@ -1331,6 +1430,7 @@
       <xs:sequence>
 	<xs:element ref="Loci" minOccurs="2" maxOccurs="2"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="formatdes" use="required"/>
       <xs:attribute ref="formatnr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
@@ -1351,6 +1451,10 @@
   <!-- Correctness Conditions -->
 
   <xs:element name="Correctness-Conditions">
+    <xs:complexType>
+      <xs:group ref="Correctness-Conditions-List" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:attribute ref="xmlid" use="required"/>
+    </xs:complexType>
   </xs:element>
   
   <xs:group name="Correctness-Conditions-List">
@@ -1365,21 +1469,39 @@
   </xs:group>
   
   <xs:element name="coherence">
+    <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
+    </xs:complexType>
   </xs:element>
   
   <xs:element name="compatibility">
+    <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
+    </xs:complexType>
   </xs:element>
   
   <xs:element name="consistency">
+    <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
+    </xs:complexType>
   </xs:element>
   
   <xs:element name="existence">
+    <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
+    </xs:complexType>
   </xs:element>
   
   <xs:element name="reducibility">
+    <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
+    </xs:complexType>
   </xs:element>
   
   <xs:element name="uniqueness">
+    <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
+    </xs:complexType>
   </xs:element>
 
   <!-- Schemes -->
@@ -1389,6 +1511,7 @@
       <xs:sequence>
 	<xs:element ref="Block"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="MMLId"/>
     </xs:complexType>
   </xs:element>
@@ -1401,11 +1524,13 @@
 	<xs:group ref="Formula"/>
 	<xs:element ref="Provisional-Formulas" minOccurs="0"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
   <xs:element name="Scheme">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="idnr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
       <xs:attribute ref="nr" use="required"/>
@@ -1417,6 +1542,7 @@
       <xs:sequence>
 	<xs:group ref="SchematicSegments" maxOccurs="unbounded"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1434,6 +1560,7 @@
 	<xs:element ref="Type-List"/>
 	<xs:element ref="Type-Specification"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
     </xs:complexType>
   </xs:element>
@@ -1444,6 +1571,7 @@
 	<xs:element ref="Variables"/>
 	<xs:element ref="Type-List"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
     </xs:complexType>
   </xs:element>
@@ -1453,6 +1581,7 @@
       <xs:sequence maxOccurs="unbounded">
 	<xs:element ref="Proposition"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1466,6 +1595,7 @@
 	<xs:element ref="Field-Segments"/>
 	<xs:element ref="Structure-Patterns-Rendering"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1474,6 +1604,7 @@
       <xs:sequence>
 	<xs:element ref="Loci" minOccurs="1" maxOccurs="1"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="formatdes" use="required"/>
       <xs:attribute ref="formatnr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
@@ -1490,6 +1621,7 @@
       <xs:sequence minOccurs="0" maxOccurs="unbounded">
 	<xs:element ref="Struct-Type"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1498,6 +1630,7 @@
       <xs:sequence minOccurs="1" maxOccurs="unbounded">
 	<xs:element ref="Field-Segment"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1507,6 +1640,7 @@
 	<xs:element ref="Selectors"/>
 	<xs:group ref="Type"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
     </xs:complexType>
   </xs:element>
@@ -1516,6 +1650,7 @@
       <xs:sequence>
 	<xs:element ref="Loci" minOccurs="1" maxOccurs="1"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="formatdes" use="required"/>
       <xs:attribute ref="formatnr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
@@ -1532,6 +1667,7 @@
       <xs:sequence>
 	<xs:element ref="Loci" minOccurs="1" maxOccurs="1"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="formatdes" use="required"/>
       <xs:attribute ref="formatnr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
@@ -1548,6 +1684,7 @@
       <xs:sequence minOccurs="1" maxOccurs="unbounded">
 	<xs:element ref="Selector"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1556,6 +1693,7 @@
       <xs:sequence minOccurs="1" maxOccurs="unbounded">
 	<xs:element ref="Locus"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="nr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
       <xs:attribute ref="position" use="required"/>
@@ -1567,6 +1705,7 @@
       <xs:sequence minOccurs="1" maxOccurs="unbounded">
 	<xs:element ref="SelectorFunctor-Pattern"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1576,6 +1715,7 @@
 	<xs:element ref="Locus" minOccurs="1" maxOccurs="1"/>
 	<xs:element ref="Loci" minOccurs="0"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="formatdes" use="required"/>
       <xs:attribute ref="formatnr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
@@ -1596,6 +1736,7 @@
       <xs:sequence>
 	<xs:element ref="Loci" minOccurs="1" maxOccurs="1"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="formatdes" use="required"/>
       <xs:attribute ref="formatnr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
@@ -1615,6 +1756,7 @@
 	<xs:element ref="Strict-Pattern"/>
 	<xs:element ref="Selectors-List"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1625,6 +1767,7 @@
       <xs:sequence minOccurs="0" maxOccurs="unbounded">
 	<xs:group ref="Term"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -1633,6 +1776,7 @@
       <xs:sequence minOccurs="0" maxOccurs="unbounded">
 	<xs:element ref="Item"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="kind" use="required"/>
       <xs:attribute ref="position" use="required"/>
       <xs:attribute ref="endposition" use="required"/>
@@ -1651,6 +1795,7 @@
       <xs:sequence>
 	<xs:element ref="Label"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1659,6 +1804,7 @@
       <xs:sequence>
 	<xs:group ref="Equalities"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1674,6 +1820,7 @@
 	<xs:element ref="Variable"/>
 	<xs:group ref="Term"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1683,6 +1830,7 @@
 	<xs:element ref="Variable"/>
 	<xs:group ref="Term"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -1698,6 +1846,7 @@
 	<xs:element ref="Variables"/>
 	<xs:group ref="Type"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position"/>
     </xs:complexType>
   </xs:element>
@@ -1708,6 +1857,7 @@
 	<xs:element ref="Variable"/>
 	<xs:element ref="ReservedDscr-Type"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="idnr"/>
       <xs:attribute ref="spelling"/>
       <xs:attribute ref="position"/>
@@ -1724,6 +1874,7 @@
 	<xs:element ref="Variable"/>
 	<xs:element ref="ReservedDscr-Type"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position"/>
     </xs:complexType>
   </xs:element>
@@ -1731,6 +1882,7 @@
   <xs:element name="ImplicitExemplification">
     <xs:complexType>
       <xs:group ref="Term"/>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1743,6 +1895,7 @@
   
   <xs:element name="Label">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="idnr" use="required"/>
       <xs:attribute ref="spelling" use="required"/>
       <xs:attribute ref="position" use="required"/>
@@ -1756,6 +1909,7 @@
       <xs:sequence>
 	<xs:element ref="Locus" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1764,6 +1918,7 @@
       <xs:sequence>
 	<xs:element ref="Loci-Equality" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -1772,12 +1927,14 @@
       <xs:sequence>
 	<xs:element ref="Locus" minOccurs="2" maxOccurs="2"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
     </xs:complexType>
   </xs:element>
   
   <xs:element name="Locus">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="idnr" use="required"/>
       <xs:attribute ref="varidkind" use="required"/>
       <xs:attribute ref="spelling"/>
@@ -1795,6 +1952,7 @@
 	<xs:element ref="Label" minOccurs="1" maxOccurs="1"/>
 	<xs:group ref="Formula" minOccurs="1" maxOccurs="1"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position" use="required"/>
     </xs:complexType>
   </xs:element>
@@ -1804,6 +1962,7 @@
       <xs:sequence minOccurs="0" maxOccurs="unbounded">
 	<xs:group ref="Segment"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1812,12 +1971,14 @@
       <xs:sequence>
 	<xs:group ref="Type" minOccurs="0" maxOccurs="1"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="property"/>
     </xs:complexType>
   </xs:element>
 
   <xs:element name="Redefine">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="occurs"/>
     </xs:complexType>
   </xs:element>
@@ -1829,6 +1990,7 @@
 	<xs:element ref="Variable-Segments"/>
 	<xs:group ref="Type"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position"/>
     </xs:complexType>
   </xs:element>
@@ -1838,11 +2000,13 @@
       <xs:sequence minOccurs="0">
 	<xs:group ref="Formula"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
     
   <xs:element name="Right-Circumflex-Symbol">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="nr"/>
       <xs:attribute ref="formatnr"/>
       <xs:attribute ref="spelling"/>
@@ -1855,6 +2019,7 @@
       <xs:sequence minOccurs="1">
 	<xs:group ref="Formula"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -1875,6 +2040,7 @@
 
   <xs:element name="Substitution">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="freevarnr"/>
       <xs:attribute ref="kind"/>
       <xs:attribute ref="varnr"/>
@@ -1886,6 +2052,7 @@
       <xs:sequence>
 	<xs:element ref="Substitution" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -1894,11 +2061,13 @@
       <xs:sequence>
 	<xs:group ref="Type"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
   <xs:element name="Canceled">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position"/>
       <xs:attribute ref="kind"/>
       <xs:attribute ref="amount"/>
@@ -1908,6 +2077,7 @@
 
   <xs:element name="Notion-Name">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position"/>
       <xs:attribute ref="inscription"/>
     </xs:complexType>
@@ -1915,6 +2085,7 @@
 
   <xs:element name="Unknown">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position"/>
       <xs:attribute ref="inscription"/>
     </xs:complexType>
@@ -1922,6 +2093,7 @@
 
   <xs:element name="URL">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="position"/>
       <xs:attribute ref="href"/>
       <xs:attribute ref="description"/>
@@ -1930,6 +2102,7 @@
 
   <xs:element name="Variable">
     <xs:complexType>
+      <xs:attribute ref="xmlid" use="required"/>
       <xs:attribute ref="idnr"/>
       <xs:attribute ref="spelling"/>
       <xs:attribute ref="position"/>
@@ -1946,6 +2119,7 @@
       <xs:sequence maxOccurs="unbounded">
 	<xs:element ref="Variable"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
   
@@ -1954,6 +2128,7 @@
       <xs:sequence minOccurs="0" maxOccurs="unbounded">
 	<xs:group ref="Segment"/>
       </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
     </xs:complexType>
   </xs:element>
     
