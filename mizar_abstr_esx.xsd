@@ -54,6 +54,7 @@
   <xs:attribute name="position" type="xs:string"/>
   <xs:attribute name="property" type="xs:string"/>
   <xs:attribute name="rightargsbracketed" type="xs:string"/>
+  <xs:attribute name="role" type="xs:string"/>
   <xs:attribute name="serialnr" type="xs:integer"/>
   <xs:attribute name="shape" type="xs:string"/>
   <xs:attribute name="sort" type="xs:string"/>
@@ -368,7 +369,25 @@
   <xs:element name="Reduction">
     <xs:complexType>
       <xs:sequence>
+	<xs:element ref="Redex"/>
+	<xs:element ref="Reduct"/>
+      </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Redex">
+    <xs:complexType>
+      <xs:sequence>
 	<xs:group ref="Term"/>
+      </xs:sequence>
+      <xs:attribute ref="xmlid" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Reduct">
+    <xs:complexType>
+      <xs:sequence>
 	<xs:group ref="Term"/>
       </xs:sequence>
       <xs:attribute ref="xmlid" use="required"/>
@@ -1081,6 +1100,7 @@
 	<xs:element ref="Attribute"/>
       </xs:sequence>
       <xs:attribute ref="xmlid" use="required"/>
+      <xs:attribute ref="role"/>
     </xs:complexType>
   </xs:element>
 
@@ -1306,6 +1326,7 @@
 	<xs:group ref="Pattern"/>
       </xs:sequence>
       <xs:attribute ref="xmlid" use="required"/>
+      <xs:attribute ref="role"/>
     </xs:complexType>
   </xs:element>
 

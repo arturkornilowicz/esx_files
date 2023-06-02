@@ -5875,8 +5875,8 @@
     <Item xmlid="x3512" kind="Cluster" position="334\9" endposition="334\34">
      <Cluster xmlid="x3513">
       <Conditional-Registration xmlid="x3514" position="334\9">
-       <Adjective-Cluster xmlid="x3515"/>
-       <Adjective-Cluster xmlid="x3516">
+       <Adjective-Cluster xmlid="x3515" role="antecedent"/>
+       <Adjective-Cluster xmlid="x3516" role="consequent">
         <Attribute xmlid="x3517" nr="3" formatnr="13" patternnr="1" absolutepatternMMLId="XBOOLE_0:1" spelling="empty" sort="Adjective" constrnr="1" absoluteconstrMMLId="XBOOLE_0:1" originalnr="0" position="334\18">
          <Arguments xmlid="x3518"/>
         </Attribute>
@@ -6045,12 +6045,12 @@
     <Item xmlid="x3609" kind="Cluster" position="359\9" endposition="359\49">
      <Cluster xmlid="x3610">
       <Conditional-Registration xmlid="x3611" position="359\9">
-       <Adjective-Cluster xmlid="x3612">
+       <Adjective-Cluster xmlid="x3612" role="antecedent">
         <Attribute xmlid="x3613" nr="4" formatnr="46" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="proper" nonocc="true" sort="Adjective" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="359\20">
          <Arguments xmlid="x3614"/>
         </Attribute>
        </Adjective-Cluster>
-       <Adjective-Cluster xmlid="x3615">
+       <Adjective-Cluster xmlid="x3615" role="consequent">
         <Attribute xmlid="x3616" nr="3" formatnr="13" patternnr="1" absolutepatternMMLId="XBOOLE_0:1" spelling="empty" nonocc="true" sort="Adjective" constrnr="1" absoluteconstrMMLId="XBOOLE_0:1" originalnr="0" position="359\33">
          <Arguments xmlid="x3617"/>
         </Attribute>
@@ -6066,12 +6066,12 @@
     <Item xmlid="x3621" kind="Cluster" position="360\9" endposition="360\41">
      <Cluster xmlid="x3622">
       <Conditional-Registration xmlid="x3623" position="360\9">
-       <Adjective-Cluster xmlid="x3624">
+       <Adjective-Cluster xmlid="x3624" role="antecedent">
         <Attribute xmlid="x3625" nr="3" formatnr="13" patternnr="1" absolutepatternMMLId="XBOOLE_0:1" spelling="empty" sort="Adjective" constrnr="1" absoluteconstrMMLId="XBOOLE_0:1" originalnr="0" position="360\15">
          <Arguments xmlid="x3626"/>
         </Attribute>
        </Adjective-Cluster>
-       <Adjective-Cluster xmlid="x3627">
+       <Adjective-Cluster xmlid="x3627" role="consequent">
         <Attribute xmlid="x3628" nr="4" formatnr="46" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="proper" sort="Adjective" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="360\25">
          <Arguments xmlid="x3629"/>
         </Attribute>
@@ -6157,8 +6157,8 @@
     <Item xmlid="x3672" kind="Cluster" position="370\9" endposition="370\39">
      <Cluster xmlid="x3673">
       <Conditional-Registration xmlid="x3674" position="370\9">
-       <Adjective-Cluster xmlid="x3675"/>
-       <Adjective-Cluster xmlid="x3676">
+       <Adjective-Cluster xmlid="x3675" role="antecedent"/>
+       <Adjective-Cluster xmlid="x3676" role="consequent">
         <Attribute xmlid="x3677" nr="4" formatnr="46" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="proper" nonocc="true" sort="Adjective" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="370\23">
          <Arguments xmlid="x3678"/>
         </Attribute>
@@ -6489,8 +6489,8 @@
     <Item xmlid="x3870" kind="Cluster" position="398\9" endposition="398\36">
      <Cluster xmlid="x3871">
       <Conditional-Registration xmlid="x3872" position="398\9">
-       <Adjective-Cluster xmlid="x3873"/>
-       <Adjective-Cluster xmlid="x3874">
+       <Adjective-Cluster xmlid="x3873" role="antecedent"/>
+       <Adjective-Cluster xmlid="x3874" role="consequent">
         <Attribute xmlid="x3875" nr="2" formatnr="31" patternnr="4" absolutepatternMMLId="SUBSET_1:2" spelling="trivial" sort="Adjective" constrnr="2" absoluteconstrMMLId="ZFMISC_1:1" originalnr="0" position="398\20">
          <Arguments xmlid="x3876"/>
         </Attribute>
@@ -6956,85 +6956,89 @@
     </Item>
     <Item xmlid="x4148" kind="Reduction" position="439\8" endposition="439\21">
      <Reduction xmlid="x4149">
-      <Infix-Term xmlid="x4150" nr="11" formatnr="47" patternnr="31" absolutepatternMMLId="SUBSET_1:10" leftargscount="0" spelling="In" sort="Functor-Term" constrnr="31" absoluteconstrMMLId="SUBSET_1:10" originalnr="0" position="439\11">
-       <Arguments xmlid="x4151">
-        <Simple-Term xmlid="x4152" idnr="7" spelling="x" position="439\13" origin="Constant" sort="Constant" serialnr="158" varnr="2"/>
-        <Simple-Term xmlid="x4153" idnr="5" spelling="X" position="439\15" origin="Constant" sort="Constant" serialnr="157" varnr="1"/>
-       </Arguments>
-      </Infix-Term>
-      <Simple-Term xmlid="x4154" idnr="7" spelling="x" position="439\21" origin="Constant" sort="Constant" serialnr="158" varnr="2"/>
+      <Redex xmlid="x4150">
+       <Infix-Term xmlid="x4151" nr="11" formatnr="47" patternnr="31" absolutepatternMMLId="SUBSET_1:10" leftargscount="0" spelling="In" sort="Functor-Term" constrnr="31" absoluteconstrMMLId="SUBSET_1:10" originalnr="0" position="439\11">
+        <Arguments xmlid="x4152">
+         <Simple-Term xmlid="x4153" idnr="7" spelling="x" position="439\13" origin="Constant" sort="Constant" serialnr="158" varnr="2"/>
+         <Simple-Term xmlid="x4154" idnr="5" spelling="X" position="439\15" origin="Constant" sort="Constant" serialnr="157" varnr="1"/>
+        </Arguments>
+       </Infix-Term>
+      </Redex>
+      <Reduct xmlid="x4155">
+       <Simple-Term xmlid="x4156" idnr="7" spelling="x" position="439\21" origin="Constant" sort="Constant" serialnr="158" varnr="2"/>
+      </Reduct>
      </Reduction>
     </Item>
    </Block>
   </Definition-Item>
  </Item>
- <Item xmlid="x4155" kind="Theorem-Item" position="442\7" endposition="443\39">
-  <Theorem-Item xmlid="x4156" MMLId="SUBSET_1:49">
-   <Proposition xmlid="x4157" position="443\3">
-    <Label xmlid="x4158" idnr="0" spelling="" position="443\3" serialnr="98" labelnr="0"/>
-    <Universal-Quantifier-Formula xmlid="x4159" position="443\21">
-     <Variable-Segments xmlid="x4160">
-      <Free-Variable-Segment xmlid="x4161" position="443\21">
-       <Variable xmlid="x4162" idnr="5" spelling="X" position="443\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="1"/>
-       <ReservedDscr-Type xmlid="x4163" idnr="5" nr="1" sort="ReservedDscr-Type" position="443\21">
-        <Substitutions xmlid="x4164"/>
-        <Standard-Type xmlid="x4165" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="30\23">
-         <Arguments xmlid="x4166"/>
+ <Item xmlid="x4157" kind="Theorem-Item" position="442\7" endposition="443\39">
+  <Theorem-Item xmlid="x4158" MMLId="SUBSET_1:49">
+   <Proposition xmlid="x4159" position="443\3">
+    <Label xmlid="x4160" idnr="0" spelling="" position="443\3" serialnr="98" labelnr="0"/>
+    <Universal-Quantifier-Formula xmlid="x4161" position="443\21">
+     <Variable-Segments xmlid="x4162">
+      <Free-Variable-Segment xmlid="x4163" position="443\21">
+       <Variable xmlid="x4164" idnr="5" spelling="X" position="443\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="1"/>
+       <ReservedDscr-Type xmlid="x4165" idnr="5" nr="1" sort="ReservedDscr-Type" position="443\21">
+        <Substitutions xmlid="x4166"/>
+        <Standard-Type xmlid="x4167" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="30\23">
+         <Arguments xmlid="x4168"/>
         </Standard-Type>
        </ReservedDscr-Type>
       </Free-Variable-Segment>
      </Variable-Segments>
-     <Scope xmlid="x4167">
-      <Universal-Quantifier-Formula xmlid="x4168" position="443\21">
-       <Variable-Segments xmlid="x4169">
-        <Free-Variable-Segment xmlid="x4170" position="443\21">
-         <Variable xmlid="x4171" idnr="6" spelling="Y" position="443\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="2"/>
-         <ReservedDscr-Type xmlid="x4172" idnr="6" nr="1" sort="ReservedDscr-Type" position="443\21">
-          <Substitutions xmlid="x4173"/>
-          <Standard-Type xmlid="x4174" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="30\23">
-           <Arguments xmlid="x4175"/>
+     <Scope xmlid="x4169">
+      <Universal-Quantifier-Formula xmlid="x4170" position="443\21">
+       <Variable-Segments xmlid="x4171">
+        <Free-Variable-Segment xmlid="x4172" position="443\21">
+         <Variable xmlid="x4173" idnr="6" spelling="Y" position="443\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="3" varnr="2"/>
+         <ReservedDscr-Type xmlid="x4174" idnr="6" nr="1" sort="ReservedDscr-Type" position="443\21">
+          <Substitutions xmlid="x4175"/>
+          <Standard-Type xmlid="x4176" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="30\23">
+           <Arguments xmlid="x4177"/>
           </Standard-Type>
          </ReservedDscr-Type>
         </Free-Variable-Segment>
        </Variable-Segments>
-       <Scope xmlid="x4176">
-        <Universal-Quantifier-Formula xmlid="x4177" position="443\21">
-         <Variable-Segments xmlid="x4178">
-          <Free-Variable-Segment xmlid="x4179" position="443\21">
-           <Variable xmlid="x4180" idnr="7" spelling="x" position="443\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="18" varnr="3"/>
-           <ReservedDscr-Type xmlid="x4181" idnr="7" nr="4" sort="ReservedDscr-Type" position="443\21">
-            <Substitutions xmlid="x4182"/>
-            <Standard-Type xmlid="x4183" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="426\20">
-             <Arguments xmlid="x4184"/>
+       <Scope xmlid="x4178">
+        <Universal-Quantifier-Formula xmlid="x4179" position="443\21">
+         <Variable-Segments xmlid="x4180">
+          <Free-Variable-Segment xmlid="x4181" position="443\21">
+           <Variable xmlid="x4182" idnr="7" spelling="x" position="443\21" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="18" varnr="3"/>
+           <ReservedDscr-Type xmlid="x4183" idnr="7" nr="4" sort="ReservedDscr-Type" position="443\21">
+            <Substitutions xmlid="x4184"/>
+            <Standard-Type xmlid="x4185" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="426\20">
+             <Arguments xmlid="x4186"/>
             </Standard-Type>
            </ReservedDscr-Type>
           </Free-Variable-Segment>
          </Variable-Segments>
-         <Scope xmlid="x4185">
-          <Conditional-Formula xmlid="x4186" position="443\21">
-           <Relation-Formula xmlid="x4187" nr="3" formatnr="6" patternnr="3" absolutepatternMMLId="HIDDEN:3" leftargscount="1" spelling="in" sort="Relation-Formula" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="443\6">
-            <Arguments xmlid="x4188">
-             <Simple-Term xmlid="x4189" idnr="7" spelling="x" position="443\3" origin="ReservedVar" sort="BoundVar" serialnr="18" varnr="3"/>
-             <Infix-Term xmlid="x4190" nr="4" formatnr="20" patternnr="7" absolutepatternMMLId="XBOOLE_0:3" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="7" absoluteconstrMMLId="XBOOLE_0:3" originalnr="0" position="443\11">
-              <Arguments xmlid="x4191">
-               <Simple-Term xmlid="x4192" idnr="5" spelling="X" position="443\8" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
-               <Simple-Term xmlid="x4193" idnr="6" spelling="Y" position="443\13" origin="ReservedVar" sort="BoundVar" serialnr="3" varnr="2"/>
+         <Scope xmlid="x4187">
+          <Conditional-Formula xmlid="x4188" position="443\21">
+           <Relation-Formula xmlid="x4189" nr="3" formatnr="6" patternnr="3" absolutepatternMMLId="HIDDEN:3" leftargscount="1" spelling="in" sort="Relation-Formula" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="443\6">
+            <Arguments xmlid="x4190">
+             <Simple-Term xmlid="x4191" idnr="7" spelling="x" position="443\3" origin="ReservedVar" sort="BoundVar" serialnr="18" varnr="3"/>
+             <Infix-Term xmlid="x4192" nr="4" formatnr="20" patternnr="7" absolutepatternMMLId="XBOOLE_0:3" leftargscount="1" spelling="/\" sort="Functor-Term" constrnr="7" absoluteconstrMMLId="XBOOLE_0:3" originalnr="0" position="443\11">
+              <Arguments xmlid="x4193">
+               <Simple-Term xmlid="x4194" idnr="5" spelling="X" position="443\8" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+               <Simple-Term xmlid="x4195" idnr="6" spelling="Y" position="443\13" origin="ReservedVar" sort="BoundVar" serialnr="3" varnr="2"/>
               </Arguments>
              </Infix-Term>
             </Arguments>
            </Relation-Formula>
-           <Relation-Formula xmlid="x4194" nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="443\31">
-            <Arguments xmlid="x4195">
-             <Infix-Term xmlid="x4196" nr="11" formatnr="47" patternnr="31" absolutepatternMMLId="SUBSET_1:10" leftargscount="0" spelling="In" sort="Functor-Term" constrnr="31" absoluteconstrMMLId="SUBSET_1:10" originalnr="0" position="443\24">
-              <Arguments xmlid="x4197">
-               <Simple-Term xmlid="x4198" idnr="7" spelling="x" position="443\26" origin="ReservedVar" sort="BoundVar" serialnr="18" varnr="3"/>
-               <Simple-Term xmlid="x4199" idnr="5" spelling="X" position="443\28" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+           <Relation-Formula xmlid="x4196" nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="443\31">
+            <Arguments xmlid="x4197">
+             <Infix-Term xmlid="x4198" nr="11" formatnr="47" patternnr="31" absolutepatternMMLId="SUBSET_1:10" leftargscount="0" spelling="In" sort="Functor-Term" constrnr="31" absoluteconstrMMLId="SUBSET_1:10" originalnr="0" position="443\24">
+              <Arguments xmlid="x4199">
+               <Simple-Term xmlid="x4200" idnr="7" spelling="x" position="443\26" origin="ReservedVar" sort="BoundVar" serialnr="18" varnr="3"/>
+               <Simple-Term xmlid="x4201" idnr="5" spelling="X" position="443\28" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
               </Arguments>
              </Infix-Term>
-             <Infix-Term xmlid="x4200" nr="11" formatnr="47" patternnr="31" absolutepatternMMLId="SUBSET_1:10" leftargscount="0" spelling="In" sort="Functor-Term" constrnr="31" absoluteconstrMMLId="SUBSET_1:10" originalnr="0" position="443\34">
-              <Arguments xmlid="x4201">
-               <Simple-Term xmlid="x4202" idnr="7" spelling="x" position="443\36" origin="ReservedVar" sort="BoundVar" serialnr="18" varnr="3"/>
-               <Simple-Term xmlid="x4203" idnr="6" spelling="Y" position="443\38" origin="ReservedVar" sort="BoundVar" serialnr="3" varnr="2"/>
+             <Infix-Term xmlid="x4202" nr="11" formatnr="47" patternnr="31" absolutepatternMMLId="SUBSET_1:10" leftargscount="0" spelling="In" sort="Functor-Term" constrnr="31" absoluteconstrMMLId="SUBSET_1:10" originalnr="0" position="443\34">
+              <Arguments xmlid="x4203">
+               <Simple-Term xmlid="x4204" idnr="7" spelling="x" position="443\36" origin="ReservedVar" sort="BoundVar" serialnr="18" varnr="3"/>
+               <Simple-Term xmlid="x4205" idnr="6" spelling="Y" position="443\38" origin="ReservedVar" sort="BoundVar" serialnr="3" varnr="2"/>
               </Arguments>
              </Infix-Term>
             </Arguments>
@@ -7047,58 +7051,58 @@
      </Scope>
     </Universal-Quantifier-Formula>
    </Proposition>
-   <Straightforward-Justification xmlid="x4204" position="443\39"/>
+   <Straightforward-Justification xmlid="x4206" position="443\39"/>
   </Theorem-Item>
  </Item>
- <Item xmlid="x4205" kind="Theorem-Item" position="447\7" endposition="448\76">
-  <Theorem-Item xmlid="x4206" MMLId="SUBSET_1:50">
-   <Proposition xmlid="x4207" position="448\5">
-    <Label xmlid="x4208" idnr="0" spelling="" position="448\5" serialnr="99" labelnr="0"/>
-    <Universal-Quantifier-Formula xmlid="x4209" position="448\5">
-     <Variable-Segments xmlid="x4210">
-      <Explicitly-Qualified-Segment xmlid="x4211" position="448\5">
-       <Variables xmlid="x4212">
-        <Variable xmlid="x4213" idnr="5" spelling="X" position="448\7" varintro="Quantifier" kind="BoundVar" serialnr="159" varnr="1"/>
+ <Item xmlid="x4207" kind="Theorem-Item" position="447\7" endposition="448\76">
+  <Theorem-Item xmlid="x4208" MMLId="SUBSET_1:50">
+   <Proposition xmlid="x4209" position="448\5">
+    <Label xmlid="x4210" idnr="0" spelling="" position="448\5" serialnr="99" labelnr="0"/>
+    <Universal-Quantifier-Formula xmlid="x4211" position="448\5">
+     <Variable-Segments xmlid="x4212">
+      <Explicitly-Qualified-Segment xmlid="x4213" position="448\5">
+       <Variables xmlid="x4214">
+        <Variable xmlid="x4215" idnr="5" spelling="X" position="448\7" varintro="Quantifier" kind="BoundVar" serialnr="159" varnr="1"/>
        </Variables>
-       <Clustered-Type xmlid="x4214" sort="Clustered-Type" position="448\29">
-        <Adjective-Cluster xmlid="x4215">
-         <Attribute xmlid="x4216" nr="2" formatnr="31" patternnr="4" absolutepatternMMLId="SUBSET_1:2" spelling="trivial" nonocc="true" sort="Adjective" constrnr="2" absoluteconstrMMLId="ZFMISC_1:1" originalnr="0" position="448\25">
-          <Arguments xmlid="x4217"/>
+       <Clustered-Type xmlid="x4216" sort="Clustered-Type" position="448\29">
+        <Adjective-Cluster xmlid="x4217">
+         <Attribute xmlid="x4218" nr="2" formatnr="31" patternnr="4" absolutepatternMMLId="SUBSET_1:2" spelling="trivial" nonocc="true" sort="Adjective" constrnr="2" absoluteconstrMMLId="ZFMISC_1:1" originalnr="0" position="448\25">
+          <Arguments xmlid="x4219"/>
          </Attribute>
         </Adjective-Cluster>
-        <Standard-Type xmlid="x4218" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="448\29">
-         <Arguments xmlid="x4219"/>
+        <Standard-Type xmlid="x4220" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="448\29">
+         <Arguments xmlid="x4221"/>
         </Standard-Type>
        </Clustered-Type>
       </Explicitly-Qualified-Segment>
-      <Explicitly-Qualified-Segment xmlid="x4220" position="448\30">
-       <Variables xmlid="x4221">
-        <Variable xmlid="x4222" idnr="35" spelling="p" position="448\32" varintro="Quantifier" kind="BoundVar" serialnr="160" varnr="2"/>
+      <Explicitly-Qualified-Segment xmlid="x4222" position="448\30">
+       <Variables xmlid="x4223">
+        <Variable xmlid="x4224" idnr="35" spelling="p" position="448\32" varintro="Quantifier" kind="BoundVar" serialnr="160" varnr="2"/>
        </Variables>
-       <Standard-Type xmlid="x4223" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="448\42">
-        <Arguments xmlid="x4224"/>
+       <Standard-Type xmlid="x4225" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="448\42">
+        <Arguments xmlid="x4226"/>
        </Standard-Type>
       </Explicitly-Qualified-Segment>
      </Variable-Segments>
-     <Scope xmlid="x4225">
-      <Existential-Quantifier-Formula xmlid="x4226" position="448\45">
-       <Variable-Segments xmlid="x4227">
-        <Explicitly-Qualified-Segment xmlid="x4228" position="448\45">
-         <Variables xmlid="x4229">
-          <Variable xmlid="x4230" idnr="38" spelling="q" position="448\47" varintro="Quantifier" kind="BoundVar" serialnr="161" varnr="3"/>
+     <Scope xmlid="x4227">
+      <Existential-Quantifier-Formula xmlid="x4228" position="448\45">
+       <Variable-Segments xmlid="x4229">
+        <Explicitly-Qualified-Segment xmlid="x4230" position="448\45">
+         <Variables xmlid="x4231">
+          <Variable xmlid="x4232" idnr="38" spelling="q" position="448\47" varintro="Quantifier" kind="BoundVar" serialnr="161" varnr="3"/>
          </Variables>
-         <Standard-Type xmlid="x4231" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="448\61">
-          <Arguments xmlid="x4232">
-           <Simple-Term xmlid="x4233" idnr="5" spelling="X" position="448\66" origin="BoundVar" sort="BoundVar" serialnr="159" varnr="1"/>
+         <Standard-Type xmlid="x4233" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="448\61">
+          <Arguments xmlid="x4234">
+           <Simple-Term xmlid="x4235" idnr="5" spelling="X" position="448\66" origin="BoundVar" sort="BoundVar" serialnr="159" varnr="1"/>
           </Arguments>
          </Standard-Type>
         </Explicitly-Qualified-Segment>
        </Variable-Segments>
-       <Scope xmlid="x4234">
-        <Relation-Formula xmlid="x4235" nr="2" formatnr="5" patternnr="2" absolutepatternMMLId="HIDDEN:2" antonymic="true" leftargscount="1" spelling="&#x3C;&#x3E;" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="448\74">
-         <Arguments xmlid="x4236">
-          <Simple-Term xmlid="x4237" idnr="38" spelling="q" position="448\71" origin="BoundVar" sort="BoundVar" serialnr="161" varnr="3"/>
-          <Simple-Term xmlid="x4238" idnr="35" spelling="p" position="448\76" origin="BoundVar" sort="BoundVar" serialnr="160" varnr="2"/>
+       <Scope xmlid="x4236">
+        <Relation-Formula xmlid="x4237" nr="2" formatnr="5" patternnr="2" absolutepatternMMLId="HIDDEN:2" antonymic="true" leftargscount="1" spelling="&#x3C;&#x3E;" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="448\74">
+         <Arguments xmlid="x4238">
+          <Simple-Term xmlid="x4239" idnr="38" spelling="q" position="448\71" origin="BoundVar" sort="BoundVar" serialnr="161" varnr="3"/>
+          <Simple-Term xmlid="x4240" idnr="35" spelling="p" position="448\76" origin="BoundVar" sort="BoundVar" serialnr="160" varnr="2"/>
          </Arguments>
         </Relation-Formula>
        </Scope>
@@ -7106,82 +7110,82 @@
      </Scope>
     </Universal-Quantifier-Formula>
    </Proposition>
-   <Straightforward-Justification xmlid="x4239" position="448\76"/>
+   <Straightforward-Justification xmlid="x4241" position="448\76"/>
   </Theorem-Item>
  </Item>
- <Item xmlid="x4240" kind="Theorem-Item" position="450\7" endposition="452\54">
-  <Theorem-Item xmlid="x4241" MMLId="SUBSET_1:51">
-   <Proposition xmlid="x4242" position="451\5">
-    <Label xmlid="x4243" idnr="0" spelling="" position="451\5" serialnr="100" labelnr="0"/>
-    <Universal-Quantifier-Formula xmlid="x4244" position="451\5">
-     <Variable-Segments xmlid="x4245">
-      <Explicitly-Qualified-Segment xmlid="x4246" position="451\5">
-       <Variables xmlid="x4247">
-        <Variable xmlid="x4248" idnr="39" spelling="T" position="451\7" varintro="Quantifier" kind="BoundVar" serialnr="165" varnr="1"/>
+ <Item xmlid="x4242" kind="Theorem-Item" position="450\7" endposition="452\54">
+  <Theorem-Item xmlid="x4243" MMLId="SUBSET_1:51">
+   <Proposition xmlid="x4244" position="451\5">
+    <Label xmlid="x4245" idnr="0" spelling="" position="451\5" serialnr="100" labelnr="0"/>
+    <Universal-Quantifier-Formula xmlid="x4246" position="451\5">
+     <Variable-Segments xmlid="x4247">
+      <Explicitly-Qualified-Segment xmlid="x4248" position="451\5">
+       <Variables xmlid="x4249">
+        <Variable xmlid="x4250" idnr="39" spelling="T" position="451\7" varintro="Quantifier" kind="BoundVar" serialnr="165" varnr="1"/>
        </Variables>
-       <Clustered-Type xmlid="x4249" sort="Clustered-Type" position="451\29">
-        <Adjective-Cluster xmlid="x4250">
-         <Attribute xmlid="x4251" nr="2" formatnr="31" patternnr="4" absolutepatternMMLId="SUBSET_1:2" spelling="trivial" nonocc="true" sort="Adjective" constrnr="2" absoluteconstrMMLId="ZFMISC_1:1" originalnr="0" position="451\25">
-          <Arguments xmlid="x4252"/>
+       <Clustered-Type xmlid="x4251" sort="Clustered-Type" position="451\29">
+        <Adjective-Cluster xmlid="x4252">
+         <Attribute xmlid="x4253" nr="2" formatnr="31" patternnr="4" absolutepatternMMLId="SUBSET_1:2" spelling="trivial" nonocc="true" sort="Adjective" constrnr="2" absoluteconstrMMLId="ZFMISC_1:1" originalnr="0" position="451\25">
+          <Arguments xmlid="x4254"/>
          </Attribute>
         </Adjective-Cluster>
-        <Standard-Type xmlid="x4253" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="451\29">
-         <Arguments xmlid="x4254"/>
+        <Standard-Type xmlid="x4255" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="451\29">
+         <Arguments xmlid="x4256"/>
         </Standard-Type>
        </Clustered-Type>
       </Explicitly-Qualified-Segment>
-      <Explicitly-Qualified-Segment xmlid="x4255" position="451\30">
-       <Variables xmlid="x4256">
-        <Variable xmlid="x4257" idnr="5" spelling="X" position="451\32" varintro="Quantifier" kind="BoundVar" serialnr="166" varnr="2"/>
+      <Explicitly-Qualified-Segment xmlid="x4257" position="451\30">
+       <Variables xmlid="x4258">
+        <Variable xmlid="x4259" idnr="5" spelling="X" position="451\32" varintro="Quantifier" kind="BoundVar" serialnr="166" varnr="2"/>
        </Variables>
-       <Clustered-Type xmlid="x4258" sort="Clustered-Type" position="451\57">
-        <Adjective-Cluster xmlid="x4259">
-         <Attribute xmlid="x4260" nr="2" formatnr="31" patternnr="4" absolutepatternMMLId="SUBSET_1:2" spelling="trivial" nonocc="true" sort="Adjective" constrnr="2" absoluteconstrMMLId="ZFMISC_1:1" originalnr="0" position="451\50">
-          <Arguments xmlid="x4261"/>
+       <Clustered-Type xmlid="x4260" sort="Clustered-Type" position="451\57">
+        <Adjective-Cluster xmlid="x4261">
+         <Attribute xmlid="x4262" nr="2" formatnr="31" patternnr="4" absolutepatternMMLId="SUBSET_1:2" spelling="trivial" nonocc="true" sort="Adjective" constrnr="2" absoluteconstrMMLId="ZFMISC_1:1" originalnr="0" position="451\50">
+          <Arguments xmlid="x4263"/>
          </Attribute>
         </Adjective-Cluster>
-        <Standard-Type xmlid="x4262" nr="4" formatnr="42" patternnr="4" absolutepatternMMLId="SUBSET_1:2" spelling="Subset" sort="Expandable-Type" position="451\57">
-         <Arguments xmlid="x4263">
-          <Simple-Term xmlid="x4264" idnr="39" spelling="T" position="451\62" origin="BoundVar" sort="BoundVar" serialnr="165" varnr="1"/>
+        <Standard-Type xmlid="x4264" nr="4" formatnr="42" patternnr="4" absolutepatternMMLId="SUBSET_1:2" spelling="Subset" sort="Expandable-Type" position="451\57">
+         <Arguments xmlid="x4265">
+          <Simple-Term xmlid="x4266" idnr="39" spelling="T" position="451\62" origin="BoundVar" sort="BoundVar" serialnr="165" varnr="1"/>
          </Arguments>
         </Standard-Type>
        </Clustered-Type>
       </Explicitly-Qualified-Segment>
-      <Explicitly-Qualified-Segment xmlid="x4265" position="451\63">
-       <Variables xmlid="x4266">
-        <Variable xmlid="x4267" idnr="35" spelling="p" position="451\65" varintro="Quantifier" kind="BoundVar" serialnr="167" varnr="3"/>
+      <Explicitly-Qualified-Segment xmlid="x4267" position="451\63">
+       <Variables xmlid="x4268">
+        <Variable xmlid="x4269" idnr="35" spelling="p" position="451\65" varintro="Quantifier" kind="BoundVar" serialnr="167" varnr="3"/>
        </Variables>
-       <Standard-Type xmlid="x4268" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="452\11">
-        <Arguments xmlid="x4269"/>
+       <Standard-Type xmlid="x4270" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="452\11">
+        <Arguments xmlid="x4271"/>
        </Standard-Type>
       </Explicitly-Qualified-Segment>
      </Variable-Segments>
-     <Scope xmlid="x4270">
-      <Existential-Quantifier-Formula xmlid="x4271" position="452\14">
-       <Variable-Segments xmlid="x4272">
-        <Explicitly-Qualified-Segment xmlid="x4273" position="452\14">
-         <Variables xmlid="x4274">
-          <Variable xmlid="x4275" idnr="38" spelling="q" position="452\16" varintro="Quantifier" kind="BoundVar" serialnr="168" varnr="4"/>
+     <Scope xmlid="x4272">
+      <Existential-Quantifier-Formula xmlid="x4273" position="452\14">
+       <Variable-Segments xmlid="x4274">
+        <Explicitly-Qualified-Segment xmlid="x4275" position="452\14">
+         <Variables xmlid="x4276">
+          <Variable xmlid="x4277" idnr="38" spelling="q" position="452\16" varintro="Quantifier" kind="BoundVar" serialnr="168" varnr="4"/>
          </Variables>
-         <Standard-Type xmlid="x4276" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="452\30">
-          <Arguments xmlid="x4277">
-           <Simple-Term xmlid="x4278" idnr="39" spelling="T" position="452\35" origin="BoundVar" sort="BoundVar" serialnr="165" varnr="1"/>
+         <Standard-Type xmlid="x4278" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="452\30">
+          <Arguments xmlid="x4279">
+           <Simple-Term xmlid="x4280" idnr="39" spelling="T" position="452\35" origin="BoundVar" sort="BoundVar" serialnr="165" varnr="1"/>
           </Arguments>
          </Standard-Type>
         </Explicitly-Qualified-Segment>
        </Variable-Segments>
-       <Scope xmlid="x4279">
-        <Conjunctive-Formula xmlid="x4280" position="452\47">
-         <Relation-Formula xmlid="x4281" nr="3" formatnr="6" patternnr="5" absolutepatternMMLId="TARSKI:2" leftargscount="1" spelling="in" sort="Relation-Formula" constrnr="4" absoluteconstrMMLId="TARSKI:2" originalnr="2" absoluteorigconstrMMLId="HIDDEN:2" position="452\43">
-          <Arguments xmlid="x4282">
-           <Simple-Term xmlid="x4283" idnr="38" spelling="q" position="452\40" origin="BoundVar" sort="BoundVar" serialnr="168" varnr="4"/>
-           <Simple-Term xmlid="x4284" idnr="5" spelling="X" position="452\45" origin="BoundVar" sort="BoundVar" serialnr="166" varnr="2"/>
+       <Scope xmlid="x4281">
+        <Conjunctive-Formula xmlid="x4282" position="452\47">
+         <Relation-Formula xmlid="x4283" nr="3" formatnr="6" patternnr="5" absolutepatternMMLId="TARSKI:2" leftargscount="1" spelling="in" sort="Relation-Formula" constrnr="4" absoluteconstrMMLId="TARSKI:2" originalnr="2" absoluteorigconstrMMLId="HIDDEN:2" position="452\43">
+          <Arguments xmlid="x4284">
+           <Simple-Term xmlid="x4285" idnr="38" spelling="q" position="452\40" origin="BoundVar" sort="BoundVar" serialnr="168" varnr="4"/>
+           <Simple-Term xmlid="x4286" idnr="5" spelling="X" position="452\45" origin="BoundVar" sort="BoundVar" serialnr="166" varnr="2"/>
           </Arguments>
          </Relation-Formula>
-         <Relation-Formula xmlid="x4285" nr="2" formatnr="5" patternnr="2" absolutepatternMMLId="HIDDEN:2" antonymic="true" leftargscount="1" spelling="&#x3C;&#x3E;" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="452\52">
-          <Arguments xmlid="x4286">
-           <Simple-Term xmlid="x4287" idnr="38" spelling="q" position="452\49" origin="BoundVar" sort="BoundVar" serialnr="168" varnr="4"/>
-           <Simple-Term xmlid="x4288" idnr="35" spelling="p" position="452\54" origin="BoundVar" sort="BoundVar" serialnr="167" varnr="3"/>
+         <Relation-Formula xmlid="x4287" nr="2" formatnr="5" patternnr="2" absolutepatternMMLId="HIDDEN:2" antonymic="true" leftargscount="1" spelling="&#x3C;&#x3E;" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="452\52">
+          <Arguments xmlid="x4288">
+           <Simple-Term xmlid="x4289" idnr="38" spelling="q" position="452\49" origin="BoundVar" sort="BoundVar" serialnr="168" varnr="4"/>
+           <Simple-Term xmlid="x4290" idnr="35" spelling="p" position="452\54" origin="BoundVar" sort="BoundVar" serialnr="167" varnr="3"/>
           </Arguments>
          </Relation-Formula>
         </Conjunctive-Formula>
@@ -7190,90 +7194,90 @@
      </Scope>
     </Universal-Quantifier-Formula>
    </Proposition>
-   <Straightforward-Justification xmlid="x4289" position="452\54"/>
+   <Straightforward-Justification xmlid="x4291" position="452\54"/>
   </Theorem-Item>
  </Item>
- <Item xmlid="x4290" kind="Scheme-Block-Item" position="456\6" endposition="458\64">
-  <Scheme-Block-Item xmlid="x4291" MMLId="SUBSET_1:5">
-   <Block xmlid="x4292" kind="Scheme-Block" position="456\6" endposition="460\6">
-    <Item xmlid="x4293" kind="Scheme-Head" position="457\7" endposition="458\63">
-     <Scheme-Head xmlid="x4294">
-      <Scheme xmlid="x4295" idnr="40" spelling="Union1" nr="5"/>
-      <Schematic-Variables xmlid="x4296">
-       <Functor-Segment xmlid="x4297" position="457\13">
-        <Variables xmlid="x4298">
-         <Variable xmlid="x4299" idnr="23" spelling="A" position="457\11" varintro="itSchemeHead" kind="Scheme-Functor" serialnr="9" varnr="1"/>
+ <Item xmlid="x4292" kind="Scheme-Block-Item" position="456\6" endposition="458\64">
+  <Scheme-Block-Item xmlid="x4293" MMLId="SUBSET_1:5">
+   <Block xmlid="x4294" kind="Scheme-Block" position="456\6" endposition="460\6">
+    <Item xmlid="x4295" kind="Scheme-Head" position="457\7" endposition="458\63">
+     <Scheme-Head xmlid="x4296">
+      <Scheme xmlid="x4297" idnr="40" spelling="Union1" nr="5"/>
+      <Schematic-Variables xmlid="x4298">
+       <Functor-Segment xmlid="x4299" position="457\13">
+        <Variables xmlid="x4300">
+         <Variable xmlid="x4301" idnr="23" spelling="A" position="457\11" varintro="itSchemeHead" kind="Scheme-Functor" serialnr="9" varnr="1"/>
         </Variables>
-        <Type-List xmlid="x4300"/>
-        <Type-Specification xmlid="x4301">
-         <Standard-Type xmlid="x4302" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="457\19">
-          <Arguments xmlid="x4303"/>
+        <Type-List xmlid="x4302"/>
+        <Type-Specification xmlid="x4303">
+         <Standard-Type xmlid="x4304" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="457\19">
+          <Arguments xmlid="x4305"/>
          </Standard-Type>
         </Type-Specification>
        </Functor-Segment>
-       <Functor-Segment xmlid="x4304" position="457\24">
-        <Variables xmlid="x4305">
-         <Variable xmlid="x4306" idnr="26" spelling="a" position="457\22" varintro="itSchemeHead" kind="Scheme-Functor" serialnr="10" varnr="2"/>
+       <Functor-Segment xmlid="x4306" position="457\24">
+        <Variables xmlid="x4307">
+         <Variable xmlid="x4308" idnr="26" spelling="a" position="457\22" varintro="itSchemeHead" kind="Scheme-Functor" serialnr="10" varnr="2"/>
         </Variables>
-        <Type-List xmlid="x4307"/>
-        <Type-Specification xmlid="x4308">
-         <Standard-Type xmlid="x4309" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="457\34">
-          <Arguments xmlid="x4310">
-           <Private-Functor-Term xmlid="x4311" idnr="23" spelling="A" position="457\39" sort="Scheme-Functor-Term" serialnr="9" nr="1">
-            <Arguments xmlid="x4312"/>
+        <Type-List xmlid="x4309"/>
+        <Type-Specification xmlid="x4310">
+         <Standard-Type xmlid="x4311" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="457\34">
+          <Arguments xmlid="x4312">
+           <Private-Functor-Term xmlid="x4313" idnr="23" spelling="A" position="457\39" sort="Scheme-Functor-Term" serialnr="9" nr="1">
+            <Arguments xmlid="x4314"/>
            </Private-Functor-Term>
           </Arguments>
          </Standard-Type>
         </Type-Specification>
        </Functor-Segment>
-       <Functor-Segment xmlid="x4313" position="457\52">
-        <Variables xmlid="x4314">
-         <Variable xmlid="x4315" idnr="41" spelling="F" position="457\44" varintro="itSchemeHead" kind="Scheme-Functor" serialnr="11" varnr="3"/>
+       <Functor-Segment xmlid="x4315" position="457\52">
+        <Variables xmlid="x4316">
+         <Variable xmlid="x4317" idnr="41" spelling="F" position="457\44" varintro="itSchemeHead" kind="Scheme-Functor" serialnr="11" varnr="3"/>
         </Variables>
-        <Type-List xmlid="x4316">
-         <Standard-Type xmlid="x4317" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="457\51">
-          <Arguments xmlid="x4318"/>
+        <Type-List xmlid="x4318">
+         <Standard-Type xmlid="x4319" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="457\51">
+          <Arguments xmlid="x4320"/>
          </Standard-Type>
         </Type-List>
-        <Type-Specification xmlid="x4319">
-         <Standard-Type xmlid="x4320" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="457\59">
-          <Arguments xmlid="x4321"/>
+        <Type-Specification xmlid="x4321">
+         <Standard-Type xmlid="x4322" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="457\59">
+          <Arguments xmlid="x4323"/>
          </Standard-Type>
         </Type-Specification>
        </Functor-Segment>
       </Schematic-Variables>
-      <Relation-Formula xmlid="x4322" nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="458\56">
-       <Arguments xmlid="x4323">
-        <Infix-Term xmlid="x4324" nr="7" formatnr="11" patternnr="3" absolutepatternMMLId="TARSKI:3" leftargscount="0" spelling="union" sort="Functor-Term" constrnr="3" absoluteconstrMMLId="TARSKI:3" originalnr="0" position="458\7">
-         <Arguments xmlid="x4325">
-          <Fraenkel-Term xmlid="x4326" sort="Fraenkel-Term" position="458\54">
-           <Variable-Segments xmlid="x4327">
-            <Explicitly-Qualified-Segment xmlid="x4328" position="458\25">
-             <Variables xmlid="x4329">
-              <Variable xmlid="x4330" idnr="42" spelling="j" position="458\22" varintro="Fraenkel" kind="BoundVar" serialnr="173" varnr="1"/>
+      <Relation-Formula xmlid="x4324" nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="458\56">
+       <Arguments xmlid="x4325">
+        <Infix-Term xmlid="x4326" nr="7" formatnr="11" patternnr="3" absolutepatternMMLId="TARSKI:3" leftargscount="0" spelling="union" sort="Functor-Term" constrnr="3" absoluteconstrMMLId="TARSKI:3" originalnr="0" position="458\7">
+         <Arguments xmlid="x4327">
+          <Fraenkel-Term xmlid="x4328" sort="Fraenkel-Term" position="458\54">
+           <Variable-Segments xmlid="x4329">
+            <Explicitly-Qualified-Segment xmlid="x4330" position="458\25">
+             <Variables xmlid="x4331">
+              <Variable xmlid="x4332" idnr="42" spelling="j" position="458\22" varintro="Fraenkel" kind="BoundVar" serialnr="173" varnr="1"/>
              </Variables>
-             <Standard-Type xmlid="x4331" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="458\33">
-              <Arguments xmlid="x4332">
-               <Private-Functor-Term xmlid="x4333" idnr="23" spelling="A" position="458\38" sort="Scheme-Functor-Term" serialnr="9" nr="1">
-                <Arguments xmlid="x4334"/>
+             <Standard-Type xmlid="x4333" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="458\33">
+              <Arguments xmlid="x4334">
+               <Private-Functor-Term xmlid="x4335" idnr="23" spelling="A" position="458\38" sort="Scheme-Functor-Term" serialnr="9" nr="1">
+                <Arguments xmlid="x4336"/>
                </Private-Functor-Term>
               </Arguments>
              </Standard-Type>
             </Explicitly-Qualified-Segment>
            </Variable-Segments>
-           <Private-Functor-Term xmlid="x4335" idnr="41" spelling="F" position="458\11" sort="Scheme-Functor-Term" serialnr="11" nr="3">
-            <Arguments xmlid="x4336">
-             <Simple-Term xmlid="x4337" idnr="42" spelling="j" position="458\13" origin="BoundVar" sort="BoundVar" serialnr="173" varnr="1"/>
+           <Private-Functor-Term xmlid="x4337" idnr="41" spelling="F" position="458\11" sort="Scheme-Functor-Term" serialnr="11" nr="3">
+            <Arguments xmlid="x4338">
+             <Simple-Term xmlid="x4339" idnr="42" spelling="j" position="458\13" origin="BoundVar" sort="BoundVar" serialnr="173" varnr="1"/>
             </Arguments>
            </Private-Functor-Term>
-           <Relation-Formula xmlid="x4338" nr="3" formatnr="6" patternnr="5" absolutepatternMMLId="TARSKI:2" leftargscount="1" spelling="in" sort="Relation-Formula" constrnr="4" absoluteconstrMMLId="TARSKI:2" originalnr="2" absoluteorigconstrMMLId="HIDDEN:2" position="458\47">
-            <Arguments xmlid="x4339">
-             <Simple-Term xmlid="x4340" idnr="42" spelling="j" position="458\44" origin="BoundVar" sort="BoundVar" serialnr="173" varnr="1"/>
-             <Circumfix-Term xmlid="x4341" nr="2" formatnr="9" patternnr="1" absolutepatternMMLId="TARSKI:1" spelling="{" sort="Functor-Term" constrnr="1" absoluteconstrMMLId="TARSKI:1" originalnr="0" position="458\53">
-              <Right-Circumflex-Symbol xmlid="x4342" nr="2" formatnr="9" spelling="}" position="458\53"/>
-              <Arguments xmlid="x4343">
-               <Private-Functor-Term xmlid="x4344" idnr="26" spelling="a" position="458\50" sort="Scheme-Functor-Term" serialnr="10" nr="2">
-                <Arguments xmlid="x4345"/>
+           <Relation-Formula xmlid="x4340" nr="3" formatnr="6" patternnr="5" absolutepatternMMLId="TARSKI:2" leftargscount="1" spelling="in" sort="Relation-Formula" constrnr="4" absoluteconstrMMLId="TARSKI:2" originalnr="2" absoluteorigconstrMMLId="HIDDEN:2" position="458\47">
+            <Arguments xmlid="x4341">
+             <Simple-Term xmlid="x4342" idnr="42" spelling="j" position="458\44" origin="BoundVar" sort="BoundVar" serialnr="173" varnr="1"/>
+             <Circumfix-Term xmlid="x4343" nr="2" formatnr="9" patternnr="1" absolutepatternMMLId="TARSKI:1" spelling="{" sort="Functor-Term" constrnr="1" absoluteconstrMMLId="TARSKI:1" originalnr="0" position="458\53">
+              <Right-Circumflex-Symbol xmlid="x4344" nr="2" formatnr="9" spelling="}" position="458\53"/>
+              <Arguments xmlid="x4345">
+               <Private-Functor-Term xmlid="x4346" idnr="26" spelling="a" position="458\50" sort="Scheme-Functor-Term" serialnr="10" nr="2">
+                <Arguments xmlid="x4347"/>
                </Private-Functor-Term>
               </Arguments>
              </Circumfix-Term>
@@ -7282,10 +7286,10 @@
           </Fraenkel-Term>
          </Arguments>
         </Infix-Term>
-        <Private-Functor-Term xmlid="x4346" idnr="41" spelling="F" position="458\58" sort="Scheme-Functor-Term" serialnr="11" nr="3">
-         <Arguments xmlid="x4347">
-          <Private-Functor-Term xmlid="x4348" idnr="26" spelling="a" position="458\60" sort="Scheme-Functor-Term" serialnr="10" nr="2">
-           <Arguments xmlid="x4349"/>
+        <Private-Functor-Term xmlid="x4348" idnr="41" spelling="F" position="458\58" sort="Scheme-Functor-Term" serialnr="11" nr="3">
+         <Arguments xmlid="x4349">
+          <Private-Functor-Term xmlid="x4350" idnr="26" spelling="a" position="458\60" sort="Scheme-Functor-Term" serialnr="10" nr="2">
+           <Arguments xmlid="x4351"/>
           </Private-Functor-Term>
          </Arguments>
         </Private-Functor-Term>
@@ -7296,91 +7300,91 @@
    </Block>
   </Scheme-Block-Item>
  </Item>
- <Item xmlid="x4350" kind="Scheme-Block-Item" position="460\6" endposition="462\78">
-  <Scheme-Block-Item xmlid="x4351" MMLId="SUBSET_1:6">
-   <Block xmlid="x4352" kind="Scheme-Block" position="460\6" endposition="464\7">
-    <Item xmlid="x4353" kind="Scheme-Head" position="461\7" endposition="462\77">
-     <Scheme-Head xmlid="x4354">
-      <Scheme xmlid="x4355" idnr="43" spelling="Union2" nr="6"/>
-      <Schematic-Variables xmlid="x4356">
-       <Functor-Segment xmlid="x4357" position="461\13">
-        <Variables xmlid="x4358">
-         <Variable xmlid="x4359" idnr="23" spelling="A" position="461\11" varintro="itSchemeHead" kind="Scheme-Functor" serialnr="12" varnr="1"/>
+ <Item xmlid="x4352" kind="Scheme-Block-Item" position="460\6" endposition="462\78">
+  <Scheme-Block-Item xmlid="x4353" MMLId="SUBSET_1:6">
+   <Block xmlid="x4354" kind="Scheme-Block" position="460\6" endposition="464\7">
+    <Item xmlid="x4355" kind="Scheme-Head" position="461\7" endposition="462\77">
+     <Scheme-Head xmlid="x4356">
+      <Scheme xmlid="x4357" idnr="43" spelling="Union2" nr="6"/>
+      <Schematic-Variables xmlid="x4358">
+       <Functor-Segment xmlid="x4359" position="461\13">
+        <Variables xmlid="x4360">
+         <Variable xmlid="x4361" idnr="23" spelling="A" position="461\11" varintro="itSchemeHead" kind="Scheme-Functor" serialnr="12" varnr="1"/>
         </Variables>
-        <Type-List xmlid="x4360"/>
-        <Type-Specification xmlid="x4361">
-         <Standard-Type xmlid="x4362" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="461\19">
-          <Arguments xmlid="x4363"/>
+        <Type-List xmlid="x4362"/>
+        <Type-Specification xmlid="x4363">
+         <Standard-Type xmlid="x4364" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="461\19">
+          <Arguments xmlid="x4365"/>
          </Standard-Type>
         </Type-Specification>
        </Functor-Segment>
-       <Functor-Segment xmlid="x4364" position="461\26">
-        <Variables xmlid="x4365">
-         <Variable xmlid="x4366" idnr="26" spelling="a" position="461\22" varintro="itSchemeHead" kind="Scheme-Functor" serialnr="13" varnr="2"/>
-         <Variable xmlid="x4367" idnr="44" spelling="b" position="461\24" varintro="itSchemeHead" kind="Scheme-Functor" serialnr="14" varnr="3"/>
+       <Functor-Segment xmlid="x4366" position="461\26">
+        <Variables xmlid="x4367">
+         <Variable xmlid="x4368" idnr="26" spelling="a" position="461\22" varintro="itSchemeHead" kind="Scheme-Functor" serialnr="13" varnr="2"/>
+         <Variable xmlid="x4369" idnr="44" spelling="b" position="461\24" varintro="itSchemeHead" kind="Scheme-Functor" serialnr="14" varnr="3"/>
         </Variables>
-        <Type-List xmlid="x4368"/>
-        <Type-Specification xmlid="x4369">
-         <Standard-Type xmlid="x4370" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="461\36">
-          <Arguments xmlid="x4371">
-           <Private-Functor-Term xmlid="x4372" idnr="23" spelling="A" position="461\41" sort="Scheme-Functor-Term" serialnr="12" nr="1">
-            <Arguments xmlid="x4373"/>
+        <Type-List xmlid="x4370"/>
+        <Type-Specification xmlid="x4371">
+         <Standard-Type xmlid="x4372" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="461\36">
+          <Arguments xmlid="x4373">
+           <Private-Functor-Term xmlid="x4374" idnr="23" spelling="A" position="461\41" sort="Scheme-Functor-Term" serialnr="12" nr="1">
+            <Arguments xmlid="x4375"/>
            </Private-Functor-Term>
           </Arguments>
          </Standard-Type>
         </Type-Specification>
        </Functor-Segment>
-       <Functor-Segment xmlid="x4374" position="461\54">
-        <Variables xmlid="x4375">
-         <Variable xmlid="x4376" idnr="41" spelling="F" position="461\46" varintro="itSchemeHead" kind="Scheme-Functor" serialnr="15" varnr="4"/>
+       <Functor-Segment xmlid="x4376" position="461\54">
+        <Variables xmlid="x4377">
+         <Variable xmlid="x4378" idnr="41" spelling="F" position="461\46" varintro="itSchemeHead" kind="Scheme-Functor" serialnr="15" varnr="4"/>
         </Variables>
-        <Type-List xmlid="x4377">
-         <Standard-Type xmlid="x4378" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="461\53">
-          <Arguments xmlid="x4379"/>
+        <Type-List xmlid="x4379">
+         <Standard-Type xmlid="x4380" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="461\53">
+          <Arguments xmlid="x4381"/>
          </Standard-Type>
         </Type-List>
-        <Type-Specification xmlid="x4380">
-         <Standard-Type xmlid="x4381" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="461\61">
-          <Arguments xmlid="x4382"/>
+        <Type-Specification xmlid="x4382">
+         <Standard-Type xmlid="x4383" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="461\61">
+          <Arguments xmlid="x4384"/>
          </Standard-Type>
         </Type-Specification>
        </Functor-Segment>
       </Schematic-Variables>
-      <Relation-Formula xmlid="x4383" nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="462\60">
-       <Arguments xmlid="x4384">
-        <Infix-Term xmlid="x4385" nr="7" formatnr="11" patternnr="3" absolutepatternMMLId="TARSKI:3" leftargscount="0" spelling="union" sort="Functor-Term" constrnr="3" absoluteconstrMMLId="TARSKI:3" originalnr="0" position="462\7">
-         <Arguments xmlid="x4386">
-          <Fraenkel-Term xmlid="x4387" sort="Fraenkel-Term" position="462\58">
-           <Variable-Segments xmlid="x4388">
-            <Explicitly-Qualified-Segment xmlid="x4389" position="462\25">
-             <Variables xmlid="x4390">
-              <Variable xmlid="x4391" idnr="42" spelling="j" position="462\22" varintro="Fraenkel" kind="BoundVar" serialnr="175" varnr="1"/>
+      <Relation-Formula xmlid="x4385" nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="462\60">
+       <Arguments xmlid="x4386">
+        <Infix-Term xmlid="x4387" nr="7" formatnr="11" patternnr="3" absolutepatternMMLId="TARSKI:3" leftargscount="0" spelling="union" sort="Functor-Term" constrnr="3" absoluteconstrMMLId="TARSKI:3" originalnr="0" position="462\7">
+         <Arguments xmlid="x4388">
+          <Fraenkel-Term xmlid="x4389" sort="Fraenkel-Term" position="462\58">
+           <Variable-Segments xmlid="x4390">
+            <Explicitly-Qualified-Segment xmlid="x4391" position="462\25">
+             <Variables xmlid="x4392">
+              <Variable xmlid="x4393" idnr="42" spelling="j" position="462\22" varintro="Fraenkel" kind="BoundVar" serialnr="175" varnr="1"/>
              </Variables>
-             <Standard-Type xmlid="x4392" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="462\33">
-              <Arguments xmlid="x4393">
-               <Private-Functor-Term xmlid="x4394" idnr="23" spelling="A" position="462\38" sort="Scheme-Functor-Term" serialnr="12" nr="1">
-                <Arguments xmlid="x4395"/>
+             <Standard-Type xmlid="x4394" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="462\33">
+              <Arguments xmlid="x4395">
+               <Private-Functor-Term xmlid="x4396" idnr="23" spelling="A" position="462\38" sort="Scheme-Functor-Term" serialnr="12" nr="1">
+                <Arguments xmlid="x4397"/>
                </Private-Functor-Term>
               </Arguments>
              </Standard-Type>
             </Explicitly-Qualified-Segment>
            </Variable-Segments>
-           <Private-Functor-Term xmlid="x4396" idnr="41" spelling="F" position="462\11" sort="Scheme-Functor-Term" serialnr="15" nr="4">
-            <Arguments xmlid="x4397">
-             <Simple-Term xmlid="x4398" idnr="42" spelling="j" position="462\13" origin="BoundVar" sort="BoundVar" serialnr="175" varnr="1"/>
+           <Private-Functor-Term xmlid="x4398" idnr="41" spelling="F" position="462\11" sort="Scheme-Functor-Term" serialnr="15" nr="4">
+            <Arguments xmlid="x4399">
+             <Simple-Term xmlid="x4400" idnr="42" spelling="j" position="462\13" origin="BoundVar" sort="BoundVar" serialnr="175" varnr="1"/>
             </Arguments>
            </Private-Functor-Term>
-           <Relation-Formula xmlid="x4399" nr="3" formatnr="6" patternnr="5" absolutepatternMMLId="TARSKI:2" leftargscount="1" spelling="in" sort="Relation-Formula" constrnr="4" absoluteconstrMMLId="TARSKI:2" originalnr="2" absoluteorigconstrMMLId="HIDDEN:2" position="462\47">
-            <Arguments xmlid="x4400">
-             <Simple-Term xmlid="x4401" idnr="42" spelling="j" position="462\44" origin="BoundVar" sort="BoundVar" serialnr="175" varnr="1"/>
-             <Circumfix-Term xmlid="x4402" nr="2" formatnr="10" patternnr="2" absolutepatternMMLId="TARSKI:2" spelling="{" sort="Functor-Term" constrnr="2" absoluteconstrMMLId="TARSKI:2" originalnr="0" position="462\57">
-              <Right-Circumflex-Symbol xmlid="x4403" nr="2" formatnr="10" spelling="}" position="462\57"/>
-              <Arguments xmlid="x4404">
-               <Private-Functor-Term xmlid="x4405" idnr="26" spelling="a" position="462\50" sort="Scheme-Functor-Term" serialnr="13" nr="2">
-                <Arguments xmlid="x4406"/>
-               </Private-Functor-Term>
-               <Private-Functor-Term xmlid="x4407" idnr="44" spelling="b" position="462\54" sort="Scheme-Functor-Term" serialnr="14" nr="3">
+           <Relation-Formula xmlid="x4401" nr="3" formatnr="6" patternnr="5" absolutepatternMMLId="TARSKI:2" leftargscount="1" spelling="in" sort="Relation-Formula" constrnr="4" absoluteconstrMMLId="TARSKI:2" originalnr="2" absoluteorigconstrMMLId="HIDDEN:2" position="462\47">
+            <Arguments xmlid="x4402">
+             <Simple-Term xmlid="x4403" idnr="42" spelling="j" position="462\44" origin="BoundVar" sort="BoundVar" serialnr="175" varnr="1"/>
+             <Circumfix-Term xmlid="x4404" nr="2" formatnr="10" patternnr="2" absolutepatternMMLId="TARSKI:2" spelling="{" sort="Functor-Term" constrnr="2" absoluteconstrMMLId="TARSKI:2" originalnr="0" position="462\57">
+              <Right-Circumflex-Symbol xmlid="x4405" nr="2" formatnr="10" spelling="}" position="462\57"/>
+              <Arguments xmlid="x4406">
+               <Private-Functor-Term xmlid="x4407" idnr="26" spelling="a" position="462\50" sort="Scheme-Functor-Term" serialnr="13" nr="2">
                 <Arguments xmlid="x4408"/>
+               </Private-Functor-Term>
+               <Private-Functor-Term xmlid="x4409" idnr="44" spelling="b" position="462\54" sort="Scheme-Functor-Term" serialnr="14" nr="3">
+                <Arguments xmlid="x4410"/>
                </Private-Functor-Term>
               </Arguments>
              </Circumfix-Term>
@@ -7389,19 +7393,19 @@
           </Fraenkel-Term>
          </Arguments>
         </Infix-Term>
-        <Infix-Term xmlid="x4409" nr="3" formatnr="19" patternnr="6" absolutepatternMMLId="XBOOLE_0:2" leftargscount="1" spelling="\/" sort="Functor-Term" constrnr="6" absoluteconstrMMLId="XBOOLE_0:2" originalnr="0" position="462\70">
-         <Arguments xmlid="x4410">
-          <Private-Functor-Term xmlid="x4411" idnr="41" spelling="F" position="462\62" sort="Scheme-Functor-Term" serialnr="15" nr="4">
-           <Arguments xmlid="x4412">
-            <Private-Functor-Term xmlid="x4413" idnr="26" spelling="a" position="462\64" sort="Scheme-Functor-Term" serialnr="13" nr="2">
-             <Arguments xmlid="x4414"/>
+        <Infix-Term xmlid="x4411" nr="3" formatnr="19" patternnr="6" absolutepatternMMLId="XBOOLE_0:2" leftargscount="1" spelling="\/" sort="Functor-Term" constrnr="6" absoluteconstrMMLId="XBOOLE_0:2" originalnr="0" position="462\70">
+         <Arguments xmlid="x4412">
+          <Private-Functor-Term xmlid="x4413" idnr="41" spelling="F" position="462\62" sort="Scheme-Functor-Term" serialnr="15" nr="4">
+           <Arguments xmlid="x4414">
+            <Private-Functor-Term xmlid="x4415" idnr="26" spelling="a" position="462\64" sort="Scheme-Functor-Term" serialnr="13" nr="2">
+             <Arguments xmlid="x4416"/>
             </Private-Functor-Term>
            </Arguments>
           </Private-Functor-Term>
-          <Private-Functor-Term xmlid="x4415" idnr="41" spelling="F" position="462\72" sort="Scheme-Functor-Term" serialnr="15" nr="4">
-           <Arguments xmlid="x4416">
-            <Private-Functor-Term xmlid="x4417" idnr="44" spelling="b" position="462\74" sort="Scheme-Functor-Term" serialnr="14" nr="3">
-             <Arguments xmlid="x4418"/>
+          <Private-Functor-Term xmlid="x4417" idnr="41" spelling="F" position="462\72" sort="Scheme-Functor-Term" serialnr="15" nr="4">
+           <Arguments xmlid="x4418">
+            <Private-Functor-Term xmlid="x4419" idnr="44" spelling="b" position="462\74" sort="Scheme-Functor-Term" serialnr="14" nr="3">
+             <Arguments xmlid="x4420"/>
             </Private-Functor-Term>
            </Arguments>
           </Private-Functor-Term>
@@ -7414,203 +7418,203 @@
    </Block>
   </Scheme-Block-Item>
  </Item>
- <Item xmlid="x4419" kind="Theorem-Item" position="464\7" endposition="465\61">
-  <Theorem-Item xmlid="x4420" MMLId="SUBSET_1:52">
-   <Proposition xmlid="x4421" position="465\3">
-    <Label xmlid="x4422" idnr="0" spelling="" position="465\3" serialnr="103" labelnr="0"/>
-    <Universal-Quantifier-Formula xmlid="x4423" position="465\17">
-     <Variable-Segments xmlid="x4424">
-      <Free-Variable-Segment xmlid="x4425" position="465\17">
-       <Variable xmlid="x4426" idnr="5" spelling="X" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="1"/>
-       <ReservedDscr-Type xmlid="x4427" idnr="5" nr="1" sort="ReservedDscr-Type" position="465\17">
-        <Substitutions xmlid="x4428"/>
-        <Standard-Type xmlid="x4429" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="30\23">
-         <Arguments xmlid="x4430"/>
+ <Item xmlid="x4421" kind="Theorem-Item" position="464\7" endposition="465\61">
+  <Theorem-Item xmlid="x4422" MMLId="SUBSET_1:52">
+   <Proposition xmlid="x4423" position="465\3">
+    <Label xmlid="x4424" idnr="0" spelling="" position="465\3" serialnr="103" labelnr="0"/>
+    <Universal-Quantifier-Formula xmlid="x4425" position="465\17">
+     <Variable-Segments xmlid="x4426">
+      <Free-Variable-Segment xmlid="x4427" position="465\17">
+       <Variable xmlid="x4428" idnr="5" spelling="X" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="1"/>
+       <ReservedDscr-Type xmlid="x4429" idnr="5" nr="1" sort="ReservedDscr-Type" position="465\17">
+        <Substitutions xmlid="x4430"/>
+        <Standard-Type xmlid="x4431" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="30\23">
+         <Arguments xmlid="x4432"/>
         </Standard-Type>
        </ReservedDscr-Type>
       </Free-Variable-Segment>
      </Variable-Segments>
-     <Scope xmlid="x4431">
-      <Universal-Quantifier-Formula xmlid="x4432" position="465\17">
-       <Variable-Segments xmlid="x4433">
-        <Free-Variable-Segment xmlid="x4434" position="465\17">
-         <Variable xmlid="x4435" idnr="8" spelling="x1" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="2"/>
-         <ReservedDscr-Type xmlid="x4436" idnr="8" nr="3" sort="ReservedDscr-Type" position="465\17">
-          <Substitutions xmlid="x4437">
-           <Substitution xmlid="x4438" freevarnr="2" kind="BoundVar" varnr="1"/>
+     <Scope xmlid="x4433">
+      <Universal-Quantifier-Formula xmlid="x4434" position="465\17">
+       <Variable-Segments xmlid="x4435">
+        <Free-Variable-Segment xmlid="x4436" position="465\17">
+         <Variable xmlid="x4437" idnr="8" spelling="x1" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="2"/>
+         <ReservedDscr-Type xmlid="x4438" idnr="8" nr="3" sort="ReservedDscr-Type" position="465\17">
+          <Substitutions xmlid="x4439">
+           <Substitution xmlid="x4440" freevarnr="2" kind="BoundVar" varnr="1"/>
           </Substitutions>
-          <Standard-Type xmlid="x4439" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-           <Arguments xmlid="x4440">
-            <Simple-Term xmlid="x4441" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+          <Standard-Type xmlid="x4441" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+           <Arguments xmlid="x4442">
+            <Simple-Term xmlid="x4443" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
            </Arguments>
           </Standard-Type>
          </ReservedDscr-Type>
         </Free-Variable-Segment>
        </Variable-Segments>
-       <Scope xmlid="x4442">
-        <Universal-Quantifier-Formula xmlid="x4443" position="465\17">
-         <Variable-Segments xmlid="x4444">
-          <Free-Variable-Segment xmlid="x4445" position="465\17">
-           <Variable xmlid="x4446" idnr="9" spelling="x2" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="9" varnr="3"/>
-           <ReservedDscr-Type xmlid="x4447" idnr="9" nr="3" sort="ReservedDscr-Type" position="465\17">
-            <Substitutions xmlid="x4448">
-             <Substitution xmlid="x4449" freevarnr="2" kind="BoundVar" varnr="1"/>
+       <Scope xmlid="x4444">
+        <Universal-Quantifier-Formula xmlid="x4445" position="465\17">
+         <Variable-Segments xmlid="x4446">
+          <Free-Variable-Segment xmlid="x4447" position="465\17">
+           <Variable xmlid="x4448" idnr="9" spelling="x2" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="9" varnr="3"/>
+           <ReservedDscr-Type xmlid="x4449" idnr="9" nr="3" sort="ReservedDscr-Type" position="465\17">
+            <Substitutions xmlid="x4450">
+             <Substitution xmlid="x4451" freevarnr="2" kind="BoundVar" varnr="1"/>
             </Substitutions>
-            <Standard-Type xmlid="x4450" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-             <Arguments xmlid="x4451">
-              <Simple-Term xmlid="x4452" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+            <Standard-Type xmlid="x4452" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+             <Arguments xmlid="x4453">
+              <Simple-Term xmlid="x4454" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
              </Arguments>
             </Standard-Type>
            </ReservedDscr-Type>
           </Free-Variable-Segment>
          </Variable-Segments>
-         <Scope xmlid="x4453">
-          <Universal-Quantifier-Formula xmlid="x4454" position="465\17">
-           <Variable-Segments xmlid="x4455">
-            <Free-Variable-Segment xmlid="x4456" position="465\17">
-             <Variable xmlid="x4457" idnr="10" spelling="x3" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="10" varnr="4"/>
-             <ReservedDscr-Type xmlid="x4458" idnr="10" nr="3" sort="ReservedDscr-Type" position="465\17">
-              <Substitutions xmlid="x4459">
-               <Substitution xmlid="x4460" freevarnr="2" kind="BoundVar" varnr="1"/>
+         <Scope xmlid="x4455">
+          <Universal-Quantifier-Formula xmlid="x4456" position="465\17">
+           <Variable-Segments xmlid="x4457">
+            <Free-Variable-Segment xmlid="x4458" position="465\17">
+             <Variable xmlid="x4459" idnr="10" spelling="x3" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="10" varnr="4"/>
+             <ReservedDscr-Type xmlid="x4460" idnr="10" nr="3" sort="ReservedDscr-Type" position="465\17">
+              <Substitutions xmlid="x4461">
+               <Substitution xmlid="x4462" freevarnr="2" kind="BoundVar" varnr="1"/>
               </Substitutions>
-              <Standard-Type xmlid="x4461" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-               <Arguments xmlid="x4462">
-                <Simple-Term xmlid="x4463" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+              <Standard-Type xmlid="x4463" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+               <Arguments xmlid="x4464">
+                <Simple-Term xmlid="x4465" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                </Arguments>
               </Standard-Type>
              </ReservedDscr-Type>
             </Free-Variable-Segment>
            </Variable-Segments>
-           <Scope xmlid="x4464">
-            <Universal-Quantifier-Formula xmlid="x4465" position="465\17">
-             <Variable-Segments xmlid="x4466">
-              <Free-Variable-Segment xmlid="x4467" position="465\17">
-               <Variable xmlid="x4468" idnr="11" spelling="x4" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="11" varnr="5"/>
-               <ReservedDscr-Type xmlid="x4469" idnr="11" nr="3" sort="ReservedDscr-Type" position="465\17">
-                <Substitutions xmlid="x4470">
-                 <Substitution xmlid="x4471" freevarnr="2" kind="BoundVar" varnr="1"/>
+           <Scope xmlid="x4466">
+            <Universal-Quantifier-Formula xmlid="x4467" position="465\17">
+             <Variable-Segments xmlid="x4468">
+              <Free-Variable-Segment xmlid="x4469" position="465\17">
+               <Variable xmlid="x4470" idnr="11" spelling="x4" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="11" varnr="5"/>
+               <ReservedDscr-Type xmlid="x4471" idnr="11" nr="3" sort="ReservedDscr-Type" position="465\17">
+                <Substitutions xmlid="x4472">
+                 <Substitution xmlid="x4473" freevarnr="2" kind="BoundVar" varnr="1"/>
                 </Substitutions>
-                <Standard-Type xmlid="x4472" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-                 <Arguments xmlid="x4473">
-                  <Simple-Term xmlid="x4474" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                <Standard-Type xmlid="x4474" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+                 <Arguments xmlid="x4475">
+                  <Simple-Term xmlid="x4476" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                  </Arguments>
                 </Standard-Type>
                </ReservedDscr-Type>
               </Free-Variable-Segment>
              </Variable-Segments>
-             <Scope xmlid="x4475">
-              <Universal-Quantifier-Formula xmlid="x4476" position="465\17">
-               <Variable-Segments xmlid="x4477">
-                <Free-Variable-Segment xmlid="x4478" position="465\17">
-                 <Variable xmlid="x4479" idnr="12" spelling="x5" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="12" varnr="6"/>
-                 <ReservedDscr-Type xmlid="x4480" idnr="12" nr="3" sort="ReservedDscr-Type" position="465\17">
-                  <Substitutions xmlid="x4481">
-                   <Substitution xmlid="x4482" freevarnr="2" kind="BoundVar" varnr="1"/>
+             <Scope xmlid="x4477">
+              <Universal-Quantifier-Formula xmlid="x4478" position="465\17">
+               <Variable-Segments xmlid="x4479">
+                <Free-Variable-Segment xmlid="x4480" position="465\17">
+                 <Variable xmlid="x4481" idnr="12" spelling="x5" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="12" varnr="6"/>
+                 <ReservedDscr-Type xmlid="x4482" idnr="12" nr="3" sort="ReservedDscr-Type" position="465\17">
+                  <Substitutions xmlid="x4483">
+                   <Substitution xmlid="x4484" freevarnr="2" kind="BoundVar" varnr="1"/>
                   </Substitutions>
-                  <Standard-Type xmlid="x4483" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-                   <Arguments xmlid="x4484">
-                    <Simple-Term xmlid="x4485" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                  <Standard-Type xmlid="x4485" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+                   <Arguments xmlid="x4486">
+                    <Simple-Term xmlid="x4487" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                    </Arguments>
                   </Standard-Type>
                  </ReservedDscr-Type>
                 </Free-Variable-Segment>
                </Variable-Segments>
-               <Scope xmlid="x4486">
-                <Universal-Quantifier-Formula xmlid="x4487" position="465\17">
-                 <Variable-Segments xmlid="x4488">
-                  <Free-Variable-Segment xmlid="x4489" position="465\17">
-                   <Variable xmlid="x4490" idnr="13" spelling="x6" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="7"/>
-                   <ReservedDscr-Type xmlid="x4491" idnr="13" nr="3" sort="ReservedDscr-Type" position="465\17">
-                    <Substitutions xmlid="x4492">
-                     <Substitution xmlid="x4493" freevarnr="2" kind="BoundVar" varnr="1"/>
+               <Scope xmlid="x4488">
+                <Universal-Quantifier-Formula xmlid="x4489" position="465\17">
+                 <Variable-Segments xmlid="x4490">
+                  <Free-Variable-Segment xmlid="x4491" position="465\17">
+                   <Variable xmlid="x4492" idnr="13" spelling="x6" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="7"/>
+                   <ReservedDscr-Type xmlid="x4493" idnr="13" nr="3" sort="ReservedDscr-Type" position="465\17">
+                    <Substitutions xmlid="x4494">
+                     <Substitution xmlid="x4495" freevarnr="2" kind="BoundVar" varnr="1"/>
                     </Substitutions>
-                    <Standard-Type xmlid="x4494" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-                     <Arguments xmlid="x4495">
-                      <Simple-Term xmlid="x4496" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                    <Standard-Type xmlid="x4496" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+                     <Arguments xmlid="x4497">
+                      <Simple-Term xmlid="x4498" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                      </Arguments>
                     </Standard-Type>
                    </ReservedDscr-Type>
                   </Free-Variable-Segment>
                  </Variable-Segments>
-                 <Scope xmlid="x4497">
-                  <Universal-Quantifier-Formula xmlid="x4498" position="465\17">
-                   <Variable-Segments xmlid="x4499">
-                    <Free-Variable-Segment xmlid="x4500" position="465\17">
-                     <Variable xmlid="x4501" idnr="14" spelling="x7" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="14" varnr="8"/>
-                     <ReservedDscr-Type xmlid="x4502" idnr="14" nr="3" sort="ReservedDscr-Type" position="465\17">
-                      <Substitutions xmlid="x4503">
-                       <Substitution xmlid="x4504" freevarnr="2" kind="BoundVar" varnr="1"/>
+                 <Scope xmlid="x4499">
+                  <Universal-Quantifier-Formula xmlid="x4500" position="465\17">
+                   <Variable-Segments xmlid="x4501">
+                    <Free-Variable-Segment xmlid="x4502" position="465\17">
+                     <Variable xmlid="x4503" idnr="14" spelling="x7" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="14" varnr="8"/>
+                     <ReservedDscr-Type xmlid="x4504" idnr="14" nr="3" sort="ReservedDscr-Type" position="465\17">
+                      <Substitutions xmlid="x4505">
+                       <Substitution xmlid="x4506" freevarnr="2" kind="BoundVar" varnr="1"/>
                       </Substitutions>
-                      <Standard-Type xmlid="x4505" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-                       <Arguments xmlid="x4506">
-                        <Simple-Term xmlid="x4507" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                      <Standard-Type xmlid="x4507" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+                       <Arguments xmlid="x4508">
+                        <Simple-Term xmlid="x4509" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                        </Arguments>
                       </Standard-Type>
                      </ReservedDscr-Type>
                     </Free-Variable-Segment>
                    </Variable-Segments>
-                   <Scope xmlid="x4508">
-                    <Universal-Quantifier-Formula xmlid="x4509" position="465\17">
-                     <Variable-Segments xmlid="x4510">
-                      <Free-Variable-Segment xmlid="x4511" position="465\17">
-                       <Variable xmlid="x4512" idnr="15" spelling="x8" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="15" varnr="9"/>
-                       <ReservedDscr-Type xmlid="x4513" idnr="15" nr="3" sort="ReservedDscr-Type" position="465\17">
-                        <Substitutions xmlid="x4514">
-                         <Substitution xmlid="x4515" freevarnr="2" kind="BoundVar" varnr="1"/>
+                   <Scope xmlid="x4510">
+                    <Universal-Quantifier-Formula xmlid="x4511" position="465\17">
+                     <Variable-Segments xmlid="x4512">
+                      <Free-Variable-Segment xmlid="x4513" position="465\17">
+                       <Variable xmlid="x4514" idnr="15" spelling="x8" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="15" varnr="9"/>
+                       <ReservedDscr-Type xmlid="x4515" idnr="15" nr="3" sort="ReservedDscr-Type" position="465\17">
+                        <Substitutions xmlid="x4516">
+                         <Substitution xmlid="x4517" freevarnr="2" kind="BoundVar" varnr="1"/>
                         </Substitutions>
-                        <Standard-Type xmlid="x4516" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-                         <Arguments xmlid="x4517">
-                          <Simple-Term xmlid="x4518" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                        <Standard-Type xmlid="x4518" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+                         <Arguments xmlid="x4519">
+                          <Simple-Term xmlid="x4520" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                          </Arguments>
                         </Standard-Type>
                        </ReservedDscr-Type>
                       </Free-Variable-Segment>
                      </Variable-Segments>
-                     <Scope xmlid="x4519">
-                      <Universal-Quantifier-Formula xmlid="x4520" position="465\17">
-                       <Variable-Segments xmlid="x4521">
-                        <Free-Variable-Segment xmlid="x4522" position="465\17">
-                         <Variable xmlid="x4523" idnr="16" spelling="x9" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="16" varnr="10"/>
-                         <ReservedDscr-Type xmlid="x4524" idnr="16" nr="3" sort="ReservedDscr-Type" position="465\17">
-                          <Substitutions xmlid="x4525">
-                           <Substitution xmlid="x4526" freevarnr="2" kind="BoundVar" varnr="1"/>
+                     <Scope xmlid="x4521">
+                      <Universal-Quantifier-Formula xmlid="x4522" position="465\17">
+                       <Variable-Segments xmlid="x4523">
+                        <Free-Variable-Segment xmlid="x4524" position="465\17">
+                         <Variable xmlid="x4525" idnr="16" spelling="x9" position="465\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="16" varnr="10"/>
+                         <ReservedDscr-Type xmlid="x4526" idnr="16" nr="3" sort="ReservedDscr-Type" position="465\17">
+                          <Substitutions xmlid="x4527">
+                           <Substitution xmlid="x4528" freevarnr="2" kind="BoundVar" varnr="1"/>
                           </Substitutions>
-                          <Standard-Type xmlid="x4527" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-                           <Arguments xmlid="x4528">
-                            <Simple-Term xmlid="x4529" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                          <Standard-Type xmlid="x4529" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+                           <Arguments xmlid="x4530">
+                            <Simple-Term xmlid="x4531" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                            </Arguments>
                           </Standard-Type>
                          </ReservedDscr-Type>
                         </Free-Variable-Segment>
                        </Variable-Segments>
-                       <Scope xmlid="x4530">
-                        <Conditional-Formula xmlid="x4531" position="465\17">
-                         <Relation-Formula xmlid="x4532" nr="2" formatnr="5" patternnr="2" absolutepatternMMLId="HIDDEN:2" antonymic="true" leftargscount="1" spelling="&#x3C;&#x3E;" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="465\6">
-                          <Arguments xmlid="x4533">
-                           <Simple-Term xmlid="x4534" idnr="5" spelling="X" position="465\3" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
-                           <Infix-Term xmlid="x4535" nr="2" formatnr="18" patternnr="5" absolutepatternMMLId="XBOOLE_0:1" leftargscount="0" spelling="&#x7B;&#x7D;" sort="Functor-Term" constrnr="5" absoluteconstrMMLId="XBOOLE_0:1" originalnr="0" position="465\9">
-                            <Arguments xmlid="x4536"/>
+                       <Scope xmlid="x4532">
+                        <Conditional-Formula xmlid="x4533" position="465\17">
+                         <Relation-Formula xmlid="x4534" nr="2" formatnr="5" patternnr="2" absolutepatternMMLId="HIDDEN:2" antonymic="true" leftargscount="1" spelling="&#x3C;&#x3E;" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="465\6">
+                          <Arguments xmlid="x4535">
+                           <Simple-Term xmlid="x4536" idnr="5" spelling="X" position="465\3" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                           <Infix-Term xmlid="x4537" nr="2" formatnr="18" patternnr="5" absolutepatternMMLId="XBOOLE_0:1" leftargscount="0" spelling="&#x7B;&#x7D;" sort="Functor-Term" constrnr="5" absoluteconstrMMLId="XBOOLE_0:1" originalnr="0" position="465\9">
+                            <Arguments xmlid="x4538"/>
                            </Infix-Term>
                           </Arguments>
                          </Relation-Formula>
-                         <Qualifying-Formula xmlid="x4537" position="465\56">
-                          <Circumfix-Term xmlid="x4538" nr="2" formatnr="29" patternnr="16" absolutepatternMMLId="ENUMSET1:7" spelling="{" sort="Functor-Term" constrnr="16" absoluteconstrMMLId="ENUMSET1:7" originalnr="0" position="465\46">
-                           <Right-Circumflex-Symbol xmlid="x4539" nr="2" formatnr="29" spelling="}" position="465\46"/>
-                           <Arguments xmlid="x4540">
-                            <Simple-Term xmlid="x4541" idnr="8" spelling="x1" position="465\21" origin="ReservedVar" sort="BoundVar" serialnr="8" varnr="2"/>
-                            <Simple-Term xmlid="x4542" idnr="9" spelling="x2" position="465\24" origin="ReservedVar" sort="BoundVar" serialnr="9" varnr="3"/>
-                            <Simple-Term xmlid="x4543" idnr="10" spelling="x3" position="465\27" origin="ReservedVar" sort="BoundVar" serialnr="10" varnr="4"/>
-                            <Simple-Term xmlid="x4544" idnr="11" spelling="x4" position="465\30" origin="ReservedVar" sort="BoundVar" serialnr="11" varnr="5"/>
-                            <Simple-Term xmlid="x4545" idnr="12" spelling="x5" position="465\33" origin="ReservedVar" sort="BoundVar" serialnr="12" varnr="6"/>
-                            <Simple-Term xmlid="x4546" idnr="13" spelling="x6" position="465\36" origin="ReservedVar" sort="BoundVar" serialnr="13" varnr="7"/>
-                            <Simple-Term xmlid="x4547" idnr="14" spelling="x7" position="465\39" origin="ReservedVar" sort="BoundVar" serialnr="14" varnr="8"/>
-                            <Simple-Term xmlid="x4548" idnr="15" spelling="x8" position="465\42" origin="ReservedVar" sort="BoundVar" serialnr="15" varnr="9"/>
-                            <Simple-Term xmlid="x4549" idnr="16" spelling="x9" position="465\45" origin="ReservedVar" sort="BoundVar" serialnr="16" varnr="10"/>
+                         <Qualifying-Formula xmlid="x4539" position="465\56">
+                          <Circumfix-Term xmlid="x4540" nr="2" formatnr="29" patternnr="16" absolutepatternMMLId="ENUMSET1:7" spelling="{" sort="Functor-Term" constrnr="16" absoluteconstrMMLId="ENUMSET1:7" originalnr="0" position="465\46">
+                           <Right-Circumflex-Symbol xmlid="x4541" nr="2" formatnr="29" spelling="}" position="465\46"/>
+                           <Arguments xmlid="x4542">
+                            <Simple-Term xmlid="x4543" idnr="8" spelling="x1" position="465\21" origin="ReservedVar" sort="BoundVar" serialnr="8" varnr="2"/>
+                            <Simple-Term xmlid="x4544" idnr="9" spelling="x2" position="465\24" origin="ReservedVar" sort="BoundVar" serialnr="9" varnr="3"/>
+                            <Simple-Term xmlid="x4545" idnr="10" spelling="x3" position="465\27" origin="ReservedVar" sort="BoundVar" serialnr="10" varnr="4"/>
+                            <Simple-Term xmlid="x4546" idnr="11" spelling="x4" position="465\30" origin="ReservedVar" sort="BoundVar" serialnr="11" varnr="5"/>
+                            <Simple-Term xmlid="x4547" idnr="12" spelling="x5" position="465\33" origin="ReservedVar" sort="BoundVar" serialnr="12" varnr="6"/>
+                            <Simple-Term xmlid="x4548" idnr="13" spelling="x6" position="465\36" origin="ReservedVar" sort="BoundVar" serialnr="13" varnr="7"/>
+                            <Simple-Term xmlid="x4549" idnr="14" spelling="x7" position="465\39" origin="ReservedVar" sort="BoundVar" serialnr="14" varnr="8"/>
+                            <Simple-Term xmlid="x4550" idnr="15" spelling="x8" position="465\42" origin="ReservedVar" sort="BoundVar" serialnr="15" varnr="9"/>
+                            <Simple-Term xmlid="x4551" idnr="16" spelling="x9" position="465\45" origin="ReservedVar" sort="BoundVar" serialnr="16" varnr="10"/>
                            </Arguments>
                           </Circumfix-Term>
-                          <Standard-Type xmlid="x4550" nr="4" formatnr="42" patternnr="4" absolutepatternMMLId="SUBSET_1:2" spelling="Subset" sort="Expandable-Type" position="465\56">
-                           <Arguments xmlid="x4551">
-                            <Simple-Term xmlid="x4552" idnr="5" spelling="X" position="465\61" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                          <Standard-Type xmlid="x4552" nr="4" formatnr="42" patternnr="4" absolutepatternMMLId="SUBSET_1:2" spelling="Subset" sort="Expandable-Type" position="465\56">
+                           <Arguments xmlid="x4553">
+                            <Simple-Term xmlid="x4554" idnr="5" spelling="X" position="465\61" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                            </Arguments>
                           </Standard-Type>
                          </Qualifying-Formula>
@@ -7636,224 +7640,224 @@
      </Scope>
     </Universal-Quantifier-Formula>
    </Proposition>
-   <Straightforward-Justification xmlid="x4553" position="465\61"/>
+   <Straightforward-Justification xmlid="x4555" position="465\61"/>
   </Theorem-Item>
  </Item>
- <Item xmlid="x4554" kind="Theorem-Item" position="467\7" endposition="468\65">
-  <Theorem-Item xmlid="x4555" MMLId="SUBSET_1:53">
-   <Proposition xmlid="x4556" position="468\3">
-    <Label xmlid="x4557" idnr="0" spelling="" position="468\3" serialnr="104" labelnr="0"/>
-    <Universal-Quantifier-Formula xmlid="x4558" position="468\17">
-     <Variable-Segments xmlid="x4559">
-      <Free-Variable-Segment xmlid="x4560" position="468\17">
-       <Variable xmlid="x4561" idnr="5" spelling="X" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="1"/>
-       <ReservedDscr-Type xmlid="x4562" idnr="5" nr="1" sort="ReservedDscr-Type" position="468\17">
-        <Substitutions xmlid="x4563"/>
-        <Standard-Type xmlid="x4564" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="30\23">
-         <Arguments xmlid="x4565"/>
+ <Item xmlid="x4556" kind="Theorem-Item" position="467\7" endposition="468\65">
+  <Theorem-Item xmlid="x4557" MMLId="SUBSET_1:53">
+   <Proposition xmlid="x4558" position="468\3">
+    <Label xmlid="x4559" idnr="0" spelling="" position="468\3" serialnr="104" labelnr="0"/>
+    <Universal-Quantifier-Formula xmlid="x4560" position="468\17">
+     <Variable-Segments xmlid="x4561">
+      <Free-Variable-Segment xmlid="x4562" position="468\17">
+       <Variable xmlid="x4563" idnr="5" spelling="X" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="1"/>
+       <ReservedDscr-Type xmlid="x4564" idnr="5" nr="1" sort="ReservedDscr-Type" position="468\17">
+        <Substitutions xmlid="x4565"/>
+        <Standard-Type xmlid="x4566" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="30\23">
+         <Arguments xmlid="x4567"/>
         </Standard-Type>
        </ReservedDscr-Type>
       </Free-Variable-Segment>
      </Variable-Segments>
-     <Scope xmlid="x4566">
-      <Universal-Quantifier-Formula xmlid="x4567" position="468\17">
-       <Variable-Segments xmlid="x4568">
-        <Free-Variable-Segment xmlid="x4569" position="468\17">
-         <Variable xmlid="x4570" idnr="8" spelling="x1" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="2"/>
-         <ReservedDscr-Type xmlid="x4571" idnr="8" nr="3" sort="ReservedDscr-Type" position="468\17">
-          <Substitutions xmlid="x4572">
-           <Substitution xmlid="x4573" freevarnr="2" kind="BoundVar" varnr="1"/>
+     <Scope xmlid="x4568">
+      <Universal-Quantifier-Formula xmlid="x4569" position="468\17">
+       <Variable-Segments xmlid="x4570">
+        <Free-Variable-Segment xmlid="x4571" position="468\17">
+         <Variable xmlid="x4572" idnr="8" spelling="x1" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="8" varnr="2"/>
+         <ReservedDscr-Type xmlid="x4573" idnr="8" nr="3" sort="ReservedDscr-Type" position="468\17">
+          <Substitutions xmlid="x4574">
+           <Substitution xmlid="x4575" freevarnr="2" kind="BoundVar" varnr="1"/>
           </Substitutions>
-          <Standard-Type xmlid="x4574" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-           <Arguments xmlid="x4575">
-            <Simple-Term xmlid="x4576" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+          <Standard-Type xmlid="x4576" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+           <Arguments xmlid="x4577">
+            <Simple-Term xmlid="x4578" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
            </Arguments>
           </Standard-Type>
          </ReservedDscr-Type>
         </Free-Variable-Segment>
        </Variable-Segments>
-       <Scope xmlid="x4577">
-        <Universal-Quantifier-Formula xmlid="x4578" position="468\17">
-         <Variable-Segments xmlid="x4579">
-          <Free-Variable-Segment xmlid="x4580" position="468\17">
-           <Variable xmlid="x4581" idnr="9" spelling="x2" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="9" varnr="3"/>
-           <ReservedDscr-Type xmlid="x4582" idnr="9" nr="3" sort="ReservedDscr-Type" position="468\17">
-            <Substitutions xmlid="x4583">
-             <Substitution xmlid="x4584" freevarnr="2" kind="BoundVar" varnr="1"/>
+       <Scope xmlid="x4579">
+        <Universal-Quantifier-Formula xmlid="x4580" position="468\17">
+         <Variable-Segments xmlid="x4581">
+          <Free-Variable-Segment xmlid="x4582" position="468\17">
+           <Variable xmlid="x4583" idnr="9" spelling="x2" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="9" varnr="3"/>
+           <ReservedDscr-Type xmlid="x4584" idnr="9" nr="3" sort="ReservedDscr-Type" position="468\17">
+            <Substitutions xmlid="x4585">
+             <Substitution xmlid="x4586" freevarnr="2" kind="BoundVar" varnr="1"/>
             </Substitutions>
-            <Standard-Type xmlid="x4585" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-             <Arguments xmlid="x4586">
-              <Simple-Term xmlid="x4587" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+            <Standard-Type xmlid="x4587" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+             <Arguments xmlid="x4588">
+              <Simple-Term xmlid="x4589" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
              </Arguments>
             </Standard-Type>
            </ReservedDscr-Type>
           </Free-Variable-Segment>
          </Variable-Segments>
-         <Scope xmlid="x4588">
-          <Universal-Quantifier-Formula xmlid="x4589" position="468\17">
-           <Variable-Segments xmlid="x4590">
-            <Free-Variable-Segment xmlid="x4591" position="468\17">
-             <Variable xmlid="x4592" idnr="10" spelling="x3" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="10" varnr="4"/>
-             <ReservedDscr-Type xmlid="x4593" idnr="10" nr="3" sort="ReservedDscr-Type" position="468\17">
-              <Substitutions xmlid="x4594">
-               <Substitution xmlid="x4595" freevarnr="2" kind="BoundVar" varnr="1"/>
+         <Scope xmlid="x4590">
+          <Universal-Quantifier-Formula xmlid="x4591" position="468\17">
+           <Variable-Segments xmlid="x4592">
+            <Free-Variable-Segment xmlid="x4593" position="468\17">
+             <Variable xmlid="x4594" idnr="10" spelling="x3" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="10" varnr="4"/>
+             <ReservedDscr-Type xmlid="x4595" idnr="10" nr="3" sort="ReservedDscr-Type" position="468\17">
+              <Substitutions xmlid="x4596">
+               <Substitution xmlid="x4597" freevarnr="2" kind="BoundVar" varnr="1"/>
               </Substitutions>
-              <Standard-Type xmlid="x4596" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-               <Arguments xmlid="x4597">
-                <Simple-Term xmlid="x4598" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+              <Standard-Type xmlid="x4598" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+               <Arguments xmlid="x4599">
+                <Simple-Term xmlid="x4600" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                </Arguments>
               </Standard-Type>
              </ReservedDscr-Type>
             </Free-Variable-Segment>
            </Variable-Segments>
-           <Scope xmlid="x4599">
-            <Universal-Quantifier-Formula xmlid="x4600" position="468\17">
-             <Variable-Segments xmlid="x4601">
-              <Free-Variable-Segment xmlid="x4602" position="468\17">
-               <Variable xmlid="x4603" idnr="11" spelling="x4" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="11" varnr="5"/>
-               <ReservedDscr-Type xmlid="x4604" idnr="11" nr="3" sort="ReservedDscr-Type" position="468\17">
-                <Substitutions xmlid="x4605">
-                 <Substitution xmlid="x4606" freevarnr="2" kind="BoundVar" varnr="1"/>
+           <Scope xmlid="x4601">
+            <Universal-Quantifier-Formula xmlid="x4602" position="468\17">
+             <Variable-Segments xmlid="x4603">
+              <Free-Variable-Segment xmlid="x4604" position="468\17">
+               <Variable xmlid="x4605" idnr="11" spelling="x4" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="11" varnr="5"/>
+               <ReservedDscr-Type xmlid="x4606" idnr="11" nr="3" sort="ReservedDscr-Type" position="468\17">
+                <Substitutions xmlid="x4607">
+                 <Substitution xmlid="x4608" freevarnr="2" kind="BoundVar" varnr="1"/>
                 </Substitutions>
-                <Standard-Type xmlid="x4607" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-                 <Arguments xmlid="x4608">
-                  <Simple-Term xmlid="x4609" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                <Standard-Type xmlid="x4609" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+                 <Arguments xmlid="x4610">
+                  <Simple-Term xmlid="x4611" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                  </Arguments>
                 </Standard-Type>
                </ReservedDscr-Type>
               </Free-Variable-Segment>
              </Variable-Segments>
-             <Scope xmlid="x4610">
-              <Universal-Quantifier-Formula xmlid="x4611" position="468\17">
-               <Variable-Segments xmlid="x4612">
-                <Free-Variable-Segment xmlid="x4613" position="468\17">
-                 <Variable xmlid="x4614" idnr="12" spelling="x5" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="12" varnr="6"/>
-                 <ReservedDscr-Type xmlid="x4615" idnr="12" nr="3" sort="ReservedDscr-Type" position="468\17">
-                  <Substitutions xmlid="x4616">
-                   <Substitution xmlid="x4617" freevarnr="2" kind="BoundVar" varnr="1"/>
+             <Scope xmlid="x4612">
+              <Universal-Quantifier-Formula xmlid="x4613" position="468\17">
+               <Variable-Segments xmlid="x4614">
+                <Free-Variable-Segment xmlid="x4615" position="468\17">
+                 <Variable xmlid="x4616" idnr="12" spelling="x5" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="12" varnr="6"/>
+                 <ReservedDscr-Type xmlid="x4617" idnr="12" nr="3" sort="ReservedDscr-Type" position="468\17">
+                  <Substitutions xmlid="x4618">
+                   <Substitution xmlid="x4619" freevarnr="2" kind="BoundVar" varnr="1"/>
                   </Substitutions>
-                  <Standard-Type xmlid="x4618" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-                   <Arguments xmlid="x4619">
-                    <Simple-Term xmlid="x4620" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                  <Standard-Type xmlid="x4620" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+                   <Arguments xmlid="x4621">
+                    <Simple-Term xmlid="x4622" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                    </Arguments>
                   </Standard-Type>
                  </ReservedDscr-Type>
                 </Free-Variable-Segment>
                </Variable-Segments>
-               <Scope xmlid="x4621">
-                <Universal-Quantifier-Formula xmlid="x4622" position="468\17">
-                 <Variable-Segments xmlid="x4623">
-                  <Free-Variable-Segment xmlid="x4624" position="468\17">
-                   <Variable xmlid="x4625" idnr="13" spelling="x6" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="7"/>
-                   <ReservedDscr-Type xmlid="x4626" idnr="13" nr="3" sort="ReservedDscr-Type" position="468\17">
-                    <Substitutions xmlid="x4627">
-                     <Substitution xmlid="x4628" freevarnr="2" kind="BoundVar" varnr="1"/>
+               <Scope xmlid="x4623">
+                <Universal-Quantifier-Formula xmlid="x4624" position="468\17">
+                 <Variable-Segments xmlid="x4625">
+                  <Free-Variable-Segment xmlid="x4626" position="468\17">
+                   <Variable xmlid="x4627" idnr="13" spelling="x6" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="13" varnr="7"/>
+                   <ReservedDscr-Type xmlid="x4628" idnr="13" nr="3" sort="ReservedDscr-Type" position="468\17">
+                    <Substitutions xmlid="x4629">
+                     <Substitution xmlid="x4630" freevarnr="2" kind="BoundVar" varnr="1"/>
                     </Substitutions>
-                    <Standard-Type xmlid="x4629" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-                     <Arguments xmlid="x4630">
-                      <Simple-Term xmlid="x4631" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                    <Standard-Type xmlid="x4631" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+                     <Arguments xmlid="x4632">
+                      <Simple-Term xmlid="x4633" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                      </Arguments>
                     </Standard-Type>
                    </ReservedDscr-Type>
                   </Free-Variable-Segment>
                  </Variable-Segments>
-                 <Scope xmlid="x4632">
-                  <Universal-Quantifier-Formula xmlid="x4633" position="468\17">
-                   <Variable-Segments xmlid="x4634">
-                    <Free-Variable-Segment xmlid="x4635" position="468\17">
-                     <Variable xmlid="x4636" idnr="14" spelling="x7" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="14" varnr="8"/>
-                     <ReservedDscr-Type xmlid="x4637" idnr="14" nr="3" sort="ReservedDscr-Type" position="468\17">
-                      <Substitutions xmlid="x4638">
-                       <Substitution xmlid="x4639" freevarnr="2" kind="BoundVar" varnr="1"/>
+                 <Scope xmlid="x4634">
+                  <Universal-Quantifier-Formula xmlid="x4635" position="468\17">
+                   <Variable-Segments xmlid="x4636">
+                    <Free-Variable-Segment xmlid="x4637" position="468\17">
+                     <Variable xmlid="x4638" idnr="14" spelling="x7" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="14" varnr="8"/>
+                     <ReservedDscr-Type xmlid="x4639" idnr="14" nr="3" sort="ReservedDscr-Type" position="468\17">
+                      <Substitutions xmlid="x4640">
+                       <Substitution xmlid="x4641" freevarnr="2" kind="BoundVar" varnr="1"/>
                       </Substitutions>
-                      <Standard-Type xmlid="x4640" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-                       <Arguments xmlid="x4641">
-                        <Simple-Term xmlid="x4642" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                      <Standard-Type xmlid="x4642" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+                       <Arguments xmlid="x4643">
+                        <Simple-Term xmlid="x4644" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                        </Arguments>
                       </Standard-Type>
                      </ReservedDscr-Type>
                     </Free-Variable-Segment>
                    </Variable-Segments>
-                   <Scope xmlid="x4643">
-                    <Universal-Quantifier-Formula xmlid="x4644" position="468\17">
-                     <Variable-Segments xmlid="x4645">
-                      <Free-Variable-Segment xmlid="x4646" position="468\17">
-                       <Variable xmlid="x4647" idnr="15" spelling="x8" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="15" varnr="9"/>
-                       <ReservedDscr-Type xmlid="x4648" idnr="15" nr="3" sort="ReservedDscr-Type" position="468\17">
-                        <Substitutions xmlid="x4649">
-                         <Substitution xmlid="x4650" freevarnr="2" kind="BoundVar" varnr="1"/>
+                   <Scope xmlid="x4645">
+                    <Universal-Quantifier-Formula xmlid="x4646" position="468\17">
+                     <Variable-Segments xmlid="x4647">
+                      <Free-Variable-Segment xmlid="x4648" position="468\17">
+                       <Variable xmlid="x4649" idnr="15" spelling="x8" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="15" varnr="9"/>
+                       <ReservedDscr-Type xmlid="x4650" idnr="15" nr="3" sort="ReservedDscr-Type" position="468\17">
+                        <Substitutions xmlid="x4651">
+                         <Substitution xmlid="x4652" freevarnr="2" kind="BoundVar" varnr="1"/>
                         </Substitutions>
-                        <Standard-Type xmlid="x4651" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-                         <Arguments xmlid="x4652">
-                          <Simple-Term xmlid="x4653" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                        <Standard-Type xmlid="x4653" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+                         <Arguments xmlid="x4654">
+                          <Simple-Term xmlid="x4655" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                          </Arguments>
                         </Standard-Type>
                        </ReservedDscr-Type>
                       </Free-Variable-Segment>
                      </Variable-Segments>
-                     <Scope xmlid="x4654">
-                      <Universal-Quantifier-Formula xmlid="x4655" position="468\17">
-                       <Variable-Segments xmlid="x4656">
-                        <Free-Variable-Segment xmlid="x4657" position="468\17">
-                         <Variable xmlid="x4658" idnr="16" spelling="x9" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="16" varnr="10"/>
-                         <ReservedDscr-Type xmlid="x4659" idnr="16" nr="3" sort="ReservedDscr-Type" position="468\17">
-                          <Substitutions xmlid="x4660">
-                           <Substitution xmlid="x4661" freevarnr="2" kind="BoundVar" varnr="1"/>
+                     <Scope xmlid="x4656">
+                      <Universal-Quantifier-Formula xmlid="x4657" position="468\17">
+                       <Variable-Segments xmlid="x4658">
+                        <Free-Variable-Segment xmlid="x4659" position="468\17">
+                         <Variable xmlid="x4660" idnr="16" spelling="x9" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="16" varnr="10"/>
+                         <ReservedDscr-Type xmlid="x4661" idnr="16" nr="3" sort="ReservedDscr-Type" position="468\17">
+                          <Substitutions xmlid="x4662">
+                           <Substitution xmlid="x4663" freevarnr="2" kind="BoundVar" varnr="1"/>
                           </Substitutions>
-                          <Standard-Type xmlid="x4662" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-                           <Arguments xmlid="x4663">
-                            <Simple-Term xmlid="x4664" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                          <Standard-Type xmlid="x4664" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+                           <Arguments xmlid="x4665">
+                            <Simple-Term xmlid="x4666" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                            </Arguments>
                           </Standard-Type>
                          </ReservedDscr-Type>
                         </Free-Variable-Segment>
                        </Variable-Segments>
-                       <Scope xmlid="x4665">
-                        <Universal-Quantifier-Formula xmlid="x4666" position="468\17">
-                         <Variable-Segments xmlid="x4667">
-                          <Free-Variable-Segment xmlid="x4668" position="468\17">
-                           <Variable xmlid="x4669" idnr="17" spelling="x10" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="17" varnr="11"/>
-                           <ReservedDscr-Type xmlid="x4670" idnr="17" nr="3" sort="ReservedDscr-Type" position="468\17">
-                            <Substitutions xmlid="x4671">
-                             <Substitution xmlid="x4672" freevarnr="2" kind="BoundVar" varnr="1"/>
+                       <Scope xmlid="x4667">
+                        <Universal-Quantifier-Formula xmlid="x4668" position="468\17">
+                         <Variable-Segments xmlid="x4669">
+                          <Free-Variable-Segment xmlid="x4670" position="468\17">
+                           <Variable xmlid="x4671" idnr="17" spelling="x10" position="468\17" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="17" varnr="11"/>
+                           <ReservedDscr-Type xmlid="x4672" idnr="17" nr="3" sort="ReservedDscr-Type" position="468\17">
+                            <Substitutions xmlid="x4673">
+                             <Substitution xmlid="x4674" freevarnr="2" kind="BoundVar" varnr="1"/>
                             </Substitutions>
-                            <Standard-Type xmlid="x4673" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
-                             <Arguments xmlid="x4674">
-                              <Simple-Term xmlid="x4675" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                            <Standard-Type xmlid="x4675" nr="3" formatnr="41" patternnr="3" absolutepatternMMLId="SUBSET_1:1" spelling="Element" sort="Mode" constrnr="3" absoluteconstrMMLId="SUBSET_1:1" originalnr="0" position="252\50">
+                             <Arguments xmlid="x4676">
+                              <Simple-Term xmlid="x4677" idnr="5" spelling="X" position="252\55" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                              </Arguments>
                             </Standard-Type>
                            </ReservedDscr-Type>
                           </Free-Variable-Segment>
                          </Variable-Segments>
-                         <Scope xmlid="x4676">
-                          <Conditional-Formula xmlid="x4677" position="468\17">
-                           <Relation-Formula xmlid="x4678" nr="2" formatnr="5" patternnr="2" absolutepatternMMLId="HIDDEN:2" antonymic="true" leftargscount="1" spelling="&#x3C;&#x3E;" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="468\6">
-                            <Arguments xmlid="x4679">
-                             <Simple-Term xmlid="x4680" idnr="5" spelling="X" position="468\3" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
-                             <Infix-Term xmlid="x4681" nr="2" formatnr="18" patternnr="5" absolutepatternMMLId="XBOOLE_0:1" leftargscount="0" spelling="&#x7B;&#x7D;" sort="Functor-Term" constrnr="5" absoluteconstrMMLId="XBOOLE_0:1" originalnr="0" position="468\9">
-                              <Arguments xmlid="x4682"/>
+                         <Scope xmlid="x4678">
+                          <Conditional-Formula xmlid="x4679" position="468\17">
+                           <Relation-Formula xmlid="x4680" nr="2" formatnr="5" patternnr="2" absolutepatternMMLId="HIDDEN:2" antonymic="true" leftargscount="1" spelling="&#x3C;&#x3E;" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="468\6">
+                            <Arguments xmlid="x4681">
+                             <Simple-Term xmlid="x4682" idnr="5" spelling="X" position="468\3" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                             <Infix-Term xmlid="x4683" nr="2" formatnr="18" patternnr="5" absolutepatternMMLId="XBOOLE_0:1" leftargscount="0" spelling="&#x7B;&#x7D;" sort="Functor-Term" constrnr="5" absoluteconstrMMLId="XBOOLE_0:1" originalnr="0" position="468\9">
+                              <Arguments xmlid="x4684"/>
                              </Infix-Term>
                             </Arguments>
                            </Relation-Formula>
-                           <Qualifying-Formula xmlid="x4683" position="468\60">
-                            <Circumfix-Term xmlid="x4684" nr="2" formatnr="30" patternnr="17" absolutepatternMMLId="ENUMSET1:8" spelling="{" sort="Functor-Term" constrnr="17" absoluteconstrMMLId="ENUMSET1:8" originalnr="0" position="468\50">
-                             <Right-Circumflex-Symbol xmlid="x4685" nr="2" formatnr="30" spelling="}" position="468\50"/>
-                             <Arguments xmlid="x4686">
-                              <Simple-Term xmlid="x4687" idnr="8" spelling="x1" position="468\21" origin="ReservedVar" sort="BoundVar" serialnr="8" varnr="2"/>
-                              <Simple-Term xmlid="x4688" idnr="9" spelling="x2" position="468\24" origin="ReservedVar" sort="BoundVar" serialnr="9" varnr="3"/>
-                              <Simple-Term xmlid="x4689" idnr="10" spelling="x3" position="468\27" origin="ReservedVar" sort="BoundVar" serialnr="10" varnr="4"/>
-                              <Simple-Term xmlid="x4690" idnr="11" spelling="x4" position="468\30" origin="ReservedVar" sort="BoundVar" serialnr="11" varnr="5"/>
-                              <Simple-Term xmlid="x4691" idnr="12" spelling="x5" position="468\33" origin="ReservedVar" sort="BoundVar" serialnr="12" varnr="6"/>
-                              <Simple-Term xmlid="x4692" idnr="13" spelling="x6" position="468\36" origin="ReservedVar" sort="BoundVar" serialnr="13" varnr="7"/>
-                              <Simple-Term xmlid="x4693" idnr="14" spelling="x7" position="468\39" origin="ReservedVar" sort="BoundVar" serialnr="14" varnr="8"/>
-                              <Simple-Term xmlid="x4694" idnr="15" spelling="x8" position="468\42" origin="ReservedVar" sort="BoundVar" serialnr="15" varnr="9"/>
-                              <Simple-Term xmlid="x4695" idnr="16" spelling="x9" position="468\45" origin="ReservedVar" sort="BoundVar" serialnr="16" varnr="10"/>
-                              <Simple-Term xmlid="x4696" idnr="17" spelling="x10" position="468\49" origin="ReservedVar" sort="BoundVar" serialnr="17" varnr="11"/>
+                           <Qualifying-Formula xmlid="x4685" position="468\60">
+                            <Circumfix-Term xmlid="x4686" nr="2" formatnr="30" patternnr="17" absolutepatternMMLId="ENUMSET1:8" spelling="{" sort="Functor-Term" constrnr="17" absoluteconstrMMLId="ENUMSET1:8" originalnr="0" position="468\50">
+                             <Right-Circumflex-Symbol xmlid="x4687" nr="2" formatnr="30" spelling="}" position="468\50"/>
+                             <Arguments xmlid="x4688">
+                              <Simple-Term xmlid="x4689" idnr="8" spelling="x1" position="468\21" origin="ReservedVar" sort="BoundVar" serialnr="8" varnr="2"/>
+                              <Simple-Term xmlid="x4690" idnr="9" spelling="x2" position="468\24" origin="ReservedVar" sort="BoundVar" serialnr="9" varnr="3"/>
+                              <Simple-Term xmlid="x4691" idnr="10" spelling="x3" position="468\27" origin="ReservedVar" sort="BoundVar" serialnr="10" varnr="4"/>
+                              <Simple-Term xmlid="x4692" idnr="11" spelling="x4" position="468\30" origin="ReservedVar" sort="BoundVar" serialnr="11" varnr="5"/>
+                              <Simple-Term xmlid="x4693" idnr="12" spelling="x5" position="468\33" origin="ReservedVar" sort="BoundVar" serialnr="12" varnr="6"/>
+                              <Simple-Term xmlid="x4694" idnr="13" spelling="x6" position="468\36" origin="ReservedVar" sort="BoundVar" serialnr="13" varnr="7"/>
+                              <Simple-Term xmlid="x4695" idnr="14" spelling="x7" position="468\39" origin="ReservedVar" sort="BoundVar" serialnr="14" varnr="8"/>
+                              <Simple-Term xmlid="x4696" idnr="15" spelling="x8" position="468\42" origin="ReservedVar" sort="BoundVar" serialnr="15" varnr="9"/>
+                              <Simple-Term xmlid="x4697" idnr="16" spelling="x9" position="468\45" origin="ReservedVar" sort="BoundVar" serialnr="16" varnr="10"/>
+                              <Simple-Term xmlid="x4698" idnr="17" spelling="x10" position="468\49" origin="ReservedVar" sort="BoundVar" serialnr="17" varnr="11"/>
                              </Arguments>
                             </Circumfix-Term>
-                            <Standard-Type xmlid="x4697" nr="4" formatnr="42" patternnr="4" absolutepatternMMLId="SUBSET_1:2" spelling="Subset" sort="Expandable-Type" position="468\60">
-                             <Arguments xmlid="x4698">
-                              <Simple-Term xmlid="x4699" idnr="5" spelling="X" position="468\65" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
+                            <Standard-Type xmlid="x4699" nr="4" formatnr="42" patternnr="4" absolutepatternMMLId="SUBSET_1:2" spelling="Subset" sort="Expandable-Type" position="468\60">
+                             <Arguments xmlid="x4700">
+                              <Simple-Term xmlid="x4701" idnr="5" spelling="X" position="468\65" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="1"/>
                              </Arguments>
                             </Standard-Type>
                            </Qualifying-Formula>
@@ -7881,7 +7885,7 @@
      </Scope>
     </Universal-Quantifier-Formula>
    </Proposition>
-   <Straightforward-Justification xmlid="x4700" position="468\65"/>
+   <Straightforward-Justification xmlid="x4702" position="468\65"/>
   </Theorem-Item>
  </Item>
 </Text-Proper>

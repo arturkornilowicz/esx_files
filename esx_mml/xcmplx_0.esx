@@ -12713,12 +12713,12 @@
     <Item xmlid="x7799" kind="Cluster" position="624\9" endposition="624\39">
      <Cluster xmlid="x7800">
       <Conditional-Registration xmlid="x7801" position="624\9">
-       <Adjective-Cluster xmlid="x7802">
+       <Adjective-Cluster xmlid="x7802" role="antecedent">
         <Attribute xmlid="x7803" nr="12" formatnr="92" patternnr="26" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="624\17">
          <Arguments xmlid="x7804"/>
         </Attribute>
        </Adjective-Cluster>
-       <Adjective-Cluster xmlid="x7805">
+       <Adjective-Cluster xmlid="x7805" role="consequent">
         <Attribute xmlid="x7806" nr="30" formatnr="122" patternnr="28" absolutepatternMMLId="XCMPLX_0:1" spelling="complex" sort="Adjective" constrnr="33" absoluteconstrMMLId="XCMPLX_0:1" originalnr="0" position="624\28">
          <Arguments xmlid="x7807"/>
         </Attribute>
@@ -14539,8 +14539,8 @@
     <Item xmlid="x8937" kind="Cluster" position="736\9" endposition="736\40">
      <Cluster xmlid="x8938">
       <Conditional-Registration xmlid="x8939" position="736\9">
-       <Adjective-Cluster xmlid="x8940"/>
-       <Adjective-Cluster xmlid="x8941">
+       <Adjective-Cluster xmlid="x8940" role="antecedent"/>
+       <Adjective-Cluster xmlid="x8941" role="consequent">
         <Attribute xmlid="x8942" nr="30" formatnr="122" patternnr="28" absolutepatternMMLId="XCMPLX_0:1" spelling="complex" sort="Adjective" constrnr="33" absoluteconstrMMLId="XCMPLX_0:1" originalnr="0" position="736\20">
          <Arguments xmlid="x8943"/>
         </Attribute>
@@ -14618,8 +14618,8 @@
     <Item xmlid="x8984" kind="Cluster" position="746\9" endposition="746\43">
      <Cluster xmlid="x8985">
       <Conditional-Registration xmlid="x8986" position="746\9">
-       <Adjective-Cluster xmlid="x8987"/>
-       <Adjective-Cluster xmlid="x8988">
+       <Adjective-Cluster xmlid="x8987" role="antecedent"/>
+       <Adjective-Cluster xmlid="x8988" role="consequent">
         <Attribute xmlid="x8989" nr="30" formatnr="122" patternnr="28" absolutepatternMMLId="XCMPLX_0:1" spelling="complex" sort="Adjective" constrnr="33" absoluteconstrMMLId="XCMPLX_0:1" originalnr="0" position="746\20">
          <Arguments xmlid="x8990"/>
         </Attribute>
@@ -14662,23 +14662,27 @@
     </Item>
     <Item xmlid="x9010" kind="Reduction" position="753\7" endposition="753\26">
      <Reduction xmlid="x9011">
-      <Infix-Term xmlid="x9012" nr="70" formatnr="30" patternnr="19" absolutepatternMMLId="SUBSET_1:10" leftargscount="0" spelling="In" sort="Functor-Term" constrnr="32" absoluteconstrMMLId="SUBSET_1:10" originalnr="0" position="753\10">
-       <Arguments xmlid="x9013">
-        <Simple-Term xmlid="x9014" idnr="128" spelling="i" position="753\12" origin="Constant" sort="Constant" serialnr="207" varnr="1"/>
-        <Infix-Term xmlid="x9015" bracketed="true" nr="18" formatnr="112" patternnr="84" absolutepatternMMLId="NUMBERS:3" leftargscount="0" spelling="COMPLEX" sort="Functor-Term" constrnr="127" absoluteconstrMMLId="NUMBERS:2" originalnr="0" position="753\20">
-         <Arguments xmlid="x9016"/>
-        </Infix-Term>
-       </Arguments>
-      </Infix-Term>
-      <Simple-Term xmlid="x9017" idnr="128" spelling="i" position="753\26" origin="Constant" sort="Constant" serialnr="207" varnr="1"/>
+      <Redex xmlid="x9012">
+       <Infix-Term xmlid="x9013" nr="70" formatnr="30" patternnr="19" absolutepatternMMLId="SUBSET_1:10" leftargscount="0" spelling="In" sort="Functor-Term" constrnr="32" absoluteconstrMMLId="SUBSET_1:10" originalnr="0" position="753\10">
+        <Arguments xmlid="x9014">
+         <Simple-Term xmlid="x9015" idnr="128" spelling="i" position="753\12" origin="Constant" sort="Constant" serialnr="207" varnr="1"/>
+         <Infix-Term xmlid="x9016" bracketed="true" nr="18" formatnr="112" patternnr="84" absolutepatternMMLId="NUMBERS:3" leftargscount="0" spelling="COMPLEX" sort="Functor-Term" constrnr="127" absoluteconstrMMLId="NUMBERS:2" originalnr="0" position="753\20">
+          <Arguments xmlid="x9017"/>
+         </Infix-Term>
+        </Arguments>
+       </Infix-Term>
+      </Redex>
+      <Reduct xmlid="x9018">
+       <Simple-Term xmlid="x9019" idnr="128" spelling="i" position="753\26" origin="Constant" sort="Constant" serialnr="207" varnr="1"/>
+      </Reduct>
      </Reduction>
     </Item>
-    <Item xmlid="x9018" kind="Correctness-Condition" position="754\13" endposition="754\36">
-     <Correctness-Condition xmlid="x9019">
-      <reducibility xmlid="x9020"/>
-      <Straightforward-Justification xmlid="x9021" position="754\16">
-       <Local-Reference xmlid="x9022" position="754\21" idnr="13" spelling="Def2" serialnr="2" labelnr="1"/>
-       <Definition-Reference xmlid="x9023" position="754\36" nr="13" MMLId="SUBSET_1:8"/>
+    <Item xmlid="x9020" kind="Correctness-Condition" position="754\13" endposition="754\36">
+     <Correctness-Condition xmlid="x9021">
+      <reducibility xmlid="x9022"/>
+      <Straightforward-Justification xmlid="x9023" position="754\16">
+       <Local-Reference xmlid="x9024" position="754\21" idnr="13" spelling="Def2" serialnr="2" labelnr="1"/>
+       <Definition-Reference xmlid="x9025" position="754\36" nr="13" MMLId="SUBSET_1:8"/>
       </Straightforward-Justification>
      </Correctness-Condition>
     </Item>

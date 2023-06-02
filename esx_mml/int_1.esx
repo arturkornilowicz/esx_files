@@ -3457,8 +3457,8 @@
     <Item xmlid="x2169" kind="Cluster" position="244\9" endposition="244\39">
      <Cluster xmlid="x2170">
       <Conditional-Registration xmlid="x2171" position="244\9">
-       <Adjective-Cluster xmlid="x2172"/>
-       <Adjective-Cluster xmlid="x2173">
+       <Adjective-Cluster xmlid="x2172" role="antecedent"/>
+       <Adjective-Cluster xmlid="x2173" role="consequent">
         <Attribute xmlid="x2174" nr="25" formatnr="105" patternnr="18" absolutepatternMMLId="INT_1:1" spelling="integer" sort="Adjective" constrnr="47" absoluteconstrMMLId="INT_1:1" originalnr="0" position="244\20">
          <Arguments xmlid="x2175"/>
         </Attribute>
@@ -3827,12 +3827,12 @@
     <Item xmlid="x2393" kind="Cluster" position="273\9" endposition="273\39">
      <Cluster xmlid="x2394">
       <Conditional-Registration xmlid="x2395" position="273\9">
-       <Adjective-Cluster xmlid="x2396">
+       <Adjective-Cluster xmlid="x2396" role="antecedent">
         <Attribute xmlid="x2397" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="273\17">
          <Arguments xmlid="x2398"/>
         </Attribute>
        </Adjective-Cluster>
-       <Adjective-Cluster xmlid="x2399">
+       <Adjective-Cluster xmlid="x2399" role="consequent">
         <Attribute xmlid="x2400" nr="25" formatnr="105" patternnr="18" absolutepatternMMLId="INT_1:1" spelling="integer" sort="Adjective" constrnr="47" absoluteconstrMMLId="INT_1:1" originalnr="0" position="273\28">
          <Arguments xmlid="x2401"/>
         </Attribute>
@@ -3860,12 +3860,12 @@
     <Item xmlid="x2412" kind="Cluster" position="278\9" endposition="278\36">
      <Cluster xmlid="x2413">
       <Conditional-Registration xmlid="x2414" position="278\9">
-       <Adjective-Cluster xmlid="x2415">
+       <Adjective-Cluster xmlid="x2415" role="antecedent">
         <Attribute xmlid="x2416" nr="25" formatnr="105" patternnr="18" absolutepatternMMLId="INT_1:1" spelling="integer" sort="Adjective" constrnr="47" absoluteconstrMMLId="INT_1:1" originalnr="0" position="278\17">
          <Arguments xmlid="x2417"/>
         </Attribute>
        </Adjective-Cluster>
-       <Adjective-Cluster xmlid="x2418">
+       <Adjective-Cluster xmlid="x2418" role="consequent">
         <Attribute xmlid="x2419" nr="3" formatnr="89" patternnr="14" absolutepatternMMLId="XREAL_0:1" spelling="real" sort="Adjective" constrnr="46" absoluteconstrMMLId="XREAL_0:1" originalnr="0" position="278\25">
          <Arguments xmlid="x2420"/>
         </Attribute>
@@ -28956,71 +28956,75 @@
     </Item>
     <Item xmlid="x17863" kind="Reduction" position="1753\7" endposition="1753\22">
      <Reduction xmlid="x17864">
-      <Infix-Term xmlid="x17865" nr="69" formatnr="39" patternnr="23" absolutepatternMMLId="SUBSET_1:10" leftargscount="0" spelling="In" sort="Functor-Term" constrnr="32" absoluteconstrMMLId="SUBSET_1:10" originalnr="0" position="1753\10">
-       <Arguments xmlid="x17866">
-        <Simple-Term xmlid="x17867" idnr="52" spelling="i" position="1753\12" origin="Constant" sort="Constant" serialnr="396" varnr="1"/>
-        <Infix-Term xmlid="x17868" bracketed="true" nr="5" formatnr="74" patternnr="79" absolutepatternMMLId="INT_1:1" leftargscount="0" spelling="INT" sort="Functor-Term" constrnr="129" absoluteconstrMMLId="NUMBERS:4" originalnr="0" position="1753\16">
-         <Arguments xmlid="x17869"/>
-        </Infix-Term>
-       </Arguments>
-      </Infix-Term>
-      <Simple-Term xmlid="x17870" idnr="52" spelling="i" position="1753\22" origin="Constant" sort="Constant" serialnr="396" varnr="1"/>
+      <Redex xmlid="x17865">
+       <Infix-Term xmlid="x17866" nr="69" formatnr="39" patternnr="23" absolutepatternMMLId="SUBSET_1:10" leftargscount="0" spelling="In" sort="Functor-Term" constrnr="32" absoluteconstrMMLId="SUBSET_1:10" originalnr="0" position="1753\10">
+        <Arguments xmlid="x17867">
+         <Simple-Term xmlid="x17868" idnr="52" spelling="i" position="1753\12" origin="Constant" sort="Constant" serialnr="396" varnr="1"/>
+         <Infix-Term xmlid="x17869" bracketed="true" nr="5" formatnr="74" patternnr="79" absolutepatternMMLId="INT_1:1" leftargscount="0" spelling="INT" sort="Functor-Term" constrnr="129" absoluteconstrMMLId="NUMBERS:4" originalnr="0" position="1753\16">
+          <Arguments xmlid="x17870"/>
+         </Infix-Term>
+        </Arguments>
+       </Infix-Term>
+      </Redex>
+      <Reduct xmlid="x17871">
+       <Simple-Term xmlid="x17872" idnr="52" spelling="i" position="1753\22" origin="Constant" sort="Constant" serialnr="396" varnr="1"/>
+      </Reduct>
      </Reduction>
     </Item>
-    <Item xmlid="x17871" kind="Correctness-Condition" position="1754\13" endposition="1754\36">
-     <Correctness-Condition xmlid="x17872">
-      <reducibility xmlid="x17873"/>
-      <Straightforward-Justification xmlid="x17874" position="1754\16">
-       <Local-Reference xmlid="x17875" position="1754\21" idnr="53" spelling="Def2" serialnr="110" labelnr="4"/>
-       <Definition-Reference xmlid="x17876" position="1754\36" nr="17" MMLId="SUBSET_1:8"/>
+    <Item xmlid="x17873" kind="Correctness-Condition" position="1754\13" endposition="1754\36">
+     <Correctness-Condition xmlid="x17874">
+      <reducibility xmlid="x17875"/>
+      <Straightforward-Justification xmlid="x17876" position="1754\16">
+       <Local-Reference xmlid="x17877" position="1754\21" idnr="53" spelling="Def2" serialnr="110" labelnr="4"/>
+       <Definition-Reference xmlid="x17878" position="1754\36" nr="17" MMLId="SUBSET_1:8"/>
       </Straightforward-Justification>
      </Correctness-Condition>
     </Item>
    </Block>
   </Definition-Item>
  </Item>
- <Item xmlid="x17877" kind="Definition-Item" position="1757\10" endposition="1760\3">
-  <Definition-Item xmlid="x17878">
-   <Block xmlid="x17879" kind="Definitional-Block" position="1757\10" endposition="1760\3">
-    <Item xmlid="x17880" kind="Loci-Declaration" position="1757\14" endposition="1757\26">
-     <Loci-Declaration xmlid="x17881">
-      <Qualified-Segments xmlid="x17882">
-       <Explicitly-Qualified-Segment xmlid="x17883" position="1757\16">
-        <Variables xmlid="x17884">
-         <Variable xmlid="x17885" idnr="14" spelling="x" position="1757\16" varintro="itLociDeclaration" kind="Constant" serialnr="397" varnr="1"/>
+ <Item xmlid="x17879" kind="Definition-Item" position="1757\10" endposition="1760\3">
+  <Definition-Item xmlid="x17880">
+   <Block xmlid="x17881" kind="Definitional-Block" position="1757\10" endposition="1760\3">
+    <Item xmlid="x17882" kind="Loci-Declaration" position="1757\14" endposition="1757\26">
+     <Loci-Declaration xmlid="x17883">
+      <Qualified-Segments xmlid="x17884">
+       <Explicitly-Qualified-Segment xmlid="x17885" position="1757\16">
+        <Variables xmlid="x17886">
+         <Variable xmlid="x17887" idnr="14" spelling="x" position="1757\16" varintro="itLociDeclaration" kind="Constant" serialnr="397" varnr="1"/>
         </Variables>
-        <Standard-Type xmlid="x17886" nr="8" formatnr="40" patternnr="6" absolutepatternMMLId="ORDINAL1:1" spelling="Number" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1757\26">
-         <Arguments xmlid="x17887"/>
+        <Standard-Type xmlid="x17888" nr="8" formatnr="40" patternnr="6" absolutepatternMMLId="ORDINAL1:1" spelling="Number" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1757\26">
+         <Arguments xmlid="x17889"/>
         </Standard-Type>
        </Explicitly-Qualified-Segment>
       </Qualified-Segments>
      </Loci-Declaration>
     </Item>
-    <Item xmlid="x17888" kind="Attribute-Definition" position="1758\5" endposition="1759\30">
-     <Attribute-Definition xmlid="x17889" MMLId="INT_1:11">
-      <Redefine xmlid="x17890" occurs="false"/>
-      <Attribute-Pattern xmlid="x17891" formatdes="V26[0(1)1]" formatnr="114" spelling="dim-like" position="1758\19" patternnr="19" absolutepatternMMLId="INT_1:2" constr="V48" absoluteconstrMMLId="INT_1:2" origconstrnr="0" arity="1">
-       <Locus xmlid="x17892" idnr="14" varidkind="Identifier" spelling="x" position="1757\16" origin="Constant" kind="Constant" serialnr="397" varnr="1"/>
-       <Loci xmlid="x17893"/>
+    <Item xmlid="x17890" kind="Attribute-Definition" position="1758\5" endposition="1759\30">
+     <Attribute-Definition xmlid="x17891" MMLId="INT_1:11">
+      <Redefine xmlid="x17892" occurs="false"/>
+      <Attribute-Pattern xmlid="x17893" formatdes="V26[0(1)1]" formatnr="114" spelling="dim-like" position="1758\19" patternnr="19" absolutepatternMMLId="INT_1:2" constr="V48" absoluteconstrMMLId="INT_1:2" origconstrnr="0" arity="1">
+       <Locus xmlid="x17894" idnr="14" varidkind="Identifier" spelling="x" position="1757\16" origin="Constant" kind="Constant" serialnr="397" varnr="1"/>
+       <Loci xmlid="x17895"/>
       </Attribute-Pattern>
-      <Definiens xmlid="x17894" position="1758\25" kind="Simple-Definiens" shape="Formula-Expression">
-       <Label xmlid="x17895" idnr="128" spelling="Def11" position="1759\6" serialnr="848" labelnr="40"/>
-       <Disjunctive-Formula xmlid="x17896" position="1759\17">
-        <Relation-Formula xmlid="x17897" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1759\11">
-         <Arguments xmlid="x17898">
-          <Simple-Term xmlid="x17899" idnr="14" spelling="x" position="1759\9" origin="Constant" sort="Constant" serialnr="397" varnr="1"/>
-          <Infix-Term xmlid="x17900" nr="26" formatnr="85" patternnr="55" absolutepatternMMLId="XCMPLX_0:4" leftargscount="0" spelling="-" sort="Functor-Term" constrnr="145" absoluteconstrMMLId="XCMPLX_0:4" originalnr="0" position="1759\13">
-           <Arguments xmlid="x17901">
-            <Numeral-Term xmlid="x17902" number="1" sort="Numeral-Term" position="1759\14"/>
+      <Definiens xmlid="x17896" position="1758\25" kind="Simple-Definiens" shape="Formula-Expression">
+       <Label xmlid="x17897" idnr="128" spelling="Def11" position="1759\6" serialnr="848" labelnr="40"/>
+       <Disjunctive-Formula xmlid="x17898" position="1759\17">
+        <Relation-Formula xmlid="x17899" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1759\11">
+         <Arguments xmlid="x17900">
+          <Simple-Term xmlid="x17901" idnr="14" spelling="x" position="1759\9" origin="Constant" sort="Constant" serialnr="397" varnr="1"/>
+          <Infix-Term xmlid="x17902" nr="26" formatnr="85" patternnr="55" absolutepatternMMLId="XCMPLX_0:4" leftargscount="0" spelling="-" sort="Functor-Term" constrnr="145" absoluteconstrMMLId="XCMPLX_0:4" originalnr="0" position="1759\13">
+           <Arguments xmlid="x17903">
+            <Numeral-Term xmlid="x17904" number="1" sort="Numeral-Term" position="1759\14"/>
            </Arguments>
           </Infix-Term>
          </Arguments>
         </Relation-Formula>
-        <Multi-Attributive-Formula xmlid="x17903" position="1759\22">
-         <Simple-Term xmlid="x17904" idnr="14" spelling="x" position="1759\19" origin="Constant" sort="Constant" serialnr="397" varnr="1"/>
-         <Adjective-Cluster xmlid="x17905">
-          <Attribute xmlid="x17906" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="1759\30">
-           <Arguments xmlid="x17907"/>
+        <Multi-Attributive-Formula xmlid="x17905" position="1759\22">
+         <Simple-Term xmlid="x17906" idnr="14" spelling="x" position="1759\19" origin="Constant" sort="Constant" serialnr="397" varnr="1"/>
+         <Adjective-Cluster xmlid="x17907">
+          <Attribute xmlid="x17908" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="1759\30">
+           <Arguments xmlid="x17909"/>
           </Attribute>
          </Adjective-Cluster>
         </Multi-Attributive-Formula>
@@ -29031,142 +29035,142 @@
    </Block>
   </Definition-Item>
  </Item>
- <Item xmlid="x17908" kind="Definition-Item" position="1762\12" endposition="1769\3">
-  <Definition-Item xmlid="x17909">
-   <Block xmlid="x17910" kind="Registration-Block" position="1762\12" endposition="1769\3">
-    <Item xmlid="x17911" kind="Cluster" position="1763\8" endposition="1763\39">
-     <Cluster xmlid="x17912">
-      <Conditional-Registration xmlid="x17913" position="1763\8">
-       <Adjective-Cluster xmlid="x17914">
-        <Attribute xmlid="x17915" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="1763\16">
-         <Arguments xmlid="x17916"/>
+ <Item xmlid="x17910" kind="Definition-Item" position="1762\12" endposition="1769\3">
+  <Definition-Item xmlid="x17911">
+   <Block xmlid="x17912" kind="Registration-Block" position="1762\12" endposition="1769\3">
+    <Item xmlid="x17913" kind="Cluster" position="1763\8" endposition="1763\39">
+     <Cluster xmlid="x17914">
+      <Conditional-Registration xmlid="x17915" position="1763\8">
+       <Adjective-Cluster xmlid="x17916" role="antecedent">
+        <Attribute xmlid="x17917" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="1763\16">
+         <Arguments xmlid="x17918"/>
         </Attribute>
        </Adjective-Cluster>
-       <Adjective-Cluster xmlid="x17917">
-        <Attribute xmlid="x17918" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="1763\28">
-         <Arguments xmlid="x17919"/>
+       <Adjective-Cluster xmlid="x17919" role="consequent">
+        <Attribute xmlid="x17920" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="1763\28">
+         <Arguments xmlid="x17921"/>
         </Attribute>
        </Adjective-Cluster>
-       <Standard-Type xmlid="x17920" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1763\39">
-        <Arguments xmlid="x17921"/>
+       <Standard-Type xmlid="x17922" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1763\39">
+        <Arguments xmlid="x17923"/>
        </Standard-Type>
       </Conditional-Registration>
      </Cluster>
     </Item>
-    <Item xmlid="x17922" kind="Correctness-Condition" position="1764\10" endposition="1764\10">
-     <Correctness-Condition xmlid="x17923">
-      <coherence xmlid="x17924"/>
-      <Straightforward-Justification xmlid="x17925" position="1764\10"/>
+    <Item xmlid="x17924" kind="Correctness-Condition" position="1764\10" endposition="1764\10">
+     <Correctness-Condition xmlid="x17925">
+      <coherence xmlid="x17926"/>
+      <Straightforward-Justification xmlid="x17927" position="1764\10"/>
      </Correctness-Condition>
     </Item>
-    <Item xmlid="x17926" kind="Cluster" position="1765\8" endposition="1765\39">
-     <Cluster xmlid="x17927">
-      <Conditional-Registration xmlid="x17928" position="1765\8">
-       <Adjective-Cluster xmlid="x17929">
-        <Attribute xmlid="x17930" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="1765\17">
-         <Arguments xmlid="x17931"/>
+    <Item xmlid="x17928" kind="Cluster" position="1765\8" endposition="1765\39">
+     <Cluster xmlid="x17929">
+      <Conditional-Registration xmlid="x17930" position="1765\8">
+       <Adjective-Cluster xmlid="x17931" role="antecedent">
+        <Attribute xmlid="x17932" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="1765\17">
+         <Arguments xmlid="x17933"/>
         </Attribute>
        </Adjective-Cluster>
-       <Adjective-Cluster xmlid="x17932">
-        <Attribute xmlid="x17933" nr="25" formatnr="105" patternnr="18" absolutepatternMMLId="INT_1:1" spelling="integer" sort="Adjective" constrnr="47" absoluteconstrMMLId="INT_1:1" originalnr="0" position="1765\28">
-         <Arguments xmlid="x17934"/>
+       <Adjective-Cluster xmlid="x17934" role="consequent">
+        <Attribute xmlid="x17935" nr="25" formatnr="105" patternnr="18" absolutepatternMMLId="INT_1:1" spelling="integer" sort="Adjective" constrnr="47" absoluteconstrMMLId="INT_1:1" originalnr="0" position="1765\28">
+         <Arguments xmlid="x17936"/>
         </Attribute>
        </Adjective-Cluster>
-       <Standard-Type xmlid="x17935" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1765\39">
-        <Arguments xmlid="x17936"/>
+       <Standard-Type xmlid="x17937" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1765\39">
+        <Arguments xmlid="x17938"/>
        </Standard-Type>
       </Conditional-Registration>
      </Cluster>
     </Item>
-    <Item xmlid="x17937" kind="Correctness-Condition" position="1766\10" endposition="1766\10">
-     <Correctness-Condition xmlid="x17938">
-      <coherence xmlid="x17939"/>
-      <Straightforward-Justification xmlid="x17940" position="1766\10"/>
+    <Item xmlid="x17939" kind="Correctness-Condition" position="1766\10" endposition="1766\10">
+     <Correctness-Condition xmlid="x17940">
+      <coherence xmlid="x17941"/>
+      <Straightforward-Justification xmlid="x17942" position="1766\10"/>
      </Correctness-Condition>
     </Item>
-    <Item xmlid="x17941" kind="Cluster" position="1767\8" endposition="1767\34">
-     <Cluster xmlid="x17942">
-      <Functorial-Registration xmlid="x17943" position="1767\8">
-       <Infix-Term xmlid="x17944" nr="26" formatnr="85" patternnr="55" absolutepatternMMLId="XCMPLX_0:4" leftargscount="0" spelling="-" sort="Functor-Term" constrnr="145" absoluteconstrMMLId="XCMPLX_0:4" originalnr="0" position="1767\10">
-        <Arguments xmlid="x17945">
-         <Numeral-Term xmlid="x17946" number="1" sort="Numeral-Term" position="1767\11"/>
+    <Item xmlid="x17943" kind="Cluster" position="1767\8" endposition="1767\34">
+     <Cluster xmlid="x17944">
+      <Functorial-Registration xmlid="x17945" position="1767\8">
+       <Infix-Term xmlid="x17946" nr="26" formatnr="85" patternnr="55" absolutepatternMMLId="XCMPLX_0:4" leftargscount="0" spelling="-" sort="Functor-Term" constrnr="145" absoluteconstrMMLId="XCMPLX_0:4" originalnr="0" position="1767\10">
+        <Arguments xmlid="x17947">
+         <Numeral-Term xmlid="x17948" number="1" sort="Numeral-Term" position="1767\11"/>
         </Arguments>
        </Infix-Term>
-       <Adjective-Cluster xmlid="x17947">
-        <Attribute xmlid="x17948" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="1767\23">
-         <Arguments xmlid="x17949"/>
+       <Adjective-Cluster xmlid="x17949">
+        <Attribute xmlid="x17950" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="1767\23">
+         <Arguments xmlid="x17951"/>
         </Attribute>
        </Adjective-Cluster>
-       <Standard-Type xmlid="x17950" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1767\34">
-        <Arguments xmlid="x17951"/>
+       <Standard-Type xmlid="x17952" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1767\34">
+        <Arguments xmlid="x17953"/>
        </Standard-Type>
       </Functorial-Registration>
      </Cluster>
     </Item>
-    <Item xmlid="x17952" kind="Correctness-Condition" position="1768\10" endposition="1768\10">
-     <Correctness-Condition xmlid="x17953">
-      <coherence xmlid="x17954"/>
-      <Straightforward-Justification xmlid="x17955" position="1768\10"/>
+    <Item xmlid="x17954" kind="Correctness-Condition" position="1768\10" endposition="1768\10">
+     <Correctness-Condition xmlid="x17955">
+      <coherence xmlid="x17956"/>
+      <Straightforward-Justification xmlid="x17957" position="1768\10"/>
      </Correctness-Condition>
     </Item>
    </Block>
   </Definition-Item>
  </Item>
- <Item xmlid="x17956" kind="Definition-Item" position="1771\12" endposition="1779\3">
-  <Definition-Item xmlid="x17957">
-   <Block xmlid="x17958" kind="Registration-Block" position="1771\12" endposition="1779\3">
-    <Item xmlid="x17959" kind="Cluster" position="1772\8" endposition="1772\25">
-     <Cluster xmlid="x17960">
-      <Existential-Registration xmlid="x17961" position="1772\8">
-       <Adjective-Cluster xmlid="x17962">
-        <Attribute xmlid="x17963" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="1772\17">
-         <Arguments xmlid="x17964"/>
+ <Item xmlid="x17958" kind="Definition-Item" position="1771\12" endposition="1779\3">
+  <Definition-Item xmlid="x17959">
+   <Block xmlid="x17960" kind="Registration-Block" position="1771\12" endposition="1779\3">
+    <Item xmlid="x17961" kind="Cluster" position="1772\8" endposition="1772\25">
+     <Cluster xmlid="x17962">
+      <Existential-Registration xmlid="x17963" position="1772\8">
+       <Adjective-Cluster xmlid="x17964">
+        <Attribute xmlid="x17965" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="1772\17">
+         <Arguments xmlid="x17966"/>
         </Attribute>
        </Adjective-Cluster>
-       <Standard-Type xmlid="x17965" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="1772\25">
-        <Arguments xmlid="x17966"/>
+       <Standard-Type xmlid="x17967" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="1772\25">
+        <Arguments xmlid="x17968"/>
        </Standard-Type>
       </Existential-Registration>
      </Cluster>
     </Item>
-    <Item xmlid="x17967" kind="Correctness-Condition" position="1773\10" endposition="1778\5">
-     <Correctness-Condition xmlid="x17968">
-      <existence xmlid="x17969"/>
-      <Block xmlid="x17970" kind="Proof" position="1774\7" endposition="1778\5">
-       <Item xmlid="x17971" kind="Type-Changing-Statement" position="1775\13" endposition="1775\39">
-        <Type-Changing-Statement xmlid="x17972">
-         <Equalities-List xmlid="x17973">
-          <Equality xmlid="x17974">
-           <Variable xmlid="x17975" idnr="14" spelling="x" position="1775\15" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="398" varnr="1"/>
-           <Infix-Term xmlid="x17976" nr="26" formatnr="85" patternnr="55" absolutepatternMMLId="XCMPLX_0:4" leftargscount="0" spelling="-" sort="Functor-Term" constrnr="145" absoluteconstrMMLId="XCMPLX_0:4" originalnr="0" position="1775\19">
-            <Arguments xmlid="x17977">
-             <Numeral-Term xmlid="x17978" number="1" sort="Numeral-Term" position="1775\20"/>
+    <Item xmlid="x17969" kind="Correctness-Condition" position="1773\10" endposition="1778\5">
+     <Correctness-Condition xmlid="x17970">
+      <existence xmlid="x17971"/>
+      <Block xmlid="x17972" kind="Proof" position="1774\7" endposition="1778\5">
+       <Item xmlid="x17973" kind="Type-Changing-Statement" position="1775\13" endposition="1775\39">
+        <Type-Changing-Statement xmlid="x17974">
+         <Equalities-List xmlid="x17975">
+          <Equality xmlid="x17976">
+           <Variable xmlid="x17977" idnr="14" spelling="x" position="1775\15" varintro="itReconsider" origin="DefConstant" kind="Constant" serialnr="398" varnr="1"/>
+           <Infix-Term xmlid="x17978" nr="26" formatnr="85" patternnr="55" absolutepatternMMLId="XCMPLX_0:4" leftargscount="0" spelling="-" sort="Functor-Term" constrnr="145" absoluteconstrMMLId="XCMPLX_0:4" originalnr="0" position="1775\19">
+            <Arguments xmlid="x17979">
+             <Numeral-Term xmlid="x17980" number="1" sort="Numeral-Term" position="1775\20"/>
             </Arguments>
            </Infix-Term>
           </Equality>
          </Equalities-List>
-         <Standard-Type xmlid="x17979" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="1775\27">
-          <Arguments xmlid="x17980"/>
+         <Standard-Type xmlid="x17981" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="1775\27">
+          <Arguments xmlid="x17982"/>
          </Standard-Type>
-         <Straightforward-Justification xmlid="x17981" position="1775\30">
-          <Theorem-Reference xmlid="x17982" position="1775\39" nr="3" MMLId="TARSKI:1"/>
+         <Straightforward-Justification xmlid="x17983" position="1775\30">
+          <Theorem-Reference xmlid="x17984" position="1775\39" nr="3" MMLId="TARSKI:1"/>
          </Straightforward-Justification>
         </Type-Changing-Statement>
        </Item>
-       <Item xmlid="x17983" kind="Exemplification" position="1776\7" endposition="1776\9">
-        <Exemplification xmlid="x17984">
-         <ImplicitExemplification xmlid="x17985">
-          <Simple-Term xmlid="x17986" idnr="14" spelling="x" position="1776\9" origin="DefConstant" sort="Constant" serialnr="398" varnr="1"/>
+       <Item xmlid="x17985" kind="Exemplification" position="1776\7" endposition="1776\9">
+        <Exemplification xmlid="x17986">
+         <ImplicitExemplification xmlid="x17987">
+          <Simple-Term xmlid="x17988" idnr="14" spelling="x" position="1776\9" origin="DefConstant" sort="Constant" serialnr="398" varnr="1"/>
          </ImplicitExemplification>
         </Exemplification>
        </Item>
-       <Item xmlid="x17987" kind="Conclusion" position="1777\14" endposition="1777\14">
-        <Conclusion xmlid="x17988">
-         <Proposition xmlid="x17989" position="1777\14">
-          <Label xmlid="x17990" idnr="0" spelling="" position="1777\14" serialnr="851" labelnr="0"/>
-          <Thesis xmlid="x17991" position="1777\14"/>
+       <Item xmlid="x17989" kind="Conclusion" position="1777\14" endposition="1777\14">
+        <Conclusion xmlid="x17990">
+         <Proposition xmlid="x17991" position="1777\14">
+          <Label xmlid="x17992" idnr="0" spelling="" position="1777\14" serialnr="851" labelnr="0"/>
+          <Thesis xmlid="x17993" position="1777\14"/>
          </Proposition>
-         <Straightforward-Justification xmlid="x17992" position="1777\14"/>
+         <Straightforward-Justification xmlid="x17994" position="1777\14"/>
         </Conclusion>
        </Item>
       </Block>
@@ -29175,72 +29179,72 @@
    </Block>
   </Definition-Item>
  </Item>
- <Item xmlid="x17993" kind="Definition-Item" position="1781\12" endposition="1794\3">
-  <Definition-Item xmlid="x17994">
-   <Block xmlid="x17995" kind="Registration-Block" position="1781\12" endposition="1794\3">
-    <Item xmlid="x17996" kind="Loci-Declaration" position="1781\16" endposition="1781\37">
-     <Loci-Declaration xmlid="x17997">
-      <Qualified-Segments xmlid="x17998">
-       <Explicitly-Qualified-Segment xmlid="x17999" position="1781\18">
-        <Variables xmlid="x18000">
-         <Variable xmlid="x18001" idnr="129" spelling="d" position="1781\18" varintro="itLociDeclaration" kind="Constant" serialnr="399" varnr="1"/>
+ <Item xmlid="x17995" kind="Definition-Item" position="1781\12" endposition="1794\3">
+  <Definition-Item xmlid="x17996">
+   <Block xmlid="x17997" kind="Registration-Block" position="1781\12" endposition="1794\3">
+    <Item xmlid="x17998" kind="Loci-Declaration" position="1781\16" endposition="1781\37">
+     <Loci-Declaration xmlid="x17999">
+      <Qualified-Segments xmlid="x18000">
+       <Explicitly-Qualified-Segment xmlid="x18001" position="1781\18">
+        <Variables xmlid="x18002">
+         <Variable xmlid="x18003" idnr="129" spelling="d" position="1781\18" varintro="itLociDeclaration" kind="Constant" serialnr="399" varnr="1"/>
         </Variables>
-        <Clustered-Type xmlid="x18002" sort="Clustered-Type" position="1781\37">
-         <Adjective-Cluster xmlid="x18003">
-          <Attribute xmlid="x18004" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="1781\30">
-           <Arguments xmlid="x18005"/>
+        <Clustered-Type xmlid="x18004" sort="Clustered-Type" position="1781\37">
+         <Adjective-Cluster xmlid="x18005">
+          <Attribute xmlid="x18006" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="1781\30">
+           <Arguments xmlid="x18007"/>
           </Attribute>
          </Adjective-Cluster>
-         <Standard-Type xmlid="x18006" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1781\37">
-          <Arguments xmlid="x18007"/>
+         <Standard-Type xmlid="x18008" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1781\37">
+          <Arguments xmlid="x18009"/>
          </Standard-Type>
         </Clustered-Type>
        </Explicitly-Qualified-Segment>
       </Qualified-Segments>
      </Loci-Declaration>
     </Item>
-    <Item xmlid="x18008" kind="Cluster" position="1782\8" endposition="1782\25">
-     <Cluster xmlid="x18009">
-      <Functorial-Registration xmlid="x18010" position="1782\8">
-       <Infix-Term xmlid="x18011" nr="41" formatnr="66" patternnr="53" absolutepatternMMLId="XCMPLX_0:2" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="143" absoluteconstrMMLId="XCMPLX_0:2" originalnr="0" position="1782\12">
-        <Arguments xmlid="x18012">
-         <Simple-Term xmlid="x18013" idnr="129" spelling="d" position="1782\10" origin="Constant" sort="Constant" serialnr="399" varnr="1"/>
-         <Numeral-Term xmlid="x18014" number="1" sort="Numeral-Term" position="1782\14"/>
+    <Item xmlid="x18010" kind="Cluster" position="1782\8" endposition="1782\25">
+     <Cluster xmlid="x18011">
+      <Functorial-Registration xmlid="x18012" position="1782\8">
+       <Infix-Term xmlid="x18013" nr="41" formatnr="66" patternnr="53" absolutepatternMMLId="XCMPLX_0:2" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="143" absoluteconstrMMLId="XCMPLX_0:2" originalnr="0" position="1782\12">
+        <Arguments xmlid="x18014">
+         <Simple-Term xmlid="x18015" idnr="129" spelling="d" position="1782\10" origin="Constant" sort="Constant" serialnr="399" varnr="1"/>
+         <Numeral-Term xmlid="x18016" number="1" sort="Numeral-Term" position="1782\14"/>
         </Arguments>
        </Infix-Term>
-       <Adjective-Cluster xmlid="x18015">
-        <Attribute xmlid="x18016" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="1782\25">
-         <Arguments xmlid="x18017"/>
+       <Adjective-Cluster xmlid="x18017">
+        <Attribute xmlid="x18018" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="1782\25">
+         <Arguments xmlid="x18019"/>
         </Attribute>
        </Adjective-Cluster>
       </Functorial-Registration>
      </Cluster>
     </Item>
-    <Item xmlid="x18018" kind="Correctness-Condition" position="1783\10" endposition="1793\5">
-     <Correctness-Condition xmlid="x18019">
-      <coherence xmlid="x18020"/>
-      <Block xmlid="x18021" kind="Proof" position="1784\7" endposition="1793\5">
-       <Item xmlid="x18022" kind="Per-Cases" position="1785\6" endposition="1785\21">
-        <Per-Cases xmlid="x18023">
-         <Straightforward-Justification xmlid="x18024" position="1785\15">
-          <Local-Reference xmlid="x18025" position="1785\21" idnr="128" spelling="Def11" serialnr="848" labelnr="40"/>
+    <Item xmlid="x18020" kind="Correctness-Condition" position="1783\10" endposition="1793\5">
+     <Correctness-Condition xmlid="x18021">
+      <coherence xmlid="x18022"/>
+      <Block xmlid="x18023" kind="Proof" position="1784\7" endposition="1793\5">
+       <Item xmlid="x18024" kind="Per-Cases" position="1785\6" endposition="1785\21">
+        <Per-Cases xmlid="x18025">
+         <Straightforward-Justification xmlid="x18026" position="1785\15">
+          <Local-Reference xmlid="x18027" position="1785\21" idnr="128" spelling="Def11" serialnr="848" labelnr="40"/>
          </Straightforward-Justification>
         </Per-Cases>
        </Item>
-       <Item xmlid="x18026" kind="Case-Block" position="1786\10" endposition="1789\6">
-        <Case-Block xmlid="x18027">
-         <Block xmlid="x18028" kind="Suppose" position="1786\10" endposition="1789\6">
-          <Item xmlid="x18029" kind="Suppose-Head" position="1786\10" endposition="1786\17">
-           <Suppose-Head xmlid="x18030">
-            <Single-Assumption xmlid="x18031" position="1786\10">
-             <Proposition xmlid="x18032" position="1786\12">
-              <Label xmlid="x18033" idnr="0" spelling="" position="1786\12" serialnr="853" labelnr="0"/>
-              <Relation-Formula xmlid="x18034" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1786\14">
-               <Arguments xmlid="x18035">
-                <Simple-Term xmlid="x18036" idnr="129" spelling="d" position="1786\12" origin="Constant" sort="Constant" serialnr="399" varnr="1"/>
-                <Infix-Term xmlid="x18037" nr="26" formatnr="85" patternnr="55" absolutepatternMMLId="XCMPLX_0:4" leftargscount="0" spelling="-" sort="Functor-Term" constrnr="145" absoluteconstrMMLId="XCMPLX_0:4" originalnr="0" position="1786\16">
-                 <Arguments xmlid="x18038">
-                  <Numeral-Term xmlid="x18039" number="1" sort="Numeral-Term" position="1786\17"/>
+       <Item xmlid="x18028" kind="Case-Block" position="1786\10" endposition="1789\6">
+        <Case-Block xmlid="x18029">
+         <Block xmlid="x18030" kind="Suppose" position="1786\10" endposition="1789\6">
+          <Item xmlid="x18031" kind="Suppose-Head" position="1786\10" endposition="1786\17">
+           <Suppose-Head xmlid="x18032">
+            <Single-Assumption xmlid="x18033" position="1786\10">
+             <Proposition xmlid="x18034" position="1786\12">
+              <Label xmlid="x18035" idnr="0" spelling="" position="1786\12" serialnr="853" labelnr="0"/>
+              <Relation-Formula xmlid="x18036" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1786\14">
+               <Arguments xmlid="x18037">
+                <Simple-Term xmlid="x18038" idnr="129" spelling="d" position="1786\12" origin="Constant" sort="Constant" serialnr="399" varnr="1"/>
+                <Infix-Term xmlid="x18039" nr="26" formatnr="85" patternnr="55" absolutepatternMMLId="XCMPLX_0:4" leftargscount="0" spelling="-" sort="Functor-Term" constrnr="145" absoluteconstrMMLId="XCMPLX_0:4" originalnr="0" position="1786\16">
+                 <Arguments xmlid="x18040">
+                  <Numeral-Term xmlid="x18041" number="1" sort="Numeral-Term" position="1786\17"/>
                  </Arguments>
                 </Infix-Term>
                </Arguments>
@@ -29249,58 +29253,58 @@
             </Single-Assumption>
            </Suppose-Head>
           </Item>
-          <Item xmlid="x18040" kind="Regular-Statement" position="1787\11" endposition="1787\19">
-           <Regular-Statement xmlid="x18041">
-            <Proposition xmlid="x18042" position="1787\11">
-             <Label xmlid="x18043" idnr="0" spelling="" position="1787\11" serialnr="854" labelnr="0"/>
-             <Relation-Formula xmlid="x18044" nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1787\17">
-              <Arguments xmlid="x18045">
-               <Infix-Term xmlid="x18046" nr="41" formatnr="66" patternnr="53" absolutepatternMMLId="XCMPLX_0:2" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="143" absoluteconstrMMLId="XCMPLX_0:2" originalnr="0" position="1787\13">
-                <Arguments xmlid="x18047">
-                 <Simple-Term xmlid="x18048" idnr="129" spelling="d" position="1787\11" origin="Constant" sort="Constant" serialnr="399" varnr="1"/>
-                 <Numeral-Term xmlid="x18049" number="1" sort="Numeral-Term" position="1787\15"/>
+          <Item xmlid="x18042" kind="Regular-Statement" position="1787\11" endposition="1787\19">
+           <Regular-Statement xmlid="x18043">
+            <Proposition xmlid="x18044" position="1787\11">
+             <Label xmlid="x18045" idnr="0" spelling="" position="1787\11" serialnr="854" labelnr="0"/>
+             <Relation-Formula xmlid="x18046" nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1787\17">
+              <Arguments xmlid="x18047">
+               <Infix-Term xmlid="x18048" nr="41" formatnr="66" patternnr="53" absolutepatternMMLId="XCMPLX_0:2" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="143" absoluteconstrMMLId="XCMPLX_0:2" originalnr="0" position="1787\13">
+                <Arguments xmlid="x18049">
+                 <Simple-Term xmlid="x18050" idnr="129" spelling="d" position="1787\11" origin="Constant" sort="Constant" serialnr="399" varnr="1"/>
+                 <Numeral-Term xmlid="x18051" number="1" sort="Numeral-Term" position="1787\15"/>
                 </Arguments>
                </Infix-Term>
-               <Infix-Term xmlid="x18050" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1787\19">
-                <Arguments xmlid="x18051"/>
+               <Infix-Term xmlid="x18052" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1787\19">
+                <Arguments xmlid="x18053"/>
                </Infix-Term>
               </Arguments>
              </Relation-Formula>
             </Proposition>
-            <Straightforward-Justification xmlid="x18052" position="1787\19">
-             <Link xmlid="x18053" position="1787\9" labelnr="0"/>
-             <Local-Reference xmlid="x18054" position="1787\9" idnr="0" spelling="" serialnr="853" labelnr="40"/>
+            <Straightforward-Justification xmlid="x18054" position="1787\19">
+             <Link xmlid="x18055" position="1787\9" labelnr="0"/>
+             <Local-Reference xmlid="x18056" position="1787\9" idnr="0" spelling="" serialnr="853" labelnr="40"/>
             </Straightforward-Justification>
            </Regular-Statement>
           </Item>
-          <Item xmlid="x18055" kind="Conclusion" position="1788\16" endposition="1788\16">
-           <Conclusion xmlid="x18056">
-            <Proposition xmlid="x18057" position="1788\16">
-             <Label xmlid="x18058" idnr="0" spelling="" position="1788\16" serialnr="855" labelnr="0"/>
-             <Thesis xmlid="x18059" position="1788\16"/>
+          <Item xmlid="x18057" kind="Conclusion" position="1788\16" endposition="1788\16">
+           <Conclusion xmlid="x18058">
+            <Proposition xmlid="x18059" position="1788\16">
+             <Label xmlid="x18060" idnr="0" spelling="" position="1788\16" serialnr="855" labelnr="0"/>
+             <Thesis xmlid="x18061" position="1788\16"/>
             </Proposition>
-            <Straightforward-Justification xmlid="x18060" position="1788\16">
-             <Link xmlid="x18061" position="1788\9" labelnr="0"/>
-             <Local-Reference xmlid="x18062" position="1788\9" idnr="0" spelling="" serialnr="854" labelnr="40"/>
+            <Straightforward-Justification xmlid="x18062" position="1788\16">
+             <Link xmlid="x18063" position="1788\9" labelnr="0"/>
+             <Local-Reference xmlid="x18064" position="1788\9" idnr="0" spelling="" serialnr="854" labelnr="40"/>
             </Straightforward-Justification>
            </Conclusion>
           </Item>
          </Block>
         </Case-Block>
        </Item>
-       <Item xmlid="x18063" kind="Case-Block" position="1790\10" endposition="1792\6">
-        <Case-Block xmlid="x18064">
-         <Block xmlid="x18065" kind="Suppose" position="1790\10" endposition="1792\6">
-          <Item xmlid="x18066" kind="Suppose-Head" position="1790\10" endposition="1790\23">
-           <Suppose-Head xmlid="x18067">
-            <Single-Assumption xmlid="x18068" position="1790\10">
-             <Proposition xmlid="x18069" position="1790\12">
-              <Label xmlid="x18070" idnr="0" spelling="" position="1790\12" serialnr="856" labelnr="0"/>
-              <Multi-Attributive-Formula xmlid="x18071" position="1790\15">
-               <Simple-Term xmlid="x18072" idnr="129" spelling="d" position="1790\12" origin="Constant" sort="Constant" serialnr="399" varnr="1"/>
-               <Adjective-Cluster xmlid="x18073">
-                <Attribute xmlid="x18074" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="1790\23">
-                 <Arguments xmlid="x18075"/>
+       <Item xmlid="x18065" kind="Case-Block" position="1790\10" endposition="1792\6">
+        <Case-Block xmlid="x18066">
+         <Block xmlid="x18067" kind="Suppose" position="1790\10" endposition="1792\6">
+          <Item xmlid="x18068" kind="Suppose-Head" position="1790\10" endposition="1790\23">
+           <Suppose-Head xmlid="x18069">
+            <Single-Assumption xmlid="x18070" position="1790\10">
+             <Proposition xmlid="x18071" position="1790\12">
+              <Label xmlid="x18072" idnr="0" spelling="" position="1790\12" serialnr="856" labelnr="0"/>
+              <Multi-Attributive-Formula xmlid="x18073" position="1790\15">
+               <Simple-Term xmlid="x18074" idnr="129" spelling="d" position="1790\12" origin="Constant" sort="Constant" serialnr="399" varnr="1"/>
+               <Adjective-Cluster xmlid="x18075">
+                <Attribute xmlid="x18076" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="1790\23">
+                 <Arguments xmlid="x18077"/>
                 </Attribute>
                </Adjective-Cluster>
               </Multi-Attributive-Formula>
@@ -29308,15 +29312,15 @@
             </Single-Assumption>
            </Suppose-Head>
           </Item>
-          <Item xmlid="x18076" kind="Conclusion" position="1791\16" endposition="1791\16">
-           <Conclusion xmlid="x18077">
-            <Proposition xmlid="x18078" position="1791\16">
-             <Label xmlid="x18079" idnr="0" spelling="" position="1791\16" serialnr="857" labelnr="0"/>
-             <Thesis xmlid="x18080" position="1791\16"/>
+          <Item xmlid="x18078" kind="Conclusion" position="1791\16" endposition="1791\16">
+           <Conclusion xmlid="x18079">
+            <Proposition xmlid="x18080" position="1791\16">
+             <Label xmlid="x18081" idnr="0" spelling="" position="1791\16" serialnr="857" labelnr="0"/>
+             <Thesis xmlid="x18082" position="1791\16"/>
             </Proposition>
-            <Straightforward-Justification xmlid="x18081" position="1791\16">
-             <Link xmlid="x18082" position="1791\9" labelnr="0"/>
-             <Local-Reference xmlid="x18083" position="1791\9" idnr="0" spelling="" serialnr="856" labelnr="40"/>
+            <Straightforward-Justification xmlid="x18083" position="1791\16">
+             <Link xmlid="x18084" position="1791\9" labelnr="0"/>
+             <Local-Reference xmlid="x18085" position="1791\9" idnr="0" spelling="" serialnr="856" labelnr="40"/>
             </Straightforward-Justification>
            </Conclusion>
           </Item>
@@ -29329,90 +29333,90 @@
    </Block>
   </Definition-Item>
  </Item>
- <Item xmlid="x18084" kind="Definition-Item" position="1796\12" endposition="1812\3">
-  <Definition-Item xmlid="x18085">
-   <Block xmlid="x18086" kind="Registration-Block" position="1796\12" endposition="1812\3">
-    <Item xmlid="x18087" kind="Loci-Declaration" position="1796\16" endposition="1796\67">
-     <Loci-Declaration xmlid="x18088">
-      <Qualified-Segments xmlid="x18089">
-       <Explicitly-Qualified-Segment xmlid="x18090" position="1796\18">
-        <Variables xmlid="x18091">
-         <Variable xmlid="x18092" idnr="17" spelling="k" position="1796\18" varintro="itLociDeclaration" kind="Constant" serialnr="400" varnr="1"/>
+ <Item xmlid="x18086" kind="Definition-Item" position="1796\12" endposition="1812\3">
+  <Definition-Item xmlid="x18087">
+   <Block xmlid="x18088" kind="Registration-Block" position="1796\12" endposition="1812\3">
+    <Item xmlid="x18089" kind="Loci-Declaration" position="1796\16" endposition="1796\67">
+     <Loci-Declaration xmlid="x18090">
+      <Qualified-Segments xmlid="x18091">
+       <Explicitly-Qualified-Segment xmlid="x18092" position="1796\18">
+        <Variables xmlid="x18093">
+         <Variable xmlid="x18094" idnr="17" spelling="k" position="1796\18" varintro="itLociDeclaration" kind="Constant" serialnr="400" varnr="1"/>
         </Variables>
-        <Clustered-Type xmlid="x18093" sort="Clustered-Type" position="1796\37">
-         <Adjective-Cluster xmlid="x18094">
-          <Attribute xmlid="x18095" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="1796\30">
-           <Arguments xmlid="x18096"/>
+        <Clustered-Type xmlid="x18095" sort="Clustered-Type" position="1796\37">
+         <Adjective-Cluster xmlid="x18096">
+          <Attribute xmlid="x18097" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="1796\30">
+           <Arguments xmlid="x18098"/>
           </Attribute>
          </Adjective-Cluster>
-         <Standard-Type xmlid="x18097" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1796\37">
-          <Arguments xmlid="x18098"/>
+         <Standard-Type xmlid="x18099" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1796\37">
+          <Arguments xmlid="x18100"/>
          </Standard-Type>
         </Clustered-Type>
        </Explicitly-Qualified-Segment>
-       <Explicitly-Qualified-Segment xmlid="x18099" position="1796\40">
-        <Variables xmlid="x18100">
-         <Variable xmlid="x18101" idnr="19" spelling="n" position="1796\40" varintro="itLociDeclaration" kind="Constant" serialnr="401" varnr="2"/>
+       <Explicitly-Qualified-Segment xmlid="x18101" position="1796\40">
+        <Variables xmlid="x18102">
+         <Variable xmlid="x18103" idnr="19" spelling="n" position="1796\40" varintro="itLociDeclaration" kind="Constant" serialnr="401" varnr="2"/>
         </Variables>
-        <Clustered-Type xmlid="x18102" sort="Clustered-Type" position="1796\67">
-         <Adjective-Cluster xmlid="x18103">
-          <Attribute xmlid="x18104" nr="29" formatnr="53" patternnr="12" absolutepatternMMLId="ORDINAL1:8" spelling="zero" nonocc="true" sort="Adjective" constrnr="28" absoluteconstrMMLId="ORDINAL1:8" originalnr="0" position="1796\52">
-           <Arguments xmlid="x18105"/>
-          </Attribute>
-          <Attribute xmlid="x18106" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="1796\60">
+        <Clustered-Type xmlid="x18104" sort="Clustered-Type" position="1796\67">
+         <Adjective-Cluster xmlid="x18105">
+          <Attribute xmlid="x18106" nr="29" formatnr="53" patternnr="12" absolutepatternMMLId="ORDINAL1:8" spelling="zero" nonocc="true" sort="Adjective" constrnr="28" absoluteconstrMMLId="ORDINAL1:8" originalnr="0" position="1796\52">
            <Arguments xmlid="x18107"/>
           </Attribute>
+          <Attribute xmlid="x18108" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="1796\60">
+           <Arguments xmlid="x18109"/>
+          </Attribute>
          </Adjective-Cluster>
-         <Standard-Type xmlid="x18108" nr="8" formatnr="40" patternnr="6" absolutepatternMMLId="ORDINAL1:1" spelling="Number" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1796\67">
-          <Arguments xmlid="x18109"/>
+         <Standard-Type xmlid="x18110" nr="8" formatnr="40" patternnr="6" absolutepatternMMLId="ORDINAL1:1" spelling="Number" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1796\67">
+          <Arguments xmlid="x18111"/>
          </Standard-Type>
         </Clustered-Type>
        </Explicitly-Qualified-Segment>
       </Qualified-Segments>
      </Loci-Declaration>
     </Item>
-    <Item xmlid="x18110" kind="Cluster" position="1797\8" endposition="1797\23">
-     <Cluster xmlid="x18111">
-      <Functorial-Registration xmlid="x18112" position="1797\8">
-       <Infix-Term xmlid="x18113" nr="41" formatnr="66" patternnr="53" absolutepatternMMLId="XCMPLX_0:2" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="143" absoluteconstrMMLId="XCMPLX_0:2" originalnr="0" position="1797\11">
-        <Arguments xmlid="x18114">
-         <Simple-Term xmlid="x18115" idnr="17" spelling="k" position="1797\10" origin="Constant" sort="Constant" serialnr="400" varnr="1"/>
-         <Simple-Term xmlid="x18116" idnr="19" spelling="n" position="1797\12" origin="Constant" sort="Constant" serialnr="401" varnr="2"/>
+    <Item xmlid="x18112" kind="Cluster" position="1797\8" endposition="1797\23">
+     <Cluster xmlid="x18113">
+      <Functorial-Registration xmlid="x18114" position="1797\8">
+       <Infix-Term xmlid="x18115" nr="41" formatnr="66" patternnr="53" absolutepatternMMLId="XCMPLX_0:2" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="143" absoluteconstrMMLId="XCMPLX_0:2" originalnr="0" position="1797\11">
+        <Arguments xmlid="x18116">
+         <Simple-Term xmlid="x18117" idnr="17" spelling="k" position="1797\10" origin="Constant" sort="Constant" serialnr="400" varnr="1"/>
+         <Simple-Term xmlid="x18118" idnr="19" spelling="n" position="1797\12" origin="Constant" sort="Constant" serialnr="401" varnr="2"/>
         </Arguments>
        </Infix-Term>
-       <Adjective-Cluster xmlid="x18117">
-        <Attribute xmlid="x18118" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="1797\23">
-         <Arguments xmlid="x18119"/>
+       <Adjective-Cluster xmlid="x18119">
+        <Attribute xmlid="x18120" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="1797\23">
+         <Arguments xmlid="x18121"/>
         </Attribute>
        </Adjective-Cluster>
       </Functorial-Registration>
      </Cluster>
     </Item>
-    <Item xmlid="x18120" kind="Correctness-Condition" position="1798\10" endposition="1811\5">
-     <Correctness-Condition xmlid="x18121">
-      <coherence xmlid="x18122"/>
-      <Block xmlid="x18123" kind="Proof" position="1799\7" endposition="1811\5">
-       <Item xmlid="x18124" kind="Per-Cases" position="1800\6" endposition="1800\21">
-        <Per-Cases xmlid="x18125">
-         <Straightforward-Justification xmlid="x18126" position="1800\15">
-          <Local-Reference xmlid="x18127" position="1800\21" idnr="128" spelling="Def11" serialnr="848" labelnr="40"/>
+    <Item xmlid="x18122" kind="Correctness-Condition" position="1798\10" endposition="1811\5">
+     <Correctness-Condition xmlid="x18123">
+      <coherence xmlid="x18124"/>
+      <Block xmlid="x18125" kind="Proof" position="1799\7" endposition="1811\5">
+       <Item xmlid="x18126" kind="Per-Cases" position="1800\6" endposition="1800\21">
+        <Per-Cases xmlid="x18127">
+         <Straightforward-Justification xmlid="x18128" position="1800\15">
+          <Local-Reference xmlid="x18129" position="1800\21" idnr="128" spelling="Def11" serialnr="848" labelnr="40"/>
          </Straightforward-Justification>
         </Per-Cases>
        </Item>
-       <Item xmlid="x18128" kind="Case-Block" position="1801\10" endposition="1807\6">
-        <Case-Block xmlid="x18129">
-         <Block xmlid="x18130" kind="Suppose" position="1801\10" endposition="1807\6">
-          <Item xmlid="x18131" kind="Suppose-Head" position="1801\10" endposition="1802\12">
-           <Suppose-Head xmlid="x18132">
-            <Single-Assumption xmlid="x18133" position="1801\10">
-             <Proposition xmlid="x18134" position="1802\7">
-              <Label xmlid="x18135" idnr="22" spelling="A1" position="1802\2" serialnr="860" labelnr="41"/>
-              <Relation-Formula xmlid="x18136" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1802\9">
-               <Arguments xmlid="x18137">
-                <Simple-Term xmlid="x18138" idnr="17" spelling="k" position="1802\7" origin="Constant" sort="Constant" serialnr="400" varnr="1"/>
-                <Infix-Term xmlid="x18139" nr="26" formatnr="85" patternnr="55" absolutepatternMMLId="XCMPLX_0:4" leftargscount="0" spelling="-" sort="Functor-Term" constrnr="145" absoluteconstrMMLId="XCMPLX_0:4" originalnr="0" position="1802\11">
-                 <Arguments xmlid="x18140">
-                  <Numeral-Term xmlid="x18141" number="1" sort="Numeral-Term" position="1802\12"/>
+       <Item xmlid="x18130" kind="Case-Block" position="1801\10" endposition="1807\6">
+        <Case-Block xmlid="x18131">
+         <Block xmlid="x18132" kind="Suppose" position="1801\10" endposition="1807\6">
+          <Item xmlid="x18133" kind="Suppose-Head" position="1801\10" endposition="1802\12">
+           <Suppose-Head xmlid="x18134">
+            <Single-Assumption xmlid="x18135" position="1801\10">
+             <Proposition xmlid="x18136" position="1802\7">
+              <Label xmlid="x18137" idnr="22" spelling="A1" position="1802\2" serialnr="860" labelnr="41"/>
+              <Relation-Formula xmlid="x18138" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1802\9">
+               <Arguments xmlid="x18139">
+                <Simple-Term xmlid="x18140" idnr="17" spelling="k" position="1802\7" origin="Constant" sort="Constant" serialnr="400" varnr="1"/>
+                <Infix-Term xmlid="x18141" nr="26" formatnr="85" patternnr="55" absolutepatternMMLId="XCMPLX_0:4" leftargscount="0" spelling="-" sort="Functor-Term" constrnr="145" absoluteconstrMMLId="XCMPLX_0:4" originalnr="0" position="1802\11">
+                 <Arguments xmlid="x18142">
+                  <Numeral-Term xmlid="x18143" number="1" sort="Numeral-Term" position="1802\12"/>
                  </Arguments>
                 </Infix-Term>
                </Arguments>
@@ -29421,89 +29425,89 @@
             </Single-Assumption>
            </Suppose-Head>
           </Item>
-          <Item xmlid="x18142" kind="Choice-Statement" position="1803\13" endposition="1804\24">
-           <Choice-Statement xmlid="x18143">
-            <Qualified-Segments xmlid="x18144">
-             <Explicitly-Qualified-Segment xmlid="x18145" position="1803\15">
-              <Variables xmlid="x18146">
-               <Variable xmlid="x18147" idnr="52" spelling="i" position="1803\15" varintro="itChoice" kind="Constant" serialnr="402" varnr="3"/>
+          <Item xmlid="x18144" kind="Choice-Statement" position="1803\13" endposition="1804\24">
+           <Choice-Statement xmlid="x18145">
+            <Qualified-Segments xmlid="x18146">
+             <Explicitly-Qualified-Segment xmlid="x18147" position="1803\15">
+              <Variables xmlid="x18148">
+               <Variable xmlid="x18149" idnr="52" spelling="i" position="1803\15" varintro="itChoice" kind="Constant" serialnr="402" varnr="3"/>
               </Variables>
-              <Standard-Type xmlid="x18148" nr="12" formatnr="45" patternnr="11" absolutepatternMMLId="ORDINAL1:6" spelling="Nat" sort="Expandable-Type" position="1803\25">
-               <Arguments xmlid="x18149"/>
+              <Standard-Type xmlid="x18150" nr="12" formatnr="45" patternnr="11" absolutepatternMMLId="ORDINAL1:6" spelling="Nat" sort="Expandable-Type" position="1803\25">
+               <Arguments xmlid="x18151"/>
               </Standard-Type>
              </Explicitly-Qualified-Segment>
             </Qualified-Segments>
-            <Conditions xmlid="x18150">
-             <Proposition xmlid="x18151" position="1804\8">
-              <Label xmlid="x18152" idnr="23" spelling="A2" position="1804\2" serialnr="861" labelnr="42"/>
-              <Relation-Formula xmlid="x18153" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1804\10">
-               <Arguments xmlid="x18154">
-                <Simple-Term xmlid="x18155" idnr="19" spelling="n" position="1804\8" origin="Constant" sort="Constant" serialnr="401" varnr="2"/>
-                <Infix-Term xmlid="x18156" nr="41" formatnr="66" patternnr="66" absolutepatternMMLId="NAT_1:1" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="159" absoluteconstrMMLId="NAT_1:1" originalnr="143" absoluteorigconstrMMLId="XCMPLX_0:2" position="1804\12">
-                 <Arguments xmlid="x18157">
-                  <Simple-Term xmlid="x18158" idnr="52" spelling="i" position="1804\11" origin="Constant" sort="Constant" serialnr="402" varnr="3"/>
-                  <Numeral-Term xmlid="x18159" number="1" sort="Numeral-Term" position="1804\13"/>
+            <Conditions xmlid="x18152">
+             <Proposition xmlid="x18153" position="1804\8">
+              <Label xmlid="x18154" idnr="23" spelling="A2" position="1804\2" serialnr="861" labelnr="42"/>
+              <Relation-Formula xmlid="x18155" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1804\10">
+               <Arguments xmlid="x18156">
+                <Simple-Term xmlid="x18157" idnr="19" spelling="n" position="1804\8" origin="Constant" sort="Constant" serialnr="401" varnr="2"/>
+                <Infix-Term xmlid="x18158" nr="41" formatnr="66" patternnr="66" absolutepatternMMLId="NAT_1:1" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="159" absoluteconstrMMLId="NAT_1:1" originalnr="143" absoluteorigconstrMMLId="XCMPLX_0:2" position="1804\12">
+                 <Arguments xmlid="x18159">
+                  <Simple-Term xmlid="x18160" idnr="52" spelling="i" position="1804\11" origin="Constant" sort="Constant" serialnr="402" varnr="3"/>
+                  <Numeral-Term xmlid="x18161" number="1" sort="Numeral-Term" position="1804\13"/>
                  </Arguments>
                 </Infix-Term>
                </Arguments>
               </Relation-Formula>
              </Proposition>
             </Conditions>
-            <Straightforward-Justification xmlid="x18160" position="1804\16">
-             <Theorem-Reference xmlid="x18161" position="1804\24" nr="1" MMLId="NAT_1:6"/>
+            <Straightforward-Justification xmlid="x18162" position="1804\16">
+             <Theorem-Reference xmlid="x18163" position="1804\24" nr="1" MMLId="NAT_1:6"/>
             </Straightforward-Justification>
            </Choice-Statement>
           </Item>
-          <Item xmlid="x18162" kind="Regular-Statement" position="1805\6" endposition="1805\23">
-           <Regular-Statement xmlid="x18163">
-            <Proposition xmlid="x18164" position="1805\6">
-             <Label xmlid="x18165" idnr="0" spelling="" position="1805\6" serialnr="862" labelnr="0"/>
-             <Relation-Formula xmlid="x18166" nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1805\12">
-              <Arguments xmlid="x18167">
-               <Infix-Term xmlid="x18168" nr="41" formatnr="66" patternnr="53" absolutepatternMMLId="XCMPLX_0:2" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="143" absoluteconstrMMLId="XCMPLX_0:2" originalnr="0" position="1805\8">
-                <Arguments xmlid="x18169">
-                 <Simple-Term xmlid="x18170" idnr="17" spelling="k" position="1805\6" origin="Constant" sort="Constant" serialnr="400" varnr="1"/>
-                 <Simple-Term xmlid="x18171" idnr="19" spelling="n" position="1805\10" origin="Constant" sort="Constant" serialnr="401" varnr="2"/>
+          <Item xmlid="x18164" kind="Regular-Statement" position="1805\6" endposition="1805\23">
+           <Regular-Statement xmlid="x18165">
+            <Proposition xmlid="x18166" position="1805\6">
+             <Label xmlid="x18167" idnr="0" spelling="" position="1805\6" serialnr="862" labelnr="0"/>
+             <Relation-Formula xmlid="x18168" nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1805\12">
+              <Arguments xmlid="x18169">
+               <Infix-Term xmlid="x18170" nr="41" formatnr="66" patternnr="53" absolutepatternMMLId="XCMPLX_0:2" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="143" absoluteconstrMMLId="XCMPLX_0:2" originalnr="0" position="1805\8">
+                <Arguments xmlid="x18171">
+                 <Simple-Term xmlid="x18172" idnr="17" spelling="k" position="1805\6" origin="Constant" sort="Constant" serialnr="400" varnr="1"/>
+                 <Simple-Term xmlid="x18173" idnr="19" spelling="n" position="1805\10" origin="Constant" sort="Constant" serialnr="401" varnr="2"/>
                 </Arguments>
                </Infix-Term>
-               <Simple-Term xmlid="x18172" idnr="52" spelling="i" position="1805\14" origin="Constant" sort="Constant" serialnr="402" varnr="3"/>
+               <Simple-Term xmlid="x18174" idnr="52" spelling="i" position="1805\14" origin="Constant" sort="Constant" serialnr="402" varnr="3"/>
               </Arguments>
              </Relation-Formula>
             </Proposition>
-            <Straightforward-Justification xmlid="x18173" position="1805\17">
-             <Local-Reference xmlid="x18174" position="1805\20" idnr="23" spelling="A2" serialnr="861" labelnr="42"/>
-             <Local-Reference xmlid="x18175" position="1805\23" idnr="22" spelling="A1" serialnr="860" labelnr="41"/>
+            <Straightforward-Justification xmlid="x18175" position="1805\17">
+             <Local-Reference xmlid="x18176" position="1805\20" idnr="23" spelling="A2" serialnr="861" labelnr="42"/>
+             <Local-Reference xmlid="x18177" position="1805\23" idnr="22" spelling="A1" serialnr="860" labelnr="41"/>
             </Straightforward-Justification>
            </Regular-Statement>
           </Item>
-          <Item xmlid="x18176" kind="Conclusion" position="1806\16" endposition="1806\16">
-           <Conclusion xmlid="x18177">
-            <Proposition xmlid="x18178" position="1806\16">
-             <Label xmlid="x18179" idnr="0" spelling="" position="1806\16" serialnr="863" labelnr="0"/>
-             <Thesis xmlid="x18180" position="1806\16"/>
+          <Item xmlid="x18178" kind="Conclusion" position="1806\16" endposition="1806\16">
+           <Conclusion xmlid="x18179">
+            <Proposition xmlid="x18180" position="1806\16">
+             <Label xmlid="x18181" idnr="0" spelling="" position="1806\16" serialnr="863" labelnr="0"/>
+             <Thesis xmlid="x18182" position="1806\16"/>
             </Proposition>
-            <Straightforward-Justification xmlid="x18181" position="1806\16">
-             <Link xmlid="x18182" position="1806\9" labelnr="0"/>
-             <Local-Reference xmlid="x18183" position="1806\9" idnr="0" spelling="" serialnr="862" labelnr="42"/>
+            <Straightforward-Justification xmlid="x18183" position="1806\16">
+             <Link xmlid="x18184" position="1806\9" labelnr="0"/>
+             <Local-Reference xmlid="x18185" position="1806\9" idnr="0" spelling="" serialnr="862" labelnr="42"/>
             </Straightforward-Justification>
            </Conclusion>
           </Item>
          </Block>
         </Case-Block>
        </Item>
-       <Item xmlid="x18184" kind="Case-Block" position="1808\10" endposition="1810\6">
-        <Case-Block xmlid="x18185">
-         <Block xmlid="x18186" kind="Suppose" position="1808\10" endposition="1810\6">
-          <Item xmlid="x18187" kind="Suppose-Head" position="1808\10" endposition="1808\23">
-           <Suppose-Head xmlid="x18188">
-            <Single-Assumption xmlid="x18189" position="1808\10">
-             <Proposition xmlid="x18190" position="1808\12">
-              <Label xmlid="x18191" idnr="0" spelling="" position="1808\12" serialnr="864" labelnr="0"/>
-              <Multi-Attributive-Formula xmlid="x18192" position="1808\15">
-               <Simple-Term xmlid="x18193" idnr="17" spelling="k" position="1808\12" origin="Constant" sort="Constant" serialnr="400" varnr="1"/>
-               <Adjective-Cluster xmlid="x18194">
-                <Attribute xmlid="x18195" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="1808\23">
-                 <Arguments xmlid="x18196"/>
+       <Item xmlid="x18186" kind="Case-Block" position="1808\10" endposition="1810\6">
+        <Case-Block xmlid="x18187">
+         <Block xmlid="x18188" kind="Suppose" position="1808\10" endposition="1810\6">
+          <Item xmlid="x18189" kind="Suppose-Head" position="1808\10" endposition="1808\23">
+           <Suppose-Head xmlid="x18190">
+            <Single-Assumption xmlid="x18191" position="1808\10">
+             <Proposition xmlid="x18192" position="1808\12">
+              <Label xmlid="x18193" idnr="0" spelling="" position="1808\12" serialnr="864" labelnr="0"/>
+              <Multi-Attributive-Formula xmlid="x18194" position="1808\15">
+               <Simple-Term xmlid="x18195" idnr="17" spelling="k" position="1808\12" origin="Constant" sort="Constant" serialnr="400" varnr="1"/>
+               <Adjective-Cluster xmlid="x18196">
+                <Attribute xmlid="x18197" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="1808\23">
+                 <Arguments xmlid="x18198"/>
                 </Attribute>
                </Adjective-Cluster>
               </Multi-Attributive-Formula>
@@ -29511,15 +29515,15 @@
             </Single-Assumption>
            </Suppose-Head>
           </Item>
-          <Item xmlid="x18197" kind="Conclusion" position="1809\16" endposition="1809\16">
-           <Conclusion xmlid="x18198">
-            <Proposition xmlid="x18199" position="1809\16">
-             <Label xmlid="x18200" idnr="0" spelling="" position="1809\16" serialnr="865" labelnr="0"/>
-             <Thesis xmlid="x18201" position="1809\16"/>
+          <Item xmlid="x18199" kind="Conclusion" position="1809\16" endposition="1809\16">
+           <Conclusion xmlid="x18200">
+            <Proposition xmlid="x18201" position="1809\16">
+             <Label xmlid="x18202" idnr="0" spelling="" position="1809\16" serialnr="865" labelnr="0"/>
+             <Thesis xmlid="x18203" position="1809\16"/>
             </Proposition>
-            <Straightforward-Justification xmlid="x18202" position="1809\16">
-             <Link xmlid="x18203" position="1809\9" labelnr="0"/>
-             <Local-Reference xmlid="x18204" position="1809\9" idnr="0" spelling="" serialnr="864" labelnr="40"/>
+            <Straightforward-Justification xmlid="x18204" position="1809\16">
+             <Link xmlid="x18205" position="1809\9" labelnr="0"/>
+             <Local-Reference xmlid="x18206" position="1809\9" idnr="0" spelling="" serialnr="864" labelnr="40"/>
             </Straightforward-Justification>
            </Conclusion>
           </Item>
@@ -29532,33 +29536,33 @@
    </Block>
   </Definition-Item>
  </Item>
- <Item xmlid="x18205" kind="Theorem-Item" position="1814\7" endposition="1829\3">
-  <Theorem-Item xmlid="x18206" MMLId="INT_1:73">
-   <Proposition xmlid="x18207" position="1815\5">
-    <Label xmlid="x18208" idnr="0" spelling="" position="1815\5" serialnr="868" labelnr="0"/>
-    <Universal-Quantifier-Formula xmlid="x18209" position="1815\5">
-     <Variable-Segments xmlid="x18210">
-      <Explicitly-Qualified-Segment xmlid="x18211" position="1815\5">
-       <Variables xmlid="x18212">
-        <Variable xmlid="x18213" idnr="52" spelling="i" position="1815\7" varintro="Quantifier" kind="BoundVar" serialnr="403" varnr="1"/>
+ <Item xmlid="x18207" kind="Theorem-Item" position="1814\7" endposition="1829\3">
+  <Theorem-Item xmlid="x18208" MMLId="INT_1:73">
+   <Proposition xmlid="x18209" position="1815\5">
+    <Label xmlid="x18210" idnr="0" spelling="" position="1815\5" serialnr="868" labelnr="0"/>
+    <Universal-Quantifier-Formula xmlid="x18211" position="1815\5">
+     <Variable-Segments xmlid="x18212">
+      <Explicitly-Qualified-Segment xmlid="x18213" position="1815\5">
+       <Variables xmlid="x18214">
+        <Variable xmlid="x18215" idnr="52" spelling="i" position="1815\7" varintro="Quantifier" kind="BoundVar" serialnr="403" varnr="1"/>
        </Variables>
-       <Standard-Type xmlid="x18214" nr="15" formatnr="106" patternnr="16" absolutepatternMMLId="INT_1:1" spelling="Integer" sort="Expandable-Type" position="1815\21">
-        <Arguments xmlid="x18215"/>
+       <Standard-Type xmlid="x18216" nr="15" formatnr="106" patternnr="16" absolutepatternMMLId="INT_1:1" spelling="Integer" sort="Expandable-Type" position="1815\21">
+        <Arguments xmlid="x18217"/>
        </Standard-Type>
       </Explicitly-Qualified-Segment>
      </Variable-Segments>
-     <Scope xmlid="x18216">
-      <Relation-Formula xmlid="x18217" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1815\31">
-       <Arguments xmlid="x18218">
-        <Infix-Term xmlid="x18219" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1815\29">
-         <Arguments xmlid="x18220"/>
+     <Scope xmlid="x18218">
+      <Relation-Formula xmlid="x18219" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1815\31">
+       <Arguments xmlid="x18220">
+        <Infix-Term xmlid="x18221" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1815\29">
+         <Arguments xmlid="x18222"/>
         </Infix-Term>
-        <Infix-Term xmlid="x18221" nr="68" formatnr="113" patternnr="84" absolutepatternMMLId="INT_1:6" leftargscount="1" spelling="mod" sort="Functor-Term" constrnr="179" absoluteconstrMMLId="INT_1:5" originalnr="0" position="1815\37">
-         <Arguments xmlid="x18222">
-          <Infix-Term xmlid="x18223" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1815\33">
-           <Arguments xmlid="x18224"/>
+        <Infix-Term xmlid="x18223" nr="68" formatnr="113" patternnr="84" absolutepatternMMLId="INT_1:6" leftargscount="1" spelling="mod" sort="Functor-Term" constrnr="179" absoluteconstrMMLId="INT_1:5" originalnr="0" position="1815\37">
+         <Arguments xmlid="x18224">
+          <Infix-Term xmlid="x18225" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1815\33">
+           <Arguments xmlid="x18226"/>
           </Infix-Term>
-          <Simple-Term xmlid="x18225" idnr="52" spelling="i" position="1815\39" origin="BoundVar" sort="BoundVar" serialnr="403" varnr="1"/>
+          <Simple-Term xmlid="x18227" idnr="52" spelling="i" position="1815\39" origin="BoundVar" sort="BoundVar" serialnr="403" varnr="1"/>
          </Arguments>
         </Infix-Term>
        </Arguments>
@@ -29566,39 +29570,39 @@
      </Scope>
     </Universal-Quantifier-Formula>
    </Proposition>
-   <Block xmlid="x18226" kind="Proof" position="1816\5" endposition="1829\3">
-    <Item xmlid="x18227" kind="Generalization" position="1817\5" endposition="1817\18">
-     <Generalization xmlid="x18228">
-      <Qualified-Segments xmlid="x18229">
-       <Explicitly-Qualified-Segment xmlid="x18230" position="1817\7">
-        <Variables xmlid="x18231">
-         <Variable xmlid="x18232" idnr="52" spelling="i" position="1817\7" varintro="itGeneralization" kind="Constant" serialnr="405" varnr="1"/>
+   <Block xmlid="x18228" kind="Proof" position="1816\5" endposition="1829\3">
+    <Item xmlid="x18229" kind="Generalization" position="1817\5" endposition="1817\18">
+     <Generalization xmlid="x18230">
+      <Qualified-Segments xmlid="x18231">
+       <Explicitly-Qualified-Segment xmlid="x18232" position="1817\7">
+        <Variables xmlid="x18233">
+         <Variable xmlid="x18234" idnr="52" spelling="i" position="1817\7" varintro="itGeneralization" kind="Constant" serialnr="405" varnr="1"/>
         </Variables>
-        <Standard-Type xmlid="x18233" nr="15" formatnr="106" patternnr="16" absolutepatternMMLId="INT_1:1" spelling="Integer" sort="Expandable-Type" position="1817\18">
-         <Arguments xmlid="x18234"/>
+        <Standard-Type xmlid="x18235" nr="15" formatnr="106" patternnr="16" absolutepatternMMLId="INT_1:1" spelling="Integer" sort="Expandable-Type" position="1817\18">
+         <Arguments xmlid="x18236"/>
         </Standard-Type>
        </Explicitly-Qualified-Segment>
       </Qualified-Segments>
      </Generalization>
     </Item>
-    <Item xmlid="x18235" kind="Per-Cases" position="1818\5" endposition="1818\11">
-     <Per-Cases xmlid="x18236">
-      <Straightforward-Justification xmlid="x18237" position="1818\11"/>
+    <Item xmlid="x18237" kind="Per-Cases" position="1818\5" endposition="1818\11">
+     <Per-Cases xmlid="x18238">
+      <Straightforward-Justification xmlid="x18239" position="1818\11"/>
      </Per-Cases>
     </Item>
-    <Item xmlid="x18238" kind="Case-Block" position="1819\9" endposition="1822\5">
-     <Case-Block xmlid="x18239">
-      <Block xmlid="x18240" kind="Suppose" position="1819\9" endposition="1822\5">
-       <Item xmlid="x18241" kind="Suppose-Head" position="1819\9" endposition="1820\7">
-        <Suppose-Head xmlid="x18242">
-         <Single-Assumption xmlid="x18243" position="1819\9">
-          <Proposition xmlid="x18244" position="1820\5">
-           <Label xmlid="x18245" idnr="0" spelling="" position="1820\5" serialnr="869" labelnr="0"/>
-           <Relation-Formula xmlid="x18246" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1820\6">
-            <Arguments xmlid="x18247">
-             <Simple-Term xmlid="x18248" idnr="52" spelling="i" position="1820\5" origin="Constant" sort="Constant" serialnr="405" varnr="1"/>
-             <Infix-Term xmlid="x18249" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1820\7">
-              <Arguments xmlid="x18250"/>
+    <Item xmlid="x18240" kind="Case-Block" position="1819\9" endposition="1822\5">
+     <Case-Block xmlid="x18241">
+      <Block xmlid="x18242" kind="Suppose" position="1819\9" endposition="1822\5">
+       <Item xmlid="x18243" kind="Suppose-Head" position="1819\9" endposition="1820\7">
+        <Suppose-Head xmlid="x18244">
+         <Single-Assumption xmlid="x18245" position="1819\9">
+          <Proposition xmlid="x18246" position="1820\5">
+           <Label xmlid="x18247" idnr="0" spelling="" position="1820\5" serialnr="869" labelnr="0"/>
+           <Relation-Formula xmlid="x18248" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1820\6">
+            <Arguments xmlid="x18249">
+             <Simple-Term xmlid="x18250" idnr="52" spelling="i" position="1820\5" origin="Constant" sort="Constant" serialnr="405" varnr="1"/>
+             <Infix-Term xmlid="x18251" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1820\7">
+              <Arguments xmlid="x18252"/>
              </Infix-Term>
             </Arguments>
            </Relation-Formula>
@@ -29606,35 +29610,35 @@
          </Single-Assumption>
         </Suppose-Head>
        </Item>
-       <Item xmlid="x18251" kind="Conclusion" position="1821\16" endposition="1821\25">
-        <Conclusion xmlid="x18252">
-         <Proposition xmlid="x18253" position="1821\16">
-          <Label xmlid="x18254" idnr="0" spelling="" position="1821\16" serialnr="870" labelnr="0"/>
-          <Thesis xmlid="x18255" position="1821\16"/>
+       <Item xmlid="x18253" kind="Conclusion" position="1821\16" endposition="1821\25">
+        <Conclusion xmlid="x18254">
+         <Proposition xmlid="x18255" position="1821\16">
+          <Label xmlid="x18256" idnr="0" spelling="" position="1821\16" serialnr="870" labelnr="0"/>
+          <Thesis xmlid="x18257" position="1821\16"/>
          </Proposition>
-         <Straightforward-Justification xmlid="x18256" position="1821\19">
-          <Link xmlid="x18257" position="1821\9" labelnr="0"/>
-          <Local-Reference xmlid="x18258" position="1821\9" idnr="0" spelling="" serialnr="869" labelnr="40"/>
-          <Local-Reference xmlid="x18259" position="1821\25" idnr="111" spelling="Def10" serialnr="620" labelnr="32"/>
+         <Straightforward-Justification xmlid="x18258" position="1821\19">
+          <Link xmlid="x18259" position="1821\9" labelnr="0"/>
+          <Local-Reference xmlid="x18260" position="1821\9" idnr="0" spelling="" serialnr="869" labelnr="40"/>
+          <Local-Reference xmlid="x18261" position="1821\25" idnr="111" spelling="Def10" serialnr="620" labelnr="32"/>
          </Straightforward-Justification>
         </Conclusion>
        </Item>
       </Block>
      </Case-Block>
     </Item>
-    <Item xmlid="x18260" kind="Case-Block" position="1823\9" endposition="1828\5">
-     <Case-Block xmlid="x18261">
-      <Block xmlid="x18262" kind="Suppose" position="1823\9" endposition="1828\5">
-       <Item xmlid="x18263" kind="Suppose-Head" position="1823\9" endposition="1824\8">
-        <Suppose-Head xmlid="x18264">
-         <Single-Assumption xmlid="x18265" position="1823\9">
-          <Proposition xmlid="x18266" position="1824\5">
-           <Label xmlid="x18267" idnr="22" spelling="A1" position="1824\2" serialnr="871" labelnr="41"/>
-           <Relation-Formula xmlid="x18268" nr="2" formatnr="5" patternnr="2" absolutepatternMMLId="HIDDEN:2" antonymic="true" leftargscount="1" spelling="&#x3C;&#x3E;" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1824\7">
-            <Arguments xmlid="x18269">
-             <Simple-Term xmlid="x18270" idnr="52" spelling="i" position="1824\5" origin="Constant" sort="Constant" serialnr="405" varnr="1"/>
-             <Infix-Term xmlid="x18271" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1824\8">
-              <Arguments xmlid="x18272"/>
+    <Item xmlid="x18262" kind="Case-Block" position="1823\9" endposition="1828\5">
+     <Case-Block xmlid="x18263">
+      <Block xmlid="x18264" kind="Suppose" position="1823\9" endposition="1828\5">
+       <Item xmlid="x18265" kind="Suppose-Head" position="1823\9" endposition="1824\8">
+        <Suppose-Head xmlid="x18266">
+         <Single-Assumption xmlid="x18267" position="1823\9">
+          <Proposition xmlid="x18268" position="1824\5">
+           <Label xmlid="x18269" idnr="22" spelling="A1" position="1824\2" serialnr="871" labelnr="41"/>
+           <Relation-Formula xmlid="x18270" nr="2" formatnr="5" patternnr="2" absolutepatternMMLId="HIDDEN:2" antonymic="true" leftargscount="1" spelling="&#x3C;&#x3E;" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1824\7">
+            <Arguments xmlid="x18271">
+             <Simple-Term xmlid="x18272" idnr="52" spelling="i" position="1824\5" origin="Constant" sort="Constant" serialnr="405" varnr="1"/>
+             <Infix-Term xmlid="x18273" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1824\8">
+              <Arguments xmlid="x18274"/>
              </Infix-Term>
             </Arguments>
            </Relation-Formula>
@@ -29642,59 +29646,59 @@
          </Single-Assumption>
         </Suppose-Head>
        </Item>
-       <Item xmlid="x18273" kind="Regular-Statement" position="1825\5" endposition="1825\23">
-        <Regular-Statement xmlid="x18274">
-         <Proposition xmlid="x18275" position="1825\5">
-          <Label xmlid="x18276" idnr="0" spelling="" position="1825\5" serialnr="872" labelnr="0"/>
-          <Relation-Formula xmlid="x18277" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1825\13">
-           <Arguments xmlid="x18278">
-            <Infix-Term xmlid="x18279" nr="67" formatnr="112" patternnr="83" absolutepatternMMLId="INT_1:5" leftargscount="1" spelling="div" sort="Functor-Term" constrnr="178" absoluteconstrMMLId="INT_1:4" originalnr="0" position="1825\9">
-             <Arguments xmlid="x18280">
-              <Infix-Term xmlid="x18281" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1825\5">
-               <Arguments xmlid="x18282"/>
+       <Item xmlid="x18275" kind="Regular-Statement" position="1825\5" endposition="1825\23">
+        <Regular-Statement xmlid="x18276">
+         <Proposition xmlid="x18277" position="1825\5">
+          <Label xmlid="x18278" idnr="0" spelling="" position="1825\5" serialnr="872" labelnr="0"/>
+          <Relation-Formula xmlid="x18279" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1825\13">
+           <Arguments xmlid="x18280">
+            <Infix-Term xmlid="x18281" nr="67" formatnr="112" patternnr="83" absolutepatternMMLId="INT_1:5" leftargscount="1" spelling="div" sort="Functor-Term" constrnr="178" absoluteconstrMMLId="INT_1:4" originalnr="0" position="1825\9">
+             <Arguments xmlid="x18282">
+              <Infix-Term xmlid="x18283" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1825\5">
+               <Arguments xmlid="x18284"/>
               </Infix-Term>
-              <Simple-Term xmlid="x18283" idnr="52" spelling="i" position="1825\11" origin="Constant" sort="Constant" serialnr="405" varnr="1"/>
+              <Simple-Term xmlid="x18285" idnr="52" spelling="i" position="1825\11" origin="Constant" sort="Constant" serialnr="405" varnr="1"/>
              </Arguments>
             </Infix-Term>
-            <Infix-Term xmlid="x18284" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1825\15">
-             <Arguments xmlid="x18285"/>
+            <Infix-Term xmlid="x18286" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1825\15">
+             <Arguments xmlid="x18287"/>
             </Infix-Term>
            </Arguments>
           </Relation-Formula>
          </Proposition>
-         <Straightforward-Justification xmlid="x18286" position="1825\18">
-          <Local-Reference xmlid="x18287" position="1825\23" idnr="99" spelling="Th25" serialnr="491" labelnr="21"/>
+         <Straightforward-Justification xmlid="x18288" position="1825\18">
+          <Local-Reference xmlid="x18289" position="1825\23" idnr="99" spelling="Th25" serialnr="491" labelnr="21"/>
          </Straightforward-Justification>
         </Regular-Statement>
        </Item>
-       <Item xmlid="x18288" kind="Regular-Statement" position="1826\10" endposition="1826\46">
-        <Regular-Statement xmlid="x18289">
-         <Proposition xmlid="x18290" position="1826\10">
-          <Label xmlid="x18291" idnr="0" spelling="" position="1826\10" serialnr="873" labelnr="0"/>
-          <Relation-Formula xmlid="x18292" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1826\18">
-           <Arguments xmlid="x18293">
-            <Infix-Term xmlid="x18294" nr="68" formatnr="113" patternnr="84" absolutepatternMMLId="INT_1:6" leftargscount="1" spelling="mod" sort="Functor-Term" constrnr="179" absoluteconstrMMLId="INT_1:5" originalnr="0" position="1826\14">
-             <Arguments xmlid="x18295">
-              <Infix-Term xmlid="x18296" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1826\10">
-               <Arguments xmlid="x18297"/>
+       <Item xmlid="x18290" kind="Regular-Statement" position="1826\10" endposition="1826\46">
+        <Regular-Statement xmlid="x18291">
+         <Proposition xmlid="x18292" position="1826\10">
+          <Label xmlid="x18293" idnr="0" spelling="" position="1826\10" serialnr="873" labelnr="0"/>
+          <Relation-Formula xmlid="x18294" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="1826\18">
+           <Arguments xmlid="x18295">
+            <Infix-Term xmlid="x18296" nr="68" formatnr="113" patternnr="84" absolutepatternMMLId="INT_1:6" leftargscount="1" spelling="mod" sort="Functor-Term" constrnr="179" absoluteconstrMMLId="INT_1:5" originalnr="0" position="1826\14">
+             <Arguments xmlid="x18297">
+              <Infix-Term xmlid="x18298" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1826\10">
+               <Arguments xmlid="x18299"/>
               </Infix-Term>
-              <Simple-Term xmlid="x18298" idnr="52" spelling="i" position="1826\16" origin="Constant" sort="Constant" serialnr="405" varnr="1"/>
+              <Simple-Term xmlid="x18300" idnr="52" spelling="i" position="1826\16" origin="Constant" sort="Constant" serialnr="405" varnr="1"/>
              </Arguments>
             </Infix-Term>
-            <Infix-Term xmlid="x18299" nr="26" formatnr="69" patternnr="57" absolutepatternMMLId="XCMPLX_0:6" leftargscount="1" spelling="-" sort="Functor-Term" constrnr="147" absoluteconstrMMLId="XCMPLX_0:6" originalnr="0" position="1826\21">
-             <Arguments xmlid="x18300">
-              <Infix-Term xmlid="x18301" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1826\20">
-               <Arguments xmlid="x18302"/>
+            <Infix-Term xmlid="x18301" nr="26" formatnr="69" patternnr="57" absolutepatternMMLId="XCMPLX_0:6" leftargscount="1" spelling="-" sort="Functor-Term" constrnr="147" absoluteconstrMMLId="XCMPLX_0:6" originalnr="0" position="1826\21">
+             <Arguments xmlid="x18302">
+              <Infix-Term xmlid="x18303" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1826\20">
+               <Arguments xmlid="x18304"/>
               </Infix-Term>
-              <Infix-Term xmlid="x18303" nr="58" formatnr="84" patternnr="54" absolutepatternMMLId="XCMPLX_0:3" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="144" absoluteconstrMMLId="XCMPLX_0:3" originalnr="0" position="1826\23">
-               <Arguments xmlid="x18304">
-                <Simple-Term xmlid="x18305" idnr="52" spelling="i" position="1826\22" origin="Constant" sort="Constant" serialnr="405" varnr="1"/>
-                <Qualification-Term xmlid="x18306" bracketed="true" sort="Qualification-Term" position="1826\29">
-                 <Infix-Term xmlid="x18307" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1826\25">
-                  <Arguments xmlid="x18308"/>
-                 </Infix-Term>
-                 <Standard-Type xmlid="x18309" nr="12" formatnr="45" patternnr="11" absolutepatternMMLId="ORDINAL1:6" spelling="Nat" sort="Expandable-Type" position="1826\33">
+              <Infix-Term xmlid="x18305" nr="58" formatnr="84" patternnr="54" absolutepatternMMLId="XCMPLX_0:3" leftargscount="1" spelling="&#x2A;" sort="Functor-Term" constrnr="144" absoluteconstrMMLId="XCMPLX_0:3" originalnr="0" position="1826\23">
+               <Arguments xmlid="x18306">
+                <Simple-Term xmlid="x18307" idnr="52" spelling="i" position="1826\22" origin="Constant" sort="Constant" serialnr="405" varnr="1"/>
+                <Qualification-Term xmlid="x18308" bracketed="true" sort="Qualification-Term" position="1826\29">
+                 <Infix-Term xmlid="x18309" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1826\25">
                   <Arguments xmlid="x18310"/>
+                 </Infix-Term>
+                 <Standard-Type xmlid="x18311" nr="12" formatnr="45" patternnr="11" absolutepatternMMLId="ORDINAL1:6" spelling="Nat" sort="Expandable-Type" position="1826\33">
+                  <Arguments xmlid="x18312"/>
                  </Standard-Type>
                 </Qualification-Term>
                </Arguments>
@@ -29704,23 +29708,23 @@
            </Arguments>
           </Relation-Formula>
          </Proposition>
-         <Straightforward-Justification xmlid="x18311" position="1826\37">
-          <Link xmlid="x18312" position="1826\8" labelnr="0"/>
-          <Local-Reference xmlid="x18313" position="1826\8" idnr="0" spelling="" serialnr="872" labelnr="41"/>
-          <Local-Reference xmlid="x18314" position="1826\40" idnr="22" spelling="A1" serialnr="871" labelnr="41"/>
-          <Local-Reference xmlid="x18315" position="1826\46" idnr="111" spelling="Def10" serialnr="620" labelnr="32"/>
+         <Straightforward-Justification xmlid="x18313" position="1826\37">
+          <Link xmlid="x18314" position="1826\8" labelnr="0"/>
+          <Local-Reference xmlid="x18315" position="1826\8" idnr="0" spelling="" serialnr="872" labelnr="41"/>
+          <Local-Reference xmlid="x18316" position="1826\40" idnr="22" spelling="A1" serialnr="871" labelnr="41"/>
+          <Local-Reference xmlid="x18317" position="1826\46" idnr="111" spelling="Def10" serialnr="620" labelnr="32"/>
          </Straightforward-Justification>
         </Regular-Statement>
        </Item>
-       <Item xmlid="x18316" kind="Conclusion" position="1827\16" endposition="1827\16">
-        <Conclusion xmlid="x18317">
-         <Proposition xmlid="x18318" position="1827\16">
-          <Label xmlid="x18319" idnr="0" spelling="" position="1827\16" serialnr="874" labelnr="0"/>
-          <Thesis xmlid="x18320" position="1827\16"/>
+       <Item xmlid="x18318" kind="Conclusion" position="1827\16" endposition="1827\16">
+        <Conclusion xmlid="x18319">
+         <Proposition xmlid="x18320" position="1827\16">
+          <Label xmlid="x18321" idnr="0" spelling="" position="1827\16" serialnr="874" labelnr="0"/>
+          <Thesis xmlid="x18322" position="1827\16"/>
          </Proposition>
-         <Straightforward-Justification xmlid="x18321" position="1827\16">
-          <Link xmlid="x18322" position="1827\9" labelnr="0"/>
-          <Local-Reference xmlid="x18323" position="1827\9" idnr="0" spelling="" serialnr="873" labelnr="41"/>
+         <Straightforward-Justification xmlid="x18323" position="1827\16">
+          <Link xmlid="x18324" position="1827\9" labelnr="0"/>
+          <Local-Reference xmlid="x18325" position="1827\9" idnr="0" spelling="" serialnr="873" labelnr="41"/>
          </Straightforward-Justification>
         </Conclusion>
        </Item>
@@ -29730,186 +29734,186 @@
    </Block>
   </Theorem-Item>
  </Item>
- <Item xmlid="x18324" kind="Theorem-Item" position="1831\7" endposition="1840\3">
-  <Theorem-Item xmlid="x18325" MMLId="INT_1:74">
-   <Proposition xmlid="x18326" position="1832\5">
-    <Label xmlid="x18327" idnr="0" spelling="" position="1832\5" serialnr="876" labelnr="0"/>
-    <Universal-Quantifier-Formula xmlid="x18328" position="1832\5">
-     <Variable-Segments xmlid="x18329">
-      <Explicitly-Qualified-Segment xmlid="x18330" position="1832\5">
-       <Variables xmlid="x18331">
-        <Variable xmlid="x18332" idnr="19" spelling="n" position="1832\7" varintro="Quantifier" kind="BoundVar" serialnr="406" varnr="1"/>
+ <Item xmlid="x18326" kind="Theorem-Item" position="1831\7" endposition="1840\3">
+  <Theorem-Item xmlid="x18327" MMLId="INT_1:74">
+   <Proposition xmlid="x18328" position="1832\5">
+    <Label xmlid="x18329" idnr="0" spelling="" position="1832\5" serialnr="876" labelnr="0"/>
+    <Universal-Quantifier-Formula xmlid="x18330" position="1832\5">
+     <Variable-Segments xmlid="x18331">
+      <Explicitly-Qualified-Segment xmlid="x18332" position="1832\5">
+       <Variables xmlid="x18333">
+        <Variable xmlid="x18334" idnr="19" spelling="n" position="1832\7" varintro="Quantifier" kind="BoundVar" serialnr="406" varnr="1"/>
        </Variables>
-       <Clustered-Type xmlid="x18333" sort="Clustered-Type" position="1832\26">
-        <Adjective-Cluster xmlid="x18334">
-         <Attribute xmlid="x18335" nr="29" formatnr="53" patternnr="12" absolutepatternMMLId="ORDINAL1:8" spelling="zero" nonocc="true" sort="Adjective" constrnr="28" absoluteconstrMMLId="ORDINAL1:8" originalnr="0" position="1832\22">
-          <Arguments xmlid="x18336"/>
+       <Clustered-Type xmlid="x18335" sort="Clustered-Type" position="1832\26">
+        <Adjective-Cluster xmlid="x18336">
+         <Attribute xmlid="x18337" nr="29" formatnr="53" patternnr="12" absolutepatternMMLId="ORDINAL1:8" spelling="zero" nonocc="true" sort="Adjective" constrnr="28" absoluteconstrMMLId="ORDINAL1:8" originalnr="0" position="1832\22">
+          <Arguments xmlid="x18338"/>
          </Attribute>
         </Adjective-Cluster>
-        <Standard-Type xmlid="x18337" nr="12" formatnr="45" patternnr="11" absolutepatternMMLId="ORDINAL1:6" spelling="Nat" sort="Expandable-Type" position="1832\26">
-         <Arguments xmlid="x18338"/>
+        <Standard-Type xmlid="x18339" nr="12" formatnr="45" patternnr="11" absolutepatternMMLId="ORDINAL1:6" spelling="Nat" sort="Expandable-Type" position="1832\26">
+         <Arguments xmlid="x18340"/>
         </Standard-Type>
        </Clustered-Type>
       </Explicitly-Qualified-Segment>
      </Variable-Segments>
-     <Scope xmlid="x18339">
-      <Conjunctive-Formula xmlid="x18340" position="1832\45">
-       <Qualifying-Formula xmlid="x18341" position="1832\43">
-        <Infix-Term xmlid="x18342" nr="26" formatnr="69" patternnr="57" absolutepatternMMLId="XCMPLX_0:6" leftargscount="1" spelling="-" sort="Functor-Term" constrnr="147" absoluteconstrMMLId="XCMPLX_0:6" originalnr="0" position="1832\35">
-         <Arguments xmlid="x18343">
-          <Simple-Term xmlid="x18344" idnr="19" spelling="n" position="1832\34" origin="BoundVar" sort="BoundVar" serialnr="406" varnr="1"/>
-          <Numeral-Term xmlid="x18345" number="1" sort="Numeral-Term" position="1832\36"/>
+     <Scope xmlid="x18341">
+      <Conjunctive-Formula xmlid="x18342" position="1832\45">
+       <Qualifying-Formula xmlid="x18343" position="1832\43">
+        <Infix-Term xmlid="x18344" nr="26" formatnr="69" patternnr="57" absolutepatternMMLId="XCMPLX_0:6" leftargscount="1" spelling="-" sort="Functor-Term" constrnr="147" absoluteconstrMMLId="XCMPLX_0:6" originalnr="0" position="1832\35">
+         <Arguments xmlid="x18345">
+          <Simple-Term xmlid="x18346" idnr="19" spelling="n" position="1832\34" origin="BoundVar" sort="BoundVar" serialnr="406" varnr="1"/>
+          <Numeral-Term xmlid="x18347" number="1" sort="Numeral-Term" position="1832\36"/>
          </Arguments>
         </Infix-Term>
-        <Standard-Type xmlid="x18346" nr="12" formatnr="45" patternnr="11" absolutepatternMMLId="ORDINAL1:6" spelling="Nat" sort="Expandable-Type" position="1832\43">
-         <Arguments xmlid="x18347"/>
+        <Standard-Type xmlid="x18348" nr="12" formatnr="45" patternnr="11" absolutepatternMMLId="ORDINAL1:6" spelling="Nat" sort="Expandable-Type" position="1832\43">
+         <Arguments xmlid="x18349"/>
         </Standard-Type>
        </Qualifying-Formula>
-       <Relation-Formula xmlid="x18348" nr="15" formatnr="99" patternnr="22" absolutepatternMMLId="XXREAL_0:1" leftargscount="1" spelling="&#x3C;=" sort="Relation-Formula" constrnr="24" absoluteconstrMMLId="XXREAL_0:1" originalnr="0" position="1832\50">
-        <Arguments xmlid="x18349">
-         <Numeral-Term xmlid="x18350" number="1" sort="Numeral-Term" position="1832\47"/>
-         <Simple-Term xmlid="x18351" idnr="19" spelling="n" position="1832\52" origin="BoundVar" sort="BoundVar" serialnr="406" varnr="1"/>
+       <Relation-Formula xmlid="x18350" nr="15" formatnr="99" patternnr="22" absolutepatternMMLId="XXREAL_0:1" leftargscount="1" spelling="&#x3C;=" sort="Relation-Formula" constrnr="24" absoluteconstrMMLId="XXREAL_0:1" originalnr="0" position="1832\50">
+        <Arguments xmlid="x18351">
+         <Numeral-Term xmlid="x18352" number="1" sort="Numeral-Term" position="1832\47"/>
+         <Simple-Term xmlid="x18353" idnr="19" spelling="n" position="1832\52" origin="BoundVar" sort="BoundVar" serialnr="406" varnr="1"/>
         </Arguments>
        </Relation-Formula>
       </Conjunctive-Formula>
      </Scope>
     </Universal-Quantifier-Formula>
    </Proposition>
-   <Block xmlid="x18352" kind="Proof" position="1833\7" endposition="1840\3">
-    <Item xmlid="x18353" kind="Generalization" position="1834\7" endposition="1834\25">
-     <Generalization xmlid="x18354">
-      <Qualified-Segments xmlid="x18355">
-       <Explicitly-Qualified-Segment xmlid="x18356" position="1834\9">
-        <Variables xmlid="x18357">
-         <Variable xmlid="x18358" idnr="19" spelling="n" position="1834\9" varintro="itGeneralization" kind="Constant" serialnr="408" varnr="1"/>
+   <Block xmlid="x18354" kind="Proof" position="1833\7" endposition="1840\3">
+    <Item xmlid="x18355" kind="Generalization" position="1834\7" endposition="1834\25">
+     <Generalization xmlid="x18356">
+      <Qualified-Segments xmlid="x18357">
+       <Explicitly-Qualified-Segment xmlid="x18358" position="1834\9">
+        <Variables xmlid="x18359">
+         <Variable xmlid="x18360" idnr="19" spelling="n" position="1834\9" varintro="itGeneralization" kind="Constant" serialnr="408" varnr="1"/>
         </Variables>
-        <Clustered-Type xmlid="x18359" sort="Clustered-Type" position="1834\25">
-         <Adjective-Cluster xmlid="x18360">
-          <Attribute xmlid="x18361" nr="29" formatnr="53" patternnr="12" absolutepatternMMLId="ORDINAL1:8" spelling="zero" nonocc="true" sort="Adjective" constrnr="28" absoluteconstrMMLId="ORDINAL1:8" originalnr="0" position="1834\21">
-           <Arguments xmlid="x18362"/>
+        <Clustered-Type xmlid="x18361" sort="Clustered-Type" position="1834\25">
+         <Adjective-Cluster xmlid="x18362">
+          <Attribute xmlid="x18363" nr="29" formatnr="53" patternnr="12" absolutepatternMMLId="ORDINAL1:8" spelling="zero" nonocc="true" sort="Adjective" constrnr="28" absoluteconstrMMLId="ORDINAL1:8" originalnr="0" position="1834\21">
+           <Arguments xmlid="x18364"/>
           </Attribute>
          </Adjective-Cluster>
-         <Standard-Type xmlid="x18363" nr="12" formatnr="45" patternnr="11" absolutepatternMMLId="ORDINAL1:6" spelling="Nat" sort="Expandable-Type" position="1834\25">
-          <Arguments xmlid="x18364"/>
+         <Standard-Type xmlid="x18365" nr="12" formatnr="45" patternnr="11" absolutepatternMMLId="ORDINAL1:6" spelling="Nat" sort="Expandable-Type" position="1834\25">
+          <Arguments xmlid="x18366"/>
          </Standard-Type>
         </Clustered-Type>
        </Explicitly-Qualified-Segment>
       </Qualified-Segments>
      </Generalization>
     </Item>
-    <Item xmlid="x18365" kind="Regular-Statement" position="1835\2" endposition="1835\24">
-     <Regular-Statement xmlid="x18366">
-      <Proposition xmlid="x18367" position="1835\2">
-       <Label xmlid="x18368" idnr="22" spelling="A1" position="1835\2" serialnr="877" labelnr="41"/>
-       <Relation-Formula xmlid="x18369" nr="15" formatnr="99" patternnr="22" absolutepatternMMLId="XXREAL_0:1" leftargscount="1" spelling="&#x3C;=" sort="Relation-Formula" constrnr="24" absoluteconstrMMLId="XXREAL_0:1" originalnr="0" position="1835\10">
-        <Arguments xmlid="x18370">
-         <Infix-Term xmlid="x18371" nr="41" formatnr="66" patternnr="66" absolutepatternMMLId="NAT_1:1" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="159" absoluteconstrMMLId="NAT_1:1" originalnr="143" absoluteorigconstrMMLId="XCMPLX_0:2" position="1835\6">
-          <Arguments xmlid="x18372">
-           <Infix-Term xmlid="x18373" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1835\5">
-            <Arguments xmlid="x18374"/>
+    <Item xmlid="x18367" kind="Regular-Statement" position="1835\2" endposition="1835\24">
+     <Regular-Statement xmlid="x18368">
+      <Proposition xmlid="x18369" position="1835\2">
+       <Label xmlid="x18370" idnr="22" spelling="A1" position="1835\2" serialnr="877" labelnr="41"/>
+       <Relation-Formula xmlid="x18371" nr="15" formatnr="99" patternnr="22" absolutepatternMMLId="XXREAL_0:1" leftargscount="1" spelling="&#x3C;=" sort="Relation-Formula" constrnr="24" absoluteconstrMMLId="XXREAL_0:1" originalnr="0" position="1835\10">
+        <Arguments xmlid="x18372">
+         <Infix-Term xmlid="x18373" nr="41" formatnr="66" patternnr="66" absolutepatternMMLId="NAT_1:1" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="159" absoluteconstrMMLId="NAT_1:1" originalnr="143" absoluteorigconstrMMLId="XCMPLX_0:2" position="1835\6">
+          <Arguments xmlid="x18374">
+           <Infix-Term xmlid="x18375" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1835\5">
+            <Arguments xmlid="x18376"/>
            </Infix-Term>
-           <Numeral-Term xmlid="x18375" number="1" sort="Numeral-Term" position="1835\7"/>
+           <Numeral-Term xmlid="x18377" number="1" sort="Numeral-Term" position="1835\7"/>
           </Arguments>
          </Infix-Term>
-         <Simple-Term xmlid="x18376" idnr="19" spelling="n" position="1835\12" origin="Constant" sort="Constant" serialnr="408" varnr="1"/>
+         <Simple-Term xmlid="x18378" idnr="19" spelling="n" position="1835\12" origin="Constant" sort="Constant" serialnr="408" varnr="1"/>
         </Arguments>
        </Relation-Formula>
       </Proposition>
-      <Straightforward-Justification xmlid="x18377" position="1835\15">
-       <Theorem-Reference xmlid="x18378" position="1835\24" nr="1" MMLId="NAT_1:13"/>
+      <Straightforward-Justification xmlid="x18379" position="1835\15">
+       <Theorem-Reference xmlid="x18380" position="1835\24" nr="1" MMLId="NAT_1:13"/>
       </Straightforward-Justification>
      </Regular-Statement>
     </Item>
-    <Item xmlid="x18379" kind="Regular-Statement" position="1836\10" endposition="1836\34">
-     <Regular-Statement xmlid="x18380">
-      <Proposition xmlid="x18381" position="1836\10">
-       <Label xmlid="x18382" idnr="0" spelling="" position="1836\10" serialnr="878" labelnr="0"/>
-       <Relation-Formula xmlid="x18383" nr="15" formatnr="99" patternnr="22" absolutepatternMMLId="XXREAL_0:1" leftargscount="1" spelling="&#x3C;=" sort="Relation-Formula" constrnr="24" absoluteconstrMMLId="XXREAL_0:1" originalnr="0" position="1836\17">
-        <Arguments xmlid="x18384">
-         <Infix-Term xmlid="x18385" nr="26" formatnr="69" patternnr="57" absolutepatternMMLId="XCMPLX_0:6" leftargscount="1" spelling="-" sort="Functor-Term" constrnr="147" absoluteconstrMMLId="XCMPLX_0:6" originalnr="0" position="1836\13">
-          <Arguments xmlid="x18386">
-           <Infix-Term xmlid="x18387" nr="41" formatnr="66" patternnr="66" absolutepatternMMLId="NAT_1:1" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="159" absoluteconstrMMLId="NAT_1:1" originalnr="143" absoluteorigconstrMMLId="XCMPLX_0:2" position="1836\11">
-            <Arguments xmlid="x18388">
-             <Infix-Term xmlid="x18389" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1836\10">
-              <Arguments xmlid="x18390"/>
+    <Item xmlid="x18381" kind="Regular-Statement" position="1836\10" endposition="1836\34">
+     <Regular-Statement xmlid="x18382">
+      <Proposition xmlid="x18383" position="1836\10">
+       <Label xmlid="x18384" idnr="0" spelling="" position="1836\10" serialnr="878" labelnr="0"/>
+       <Relation-Formula xmlid="x18385" nr="15" formatnr="99" patternnr="22" absolutepatternMMLId="XXREAL_0:1" leftargscount="1" spelling="&#x3C;=" sort="Relation-Formula" constrnr="24" absoluteconstrMMLId="XXREAL_0:1" originalnr="0" position="1836\17">
+        <Arguments xmlid="x18386">
+         <Infix-Term xmlid="x18387" nr="26" formatnr="69" patternnr="57" absolutepatternMMLId="XCMPLX_0:6" leftargscount="1" spelling="-" sort="Functor-Term" constrnr="147" absoluteconstrMMLId="XCMPLX_0:6" originalnr="0" position="1836\13">
+          <Arguments xmlid="x18388">
+           <Infix-Term xmlid="x18389" nr="41" formatnr="66" patternnr="66" absolutepatternMMLId="NAT_1:1" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="159" absoluteconstrMMLId="NAT_1:1" originalnr="143" absoluteorigconstrMMLId="XCMPLX_0:2" position="1836\11">
+            <Arguments xmlid="x18390">
+             <Infix-Term xmlid="x18391" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="1836\10">
+              <Arguments xmlid="x18392"/>
              </Infix-Term>
-             <Numeral-Term xmlid="x18391" number="1" sort="Numeral-Term" position="1836\12"/>
+             <Numeral-Term xmlid="x18393" number="1" sort="Numeral-Term" position="1836\12"/>
             </Arguments>
            </Infix-Term>
-           <Numeral-Term xmlid="x18392" number="1" sort="Numeral-Term" position="1836\14"/>
+           <Numeral-Term xmlid="x18394" number="1" sort="Numeral-Term" position="1836\14"/>
           </Arguments>
          </Infix-Term>
-         <Infix-Term xmlid="x18393" nr="26" formatnr="69" patternnr="57" absolutepatternMMLId="XCMPLX_0:6" leftargscount="1" spelling="-" sort="Functor-Term" constrnr="147" absoluteconstrMMLId="XCMPLX_0:6" originalnr="0" position="1836\20">
-          <Arguments xmlid="x18394">
-           <Simple-Term xmlid="x18395" idnr="19" spelling="n" position="1836\19" origin="Constant" sort="Constant" serialnr="408" varnr="1"/>
-           <Numeral-Term xmlid="x18396" number="1" sort="Numeral-Term" position="1836\21"/>
+         <Infix-Term xmlid="x18395" nr="26" formatnr="69" patternnr="57" absolutepatternMMLId="XCMPLX_0:6" leftargscount="1" spelling="-" sort="Functor-Term" constrnr="147" absoluteconstrMMLId="XCMPLX_0:6" originalnr="0" position="1836\20">
+          <Arguments xmlid="x18396">
+           <Simple-Term xmlid="x18397" idnr="19" spelling="n" position="1836\19" origin="Constant" sort="Constant" serialnr="408" varnr="1"/>
+           <Numeral-Term xmlid="x18398" number="1" sort="Numeral-Term" position="1836\21"/>
           </Arguments>
          </Infix-Term>
         </Arguments>
        </Relation-Formula>
       </Proposition>
-      <Straightforward-Justification xmlid="x18397" position="1836\24">
-       <Link xmlid="x18398" position="1836\8" labelnr="0"/>
-       <Local-Reference xmlid="x18399" position="1836\8" idnr="0" spelling="" serialnr="877" labelnr="41"/>
-       <Theorem-Reference xmlid="x18400" position="1836\34" nr="13" MMLId="XREAL_1:9"/>
+      <Straightforward-Justification xmlid="x18399" position="1836\24">
+       <Link xmlid="x18400" position="1836\8" labelnr="0"/>
+       <Local-Reference xmlid="x18401" position="1836\8" idnr="0" spelling="" serialnr="877" labelnr="41"/>
+       <Theorem-Reference xmlid="x18402" position="1836\34" nr="13" MMLId="XREAL_1:9"/>
       </Straightforward-Justification>
      </Regular-Statement>
     </Item>
-    <Item xmlid="x18401" kind="Regular-Statement" position="1837\10" endposition="1837\26">
-     <Regular-Statement xmlid="x18402">
-      <Proposition xmlid="x18403" position="1837\10">
-       <Label xmlid="x18404" idnr="0" spelling="" position="1837\10" serialnr="879" labelnr="0"/>
-       <Relation-Formula xmlid="x18405" nr="3" formatnr="6" patternnr="5" absolutepatternMMLId="TARSKI:2" leftargscount="1" spelling="in" sort="Relation-Formula" constrnr="17" absoluteconstrMMLId="TARSKI:2" originalnr="2" absoluteorigconstrMMLId="HIDDEN:2" position="1837\15">
-        <Arguments xmlid="x18406">
-         <Infix-Term xmlid="x18407" nr="26" formatnr="69" patternnr="57" absolutepatternMMLId="XCMPLX_0:6" leftargscount="1" spelling="-" sort="Functor-Term" constrnr="147" absoluteconstrMMLId="XCMPLX_0:6" originalnr="0" position="1837\11">
-          <Arguments xmlid="x18408">
-           <Simple-Term xmlid="x18409" idnr="19" spelling="n" position="1837\10" origin="Constant" sort="Constant" serialnr="408" varnr="1"/>
-           <Numeral-Term xmlid="x18410" number="1" sort="Numeral-Term" position="1837\12"/>
+    <Item xmlid="x18403" kind="Regular-Statement" position="1837\10" endposition="1837\26">
+     <Regular-Statement xmlid="x18404">
+      <Proposition xmlid="x18405" position="1837\10">
+       <Label xmlid="x18406" idnr="0" spelling="" position="1837\10" serialnr="879" labelnr="0"/>
+       <Relation-Formula xmlid="x18407" nr="3" formatnr="6" patternnr="5" absolutepatternMMLId="TARSKI:2" leftargscount="1" spelling="in" sort="Relation-Formula" constrnr="17" absoluteconstrMMLId="TARSKI:2" originalnr="2" absoluteorigconstrMMLId="HIDDEN:2" position="1837\15">
+        <Arguments xmlid="x18408">
+         <Infix-Term xmlid="x18409" nr="26" formatnr="69" patternnr="57" absolutepatternMMLId="XCMPLX_0:6" leftargscount="1" spelling="-" sort="Functor-Term" constrnr="147" absoluteconstrMMLId="XCMPLX_0:6" originalnr="0" position="1837\11">
+          <Arguments xmlid="x18410">
+           <Simple-Term xmlid="x18411" idnr="19" spelling="n" position="1837\10" origin="Constant" sort="Constant" serialnr="408" varnr="1"/>
+           <Numeral-Term xmlid="x18412" number="1" sort="Numeral-Term" position="1837\12"/>
           </Arguments>
          </Infix-Term>
-         <Infix-Term xmlid="x18411" nr="1" formatnr="70" patternnr="40" absolutepatternMMLId="NUMBERS:1" leftargscount="0" spelling="NAT" sort="Functor-Term" constrnr="101" absoluteconstrMMLId="ORDINAL1:4" originalnr="0" position="1837\19">
-          <Arguments xmlid="x18412"/>
+         <Infix-Term xmlid="x18413" nr="1" formatnr="70" patternnr="40" absolutepatternMMLId="NUMBERS:1" leftargscount="0" spelling="NAT" sort="Functor-Term" constrnr="101" absoluteconstrMMLId="ORDINAL1:4" originalnr="0" position="1837\19">
+          <Arguments xmlid="x18414"/>
          </Infix-Term>
         </Arguments>
        </Relation-Formula>
       </Proposition>
-      <Straightforward-Justification xmlid="x18413" position="1837\22">
-       <Link xmlid="x18414" position="1837\8" labelnr="0"/>
-       <Local-Reference xmlid="x18415" position="1837\8" idnr="0" spelling="" serialnr="878" labelnr="41"/>
-       <Local-Reference xmlid="x18416" position="1837\26" idnr="65" spelling="Th3" serialnr="184" labelnr="7"/>
+      <Straightforward-Justification xmlid="x18415" position="1837\22">
+       <Link xmlid="x18416" position="1837\8" labelnr="0"/>
+       <Local-Reference xmlid="x18417" position="1837\8" idnr="0" spelling="" serialnr="878" labelnr="41"/>
+       <Local-Reference xmlid="x18418" position="1837\26" idnr="65" spelling="Th3" serialnr="184" labelnr="7"/>
       </Straightforward-Justification>
      </Regular-Statement>
     </Item>
-    <Item xmlid="x18417" kind="Conclusion" position="1838\11" endposition="1838\20">
-     <Conclusion xmlid="x18418">
-      <Proposition xmlid="x18419" position="1838\11">
-       <Label xmlid="x18420" idnr="0" spelling="" position="1838\11" serialnr="880" labelnr="0"/>
-       <Qualifying-Formula xmlid="x18421" position="1838\20">
-        <Infix-Term xmlid="x18422" nr="26" formatnr="69" patternnr="57" absolutepatternMMLId="XCMPLX_0:6" leftargscount="1" spelling="-" sort="Functor-Term" constrnr="147" absoluteconstrMMLId="XCMPLX_0:6" originalnr="0" position="1838\12">
-         <Arguments xmlid="x18423">
-          <Simple-Term xmlid="x18424" idnr="19" spelling="n" position="1838\11" origin="Constant" sort="Constant" serialnr="408" varnr="1"/>
-          <Numeral-Term xmlid="x18425" number="1" sort="Numeral-Term" position="1838\13"/>
+    <Item xmlid="x18419" kind="Conclusion" position="1838\11" endposition="1838\20">
+     <Conclusion xmlid="x18420">
+      <Proposition xmlid="x18421" position="1838\11">
+       <Label xmlid="x18422" idnr="0" spelling="" position="1838\11" serialnr="880" labelnr="0"/>
+       <Qualifying-Formula xmlid="x18423" position="1838\20">
+        <Infix-Term xmlid="x18424" nr="26" formatnr="69" patternnr="57" absolutepatternMMLId="XCMPLX_0:6" leftargscount="1" spelling="-" sort="Functor-Term" constrnr="147" absoluteconstrMMLId="XCMPLX_0:6" originalnr="0" position="1838\12">
+         <Arguments xmlid="x18425">
+          <Simple-Term xmlid="x18426" idnr="19" spelling="n" position="1838\11" origin="Constant" sort="Constant" serialnr="408" varnr="1"/>
+          <Numeral-Term xmlid="x18427" number="1" sort="Numeral-Term" position="1838\13"/>
          </Arguments>
         </Infix-Term>
-        <Standard-Type xmlid="x18426" nr="12" formatnr="45" patternnr="11" absolutepatternMMLId="ORDINAL1:6" spelling="Nat" sort="Expandable-Type" position="1838\20">
-         <Arguments xmlid="x18427"/>
+        <Standard-Type xmlid="x18428" nr="12" formatnr="45" patternnr="11" absolutepatternMMLId="ORDINAL1:6" spelling="Nat" sort="Expandable-Type" position="1838\20">
+         <Arguments xmlid="x18429"/>
         </Standard-Type>
        </Qualifying-Formula>
       </Proposition>
-      <Straightforward-Justification xmlid="x18428" position="1838\20">
-       <Link xmlid="x18429" position="1838\9" labelnr="0"/>
-       <Local-Reference xmlid="x18430" position="1838\9" idnr="0" spelling="" serialnr="879" labelnr="41"/>
+      <Straightforward-Justification xmlid="x18430" position="1838\20">
+       <Link xmlid="x18431" position="1838\9" labelnr="0"/>
+       <Local-Reference xmlid="x18432" position="1838\9" idnr="0" spelling="" serialnr="879" labelnr="41"/>
       </Straightforward-Justification>
      </Conclusion>
     </Item>
-    <Item xmlid="x18431" kind="Conclusion" position="1839\15" endposition="1839\21">
-     <Conclusion xmlid="x18432">
-      <Proposition xmlid="x18433" position="1839\15">
-       <Label xmlid="x18434" idnr="0" spelling="" position="1839\15" serialnr="881" labelnr="0"/>
-       <Thesis xmlid="x18435" position="1839\15"/>
+    <Item xmlid="x18433" kind="Conclusion" position="1839\15" endposition="1839\21">
+     <Conclusion xmlid="x18434">
+      <Proposition xmlid="x18435" position="1839\15">
+       <Label xmlid="x18436" idnr="0" spelling="" position="1839\15" serialnr="881" labelnr="0"/>
+       <Thesis xmlid="x18437" position="1839\15"/>
       </Proposition>
-      <Straightforward-Justification xmlid="x18436" position="1839\18">
-       <Local-Reference xmlid="x18437" position="1839\21" idnr="22" spelling="A1" serialnr="877" labelnr="41"/>
+      <Straightforward-Justification xmlid="x18438" position="1839\18">
+       <Local-Reference xmlid="x18439" position="1839\21" idnr="22" spelling="A1" serialnr="877" labelnr="41"/>
       </Straightforward-Justification>
      </Conclusion>
     </Item>

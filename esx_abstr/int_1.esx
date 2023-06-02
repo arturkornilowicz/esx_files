@@ -195,8 +195,8 @@
     <Item xmlid="x122" kind="Cluster" position="57\9" endposition="57\39">
      <Cluster xmlid="x123">
       <Conditional-Registration xmlid="x124" position="57\9">
-       <Adjective-Cluster xmlid="x125"/>
-       <Adjective-Cluster xmlid="x126">
+       <Adjective-Cluster xmlid="x125" role="antecedent"/>
+       <Adjective-Cluster xmlid="x126" role="consequent">
         <Attribute xmlid="x127" nr="25" formatnr="105" patternnr="18" absolutepatternMMLId="INT_1:1" spelling="integer" sort="Adjective" constrnr="47" absoluteconstrMMLId="INT_1:1" originalnr="0" position="57\20">
          <Arguments xmlid="x128"/>
         </Attribute>
@@ -380,12 +380,12 @@
     <Item xmlid="x232" kind="Cluster" position="73\9" endposition="73\39">
      <Cluster xmlid="x233">
       <Conditional-Registration xmlid="x234" position="73\9">
-       <Adjective-Cluster xmlid="x235">
+       <Adjective-Cluster xmlid="x235" role="antecedent">
         <Attribute xmlid="x236" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="73\17">
          <Arguments xmlid="x237"/>
         </Attribute>
        </Adjective-Cluster>
-       <Adjective-Cluster xmlid="x238">
+       <Adjective-Cluster xmlid="x238" role="consequent">
         <Attribute xmlid="x239" nr="25" formatnr="105" patternnr="18" absolutepatternMMLId="INT_1:1" spelling="integer" sort="Adjective" constrnr="47" absoluteconstrMMLId="INT_1:1" originalnr="0" position="73\28">
          <Arguments xmlid="x240"/>
         </Attribute>
@@ -405,12 +405,12 @@
     <Item xmlid="x246" kind="Cluster" position="77\9" endposition="77\36">
      <Cluster xmlid="x247">
       <Conditional-Registration xmlid="x248" position="77\9">
-       <Adjective-Cluster xmlid="x249">
+       <Adjective-Cluster xmlid="x249" role="antecedent">
         <Attribute xmlid="x250" nr="25" formatnr="105" patternnr="18" absolutepatternMMLId="INT_1:1" spelling="integer" sort="Adjective" constrnr="47" absoluteconstrMMLId="INT_1:1" originalnr="0" position="77\17">
          <Arguments xmlid="x251"/>
         </Attribute>
        </Adjective-Cluster>
-       <Adjective-Cluster xmlid="x252">
+       <Adjective-Cluster xmlid="x252" role="consequent">
         <Attribute xmlid="x253" nr="3" formatnr="89" patternnr="14" absolutepatternMMLId="XREAL_0:1" spelling="real" sort="Adjective" constrnr="46" absoluteconstrMMLId="XREAL_0:1" originalnr="0" position="77\25">
          <Arguments xmlid="x254"/>
         </Attribute>
@@ -6648,62 +6648,66 @@
     </Item>
     <Item xmlid="x4035" kind="Reduction" position="475\7" endposition="475\22">
      <Reduction xmlid="x4036">
-      <Infix-Term xmlid="x4037" nr="69" formatnr="39" patternnr="23" absolutepatternMMLId="SUBSET_1:10" leftargscount="0" spelling="In" sort="Functor-Term" constrnr="32" absoluteconstrMMLId="SUBSET_1:10" originalnr="0" position="475\10">
-       <Arguments xmlid="x4038">
-        <Simple-Term xmlid="x4039" idnr="21" spelling="i" position="475\12" origin="Constant" sort="Constant" serialnr="93" varnr="1"/>
-        <Infix-Term xmlid="x4040" bracketed="true" nr="5" formatnr="74" patternnr="79" absolutepatternMMLId="INT_1:1" leftargscount="0" spelling="INT" sort="Functor-Term" constrnr="129" absoluteconstrMMLId="NUMBERS:4" originalnr="0" position="475\16">
-         <Arguments xmlid="x4041"/>
-        </Infix-Term>
-       </Arguments>
-      </Infix-Term>
-      <Simple-Term xmlid="x4042" idnr="21" spelling="i" position="475\22" origin="Constant" sort="Constant" serialnr="93" varnr="1"/>
+      <Redex xmlid="x4037">
+       <Infix-Term xmlid="x4038" nr="69" formatnr="39" patternnr="23" absolutepatternMMLId="SUBSET_1:10" leftargscount="0" spelling="In" sort="Functor-Term" constrnr="32" absoluteconstrMMLId="SUBSET_1:10" originalnr="0" position="475\10">
+        <Arguments xmlid="x4039">
+         <Simple-Term xmlid="x4040" idnr="21" spelling="i" position="475\12" origin="Constant" sort="Constant" serialnr="93" varnr="1"/>
+         <Infix-Term xmlid="x4041" bracketed="true" nr="5" formatnr="74" patternnr="79" absolutepatternMMLId="INT_1:1" leftargscount="0" spelling="INT" sort="Functor-Term" constrnr="129" absoluteconstrMMLId="NUMBERS:4" originalnr="0" position="475\16">
+          <Arguments xmlid="x4042"/>
+         </Infix-Term>
+        </Arguments>
+       </Infix-Term>
+      </Redex>
+      <Reduct xmlid="x4043">
+       <Simple-Term xmlid="x4044" idnr="21" spelling="i" position="475\22" origin="Constant" sort="Constant" serialnr="93" varnr="1"/>
+      </Reduct>
      </Reduction>
     </Item>
    </Block>
   </Definition-Item>
  </Item>
- <Item xmlid="x4043" kind="Definition-Item" position="478\10" endposition="482\3">
-  <Definition-Item xmlid="x4044">
-   <Block xmlid="x4045" kind="Definitional-Block" position="478\10" endposition="482\3">
-    <Item xmlid="x4046" kind="Loci-Declaration" position="478\14" endposition="478\26">
-     <Loci-Declaration xmlid="x4047">
-      <Qualified-Segments xmlid="x4048">
-       <Explicitly-Qualified-Segment xmlid="x4049" position="478\16">
-        <Variables xmlid="x4050">
-         <Variable xmlid="x4051" idnr="14" spelling="x" position="478\16" varintro="itLociDeclaration" kind="Constant" serialnr="94" varnr="1"/>
+ <Item xmlid="x4045" kind="Definition-Item" position="478\10" endposition="482\3">
+  <Definition-Item xmlid="x4046">
+   <Block xmlid="x4047" kind="Definitional-Block" position="478\10" endposition="482\3">
+    <Item xmlid="x4048" kind="Loci-Declaration" position="478\14" endposition="478\26">
+     <Loci-Declaration xmlid="x4049">
+      <Qualified-Segments xmlid="x4050">
+       <Explicitly-Qualified-Segment xmlid="x4051" position="478\16">
+        <Variables xmlid="x4052">
+         <Variable xmlid="x4053" idnr="14" spelling="x" position="478\16" varintro="itLociDeclaration" kind="Constant" serialnr="94" varnr="1"/>
         </Variables>
-        <Standard-Type xmlid="x4052" nr="8" formatnr="40" patternnr="6" absolutepatternMMLId="ORDINAL1:1" spelling="Number" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="478\26">
-         <Arguments xmlid="x4053"/>
+        <Standard-Type xmlid="x4054" nr="8" formatnr="40" patternnr="6" absolutepatternMMLId="ORDINAL1:1" spelling="Number" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="478\26">
+         <Arguments xmlid="x4055"/>
         </Standard-Type>
        </Explicitly-Qualified-Segment>
       </Qualified-Segments>
      </Loci-Declaration>
     </Item>
-    <Item xmlid="x4054" kind="Attribute-Definition" position="479\5" endposition="481\23">
-     <Attribute-Definition xmlid="x4055" MMLId="INT_1:11">
-      <Redefine xmlid="x4056" occurs="false"/>
-      <Attribute-Pattern xmlid="x4057" formatdes="V26[0(1)1]" formatnr="114" spelling="dim-like" position="479\19" patternnr="19" absolutepatternMMLId="INT_1:2" constr="V48" absoluteconstrMMLId="INT_1:2" origconstrnr="0" arity="1">
-       <Locus xmlid="x4058" idnr="14" varidkind="Identifier" spelling="x" position="478\16" origin="Constant" kind="Constant" serialnr="94" varnr="1"/>
-       <Loci xmlid="x4059"/>
+    <Item xmlid="x4056" kind="Attribute-Definition" position="479\5" endposition="481\23">
+     <Attribute-Definition xmlid="x4057" MMLId="INT_1:11">
+      <Redefine xmlid="x4058" occurs="false"/>
+      <Attribute-Pattern xmlid="x4059" formatdes="V26[0(1)1]" formatnr="114" spelling="dim-like" position="479\19" patternnr="19" absolutepatternMMLId="INT_1:2" constr="V48" absoluteconstrMMLId="INT_1:2" origconstrnr="0" arity="1">
+       <Locus xmlid="x4060" idnr="14" varidkind="Identifier" spelling="x" position="478\16" origin="Constant" kind="Constant" serialnr="94" varnr="1"/>
+       <Loci xmlid="x4061"/>
       </Attribute-Pattern>
-      <Definiens xmlid="x4060" position="479\25" kind="Simple-Definiens" shape="Formula-Expression">
-       <Label xmlid="x4061" idnr="0" spelling="" position="481\2" serialnr="122" labelnr="0"/>
-       <Disjunctive-Formula xmlid="x4062" position="481\10">
-        <Relation-Formula xmlid="x4063" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="481\4">
-         <Arguments xmlid="x4064">
-          <Simple-Term xmlid="x4065" idnr="14" spelling="x" position="481\2" origin="Constant" sort="Constant" serialnr="94" varnr="1"/>
-          <Infix-Term xmlid="x4066" nr="26" formatnr="85" patternnr="55" absolutepatternMMLId="XCMPLX_0:4" leftargscount="0" spelling="-" sort="Functor-Term" constrnr="145" absoluteconstrMMLId="XCMPLX_0:4" originalnr="0" position="481\6">
-           <Arguments xmlid="x4067">
-            <Numeral-Term xmlid="x4068" number="1" sort="Numeral-Term" position="481\7"/>
+      <Definiens xmlid="x4062" position="479\25" kind="Simple-Definiens" shape="Formula-Expression">
+       <Label xmlid="x4063" idnr="0" spelling="" position="481\2" serialnr="122" labelnr="0"/>
+       <Disjunctive-Formula xmlid="x4064" position="481\10">
+        <Relation-Formula xmlid="x4065" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="481\4">
+         <Arguments xmlid="x4066">
+          <Simple-Term xmlid="x4067" idnr="14" spelling="x" position="481\2" origin="Constant" sort="Constant" serialnr="94" varnr="1"/>
+          <Infix-Term xmlid="x4068" nr="26" formatnr="85" patternnr="55" absolutepatternMMLId="XCMPLX_0:4" leftargscount="0" spelling="-" sort="Functor-Term" constrnr="145" absoluteconstrMMLId="XCMPLX_0:4" originalnr="0" position="481\6">
+           <Arguments xmlid="x4069">
+            <Numeral-Term xmlid="x4070" number="1" sort="Numeral-Term" position="481\7"/>
            </Arguments>
           </Infix-Term>
          </Arguments>
         </Relation-Formula>
-        <Multi-Attributive-Formula xmlid="x4069" position="481\15">
-         <Simple-Term xmlid="x4070" idnr="14" spelling="x" position="481\12" origin="Constant" sort="Constant" serialnr="94" varnr="1"/>
-         <Adjective-Cluster xmlid="x4071">
-          <Attribute xmlid="x4072" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="481\23">
-           <Arguments xmlid="x4073"/>
+        <Multi-Attributive-Formula xmlid="x4071" position="481\15">
+         <Simple-Term xmlid="x4072" idnr="14" spelling="x" position="481\12" origin="Constant" sort="Constant" serialnr="94" varnr="1"/>
+         <Adjective-Cluster xmlid="x4073">
+          <Attribute xmlid="x4074" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="481\23">
+           <Arguments xmlid="x4075"/>
           </Attribute>
          </Adjective-Cluster>
         </Multi-Attributive-Formula>
@@ -6714,62 +6718,62 @@
    </Block>
   </Definition-Item>
  </Item>
- <Item xmlid="x4074" kind="Definition-Item" position="484\12" endposition="488\3">
-  <Definition-Item xmlid="x4075">
-   <Block xmlid="x4076" kind="Registration-Block" position="484\12" endposition="488\3">
-    <Item xmlid="x4077" kind="Cluster" position="485\8" endposition="485\39">
-     <Cluster xmlid="x4078">
-      <Conditional-Registration xmlid="x4079" position="485\8">
-       <Adjective-Cluster xmlid="x4080">
-        <Attribute xmlid="x4081" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="485\16">
-         <Arguments xmlid="x4082"/>
+ <Item xmlid="x4076" kind="Definition-Item" position="484\12" endposition="488\3">
+  <Definition-Item xmlid="x4077">
+   <Block xmlid="x4078" kind="Registration-Block" position="484\12" endposition="488\3">
+    <Item xmlid="x4079" kind="Cluster" position="485\8" endposition="485\39">
+     <Cluster xmlid="x4080">
+      <Conditional-Registration xmlid="x4081" position="485\8">
+       <Adjective-Cluster xmlid="x4082" role="antecedent">
+        <Attribute xmlid="x4083" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="485\16">
+         <Arguments xmlid="x4084"/>
         </Attribute>
        </Adjective-Cluster>
-       <Adjective-Cluster xmlid="x4083">
-        <Attribute xmlid="x4084" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="485\28">
-         <Arguments xmlid="x4085"/>
+       <Adjective-Cluster xmlid="x4085" role="consequent">
+        <Attribute xmlid="x4086" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="485\28">
+         <Arguments xmlid="x4087"/>
         </Attribute>
        </Adjective-Cluster>
-       <Standard-Type xmlid="x4086" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="485\39">
-        <Arguments xmlid="x4087"/>
+       <Standard-Type xmlid="x4088" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="485\39">
+        <Arguments xmlid="x4089"/>
        </Standard-Type>
       </Conditional-Registration>
      </Cluster>
     </Item>
-    <Item xmlid="x4088" kind="Cluster" position="486\8" endposition="486\39">
-     <Cluster xmlid="x4089">
-      <Conditional-Registration xmlid="x4090" position="486\8">
-       <Adjective-Cluster xmlid="x4091">
-        <Attribute xmlid="x4092" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="486\17">
-         <Arguments xmlid="x4093"/>
+    <Item xmlid="x4090" kind="Cluster" position="486\8" endposition="486\39">
+     <Cluster xmlid="x4091">
+      <Conditional-Registration xmlid="x4092" position="486\8">
+       <Adjective-Cluster xmlid="x4093" role="antecedent">
+        <Attribute xmlid="x4094" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="486\17">
+         <Arguments xmlid="x4095"/>
         </Attribute>
        </Adjective-Cluster>
-       <Adjective-Cluster xmlid="x4094">
-        <Attribute xmlid="x4095" nr="25" formatnr="105" patternnr="18" absolutepatternMMLId="INT_1:1" spelling="integer" sort="Adjective" constrnr="47" absoluteconstrMMLId="INT_1:1" originalnr="0" position="486\28">
-         <Arguments xmlid="x4096"/>
+       <Adjective-Cluster xmlid="x4096" role="consequent">
+        <Attribute xmlid="x4097" nr="25" formatnr="105" patternnr="18" absolutepatternMMLId="INT_1:1" spelling="integer" sort="Adjective" constrnr="47" absoluteconstrMMLId="INT_1:1" originalnr="0" position="486\28">
+         <Arguments xmlid="x4098"/>
         </Attribute>
        </Adjective-Cluster>
-       <Standard-Type xmlid="x4097" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="486\39">
-        <Arguments xmlid="x4098"/>
+       <Standard-Type xmlid="x4099" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="486\39">
+        <Arguments xmlid="x4100"/>
        </Standard-Type>
       </Conditional-Registration>
      </Cluster>
     </Item>
-    <Item xmlid="x4099" kind="Cluster" position="487\8" endposition="487\34">
-     <Cluster xmlid="x4100">
-      <Functorial-Registration xmlid="x4101" position="487\8">
-       <Infix-Term xmlid="x4102" nr="26" formatnr="85" patternnr="55" absolutepatternMMLId="XCMPLX_0:4" leftargscount="0" spelling="-" sort="Functor-Term" constrnr="145" absoluteconstrMMLId="XCMPLX_0:4" originalnr="0" position="487\10">
-        <Arguments xmlid="x4103">
-         <Numeral-Term xmlid="x4104" number="1" sort="Numeral-Term" position="487\11"/>
+    <Item xmlid="x4101" kind="Cluster" position="487\8" endposition="487\34">
+     <Cluster xmlid="x4102">
+      <Functorial-Registration xmlid="x4103" position="487\8">
+       <Infix-Term xmlid="x4104" nr="26" formatnr="85" patternnr="55" absolutepatternMMLId="XCMPLX_0:4" leftargscount="0" spelling="-" sort="Functor-Term" constrnr="145" absoluteconstrMMLId="XCMPLX_0:4" originalnr="0" position="487\10">
+        <Arguments xmlid="x4105">
+         <Numeral-Term xmlid="x4106" number="1" sort="Numeral-Term" position="487\11"/>
         </Arguments>
        </Infix-Term>
-       <Adjective-Cluster xmlid="x4105">
-        <Attribute xmlid="x4106" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="487\23">
-         <Arguments xmlid="x4107"/>
+       <Adjective-Cluster xmlid="x4107">
+        <Attribute xmlid="x4108" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="487\23">
+         <Arguments xmlid="x4109"/>
         </Attribute>
        </Adjective-Cluster>
-       <Standard-Type xmlid="x4108" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="487\34">
-        <Arguments xmlid="x4109"/>
+       <Standard-Type xmlid="x4110" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="487\34">
+        <Arguments xmlid="x4111"/>
        </Standard-Type>
       </Functorial-Registration>
      </Cluster>
@@ -6777,19 +6781,19 @@
    </Block>
   </Definition-Item>
  </Item>
- <Item xmlid="x4110" kind="Definition-Item" position="490\12" endposition="492\3">
-  <Definition-Item xmlid="x4111">
-   <Block xmlid="x4112" kind="Registration-Block" position="490\12" endposition="492\3">
-    <Item xmlid="x4113" kind="Cluster" position="491\8" endposition="491\25">
-     <Cluster xmlid="x4114">
-      <Existential-Registration xmlid="x4115" position="491\8">
-       <Adjective-Cluster xmlid="x4116">
-        <Attribute xmlid="x4117" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="491\17">
-         <Arguments xmlid="x4118"/>
+ <Item xmlid="x4112" kind="Definition-Item" position="490\12" endposition="492\3">
+  <Definition-Item xmlid="x4113">
+   <Block xmlid="x4114" kind="Registration-Block" position="490\12" endposition="492\3">
+    <Item xmlid="x4115" kind="Cluster" position="491\8" endposition="491\25">
+     <Cluster xmlid="x4116">
+      <Existential-Registration xmlid="x4117" position="491\8">
+       <Adjective-Cluster xmlid="x4118">
+        <Attribute xmlid="x4119" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="491\17">
+         <Arguments xmlid="x4120"/>
         </Attribute>
        </Adjective-Cluster>
-       <Standard-Type xmlid="x4119" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="491\25">
-        <Arguments xmlid="x4120"/>
+       <Standard-Type xmlid="x4121" nr="1" formatnr="3" patternnr="2" absolutepatternMMLId="HIDDEN:2" spelling="set" sort="Mode" constrnr="2" absoluteconstrMMLId="HIDDEN:2" originalnr="0" position="491\25">
+        <Arguments xmlid="x4122"/>
        </Standard-Type>
       </Existential-Registration>
      </Cluster>
@@ -6797,42 +6801,42 @@
    </Block>
   </Definition-Item>
  </Item>
- <Item xmlid="x4121" kind="Definition-Item" position="494\12" endposition="496\3">
-  <Definition-Item xmlid="x4122">
-   <Block xmlid="x4123" kind="Registration-Block" position="494\12" endposition="496\3">
-    <Item xmlid="x4124" kind="Loci-Declaration" position="494\16" endposition="494\37">
-     <Loci-Declaration xmlid="x4125">
-      <Qualified-Segments xmlid="x4126">
-       <Explicitly-Qualified-Segment xmlid="x4127" position="494\18">
-        <Variables xmlid="x4128">
-         <Variable xmlid="x4129" idnr="55" spelling="d" position="494\18" varintro="itLociDeclaration" kind="Constant" serialnr="95" varnr="1"/>
+ <Item xmlid="x4123" kind="Definition-Item" position="494\12" endposition="496\3">
+  <Definition-Item xmlid="x4124">
+   <Block xmlid="x4125" kind="Registration-Block" position="494\12" endposition="496\3">
+    <Item xmlid="x4126" kind="Loci-Declaration" position="494\16" endposition="494\37">
+     <Loci-Declaration xmlid="x4127">
+      <Qualified-Segments xmlid="x4128">
+       <Explicitly-Qualified-Segment xmlid="x4129" position="494\18">
+        <Variables xmlid="x4130">
+         <Variable xmlid="x4131" idnr="55" spelling="d" position="494\18" varintro="itLociDeclaration" kind="Constant" serialnr="95" varnr="1"/>
         </Variables>
-        <Clustered-Type xmlid="x4130" sort="Clustered-Type" position="494\37">
-         <Adjective-Cluster xmlid="x4131">
-          <Attribute xmlid="x4132" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="494\30">
-           <Arguments xmlid="x4133"/>
+        <Clustered-Type xmlid="x4132" sort="Clustered-Type" position="494\37">
+         <Adjective-Cluster xmlid="x4133">
+          <Attribute xmlid="x4134" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="494\30">
+           <Arguments xmlid="x4135"/>
           </Attribute>
          </Adjective-Cluster>
-         <Standard-Type xmlid="x4134" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="494\37">
-          <Arguments xmlid="x4135"/>
+         <Standard-Type xmlid="x4136" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="494\37">
+          <Arguments xmlid="x4137"/>
          </Standard-Type>
         </Clustered-Type>
        </Explicitly-Qualified-Segment>
       </Qualified-Segments>
      </Loci-Declaration>
     </Item>
-    <Item xmlid="x4136" kind="Cluster" position="495\8" endposition="495\25">
-     <Cluster xmlid="x4137">
-      <Functorial-Registration xmlid="x4138" position="495\8">
-       <Infix-Term xmlid="x4139" nr="41" formatnr="66" patternnr="53" absolutepatternMMLId="XCMPLX_0:2" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="143" absoluteconstrMMLId="XCMPLX_0:2" originalnr="0" position="495\12">
-        <Arguments xmlid="x4140">
-         <Simple-Term xmlid="x4141" idnr="55" spelling="d" position="495\10" origin="Constant" sort="Constant" serialnr="95" varnr="1"/>
-         <Numeral-Term xmlid="x4142" number="1" sort="Numeral-Term" position="495\14"/>
+    <Item xmlid="x4138" kind="Cluster" position="495\8" endposition="495\25">
+     <Cluster xmlid="x4139">
+      <Functorial-Registration xmlid="x4140" position="495\8">
+       <Infix-Term xmlid="x4141" nr="41" formatnr="66" patternnr="53" absolutepatternMMLId="XCMPLX_0:2" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="143" absoluteconstrMMLId="XCMPLX_0:2" originalnr="0" position="495\12">
+        <Arguments xmlid="x4142">
+         <Simple-Term xmlid="x4143" idnr="55" spelling="d" position="495\10" origin="Constant" sort="Constant" serialnr="95" varnr="1"/>
+         <Numeral-Term xmlid="x4144" number="1" sort="Numeral-Term" position="495\14"/>
         </Arguments>
        </Infix-Term>
-       <Adjective-Cluster xmlid="x4143">
-        <Attribute xmlid="x4144" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="495\25">
-         <Arguments xmlid="x4145"/>
+       <Adjective-Cluster xmlid="x4145">
+        <Attribute xmlid="x4146" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="495\25">
+         <Arguments xmlid="x4147"/>
         </Attribute>
        </Adjective-Cluster>
       </Functorial-Registration>
@@ -6841,60 +6845,60 @@
    </Block>
   </Definition-Item>
  </Item>
- <Item xmlid="x4146" kind="Definition-Item" position="498\12" endposition="500\3">
-  <Definition-Item xmlid="x4147">
-   <Block xmlid="x4148" kind="Registration-Block" position="498\12" endposition="500\3">
-    <Item xmlid="x4149" kind="Loci-Declaration" position="498\16" endposition="498\67">
-     <Loci-Declaration xmlid="x4150">
-      <Qualified-Segments xmlid="x4151">
-       <Explicitly-Qualified-Segment xmlid="x4152" position="498\18">
-        <Variables xmlid="x4153">
-         <Variable xmlid="x4154" idnr="17" spelling="k" position="498\18" varintro="itLociDeclaration" kind="Constant" serialnr="96" varnr="1"/>
+ <Item xmlid="x4148" kind="Definition-Item" position="498\12" endposition="500\3">
+  <Definition-Item xmlid="x4149">
+   <Block xmlid="x4150" kind="Registration-Block" position="498\12" endposition="500\3">
+    <Item xmlid="x4151" kind="Loci-Declaration" position="498\16" endposition="498\67">
+     <Loci-Declaration xmlid="x4152">
+      <Qualified-Segments xmlid="x4153">
+       <Explicitly-Qualified-Segment xmlid="x4154" position="498\18">
+        <Variables xmlid="x4155">
+         <Variable xmlid="x4156" idnr="17" spelling="k" position="498\18" varintro="itLociDeclaration" kind="Constant" serialnr="96" varnr="1"/>
         </Variables>
-        <Clustered-Type xmlid="x4155" sort="Clustered-Type" position="498\37">
-         <Adjective-Cluster xmlid="x4156">
-          <Attribute xmlid="x4157" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="498\30">
-           <Arguments xmlid="x4158"/>
+        <Clustered-Type xmlid="x4157" sort="Clustered-Type" position="498\37">
+         <Adjective-Cluster xmlid="x4158">
+          <Attribute xmlid="x4159" nr="26" formatnr="114" patternnr="19" absolutepatternMMLId="INT_1:2" spelling="dim-like" sort="Adjective" constrnr="48" absoluteconstrMMLId="INT_1:2" originalnr="0" position="498\30">
+           <Arguments xmlid="x4160"/>
           </Attribute>
          </Adjective-Cluster>
-         <Standard-Type xmlid="x4159" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="498\37">
-          <Arguments xmlid="x4160"/>
+         <Standard-Type xmlid="x4161" nr="2" formatnr="2" patternnr="1" absolutepatternMMLId="HIDDEN:1" spelling="object" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="498\37">
+          <Arguments xmlid="x4162"/>
          </Standard-Type>
         </Clustered-Type>
        </Explicitly-Qualified-Segment>
-       <Explicitly-Qualified-Segment xmlid="x4161" position="498\40">
-        <Variables xmlid="x4162">
-         <Variable xmlid="x4163" idnr="19" spelling="n" position="498\40" varintro="itLociDeclaration" kind="Constant" serialnr="97" varnr="2"/>
+       <Explicitly-Qualified-Segment xmlid="x4163" position="498\40">
+        <Variables xmlid="x4164">
+         <Variable xmlid="x4165" idnr="19" spelling="n" position="498\40" varintro="itLociDeclaration" kind="Constant" serialnr="97" varnr="2"/>
         </Variables>
-        <Clustered-Type xmlid="x4164" sort="Clustered-Type" position="498\67">
-         <Adjective-Cluster xmlid="x4165">
-          <Attribute xmlid="x4166" nr="29" formatnr="53" patternnr="12" absolutepatternMMLId="ORDINAL1:8" spelling="zero" nonocc="true" sort="Adjective" constrnr="28" absoluteconstrMMLId="ORDINAL1:8" originalnr="0" position="498\52">
-           <Arguments xmlid="x4167"/>
-          </Attribute>
-          <Attribute xmlid="x4168" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="498\60">
+        <Clustered-Type xmlid="x4166" sort="Clustered-Type" position="498\67">
+         <Adjective-Cluster xmlid="x4167">
+          <Attribute xmlid="x4168" nr="29" formatnr="53" patternnr="12" absolutepatternMMLId="ORDINAL1:8" spelling="zero" nonocc="true" sort="Adjective" constrnr="28" absoluteconstrMMLId="ORDINAL1:8" originalnr="0" position="498\52">
            <Arguments xmlid="x4169"/>
           </Attribute>
+          <Attribute xmlid="x4170" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="498\60">
+           <Arguments xmlid="x4171"/>
+          </Attribute>
          </Adjective-Cluster>
-         <Standard-Type xmlid="x4170" nr="8" formatnr="40" patternnr="6" absolutepatternMMLId="ORDINAL1:1" spelling="Number" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="498\67">
-          <Arguments xmlid="x4171"/>
+         <Standard-Type xmlid="x4172" nr="8" formatnr="40" patternnr="6" absolutepatternMMLId="ORDINAL1:1" spelling="Number" sort="Mode" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="498\67">
+          <Arguments xmlid="x4173"/>
          </Standard-Type>
         </Clustered-Type>
        </Explicitly-Qualified-Segment>
       </Qualified-Segments>
      </Loci-Declaration>
     </Item>
-    <Item xmlid="x4172" kind="Cluster" position="499\8" endposition="499\23">
-     <Cluster xmlid="x4173">
-      <Functorial-Registration xmlid="x4174" position="499\8">
-       <Infix-Term xmlid="x4175" nr="41" formatnr="66" patternnr="53" absolutepatternMMLId="XCMPLX_0:2" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="143" absoluteconstrMMLId="XCMPLX_0:2" originalnr="0" position="499\11">
-        <Arguments xmlid="x4176">
-         <Simple-Term xmlid="x4177" idnr="17" spelling="k" position="499\10" origin="Constant" sort="Constant" serialnr="96" varnr="1"/>
-         <Simple-Term xmlid="x4178" idnr="19" spelling="n" position="499\12" origin="Constant" sort="Constant" serialnr="97" varnr="2"/>
+    <Item xmlid="x4174" kind="Cluster" position="499\8" endposition="499\23">
+     <Cluster xmlid="x4175">
+      <Functorial-Registration xmlid="x4176" position="499\8">
+       <Infix-Term xmlid="x4177" nr="41" formatnr="66" patternnr="53" absolutepatternMMLId="XCMPLX_0:2" leftargscount="1" spelling="&#x2B;" sort="Functor-Term" constrnr="143" absoluteconstrMMLId="XCMPLX_0:2" originalnr="0" position="499\11">
+        <Arguments xmlid="x4178">
+         <Simple-Term xmlid="x4179" idnr="17" spelling="k" position="499\10" origin="Constant" sort="Constant" serialnr="96" varnr="1"/>
+         <Simple-Term xmlid="x4180" idnr="19" spelling="n" position="499\12" origin="Constant" sort="Constant" serialnr="97" varnr="2"/>
         </Arguments>
        </Infix-Term>
-       <Adjective-Cluster xmlid="x4179">
-        <Attribute xmlid="x4180" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="499\23">
-         <Arguments xmlid="x4181"/>
+       <Adjective-Cluster xmlid="x4181">
+        <Attribute xmlid="x4182" nr="10" formatnr="52" patternnr="11" absolutepatternMMLId="ORDINAL1:7" spelling="natural" sort="Adjective" constrnr="27" absoluteconstrMMLId="ORDINAL1:7" originalnr="0" position="499\23">
+         <Arguments xmlid="x4183"/>
         </Attribute>
        </Adjective-Cluster>
       </Functorial-Registration>
@@ -6903,33 +6907,33 @@
    </Block>
   </Definition-Item>
  </Item>
- <Item xmlid="x4182" kind="Theorem-Item" position="502\7" endposition="503\39">
-  <Theorem-Item xmlid="x4183" MMLId="INT_1:73">
-   <Proposition xmlid="x4184" position="503\5">
-    <Label xmlid="x4185" idnr="0" spelling="" position="503\5" serialnr="128" labelnr="0"/>
-    <Universal-Quantifier-Formula xmlid="x4186" position="503\5">
-     <Variable-Segments xmlid="x4187">
-      <Explicitly-Qualified-Segment xmlid="x4188" position="503\5">
-       <Variables xmlid="x4189">
-        <Variable xmlid="x4190" idnr="21" spelling="i" position="503\7" varintro="Quantifier" kind="BoundVar" serialnr="98" varnr="1"/>
+ <Item xmlid="x4184" kind="Theorem-Item" position="502\7" endposition="503\39">
+  <Theorem-Item xmlid="x4185" MMLId="INT_1:73">
+   <Proposition xmlid="x4186" position="503\5">
+    <Label xmlid="x4187" idnr="0" spelling="" position="503\5" serialnr="128" labelnr="0"/>
+    <Universal-Quantifier-Formula xmlid="x4188" position="503\5">
+     <Variable-Segments xmlid="x4189">
+      <Explicitly-Qualified-Segment xmlid="x4190" position="503\5">
+       <Variables xmlid="x4191">
+        <Variable xmlid="x4192" idnr="21" spelling="i" position="503\7" varintro="Quantifier" kind="BoundVar" serialnr="98" varnr="1"/>
        </Variables>
-       <Standard-Type xmlid="x4191" nr="15" formatnr="106" patternnr="16" absolutepatternMMLId="INT_1:1" spelling="Integer" sort="Expandable-Type" position="503\21">
-        <Arguments xmlid="x4192"/>
+       <Standard-Type xmlid="x4193" nr="15" formatnr="106" patternnr="16" absolutepatternMMLId="INT_1:1" spelling="Integer" sort="Expandable-Type" position="503\21">
+        <Arguments xmlid="x4194"/>
        </Standard-Type>
       </Explicitly-Qualified-Segment>
      </Variable-Segments>
-     <Scope xmlid="x4193">
-      <Relation-Formula xmlid="x4194" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="503\31">
-       <Arguments xmlid="x4195">
-        <Infix-Term xmlid="x4196" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="503\29">
-         <Arguments xmlid="x4197"/>
+     <Scope xmlid="x4195">
+      <Relation-Formula xmlid="x4196" nr="1" formatnr="4" patternnr="1" absolutepatternMMLId="HIDDEN:1" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="503\31">
+       <Arguments xmlid="x4197">
+        <Infix-Term xmlid="x4198" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="503\29">
+         <Arguments xmlid="x4199"/>
         </Infix-Term>
-        <Infix-Term xmlid="x4198" nr="68" formatnr="113" patternnr="84" absolutepatternMMLId="INT_1:6" leftargscount="1" spelling="mod" sort="Functor-Term" constrnr="179" absoluteconstrMMLId="INT_1:5" originalnr="0" position="503\37">
-         <Arguments xmlid="x4199">
-          <Infix-Term xmlid="x4200" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="503\33">
-           <Arguments xmlid="x4201"/>
+        <Infix-Term xmlid="x4200" nr="68" formatnr="113" patternnr="84" absolutepatternMMLId="INT_1:6" leftargscount="1" spelling="mod" sort="Functor-Term" constrnr="179" absoluteconstrMMLId="INT_1:5" originalnr="0" position="503\37">
+         <Arguments xmlid="x4201">
+          <Infix-Term xmlid="x4202" nr="15" formatnr="58" patternnr="45" absolutepatternMMLId="NUMBERS:6" leftargscount="0" spelling="0" sort="Functor-Term" constrnr="130" absoluteconstrMMLId="NUMBERS:5" originalnr="102" absoluteorigconstrMMLId="ORDINAL1:5" position="503\33">
+           <Arguments xmlid="x4203"/>
           </Infix-Term>
-          <Simple-Term xmlid="x4202" idnr="21" spelling="i" position="503\39" origin="BoundVar" sort="BoundVar" serialnr="98" varnr="1"/>
+          <Simple-Term xmlid="x4204" idnr="21" spelling="i" position="503\39" origin="BoundVar" sort="BoundVar" serialnr="98" varnr="1"/>
          </Arguments>
         </Infix-Term>
        </Arguments>
@@ -6937,55 +6941,55 @@
      </Scope>
     </Universal-Quantifier-Formula>
    </Proposition>
-   <Straightforward-Justification xmlid="x4203" position="503\39"/>
+   <Straightforward-Justification xmlid="x4205" position="503\39"/>
   </Theorem-Item>
  </Item>
- <Item xmlid="x4204" kind="Theorem-Item" position="505\7" endposition="506\52">
-  <Theorem-Item xmlid="x4205" MMLId="INT_1:74">
-   <Proposition xmlid="x4206" position="506\5">
-    <Label xmlid="x4207" idnr="0" spelling="" position="506\5" serialnr="129" labelnr="0"/>
-    <Universal-Quantifier-Formula xmlid="x4208" position="506\5">
-     <Variable-Segments xmlid="x4209">
-      <Explicitly-Qualified-Segment xmlid="x4210" position="506\5">
-       <Variables xmlid="x4211">
-        <Variable xmlid="x4212" idnr="19" spelling="n" position="506\7" varintro="Quantifier" kind="BoundVar" serialnr="100" varnr="1"/>
+ <Item xmlid="x4206" kind="Theorem-Item" position="505\7" endposition="506\52">
+  <Theorem-Item xmlid="x4207" MMLId="INT_1:74">
+   <Proposition xmlid="x4208" position="506\5">
+    <Label xmlid="x4209" idnr="0" spelling="" position="506\5" serialnr="129" labelnr="0"/>
+    <Universal-Quantifier-Formula xmlid="x4210" position="506\5">
+     <Variable-Segments xmlid="x4211">
+      <Explicitly-Qualified-Segment xmlid="x4212" position="506\5">
+       <Variables xmlid="x4213">
+        <Variable xmlid="x4214" idnr="19" spelling="n" position="506\7" varintro="Quantifier" kind="BoundVar" serialnr="100" varnr="1"/>
        </Variables>
-       <Clustered-Type xmlid="x4213" sort="Clustered-Type" position="506\26">
-        <Adjective-Cluster xmlid="x4214">
-         <Attribute xmlid="x4215" nr="29" formatnr="53" patternnr="12" absolutepatternMMLId="ORDINAL1:8" spelling="zero" nonocc="true" sort="Adjective" constrnr="28" absoluteconstrMMLId="ORDINAL1:8" originalnr="0" position="506\22">
-          <Arguments xmlid="x4216"/>
+       <Clustered-Type xmlid="x4215" sort="Clustered-Type" position="506\26">
+        <Adjective-Cluster xmlid="x4216">
+         <Attribute xmlid="x4217" nr="29" formatnr="53" patternnr="12" absolutepatternMMLId="ORDINAL1:8" spelling="zero" nonocc="true" sort="Adjective" constrnr="28" absoluteconstrMMLId="ORDINAL1:8" originalnr="0" position="506\22">
+          <Arguments xmlid="x4218"/>
          </Attribute>
         </Adjective-Cluster>
-        <Standard-Type xmlid="x4217" nr="12" formatnr="45" patternnr="11" absolutepatternMMLId="ORDINAL1:6" spelling="Nat" sort="Expandable-Type" position="506\26">
-         <Arguments xmlid="x4218"/>
+        <Standard-Type xmlid="x4219" nr="12" formatnr="45" patternnr="11" absolutepatternMMLId="ORDINAL1:6" spelling="Nat" sort="Expandable-Type" position="506\26">
+         <Arguments xmlid="x4220"/>
         </Standard-Type>
        </Clustered-Type>
       </Explicitly-Qualified-Segment>
      </Variable-Segments>
-     <Scope xmlid="x4219">
-      <Conjunctive-Formula xmlid="x4220" position="506\45">
-       <Qualifying-Formula xmlid="x4221" position="506\43">
-        <Infix-Term xmlid="x4222" nr="26" formatnr="69" patternnr="57" absolutepatternMMLId="XCMPLX_0:6" leftargscount="1" spelling="-" sort="Functor-Term" constrnr="147" absoluteconstrMMLId="XCMPLX_0:6" originalnr="0" position="506\35">
-         <Arguments xmlid="x4223">
-          <Simple-Term xmlid="x4224" idnr="19" spelling="n" position="506\34" origin="BoundVar" sort="BoundVar" serialnr="100" varnr="1"/>
-          <Numeral-Term xmlid="x4225" number="1" sort="Numeral-Term" position="506\36"/>
+     <Scope xmlid="x4221">
+      <Conjunctive-Formula xmlid="x4222" position="506\45">
+       <Qualifying-Formula xmlid="x4223" position="506\43">
+        <Infix-Term xmlid="x4224" nr="26" formatnr="69" patternnr="57" absolutepatternMMLId="XCMPLX_0:6" leftargscount="1" spelling="-" sort="Functor-Term" constrnr="147" absoluteconstrMMLId="XCMPLX_0:6" originalnr="0" position="506\35">
+         <Arguments xmlid="x4225">
+          <Simple-Term xmlid="x4226" idnr="19" spelling="n" position="506\34" origin="BoundVar" sort="BoundVar" serialnr="100" varnr="1"/>
+          <Numeral-Term xmlid="x4227" number="1" sort="Numeral-Term" position="506\36"/>
          </Arguments>
         </Infix-Term>
-        <Standard-Type xmlid="x4226" nr="12" formatnr="45" patternnr="11" absolutepatternMMLId="ORDINAL1:6" spelling="Nat" sort="Expandable-Type" position="506\43">
-         <Arguments xmlid="x4227"/>
+        <Standard-Type xmlid="x4228" nr="12" formatnr="45" patternnr="11" absolutepatternMMLId="ORDINAL1:6" spelling="Nat" sort="Expandable-Type" position="506\43">
+         <Arguments xmlid="x4229"/>
         </Standard-Type>
        </Qualifying-Formula>
-       <Relation-Formula xmlid="x4228" nr="15" formatnr="99" patternnr="22" absolutepatternMMLId="XXREAL_0:1" leftargscount="1" spelling="&#x3C;=" sort="Relation-Formula" constrnr="24" absoluteconstrMMLId="XXREAL_0:1" originalnr="0" position="506\50">
-        <Arguments xmlid="x4229">
-         <Numeral-Term xmlid="x4230" number="1" sort="Numeral-Term" position="506\47"/>
-         <Simple-Term xmlid="x4231" idnr="19" spelling="n" position="506\52" origin="BoundVar" sort="BoundVar" serialnr="100" varnr="1"/>
+       <Relation-Formula xmlid="x4230" nr="15" formatnr="99" patternnr="22" absolutepatternMMLId="XXREAL_0:1" leftargscount="1" spelling="&#x3C;=" sort="Relation-Formula" constrnr="24" absoluteconstrMMLId="XXREAL_0:1" originalnr="0" position="506\50">
+        <Arguments xmlid="x4231">
+         <Numeral-Term xmlid="x4232" number="1" sort="Numeral-Term" position="506\47"/>
+         <Simple-Term xmlid="x4233" idnr="19" spelling="n" position="506\52" origin="BoundVar" sort="BoundVar" serialnr="100" varnr="1"/>
         </Arguments>
        </Relation-Formula>
       </Conjunctive-Formula>
      </Scope>
     </Universal-Quantifier-Formula>
    </Proposition>
-   <Straightforward-Justification xmlid="x4232" position="506\52"/>
+   <Straightforward-Justification xmlid="x4234" position="506\52"/>
   </Theorem-Item>
  </Item>
 </Text-Proper>

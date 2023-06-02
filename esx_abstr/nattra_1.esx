@@ -7579,12 +7579,12 @@
     <Item xmlid="x4668" kind="Cluster" position="415\8" endposition="415\64">
      <Cluster xmlid="x4669">
       <Conditional-Registration xmlid="x4670" position="415\8">
-       <Adjective-Cluster xmlid="x4671">
+       <Adjective-Cluster xmlid="x4671" role="antecedent">
         <Attribute xmlid="x4672" nr="55" formatnr="212" patternnr="62" absolutepatternMMLId="NATTRA_1:4" spelling="discrete" sort="Adjective" constrnr="93" absoluteconstrMMLId="NATTRA_1:4" originalnr="0" position="415\17">
          <Arguments xmlid="x4673"/>
         </Attribute>
        </Adjective-Cluster>
-       <Adjective-Cluster xmlid="x4674">
+       <Adjective-Cluster xmlid="x4674" role="consequent">
         <Attribute xmlid="x4675" nr="81" formatnr="210" patternnr="60" absolutepatternMMLId="NATTRA_1:2" spelling="quasi-discrete" sort="Adjective" constrnr="91" absoluteconstrMMLId="NATTRA_1:2" originalnr="0" position="415\35">
          <Arguments xmlid="x4676"/>
         </Attribute>
@@ -7601,7 +7601,7 @@
     <Item xmlid="x4681" kind="Cluster" position="416\8" endposition="416\64">
      <Cluster xmlid="x4682">
       <Conditional-Registration xmlid="x4683" position="416\8">
-       <Adjective-Cluster xmlid="x4684">
+       <Adjective-Cluster xmlid="x4684" role="antecedent">
         <Attribute xmlid="x4685" nr="81" formatnr="210" patternnr="60" absolutepatternMMLId="NATTRA_1:2" spelling="quasi-discrete" sort="Adjective" constrnr="91" absoluteconstrMMLId="NATTRA_1:2" originalnr="0" position="416\23">
          <Arguments xmlid="x4686"/>
         </Attribute>
@@ -7609,7 +7609,7 @@
          <Arguments xmlid="x4688"/>
         </Attribute>
        </Adjective-Cluster>
-       <Adjective-Cluster xmlid="x4689">
+       <Adjective-Cluster xmlid="x4689" role="consequent">
         <Attribute xmlid="x4690" nr="55" formatnr="212" patternnr="62" absolutepatternMMLId="NATTRA_1:4" spelling="discrete" sort="Adjective" constrnr="93" absoluteconstrMMLId="NATTRA_1:4" originalnr="0" position="416\51">
          <Arguments xmlid="x4691"/>
         </Attribute>
@@ -7827,8 +7827,8 @@
     <Item xmlid="x4811" kind="Cluster" position="437\9" endposition="437\42">
      <Cluster xmlid="x4812">
       <Conditional-Registration xmlid="x4813" position="437\9">
-       <Adjective-Cluster xmlid="x4814"/>
-       <Adjective-Cluster xmlid="x4815">
+       <Adjective-Cluster xmlid="x4814" role="antecedent"/>
+       <Adjective-Cluster xmlid="x4815" role="consequent">
         <Attribute xmlid="x4816" nr="55" formatnr="212" patternnr="62" absolutepatternMMLId="NATTRA_1:4" spelling="discrete" sort="Adjective" constrnr="93" absoluteconstrMMLId="NATTRA_1:4" originalnr="0" position="437\21">
          <Arguments xmlid="x4817"/>
         </Attribute>
@@ -8294,76 +8294,80 @@
     </Item>
     <Item xmlid="x5086" kind="Reduction" position="482\7" endposition="482\20">
      <Reduction xmlid="x5087">
-      <Infix-Term xmlid="x5088" nr="71" formatnr="213" patternnr="155" absolutepatternMMLId="NATTRA_1:10" leftargscount="0" spelling="IdCat" sort="Functor-Term" constrnr="286" absoluteconstrMMLId="NATTRA_1:10" originalnr="0" position="482\13">
-       <Arguments xmlid="x5089">
-        <Simple-Term xmlid="x5090" idnr="15" spelling="C" position="482\15" origin="Constant" sort="Constant" serialnr="306" varnr="1"/>
-       </Arguments>
-      </Infix-Term>
-      <Simple-Term xmlid="x5091" idnr="15" spelling="C" position="482\20" origin="Constant" sort="Constant" serialnr="306" varnr="1"/>
+      <Redex xmlid="x5088">
+       <Infix-Term xmlid="x5089" nr="71" formatnr="213" patternnr="155" absolutepatternMMLId="NATTRA_1:10" leftargscount="0" spelling="IdCat" sort="Functor-Term" constrnr="286" absoluteconstrMMLId="NATTRA_1:10" originalnr="0" position="482\13">
+        <Arguments xmlid="x5090">
+         <Simple-Term xmlid="x5091" idnr="15" spelling="C" position="482\15" origin="Constant" sort="Constant" serialnr="306" varnr="1"/>
+        </Arguments>
+       </Infix-Term>
+      </Redex>
+      <Reduct xmlid="x5092">
+       <Simple-Term xmlid="x5093" idnr="15" spelling="C" position="482\20" origin="Constant" sort="Constant" serialnr="306" varnr="1"/>
+      </Reduct>
      </Reduction>
     </Item>
    </Block>
   </Definition-Item>
  </Item>
- <Item xmlid="x5092" kind="Pragma" position="485\1" endposition="485\1">
-  <Pragma xmlid="x5093">
-   <Canceled xmlid="x5094" position="485\1" kind="T" amount="4" MMLId="NATTRA_1:43"/>
+ <Item xmlid="x5094" kind="Pragma" position="485\1" endposition="485\1">
+  <Pragma xmlid="x5095">
+   <Canceled xmlid="x5096" position="485\1" kind="T" amount="4" MMLId="NATTRA_1:43"/>
   </Pragma>
  </Item>
- <Item xmlid="x5095" kind="Theorem-Item" position="487\7" endposition="488\41">
-  <Theorem-Item xmlid="x5096" MMLId="NATTRA_1:47">
-   <Proposition xmlid="x5097" position="488\7">
-    <Label xmlid="x5098" idnr="0" spelling="" position="488\7" serialnr="101" labelnr="0"/>
-    <Universal-Quantifier-Formula xmlid="x5099" position="488\18">
-     <Variable-Segments xmlid="x5100">
-      <Free-Variable-Segment xmlid="x5101" position="488\18">
-       <Variable xmlid="x5102" idnr="13" spelling="A" position="488\18" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
-       <ReservedDscr-Type xmlid="x5103" idnr="13" nr="1" sort="ReservedDscr-Type" position="488\18">
-        <Substitutions xmlid="x5104"/>
-        <Standard-Type xmlid="x5105" nr="12" formatnr="171" patternnr="36" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="41\26">
-         <Arguments xmlid="x5106"/>
+ <Item xmlid="x5097" kind="Theorem-Item" position="487\7" endposition="488\41">
+  <Theorem-Item xmlid="x5098" MMLId="NATTRA_1:47">
+   <Proposition xmlid="x5099" position="488\7">
+    <Label xmlid="x5100" idnr="0" spelling="" position="488\7" serialnr="101" labelnr="0"/>
+    <Universal-Quantifier-Formula xmlid="x5101" position="488\18">
+     <Variable-Segments xmlid="x5102">
+      <Free-Variable-Segment xmlid="x5103" position="488\18">
+       <Variable xmlid="x5104" idnr="13" spelling="A" position="488\18" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="1" varnr="1"/>
+       <ReservedDscr-Type xmlid="x5105" idnr="13" nr="1" sort="ReservedDscr-Type" position="488\18">
+        <Substitutions xmlid="x5106"/>
+        <Standard-Type xmlid="x5107" nr="12" formatnr="171" patternnr="36" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="41\26">
+         <Arguments xmlid="x5108"/>
         </Standard-Type>
        </ReservedDscr-Type>
       </Free-Variable-Segment>
      </Variable-Segments>
-     <Scope xmlid="x5107">
-      <Universal-Quantifier-Formula xmlid="x5108" position="488\18">
-       <Variable-Segments xmlid="x5109">
-        <Free-Variable-Segment xmlid="x5110" position="488\18">
-         <Variable xmlid="x5111" idnr="14" spelling="B" position="488\18" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
-         <ReservedDscr-Type xmlid="x5112" idnr="14" nr="1" sort="ReservedDscr-Type" position="488\18">
-          <Substitutions xmlid="x5113"/>
-          <Standard-Type xmlid="x5114" nr="12" formatnr="171" patternnr="36" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="41\26">
-           <Arguments xmlid="x5115"/>
+     <Scope xmlid="x5109">
+      <Universal-Quantifier-Formula xmlid="x5110" position="488\18">
+       <Variable-Segments xmlid="x5111">
+        <Free-Variable-Segment xmlid="x5112" position="488\18">
+         <Variable xmlid="x5113" idnr="14" spelling="B" position="488\18" varintro="FromReservation" origin="ReservedVar" kind="BoundVar" serialnr="2" varnr="2"/>
+         <ReservedDscr-Type xmlid="x5114" idnr="14" nr="1" sort="ReservedDscr-Type" position="488\18">
+          <Substitutions xmlid="x5115"/>
+          <Standard-Type xmlid="x5116" nr="12" formatnr="171" patternnr="36" absolutepatternMMLId="CAT_1:4" spelling="Category" sort="Expandable-Type" position="41\26">
+           <Arguments xmlid="x5117"/>
           </Standard-Type>
          </ReservedDscr-Type>
         </Free-Variable-Segment>
        </Variable-Segments>
-       <Scope xmlid="x5116">
-        <Relation-Formula xmlid="x5117" nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="488\18">
-         <Arguments xmlid="x5118">
-          <Infix-Term xmlid="x5119" nr="71" formatnr="213" patternnr="155" absolutepatternMMLId="NATTRA_1:10" leftargscount="0" spelling="IdCat" sort="Functor-Term" constrnr="286" absoluteconstrMMLId="NATTRA_1:10" originalnr="0" position="488\7">
-           <Arguments xmlid="x5120">
-            <Circumfix-Term xmlid="x5121" bracketed="true" nr="4" formatnr="30" patternnr="133" absolutepatternMMLId="CAT_2:6" spelling="[:" sort="Functor-Term" constrnr="204" absoluteconstrMMLId="CAT_2:6" originalnr="0" position="488\15">
-             <Right-Circumflex-Symbol xmlid="x5122" nr="4" formatnr="30" spelling=":]" position="488\15"/>
-             <Arguments xmlid="x5123">
-              <Simple-Term xmlid="x5124" idnr="13" spelling="A" position="488\11" origin="ReservedVar" sort="BoundVar" serialnr="1" varnr="1"/>
-              <Simple-Term xmlid="x5125" idnr="14" spelling="B" position="488\13" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="2"/>
+       <Scope xmlid="x5118">
+        <Relation-Formula xmlid="x5119" nr="1" formatnr="4" patternnr="10" absolutepatternMMLId="XBOOLE_0:4" leftargscount="1" spelling="=" sort="Relation-Formula" constrnr="1" absoluteconstrMMLId="HIDDEN:1" originalnr="0" position="488\18">
+         <Arguments xmlid="x5120">
+          <Infix-Term xmlid="x5121" nr="71" formatnr="213" patternnr="155" absolutepatternMMLId="NATTRA_1:10" leftargscount="0" spelling="IdCat" sort="Functor-Term" constrnr="286" absoluteconstrMMLId="NATTRA_1:10" originalnr="0" position="488\7">
+           <Arguments xmlid="x5122">
+            <Circumfix-Term xmlid="x5123" bracketed="true" nr="4" formatnr="30" patternnr="133" absolutepatternMMLId="CAT_2:6" spelling="[:" sort="Functor-Term" constrnr="204" absoluteconstrMMLId="CAT_2:6" originalnr="0" position="488\15">
+             <Right-Circumflex-Symbol xmlid="x5124" nr="4" formatnr="30" spelling=":]" position="488\15"/>
+             <Arguments xmlid="x5125">
+              <Simple-Term xmlid="x5126" idnr="13" spelling="A" position="488\11" origin="ReservedVar" sort="BoundVar" serialnr="1" varnr="1"/>
+              <Simple-Term xmlid="x5127" idnr="14" spelling="B" position="488\13" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="2"/>
              </Arguments>
             </Circumfix-Term>
            </Arguments>
           </Infix-Term>
-          <Circumfix-Term xmlid="x5126" nr="4" formatnr="30" patternnr="133" absolutepatternMMLId="CAT_2:6" spelling="[:" sort="Functor-Term" constrnr="204" absoluteconstrMMLId="CAT_2:6" originalnr="0" position="488\41">
-           <Right-Circumflex-Symbol xmlid="x5127" nr="4" formatnr="30" spelling=":]" position="488\41"/>
-           <Arguments xmlid="x5128">
-            <Infix-Term xmlid="x5129" nr="71" formatnr="213" patternnr="155" absolutepatternMMLId="NATTRA_1:10" leftargscount="0" spelling="IdCat" sort="Functor-Term" constrnr="286" absoluteconstrMMLId="NATTRA_1:10" originalnr="0" position="488\26">
-             <Arguments xmlid="x5130">
-              <Simple-Term xmlid="x5131" idnr="13" spelling="A" position="488\28" origin="ReservedVar" sort="BoundVar" serialnr="1" varnr="1"/>
+          <Circumfix-Term xmlid="x5128" nr="4" formatnr="30" patternnr="133" absolutepatternMMLId="CAT_2:6" spelling="[:" sort="Functor-Term" constrnr="204" absoluteconstrMMLId="CAT_2:6" originalnr="0" position="488\41">
+           <Right-Circumflex-Symbol xmlid="x5129" nr="4" formatnr="30" spelling=":]" position="488\41"/>
+           <Arguments xmlid="x5130">
+            <Infix-Term xmlid="x5131" nr="71" formatnr="213" patternnr="155" absolutepatternMMLId="NATTRA_1:10" leftargscount="0" spelling="IdCat" sort="Functor-Term" constrnr="286" absoluteconstrMMLId="NATTRA_1:10" originalnr="0" position="488\26">
+             <Arguments xmlid="x5132">
+              <Simple-Term xmlid="x5133" idnr="13" spelling="A" position="488\28" origin="ReservedVar" sort="BoundVar" serialnr="1" varnr="1"/>
              </Arguments>
             </Infix-Term>
-            <Infix-Term xmlid="x5132" nr="71" formatnr="213" patternnr="155" absolutepatternMMLId="NATTRA_1:10" leftargscount="0" spelling="IdCat" sort="Functor-Term" constrnr="286" absoluteconstrMMLId="NATTRA_1:10" originalnr="0" position="488\36">
-             <Arguments xmlid="x5133">
-              <Simple-Term xmlid="x5134" idnr="14" spelling="B" position="488\38" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="2"/>
+            <Infix-Term xmlid="x5134" nr="71" formatnr="213" patternnr="155" absolutepatternMMLId="NATTRA_1:10" leftargscount="0" spelling="IdCat" sort="Functor-Term" constrnr="286" absoluteconstrMMLId="NATTRA_1:10" originalnr="0" position="488\36">
+             <Arguments xmlid="x5135">
+              <Simple-Term xmlid="x5136" idnr="14" spelling="B" position="488\38" origin="ReservedVar" sort="BoundVar" serialnr="2" varnr="2"/>
              </Arguments>
             </Infix-Term>
            </Arguments>
@@ -8375,7 +8379,7 @@
      </Scope>
     </Universal-Quantifier-Formula>
    </Proposition>
-   <Straightforward-Justification xmlid="x5135" position="488\41"/>
+   <Straightforward-Justification xmlid="x5137" position="488\41"/>
   </Theorem-Item>
  </Item>
 </Text-Proper>
